@@ -959,6 +959,135 @@ body::before {
   font-weight: 800;
   letter-spacing: 0.5px;
 }
+.topic-badge-new {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: linear-gradient(135deg, #ff7a45 0%, #ff9eb5 100%);
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(255,122,69,0.35);
+}
+.topic-card.featured-topic {
+  border-width: 3px;
+  background: linear-gradient(135deg, var(--orange-soft) 0%, #fff 100%);
+}
+.topic-card.featured-topic:hover {
+  background: linear-gradient(135deg, var(--orange-soft) 0%, #fff 60%);
+}
+
+/* ═══════════ 首頁「最新深度文章」banner ═══════════ */
+.featured-article-banner {
+  background: linear-gradient(135deg, #f3e8ff 0%, #fff5eb 50%, #ffeef3 100%);
+  border: 3px solid #d9b8f0;
+  border-radius: 24px;
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+}
+.featured-article-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(183, 148, 224, 0.3);
+  border-color: var(--purple);
+}
+.featured-article-banner::before {
+  content: '✨ NEW 新文章 ✨';
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  background: linear-gradient(135deg, var(--orange) 0%, var(--pink) 100%);
+  color: #fff;
+  padding: 5px 16px;
+  border-radius: 12px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  box-shadow: 0 3px 10px rgba(255,122,69,0.35);
+}
+.featured-article-inner {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.featured-article-emoji {
+  font-size: 56px;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: drop-shadow(2px 3px 0 rgba(255,255,255,0.5));
+}
+.featured-article-content {
+  flex: 1;
+  min-width: 240px;
+}
+.featured-article-category {
+  display: inline-block;
+  background: #e8657e;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+.featured-article-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.45;
+  margin-bottom: 8px;
+  letter-spacing: -0.005em;
+}
+.featured-article-desc {
+  font-size: 14px;
+  color: var(--text-soft);
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+.featured-article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.featured-article-btn {
+  display: inline-block;
+  background: #fff;
+  color: var(--orange);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  font-size: 13.5px;
+  border: 2px solid var(--orange);
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.featured-article-btn:hover {
+  background: var(--orange);
+  color: #fff;
+  transform: translateX(3px);
+}
+@media (max-width: 640px) {
+  .featured-article-inner { gap: 14px; }
+  .featured-article-emoji { font-size: 44px; }
+  .featured-article-title { font-size: 17px; }
+  .featured-article-banner { padding: 22px 22px 20px; }
+}
 
 /* ═══════════════ MODAL ═══════════════ */
 .modal-overlay {
@@ -1090,7 +1219,8 @@ body::before {
   .nav-inner { height: 60px; padding: 0 12px; gap: 10px; }
   .nav-brand-name { font-size: 16px; }
   .nav-brand-sub { display: none; }
-  .tab-btn { padding: 7px 12px; font-size: 12.5px; }
+  /* 手機上隱藏頂部 Tab,改用底部 Tab Bar */
+  .tab-bar { display: none !important; }
   .hero-title { font-size: 26px; }
   .hero-card { padding: 36px 28px; }
   .section-title { font-size: 22px; }
@@ -1102,6 +1232,65 @@ body::before {
   #map { height: 480px; }
   .filter-label { display: block; margin-bottom: 8px; }
   .search-input { width: 100%; }
+  /* 底部 Tab Bar 預留空間避免內容被遮住 */
+  body { padding-bottom: 72px; }
+}
+
+/* ═══════════════ MOBILE BOTTOM TAB BAR ═══════════════ */
+.mobile-tabbar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(253, 246, 236, 0.98);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 2px solid var(--border);
+  padding: 6px 4px calc(6px + env(safe-area-inset-bottom, 0px));
+  box-shadow: 0 -4px 16px rgba(140, 80, 30, 0.08);
+}
+.mobile-tabbar-inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.mobile-tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 6px 4px;
+  background: transparent;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text-muted);
+  transition: all 0.2s;
+  min-height: 54px;
+}
+.mobile-tab-btn:active { transform: scale(0.94); }
+.mobile-tab-btn .mtab-icon { font-size: 22px; line-height: 1; }
+.mobile-tab-btn .mtab-label {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.mobile-tab-btn.active {
+  background: var(--orange);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(255, 122, 69, 0.35);
+}
+.mobile-tab-btn.active .mtab-label { font-weight: 800; }
+
+@media (max-width: 768px) {
+  .mobile-tabbar { display: block; }
 }
 </style>
 </head>
@@ -1169,6 +1358,9 @@ body::before {
 
   <div class="layout-wrap" style="margin-top: 24px;">
     <div class="main-content">
+      <!-- 最新深度文章 banner (由 JS 從 TOPICS featured 動態生成) -->
+      <div id="featuredArticleBanner"></div>
+
       <div class="section-header">
         <div class="section-title">
           <span class="section-title-emoji">🎪</span>
@@ -1263,12 +1455,20 @@ body::before {
 
   <div class="map-wrapper">
     <div class="map-controls">
-      <span class="filter-label">🌏 區域</span>
+      <span class="filter-label">📍 顯示</span>
+      <span class="filter-chips" id="mapLayerChips">
+        <button class="filter-chip active" data-layer="events">🎪 活動</button>
+        <button class="filter-chip active" data-layer="hotels">🏨 親子飯店</button>
+        <button class="filter-chip active" data-layer="restaurants">🍽️ 親子餐廳</button>
+      </span>
+      <span class="filter-label" style="margin-left:12px;">🌏 地區</span>
       <span class="filter-chips" id="mapRegionChips"></span>
       <div class="map-legend" style="margin-left:auto;">
         <span class="legend-item"><span class="legend-dot" style="background:#ff7a45;"></span>大台北</span>
-        <span class="legend-item"><span class="legend-dot" style="background:#2ba89a;"></span>全台其他</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#2ba89a;"></span>全台</span>
         <span class="legend-item"><span class="legend-dot" style="background:#e8657e;"></span>日本</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#b794e0;"></span>飯店</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#ffc93c;"></span>餐廳</span>
       </div>
     </div>
     <div id="map"></div>
@@ -1318,6 +1518,32 @@ body::before {
   <div class="modal-content" id="modalContent"></div>
 </div>
 
+<!-- ═══════════════════════ MOBILE BOTTOM TAB BAR ═══════════════════════ -->
+<nav class="mobile-tabbar" aria-label="Mobile navigation">
+  <div class="mobile-tabbar-inner">
+    <button class="mobile-tab-btn active" data-tab="home">
+      <span class="mtab-icon">📰</span>
+      <span class="mtab-label">本週</span>
+    </button>
+    <button class="mobile-tab-btn" data-tab="browse">
+      <span class="mtab-icon">🎨</span>
+      <span class="mtab-label">瀏覽</span>
+    </button>
+    <button class="mobile-tab-btn" data-tab="map">
+      <span class="mtab-icon">🗺️</span>
+      <span class="mtab-label">地圖</span>
+    </button>
+    <button class="mobile-tab-btn" data-tab="calendar">
+      <span class="mtab-icon">📅</span>
+      <span class="mtab-label">行事曆</span>
+    </button>
+    <button class="mobile-tab-btn" data-tab="topics">
+      <span class="mtab-icon">💡</span>
+      <span class="mtab-label">議題</span>
+    </button>
+  </div>
+</nav>
+
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
 <footer class="site-footer">
   <div class="footer-inner">
@@ -1354,15 +1580,16 @@ const AGE_LABELS = {
 };
 
 const TOPICS = [
+  { cls: 't3', emoji: '💥', title: '3-4 歲 Tantrum 情緒風暴',
+    desc: '前額葉發展解讀 + 13 招正向應對（預防 / 當下 / 善後三階段）。這個階段爆走背後的腦科學。',
+    tags: ['情緒管理', 'Tantrum', '正向教養', '3-4歲'], soon: false,
+    url: 'topics/tantrum-3to4.html', featured: true },
   { cls: 't1', emoji: '🌱', title: '發展與里程碑',
     desc: '各年齡段動作、語言、認知發展指標、學走路 / 學說話 / 學如廁時機、發展遲緩識別。',
     tags: ['大肌肉', '精細動作', '語言發展', '認知', '發展遲緩'], soon: true },
   { cls: 't2', emoji: '🧠', title: '教育與學習',
     desc: '幼兒園挑選、蒙特梭利/華德福比較、繪本選書、英語啟蒙、STEAM、108 課綱陪跑。',
     tags: ['幼兒園', '雙語', '蒙特梭利', '繪本', '程式啟蒙'], soon: true },
-  { cls: 't3', emoji: '💛', title: '心理與情緒',
-    desc: '情緒管理、手足衝突、社交、爸媽情緒、正向教養、螢幕時間管理。',
-    tags: ['情緒管理', 'Tantrum', '正向教養', '手足關係', '螢幕時間'], soon: true },
   { cls: 't4', emoji: '🏥', title: '健康與醫療',
     desc: '疫苗行事曆、常見兒童疾病、視力聽力牙科、營養與副食品、睡眠訓練。',
     tags: ['疫苗', '副食品', '視力', '過敏', '睡眠'], soon: true },
@@ -1389,6 +1616,7 @@ let leafletMap = null;
 let mapMarkers = [];
 
 // ═══════════════════════ LOAD DATA ═══════════════════════
+let ALL_PLACES = [];
 async function loadArticles() {
   try {
     const res = await fetch('articles.json?t=' + Date.now());
@@ -1398,10 +1626,20 @@ async function loadArticles() {
     ALL_ARTICLES = [];
   }
 }
+async function loadPlaces() {
+  try {
+    const res = await fetch('places.json?t=' + Date.now());
+    ALL_PLACES = await res.json();
+  } catch (e) {
+    console.error('載入 places.json 失敗', e);
+    ALL_PLACES = [];
+  }
+}
 
 // ═══════════════════════ TAB SWITCH ═══════════════════════
 function switchTab(tab) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('.mobile-tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
   document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + tab));
   window.scrollTo({ top: 0, behavior: 'smooth' });
   if (tab === 'map') setTimeout(initMap, 100);
@@ -1410,12 +1648,55 @@ function switchTab(tab) {
   if (tab === 'browse') renderBrowse();
 }
 
-document.querySelectorAll('.tab-btn').forEach(btn => {
+document.querySelectorAll('.tab-btn, .mobile-tab-btn').forEach(btn => {
   btn.addEventListener('click', () => switchTab(btn.dataset.tab));
 });
 
 // ═══════════════════════ RENDER: HOME ═══════════════════════
+function renderFeaturedArticle() {
+  const banner = document.getElementById('featuredArticleBanner');
+  if (!banner) return;
+
+  // 找 TOPICS 中第一個 featured 且有 url 的文章
+  const featured = TOPICS.find(t => t.featured && t.url);
+  if (!featured) {
+    banner.innerHTML = '';
+    return;
+  }
+
+  // 類別對應中文標籤
+  const catMap = {
+    t1: { name: '🌱 發展與里程碑', color: '#15803d' },
+    t2: { name: '🧠 教育與學習', color: '#6b21a8' },
+    t3: { name: '💛 心理與情緒', color: '#a03a50' },
+    t4: { name: '🏥 健康與醫療', color: '#0c4a6e' },
+    t5: { name: '👨‍👩‍👧 家庭關係', color: '#854d0e' },
+    t6: { name: '🛡️ 安全與照護', color: '#991b1b' },
+  };
+  const cat = catMap[featured.cls] || { name: '深度文章', color: '#e8657e' };
+
+  banner.innerHTML = `
+    <div class="featured-article-banner" onclick="window.location.href='${featured.url}'">
+      <div class="featured-article-inner">
+        <div class="featured-article-emoji">${featured.emoji}</div>
+        <div class="featured-article-content">
+          <span class="featured-article-category" style="background:${cat.color};">${cat.name}</span>
+          <div class="featured-article-title">${featured.title}</div>
+          <div class="featured-article-desc">${featured.desc}</div>
+          <div class="featured-article-meta">
+            <span>⏱️ 閱讀約 10 分鐘</span>
+            <span>✍️ 嚴謹引用版</span>
+            <span>📚 14 篇學術來源</span>
+          </div>
+          <a class="featured-article-btn" href="${featured.url}" onclick="event.stopPropagation();">📖 立即閱讀 →</a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 function renderHome() {
+  renderFeaturedArticle();
   // 非 development 類的前 6 則
   const articles = ALL_ARTICLES.filter(a => a.category !== 'development').slice(0, 6);
   const grid = document.getElementById('homeGrid');
@@ -1521,8 +1802,8 @@ function initMap() {
     maxZoom: 18,
   }).addTo(leafletMap);
 
-  // region chips
-  const regions = ['all', ...new Set(ALL_ARTICLES.map(a => a.region).filter(Boolean))];
+  // region chips (from articles + places)
+  const regions = ['all', ...new Set([...ALL_ARTICLES, ...ALL_PLACES].map(a => a.region).filter(Boolean))];
   document.getElementById('mapRegionChips').innerHTML = regions.map(r =>
     `<button class="filter-chip ${state.mapRegion === r ? 'active' : ''}" data-mapregion="${r}">${r === 'all' ? '全部' : r}</button>`
   ).join('');
@@ -1534,44 +1815,119 @@ function initMap() {
     });
   });
 
+  // layer chips
+  document.querySelectorAll('.filter-chip[data-layer]').forEach(chip => {
+    chip.addEventListener('click', () => {
+      chip.classList.toggle('active');
+      drawMarkers();
+    });
+  });
+
   drawMarkers();
+}
+
+function isLayerActive(layer) {
+  const chip = document.querySelector(`.filter-chip[data-layer="${layer}"]`);
+  return chip && chip.classList.contains('active');
+}
+
+function makeIcon(color, emoji) {
+  return L.divIcon({
+    className: '',
+    html: `<div style="background:${color};width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;">
+      <span style="transform:rotate(45deg);font-size:15px;">${emoji}</span>
+    </div>`,
+    iconSize: [30, 30],
+    iconAnchor: [15, 30],
+  });
 }
 
 function drawMarkers() {
   mapMarkers.forEach(m => leafletMap.removeLayer(m));
   mapMarkers = [];
 
-  const list = ALL_ARTICLES.filter(a => {
-    if (a.category === 'development') return false;
-    if (!a.coord) return false;
-    if (state.mapRegion !== 'all' && a.region !== state.mapRegion) return false;
-    return true;
-  });
+  const showEvents = isLayerActive('events');
+  const showHotels = isLayerActive('hotels');
+  const showRestaurants = isLayerActive('restaurants');
 
-  document.getElementById('mapCount').textContent = `地圖上 ${list.length} 則`;
-
-  list.forEach(a => {
-    const color = CATEGORY_CONFIG[a.category]?.color || '#999';
-    const icon = L.divIcon({
-      className: '',
-      html: `<div style="background:${color};width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;">
-        <span style="transform:rotate(45deg);font-size:15px;">${CATEGORY_CONFIG[a.category]?.sticker || '📍'}</span>
-      </div>`,
-      iconSize: [30, 30],
-      iconAnchor: [15, 30],
+  // 1. Events (activity markers)
+  if (showEvents) {
+    const evList = ALL_ARTICLES.filter(a => {
+      if (a.category === 'development') return false;
+      if (!a.coord) return false;
+      if (state.mapRegion !== 'all' && a.region !== state.mapRegion) return false;
+      return true;
     });
-    const m = L.marker(a.coord, { icon }).addTo(leafletMap);
-    m.bindPopup(`
-      <div class="popup-title">${a.title}</div>
-      <div style="color:var(--text-muted);font-size:12px;margin-bottom:4px;">📍 ${a.region} ${a.district || ''}</div>
-      <div style="color:var(--text-muted);font-size:12px;">📅 ${a.info?.date || '長期'}</div>
-      <a class="popup-btn" onclick="closePopupAndOpen('${a.id}')">查看詳情 →</a>
-    `);
-    mapMarkers.push(m);
-  });
 
-  // 如果有篩選就 fit bounds
-  if (list.length > 0 && state.mapRegion !== 'all') {
+    evList.forEach(a => {
+      const color = CATEGORY_CONFIG[a.category]?.color || '#999';
+      const icon = makeIcon(color, CATEGORY_CONFIG[a.category]?.sticker || '📍');
+      const m = L.marker(a.coord, { icon }).addTo(leafletMap);
+      m.bindPopup(`
+        <div class="popup-title">${a.title}</div>
+        <div style="color:var(--text-muted);font-size:12px;margin-bottom:4px;">🎪 活動 · ${a.region} ${a.district || ''}</div>
+        <div style="color:var(--text-muted);font-size:12px;">📅 ${a.info?.date || '長期'}</div>
+        <a class="popup-btn" onclick="closePopupAndOpen('${a.id}')">查看詳情 →</a>
+      `);
+      mapMarkers.push(m);
+    });
+  }
+
+  // 2. Hotels
+  if (showHotels) {
+    const hotels = ALL_PLACES.filter(p => {
+      if (p.type !== 'hotel') return false;
+      if (!p.coord) return false;
+      if (typeof p.rating === 'number' && p.rating < 3.5) return false;  // 品質門檻
+      if (state.mapRegion !== 'all' && p.region !== state.mapRegion) return false;
+      return true;
+    });
+
+    hotels.forEach(p => {
+      const icon = makeIcon('#b794e0', '🏨');
+      const m = L.marker(p.coord, { icon }).addTo(leafletMap);
+      const ratingHtml = p.rating ? `<span style="background:#fff4d1;color:#92400e;padding:1px 8px;border-radius:8px;margin-right:6px;font-size:11px;font-weight:700;">⭐ ${p.rating.toFixed(1)}</span>` : '';
+      m.bindPopup(`
+        <div class="popup-title">${p.name}</div>
+        <div style="color:var(--text-muted);font-size:12px;margin-bottom:4px;">${ratingHtml}🏨 親子飯店 · ${p.region} ${p.district || ''}</div>
+        <div style="color:var(--text-soft);font-size:12px;margin-bottom:6px;line-height:1.6;">${(p.kid_features || []).slice(0, 3).map(f => `<span style="display:inline-block;background:#f3e8ff;color:#6b21a8;padding:1px 8px;border-radius:8px;margin:1px 2px 1px 0;font-size:11px;">${f}</span>`).join('')}</div>
+        <div style="color:var(--text-muted);font-size:11px;">${p.highlight || ''}</div>
+        ${p.url ? `<a class="popup-btn" href="${p.url}" target="_blank" rel="noopener">官網 →</a>` : ''}
+      `);
+      mapMarkers.push(m);
+    });
+  }
+
+  // 3. Restaurants
+  if (showRestaurants) {
+    const restaurants = ALL_PLACES.filter(p => {
+      if (p.type !== 'restaurant') return false;
+      if (!p.coord) return false;
+      if (typeof p.rating === 'number' && p.rating < 3.5) return false;  // 品質門檻
+      if (state.mapRegion !== 'all' && p.region !== state.mapRegion) return false;
+      return true;
+    });
+
+    restaurants.forEach(p => {
+      const icon = makeIcon('#ffc93c', '🍽️');
+      const m = L.marker(p.coord, { icon }).addTo(leafletMap);
+      const ratingHtml = p.rating ? `<span style="background:#fff4d1;color:#92400e;padding:1px 8px;border-radius:8px;margin-right:6px;font-size:11px;font-weight:700;">⭐ ${p.rating.toFixed(1)}</span>` : '';
+      m.bindPopup(`
+        <div class="popup-title">${p.name}</div>
+        <div style="color:var(--text-muted);font-size:12px;margin-bottom:4px;">${ratingHtml}🍽️ 親子餐廳 · ${p.region} ${p.district || ''}</div>
+        <div style="color:var(--text-soft);font-size:12px;margin-bottom:6px;line-height:1.6;">${(p.kid_features || []).slice(0, 3).map(f => `<span style="display:inline-block;background:#fff4d1;color:#92400e;padding:1px 8px;border-radius:8px;margin:1px 2px 1px 0;font-size:11px;">${f}</span>`).join('')}</div>
+        <div style="color:var(--text-muted);font-size:11px;">${p.highlight || ''}</div>
+        ${p.url ? `<a class="popup-btn" href="${p.url}" target="_blank" rel="noopener">官網 →</a>` : ''}
+      `);
+      mapMarkers.push(m);
+    });
+  }
+
+  const totalCount = mapMarkers.length;
+  document.getElementById('mapCount').textContent = `地圖上 ${totalCount} 個標記`;
+
+  // fit bounds if filtered
+  if (totalCount > 0 && state.mapRegion !== 'all') {
     const group = L.featureGroup(mapMarkers);
     leafletMap.fitBounds(group.getBounds().pad(0.2));
   }
@@ -1659,17 +2015,22 @@ function renderCalendar() {
 // ═══════════════════════ RENDER: TOPICS ═══════════════════════
 function renderTopics() {
   const grid = document.getElementById('topicsGrid');
-  grid.innerHTML = TOPICS.map(t => `
-    <div class="topic-card ${t.cls}">
+  grid.innerHTML = TOPICS.map(t => {
+    const openUrl = t.url ? `onclick="window.location.href='${t.url}'"` : '';
+    return `
+    <div class="topic-card ${t.cls} ${t.featured ? 'featured-topic' : ''}" ${openUrl} style="${t.url ? 'cursor:pointer;' : ''}">
       ${t.soon ? '<span class="topic-badge-soon">籌備中</span>' : ''}
+      ${t.featured ? '<span class="topic-badge-new">✨ 新文章</span>' : ''}
       <span class="topic-emoji">${t.emoji}</span>
       <div class="topic-title">${t.title}</div>
       <div class="topic-desc">${t.desc}</div>
       <div class="topic-tags">
         ${t.tags.map(tg => `<span class="topic-tag">${tg}</span>`).join('')}
       </div>
+      ${t.url ? '<div style="margin-top:14px;font-family:\'Fredoka\',\'Noto Sans TC\',sans-serif;font-size:13px;font-weight:700;color:var(--orange);">閱讀完整文章 →</div>' : ''}
     </div>
-  `).join('');
+  `;
+  }).join('');
 }
 
 // ═══════════════════════ CARD ═══════════════════════
@@ -1912,7 +2273,7 @@ document.addEventListener('click', (e) => {
 
 // ═══════════════════════ INIT ═══════════════════════
 (async function init() {
-  await loadArticles();
+  await Promise.all([loadArticles(), loadPlaces()]);
   renderHome();
   renderFilterChips();
   // Browse tab internal search
