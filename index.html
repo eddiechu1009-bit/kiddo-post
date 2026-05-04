@@ -128,10 +128,11 @@ body::before {
   letter-spacing: 0.5px;
 }
 .nav-brand-sub {
-  font-family: 'Caveat', cursive;
-  font-size: 15px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 12.5px;
   color: var(--teal);
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 0.04em;
 }
 
 .tab-bar {
@@ -217,10 +218,11 @@ body::before {
   padding: 12px 18px;
   background: var(--bg-cream);
   border-bottom: 2px dotted var(--border);
-  font-family: 'Caveat', cursive;
-  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 13px;
   color: var(--orange);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -291,7 +293,7 @@ body::before {
 }
 .search-empty-emoji { font-size: 38px; margin-bottom: 8px; }
 .search-empty-title { font-family: 'Fredoka', 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 600; }
-.search-empty-sub { font-family: 'Caveat', cursive; font-size: 15px; color: var(--orange); margin-top: 4px; }
+.search-empty-sub { font-family: 'Noto Sans TC', sans-serif; font-size: 13px; color: var(--orange); margin-top: 4px; font-weight: 500; }
 
 @media (max-width: 768px) {
   .global-search { flex: 1; }
@@ -328,11 +330,25 @@ body::before {
   box-shadow: 0 8px 32px rgba(255, 122, 69, 0.25);
 }
 .hero-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(255, 122, 69, 0.35); }
-.hero-deco { position: absolute; opacity: 0.85; filter: drop-shadow(3px 4px 0 rgba(255,255,255,0.4)); }
-.hero-deco.d1 { top: 20px; right: 40px; font-size: 60px; transform: rotate(15deg); }
-.hero-deco.d2 { bottom: 20px; right: 150px; font-size: 50px; transform: rotate(-10deg); }
-.hero-deco.d3 { top: 40px; left: 30px; font-size: 38px; opacity: 0.7; transform: rotate(-5deg); }
-.hero-deco.d4 { bottom: 30px; left: 60px; font-size: 44px; opacity: 0.7; transform: rotate(12deg); }
+
+/* ── Hero kids illustration (麵包小偷 繪本風, transparent PNG) ── */
+.hero-kids {
+  position: absolute;
+  right: 24px;
+  bottom: -4px;
+  width: 260px;
+  height: auto;
+  pointer-events: none;
+  filter: drop-shadow(4px 6px 0 rgba(140, 80, 30, 0.1));
+  z-index: 1;
+  object-fit: contain;
+}
+@media (max-width: 900px) {
+  .hero-kids { width: 200px; right: 12px; opacity: 0.92; }
+}
+@media (max-width: 640px) {
+  .hero-kids { display: none; }
+}
 .hero-badge {
   display: inline-block;
   background: rgba(255,255,255,0.85);
@@ -348,19 +364,21 @@ body::before {
   z-index: 2;
 }
 .hero-date {
-  font-family: 'Caveat', cursive;
-  font-size: 22px;
-  font-weight: 600;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
   margin-bottom: 10px;
   position: relative;
   z-index: 2;
+  letter-spacing: 0.04em;
+  opacity: 0.95;
 }
 .hero-title {
   font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
   font-size: 38px;
   font-weight: 800;
   line-height: 1.35;
-  max-width: 720px;
+  max-width: 560px;
   position: relative;
   z-index: 2;
   text-shadow: 2px 3px 0 rgba(255,255,255,0.3);
@@ -369,7 +387,7 @@ body::before {
   font-size: 17px;
   opacity: 0.95;
   margin-top: 16px;
-  max-width: 620px;
+  max-width: 560px;
   line-height: 1.8;
   position: relative;
   z-index: 2;
@@ -408,14 +426,15 @@ body::before {
 }
 .section-title-emoji { font-size: 34px; transform: rotate(-8deg); display: inline-block; }
 .section-count {
-  font-family: 'Caveat', cursive;
-  font-size: 18px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
   color: var(--orange);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 .section-subtitle {
-  font-family: 'Caveat', cursive;
-  font-size: 17px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
   color: var(--text-muted);
   max-width: 1280px;
   margin: 0 auto;
@@ -457,13 +476,15 @@ body::before {
 
 .card-sticker {
   position: absolute;
-  top: 12px;
-  right: 14px;
-  font-size: 28px;
+  top: 10px;
+  right: 12px;
+  font-size: 24px;
   transform: rotate(15deg);
   z-index: 2;
+  opacity: 0.88;
+  pointer-events: none;
 }
-.card-body { padding: 22px 24px 18px; flex: 1; display: flex; flex-direction: column; }
+.card-body { padding: 22px 56px 18px 24px; flex: 1; display: flex; flex-direction: column; }
 .card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
 .card-cat {
   font-size: 12px;
@@ -518,7 +539,33 @@ body::before {
   color: var(--text-muted);
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px 12px;
+  align-items: center;
+}
+.card-info .info-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--orange-soft);
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 3px 10px 3px 8px;
+  border-radius: 10px;
+  border: 1.5px solid var(--orange-light);
+  letter-spacing: 0.01em;
+}
+.card-info .info-date::before {
+  content: '📅';
+  font-size: 13px;
+}
+.card-info .info-location,
+.card-info .info-age {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-soft);
+  font-weight: 500;
 }
 .card-footer {
   padding: 12px 24px;
@@ -529,8 +576,8 @@ body::before {
   background: rgba(255, 248, 236, 0.5);
 }
 .card-read-more {
-  font-family: 'Caveat', cursive;
-  font-size: 18px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 13px;
   font-weight: 700;
   color: var(--orange);
 }
@@ -594,16 +641,20 @@ body::before {
 
 .tip-list { list-style: none; }
 .tip-list li {
-  padding: 10px 0;
+  padding: 10px 0 10px 28px;
   border-bottom: 1.5px dotted var(--border);
   font-size: 14px;
   color: var(--text-soft);
   line-height: 1.75;
-  display: flex;
-  gap: 8px;
+  position: relative;
 }
 .tip-list li:last-child { border-bottom: none; padding-bottom: 0; }
-.tip-list li::before { content: '🌱'; flex-shrink: 0; }
+.tip-list li::before {
+  content: '🌱';
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
 
 /* ═══════════════ FILTER BAR (Browse Tab) ═══════════════ */
 .filter-bar {
@@ -620,8 +671,8 @@ body::before {
   box-shadow: var(--shadow);
 }
 .filter-label {
-  font-family: 'Caveat', cursive;
-  font-size: 17px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 13.5px;
   font-weight: 700;
   color: var(--orange);
   margin-right: 14px;
@@ -780,9 +831,11 @@ body::before {
   gap: 12px;
 }
 .month-subtitle {
-  font-family: 'Caveat', cursive;
-  font-size: 20px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14.5px;
   color: var(--orange);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 .cal-event {
   display: flex;
@@ -989,7 +1042,7 @@ body::before {
   border-radius: 14px;
   border: 2px solid var(--border);
 }
-.modal-body .info-label { font-family: 'Caveat', cursive; font-size: 15px; color: var(--text-muted); font-weight: 600; }
+.modal-body .info-label { font-family: 'Noto Sans TC', sans-serif; font-size: 12.5px; color: var(--text-muted); font-weight: 500; letter-spacing: 0.02em; }
 .modal-body .info-value { font-size: 14.5px; color: var(--text); font-weight: 600; margin-top: 2px; line-height: 1.5; }
 .modal-body .source {
   font-size: 13px;
@@ -1040,7 +1093,6 @@ body::before {
   .tab-btn { padding: 7px 12px; font-size: 12.5px; }
   .hero-title { font-size: 26px; }
   .hero-card { padding: 36px 28px; }
-  .hero-deco.d1 { font-size: 40px; right: 20px; }
   .section-title { font-size: 22px; }
   .articles-grid { padding: 0 16px 32px; gap: 16px; }
   .month-section { padding: 22px 20px; }
@@ -1094,10 +1146,10 @@ body::before {
 
   <div class="hero">
     <div class="hero-card" onclick="switchTab('calendar')">
-      <span class="hero-deco d1">🧸</span>
-      <span class="hero-deco d2">🎪</span>
-      <span class="hero-deco d3">🌈</span>
-      <span class="hero-deco d4">🎈</span>
+      <!-- 麵包小偷風 · 小男孩 & 小女孩 手繪插畫 (由 Gemini / Imagen 產出, 透明 PNG) -->
+      <img class="hero-kids" src="kids.png" alt="" aria-hidden="true"
+           onerror="this.style.display='none'">
+
       <div class="hero-badge">THIS WEEK · W18</div>
       <div class="hero-date">5/4 → 5/17 · 未來兩週精選</div>
       <h1 class="hero-title">泡泡秀最後檔期 + 暑假行事曆一次看</h1>
@@ -1149,7 +1201,7 @@ body::before {
 
       <div class="sidebar-card">
         <div class="sidebar-title">📬 週報訂閱</div>
-        <p class="sidebar-desc">每週一自動發送親子情報週報<br>包含活動、發展建議、健康提醒</p>
+        <p class="sidebar-desc">每週三自動發送親子情報週報<br>包含活動、發展建議、健康提醒</p>
         <a href="mailto:eddiechu1009@gmail.com?subject=訂閱親子週報" class="sidebar-btn orange">✉️ 訂閱週報</a>
       </div>
     </aside>
@@ -1273,7 +1325,7 @@ body::before {
     <div class="footer-title">Kiddo POST · 亞麻親子情報站</div>
     <div class="footer-sub">for little ones & their grown-ups</div>
     <div class="footer-text">
-      每週一自動更新 · 由 Kiro AI 彙整 · 資訊僅供參考，請以官方公告為準<br>
+      每週三自動更新 · 由 Kiro AI 彙整 · 資訊僅供參考，請以官方公告為準<br>
       有活動推薦或意見回饋 → <a href="mailto:eddiechu1009@gmail.com">eddiechu1009@gmail.com</a>
     </div>
   </div>
@@ -1452,7 +1504,7 @@ function renderBrowse() {
     grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text-muted);">
       <div style="font-size:48px;margin-bottom:12px;">🔍</div>
       <div style="font-family:'Fredoka','Noto Sans TC',sans-serif;font-size:20px;font-weight:700;">沒有符合的活動</div>
-      <div style="font-family:'Caveat',cursive;font-size:18px;margin-top:8px;color:var(--orange);">試試放寬篩選條件吧！</div>
+      <div style="font-family:'Noto Sans TC',sans-serif;font-size:13.5px;margin-top:8px;color:var(--orange);font-weight:500;">試試放寬篩選條件吧！</div>
     </div>`;
     return;
   }
@@ -1635,9 +1687,9 @@ function cardHtml(a, idx) {
         <h3 class="card-title">${a.title}</h3>
         <p class="card-excerpt">${a.summary || ''}</p>
         ${a.info ? `<div class="card-info">
-          ${a.info.date ? `<span>📅 ${a.info.date}</span>` : ''}
-          ${a.info.location ? `<span>📍 ${a.info.location}</span>` : ''}
-          ${a.info.age ? `<span>👶 ${a.info.age}</span>` : ''}
+          ${a.info.date ? `<span class="info-date">${a.info.date}</span>` : ''}
+          ${a.info.location ? `<span class="info-location">📍 ${a.info.location}</span>` : ''}
+          ${a.info.age ? `<span class="info-age">👶 ${a.info.age}</span>` : ''}
         </div>` : ''}
       </div>
       <div class="card-footer">
