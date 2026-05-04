@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiddo POST · 親子情報站</title>
+
+<!-- SEO -->
+<meta name="description" content="Kiddo POST 亞麻親子情報站 — 每週精選大台北、全台、日本親子活動、學習資源、遊樂場所，地圖視角 + 多維度篩選，對照年齡提供發展與健康建議。">
+<meta name="keywords" content="Kiddo POST, 親子活動, 台北親子, 兒童活動, 共融遊戲場, 親子旅遊, 日本親子, 發展里程碑, 暑期活動">
+<meta name="author" content="Eddie Chu">
+
+<!-- OG -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kiddo POST · 親子情報站">
+<meta property="og:description" content="每週精選親子活動、學習資源、發展建議。">
+<meta property="og:url" content="https://eddiechu1009-bit.github.io/kiddo-post/">
+<meta property="og:site_name" content="Kiddo POST">
+<meta property="og:locale" content="zh_TW">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kiddo POST · 親子情報站">
+<meta name="twitter:description" content="每週精選親子活動、學習資源、發展建議。">
+
+<!-- Favicon (Kiddo POST brand mark - orange circle with K letter) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23ffb088'/><stop offset='60%25' stop-color='%23ff7a45'/><stop offset='100%25' stop-color='%23ff9eb5'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='72' font-family='Fredoka, Nunito, sans-serif' font-size='62' font-weight='700' text-anchor='middle' fill='%23fff'>K</text><circle cx='78' cy='26' r='5' fill='%23ffe066'/><circle cx='22' cy='78' r='4' fill='%23ffffff' opacity='0.6'/></svg>">
+
+<!-- Fonts (UX Pro Max: "Playful Creative" pairing - Fredoka + Nunito; Noto Sans TC for CJK readability; Caveat sparingly for accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- Leaflet map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #fdf6ec;
+  --bg-cream: #fff8ec;
+  --surface: #ffffff;
+  --text: #3d2b1f;
+  --text-soft: #6b4f3a;
+  --text-muted: #9e8670;
+  --orange: #ff7a45;
+  --orange-light: #ffb088;
+  --orange-soft: #fff0e5;
+  --teal: #2ba89a;
+  --teal-light: #7dc9c0;
+  --teal-soft: #e0f5f2;
+  --pink: #ff9eb5;
+  --pink-soft: #ffeef3;
+  --yellow: #ffc93c;
+  --yellow-soft: #fff4d1;
+  --green: #82c468;
+  --green-soft: #e8f5e0;
+  --purple: #b794e0;
+  --purple-soft: #f3e8ff;
+  --red: #e8654d;
+  --border: #f0e4d4;
+  --shadow: 0 6px 20px rgba(212, 163, 115, 0.15);
+  --shadow-hover: 0 12px 32px rgba(255, 122, 69, 0.22);
+}
+
+body {
+  font-family: 'Noto Sans TC', 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;           /* UX Pro Max: min 16px body for mobile readability */
+  line-height: 1.75;         /* UX Pro Max: 1.5~1.75 optimal */
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  letter-spacing: 0.01em;
+}
+
+/* Font system (UX Pro Max typography rules) */
+.f-heading { font-family: 'Fredoka', 'Noto Sans TC', sans-serif; font-weight: 600; letter-spacing: -0.01em; }
+.f-body    { font-family: 'Noto Sans TC', 'Nunito', sans-serif; }
+.f-accent  { font-family: 'Caveat', cursive; font-weight: 600; }
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 201, 60, 0.08) 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(43, 168, 154, 0.06) 0%, transparent 30%),
+    radial-gradient(circle at 50% 50%, rgba(255, 122, 69, 0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+/* ═══════════════ NAV ═══════════════ */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(253, 246, 236, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 2px dotted var(--border);
+}
+.nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 72px;
+}
+.nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+.nav-brand-emoji {
+  font-size: 32px;
+  display: inline-block;
+  transform: rotate(-8deg);
+  transition: transform 0.3s;
+}
+.nav-brand:hover .nav-brand-emoji { transform: rotate(8deg) scale(1.1); }
+.nav-brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+.nav-brand-name {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--orange);
+  letter-spacing: 0.5px;
+}
+.nav-brand-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  flex: 1;
+  justify-content: center;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+.tab-btn {
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-soft);
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.tab-btn:hover { background: var(--orange-soft); color: var(--orange); border-color: var(--orange-light); }
+.tab-btn.active {
+  background: var(--orange);
+  color: #fff;
+  border-color: var(--orange);
+  box-shadow: 0 4px 12px rgba(255, 122, 69, 0.35);
+}
+
+/* ═══════════════ GLOBAL SEARCH ═══════════════ */
+.global-search {
+  position: relative;
+  flex-shrink: 0;
+}
+.global-search-input {
+  width: 220px;
+  padding: 9px 14px 9px 38px;
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+  transition: all 0.2s;
+}
+.global-search-input:focus {
+  border-color: var(--orange);
+  width: 280px;
+  box-shadow: 0 0 0 4px var(--orange-soft);
+}
+.global-search-input::placeholder { color: var(--text-muted); }
+.global-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.search-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 460px;
+  max-height: 520px;
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.18);
+  overflow: hidden;
+  z-index: 110;
+}
+.search-dropdown.open { display: flex; flex-direction: column; }
+.search-dropdown-header {
+  padding: 12px 18px;
+  background: var(--bg-cream);
+  border-bottom: 2px dotted var(--border);
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  color: var(--orange);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-dropdown-body {
+  overflow-y: auto;
+  max-height: 440px;
+}
+.search-group {
+  padding: 10px 0;
+}
+.search-group-title {
+  padding: 8px 18px 6px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.search-item {
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background 0.15s;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border-left: 3px solid transparent;
+}
+.search-item:hover { background: var(--orange-soft); border-left-color: var(--orange); }
+.search-item-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+.search-item-body { flex: 1; min-width: 0; }
+.search-item-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.search-item-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.search-item-meta span { white-space: nowrap; }
+.search-item mark {
+  background: var(--yellow-soft);
+  color: var(--text);
+  padding: 0 2px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.search-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+.search-empty-emoji { font-size: 38px; margin-bottom: 8px; }
+.search-empty-title { font-family: 'Fredoka', 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 600; }
+.search-empty-sub { font-family: 'Caveat', cursive; font-size: 15px; color: var(--orange); margin-top: 4px; }
+
+@media (max-width: 768px) {
+  .global-search { flex: 1; }
+  .global-search-input { width: 100%; font-size: 13px; padding-left: 34px; }
+  .global-search-input:focus { width: 100%; }
+  .search-dropdown {
+    position: fixed;
+    top: 64px;
+    left: 8px;
+    right: 8px;
+    width: auto;
+    max-height: calc(100vh - 80px);
+  }
+  .search-dropdown-body { max-height: calc(100vh - 140px); }
+}
+
+/* ═══════════════ PAGES ═══════════════ */
+.page { display: none; }
+.page.active { display: block; animation: fadeIn 0.4s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ═══════════════ HERO (Home) ═══════════════ */
+.hero { max-width: 1280px; margin: 0 auto; padding: 32px 24px 0; }
+.hero-card {
+  position: relative;
+  background: linear-gradient(135deg, #ffd194 0%, #ffb088 40%, #ff9eb5 100%);
+  border-radius: 32px;
+  padding: 56px 48px 52px;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 3px solid #fff;
+  box-shadow: 0 8px 32px rgba(255, 122, 69, 0.25);
+}
+.hero-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(255, 122, 69, 0.35); }
+.hero-deco { position: absolute; opacity: 0.85; filter: drop-shadow(3px 4px 0 rgba(255,255,255,0.4)); }
+.hero-deco.d1 { top: 20px; right: 40px; font-size: 60px; transform: rotate(15deg); }
+.hero-deco.d2 { bottom: 20px; right: 150px; font-size: 50px; transform: rotate(-10deg); }
+.hero-deco.d3 { top: 40px; left: 30px; font-size: 38px; opacity: 0.7; transform: rotate(-5deg); }
+.hero-deco.d4 { bottom: 30px; left: 60px; font-size: 44px; opacity: 0.7; transform: rotate(12deg); }
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.85);
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #d2691e;
+  position: relative;
+  z-index: 2;
+}
+.hero-date {
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+.hero-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.35;
+  max-width: 720px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 3px 0 rgba(255,255,255,0.3);
+}
+.hero-excerpt {
+  font-size: 17px;
+  opacity: 0.95;
+  margin-top: 16px;
+  max-width: 620px;
+  line-height: 1.8;
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+}
+.hero-tags { margin-top: 22px; display: flex; gap: 10px; flex-wrap: wrap; position: relative; z-index: 2; }
+.hero-tag {
+  padding: 4px 14px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(255,255,255,0.4);
+  color: #5c3a21;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+/* ═══════════════ SECTION ═══════════════ */
+.section-header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 24px 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.section-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.section-title-emoji { font-size: 34px; transform: rotate(-8deg); display: inline-block; }
+.section-count {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  color: var(--orange);
+  font-weight: 600;
+}
+.section-subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: 17px;
+  color: var(--text-muted);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  margin-top: -8px;
+  padding-left: 74px;
+}
+
+/* ═══════════════ GRID & CARD ═══════════════ */
+.articles-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+.article-card {
+  background: var(--surface);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 3px solid var(--border);
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+.article-card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--orange-light);
+}
+.article-card.cat-taipei { border-color: var(--orange-light); background: linear-gradient(to bottom, var(--orange-soft) 0%, #fff 30%); }
+.article-card.cat-outside { border-color: var(--teal-light); background: linear-gradient(to bottom, var(--teal-soft) 0%, #fff 30%); }
+.article-card.cat-japan { border-color: #f7b8c7; background: linear-gradient(to bottom, var(--pink-soft) 0%, #fff 30%); }
+.article-card.cat-development { border-color: #ffd966; background: linear-gradient(to bottom, var(--yellow-soft) 0%, #fff 30%); }
+
+.card-sticker {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 28px;
+  transform: rotate(15deg);
+  z-index: 2;
+}
+.card-body { padding: 22px 24px 18px; flex: 1; display: flex; flex-direction: column; }
+.card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.card-cat {
+  font-size: 12px;
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.cat-taipei .card-cat { background: var(--orange); color: #fff; }
+.cat-outside .card-cat { background: var(--teal); color: #fff; }
+.cat-japan .card-cat { background: #e8657e; color: #fff; }
+.cat-development .card-cat { background: var(--yellow); color: #7a5901; }
+
+.card-tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  background: var(--bg-cream);
+  color: var(--text-soft);
+  border: 1.5px solid var(--border);
+}
+.tag-免費 { background: var(--teal-soft); color: var(--teal); border-color: var(--teal-light); }
+.tag-付費 { background: var(--yellow-soft); color: #92400e; border-color: #ffd966; }
+.tag-室內 { background: var(--purple-soft); color: #6b21a8; border-color: #d9b8f0; }
+.tag-戶外 { background: var(--green-soft); color: #15803d; border-color: #a3d48c; }
+
+.card-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 10px;
+  flex: 1;
+  letter-spacing: -0.005em;
+}
+.card-excerpt {
+  font-size: 15px;              /* UX Pro Max: min 15px for comfortable read */
+  color: var(--text-soft);
+  line-height: 1.75;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-info {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 2px dotted var(--border);
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card-footer {
+  padding: 12px 24px;
+  border-top: 2px dotted var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 248, 236, 0.5);
+}
+.card-read-more {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--orange);
+}
+.card-source { font-size: 12px; color: var(--text-muted); }
+
+/* ═══════════════ LAYOUT ═══════════════ */
+.layout-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
+}
+.main-content { min-width: 0; }
+.sidebar { position: sticky; top: 88px; }
+.sidebar-card {
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 24px 22px;
+  margin-bottom: 20px;
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.sidebar-card.featured {
+  background: linear-gradient(135deg, var(--yellow-soft) 0%, #fff 100%);
+  border-color: #ffd966;
+}
+.sidebar-card.calendar {
+  background: linear-gradient(135deg, var(--teal-soft) 0%, #fff 100%);
+  border-color: var(--teal-light);
+}
+.sidebar-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sidebar-desc { font-size: 14px; color: var(--text-soft); line-height: 1.75; margin-bottom: 14px; }
+.sidebar-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--teal);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.2s;
+  border: 2px solid var(--teal);
+  cursor: pointer;
+}
+.sidebar-btn:hover { background: #1e8a7e; transform: translateY(-2px); box-shadow: 0 6px 14px rgba(43, 168, 154, 0.3); }
+.sidebar-btn.orange { background: var(--orange); border-color: var(--orange); }
+.sidebar-btn.orange:hover { background: #e85c28; box-shadow: 0 6px 14px rgba(255, 122, 69, 0.35); }
+
+.tip-list { list-style: none; }
+.tip-list li {
+  padding: 10px 0;
+  border-bottom: 1.5px dotted var(--border);
+  font-size: 14px;
+  color: var(--text-soft);
+  line-height: 1.75;
+  display: flex;
+  gap: 8px;
+}
+.tip-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.tip-list li::before { content: '🌱'; flex-shrink: 0; }
+
+/* ═══════════════ FILTER BAR (Browse Tab) ═══════════════ */
+.filter-bar {
+  max-width: 1280px;
+  margin: 24px auto 0;
+  padding: 0 24px;
+}
+.filter-group {
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 20px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+}
+.filter-label {
+  font-family: 'Caveat', cursive;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--orange);
+  margin-right: 14px;
+  display: inline-block;
+  min-width: 86px;
+}
+.filter-chips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  vertical-align: middle;
+}
+.filter-chip {
+  padding: 5px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--bg-cream);
+  color: var(--text-soft);
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.filter-chip:hover { border-color: var(--orange-light); background: var(--orange-soft); color: var(--orange); }
+.filter-chip.active { background: var(--orange); color: #fff; border-color: var(--orange); }
+.search-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: auto;
+}
+.search-input {
+  padding: 8px 16px;
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+  width: 220px;
+}
+.search-input:focus { border-color: var(--orange); box-shadow: 0 0 0 4px var(--orange-soft); }
+.btn-reset {
+  padding: 8px 16px;
+  background: transparent;
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.btn-reset:hover { border-color: var(--red); color: var(--red); }
+
+/* ═══════════════ MAP ═══════════════ */
+.map-wrapper {
+  max-width: 1280px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+.map-controls {
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 20px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+}
+#map {
+  height: 620px;
+  border-radius: 20px;
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.map-legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--text-soft);
+}
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+
+/* Leaflet popup 改親子風 */
+.leaflet-popup-content-wrapper {
+  border-radius: 18px !important;
+  border: 3px solid var(--border) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12) !important;
+}
+.leaflet-popup-content {
+  margin: 18px 20px !important;
+  font-family: 'Noto Sans TC', sans-serif !important;
+  font-size: 13px !important;
+  color: var(--text) !important;
+}
+.popup-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.popup-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: var(--orange);
+  color: #fff;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* ═══════════════ CALENDAR ═══════════════ */
+.calendar-wrap { max-width: 1100px; margin: 32px auto; padding: 0 24px; }
+.month-section {
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 28px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.month-section.may { border-color: var(--orange-light); }
+.month-section.jun { border-color: #ffd966; }
+.month-section.jul { border-color: var(--teal-light); }
+.month-section.aug { border-color: #f7b8c7; }
+
+.month-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 3px dotted var(--border);
+}
+.month-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.month-subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: var(--orange);
+}
+.cal-event {
+  display: flex;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1.5px dotted var(--border);
+  align-items: flex-start;
+}
+.cal-event:last-child { border-bottom: none; }
+.cal-date-pill {
+  flex-shrink: 0;
+  background: var(--orange-soft);
+  color: var(--orange);
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 13px;
+  min-width: 108px;
+  text-align: center;
+  border: 2px solid var(--orange-light);
+}
+.cal-content { flex: 1; }
+.cal-content-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+.cal-content-meta { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+
+/* ═══════════════ TOPICS ═══════════════ */
+.topics-wrap {
+  max-width: 1280px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+.topics-intro {
+  background: linear-gradient(135deg, var(--yellow-soft) 0%, var(--orange-soft) 100%);
+  border: 3px solid var(--yellow);
+  border-radius: 24px;
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.topics-intro h2 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #92400e;
+  margin-bottom: 8px;
+}
+.topics-intro p {
+  font-size: 15.5px;
+  color: var(--text-soft);
+  line-height: 1.85;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.topic-card {
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 22px;
+  padding: 26px 26px 22px;
+  box-shadow: var(--shadow);
+  transition: all 0.25s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+.topic-card.t1 { border-color: var(--green); }
+.topic-card.t1:hover { background: var(--green-soft); }
+.topic-card.t2 { border-color: var(--purple); }
+.topic-card.t2:hover { background: var(--purple-soft); }
+.topic-card.t3 { border-color: var(--pink); }
+.topic-card.t3:hover { background: var(--pink-soft); }
+.topic-card.t4 { border-color: var(--teal); }
+.topic-card.t4:hover { background: var(--teal-soft); }
+.topic-card.t5 { border-color: var(--yellow); }
+.topic-card.t5:hover { background: var(--yellow-soft); }
+.topic-card.t6 { border-color: var(--red); }
+.topic-card.t6:hover { background: #fee4e0; }
+.topic-emoji { font-size: 42px; margin-bottom: 10px; display: block; }
+.topic-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.topic-desc { font-size: 14.5px; color: var(--text-soft); line-height: 1.8; margin-bottom: 14px; }
+.topic-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.topic-tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  background: var(--bg-cream);
+  color: var(--text-soft);
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+}
+.topic-badge-soon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: var(--orange);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* ═══════════════ MODAL ═══════════════ */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(61, 43, 31, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 40px 20px;
+}
+.modal-overlay.open { display: flex; justify-content: center; align-items: flex-start; }
+.modal-content {
+  background: var(--surface);
+  border-radius: 28px;
+  max-width: 760px;
+  width: 100%;
+  overflow: hidden;
+  animation: modalIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 3px solid #fff;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(30px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.modal-header { padding: 36px 40px 28px; position: relative; }
+.modal-header.cat-taipei { background: linear-gradient(135deg, var(--orange-soft) 0%, #fff 100%); }
+.modal-header.cat-outside { background: linear-gradient(135deg, var(--teal-soft) 0%, #fff 100%); }
+.modal-header.cat-japan { background: linear-gradient(135deg, var(--pink-soft) 0%, #fff 100%); }
+.modal-header.cat-development { background: linear-gradient(135deg, var(--yellow-soft) 0%, #fff 100%); }
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: #fff;
+  border: 2px solid var(--border);
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-soft);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-close:hover { background: var(--orange); color: #fff; border-color: var(--orange); transform: rotate(90deg); }
+.modal-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.45;
+  margin-top: 12px;
+  color: var(--text);
+}
+.modal-body { padding: 28px 40px 40px; }
+.modal-body .summary { font-size: 16px; color: var(--text-soft); line-height: 1.9; margin-bottom: 20px; }
+.modal-body .highlight {
+  background: var(--orange-soft);
+  padding: 18px 22px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--text);
+  border: 2px dashed var(--orange-light);
+}
+.modal-body .highlight strong { color: var(--orange); }
+.modal-body .info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.modal-body .info-item {
+  background: var(--bg-cream);
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 2px solid var(--border);
+}
+.modal-body .info-label { font-family: 'Caveat', cursive; font-size: 15px; color: var(--text-muted); font-weight: 600; }
+.modal-body .info-value { font-size: 14.5px; color: var(--text); font-weight: 600; margin-top: 2px; line-height: 1.5; }
+.modal-body .source {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 2px dotted var(--border);
+}
+.modal-body .source a { color: var(--orange); text-decoration: none; font-weight: 600; }
+.modal-body .source a:hover { text-decoration: underline; }
+
+/* ═══════════════ FOOTER ═══════════════ */
+.site-footer {
+  background: var(--bg-cream);
+  border-top: 3px dotted var(--border);
+  padding: 40px 24px 32px;
+  text-align: center;
+  margin-top: 60px;
+}
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-logo { font-size: 40px; margin-bottom: 8px; }
+.footer-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--orange);
+  margin-bottom: 6px;
+}
+.footer-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  color: var(--teal);
+  margin-bottom: 20px;
+}
+.footer-text { font-size: 14px; color: var(--text-muted); line-height: 1.8; }
+.footer-text a { color: var(--orange); text-decoration: none; font-weight: 600; }
+.footer-text a:hover { text-decoration: underline; }
+
+/* ═══════════════ RESPONSIVE ═══════════════ */
+@media (max-width: 1024px) {
+  .layout-wrap { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+}
+@media (max-width: 768px) {
+  .nav-inner { height: 60px; padding: 0 12px; gap: 10px; }
+  .nav-brand-name { font-size: 16px; }
+  .nav-brand-sub { display: none; }
+  .tab-btn { padding: 7px 12px; font-size: 12.5px; }
+  .hero-title { font-size: 26px; }
+  .hero-card { padding: 36px 28px; }
+  .hero-deco.d1 { font-size: 40px; right: 20px; }
+  .section-title { font-size: 22px; }
+  .articles-grid { padding: 0 16px 32px; gap: 16px; }
+  .month-section { padding: 22px 20px; }
+  .month-title { font-size: 24px; }
+  .modal-header, .modal-body { padding-left: 24px; padding-right: 24px; }
+  .modal-title { font-size: 20px; }
+  #map { height: 480px; }
+  .filter-label { display: block; margin-bottom: 8px; }
+  .search-input { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════ NAV + TABS ═══════════════════════ -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand" onclick="switchTab('home'); return false;">
+      <span class="nav-brand-emoji">🧸</span>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Kiddo POST</span>
+        <span class="nav-brand-sub">亞麻親子情報站</span>
+      </div>
+    </a>
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="home">📰 本週精選</button>
+      <button class="tab-btn" data-tab="browse">🎨 活動瀏覽</button>
+      <button class="tab-btn" data-tab="map">🗺️ 地圖</button>
+      <button class="tab-btn" data-tab="calendar">📅 行事曆</button>
+      <button class="tab-btn" data-tab="topics">💡 親子議題</button>
+    </div>
+
+    <!-- Global Search -->
+    <div class="global-search">
+      <span class="global-search-icon">🔍</span>
+      <input type="text" class="global-search-input" id="globalSearchInput"
+             placeholder="搜尋活動、地點..." autocomplete="off">
+      <div class="search-dropdown" id="searchDropdown">
+        <div class="search-dropdown-header">
+          <span id="searchDropdownTitle">即時搜尋</span>
+          <span style="font-size:13px;color:var(--text-muted);font-family:'Noto Sans TC',sans-serif;font-weight:500;cursor:pointer;" onclick="closeSearchDropdown()">✕</span>
+        </div>
+        <div class="search-dropdown-body" id="searchDropdownBody"></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ PAGE: HOME ═══════════════════════ -->
+<section class="page active" id="page-home">
+
+  <div class="hero">
+    <div class="hero-card" onclick="switchTab('calendar')">
+      <span class="hero-deco d1">🧸</span>
+      <span class="hero-deco d2">🎪</span>
+      <span class="hero-deco d3">🌈</span>
+      <span class="hero-deco d4">🎈</span>
+      <div class="hero-badge">THIS WEEK · W18</div>
+      <div class="hero-date">5/4 → 5/17 · 未來兩週精選</div>
+      <h1 class="hero-title">泡泡秀最後檔期 + 暑假行事曆一次看</h1>
+      <p class="hero-excerpt">
+        國父紀念館夢幻泡泡秀 5/10 前最後檔期、科教館恐龍 DIY 長期展、
+        5/17 起開放報名臺北市立動物園夜訪名額。同場加映 5~8 月完整行事曆，
+        從端午連假到宜蘭童玩節、日本 Sanrio 50 週年。
+      </p>
+      <div class="hero-tags">
+        <span class="hero-tag">🎪 泡泡秀</span>
+        <span class="hero-tag">🦕 恐龍 DIY</span>
+        <span class="hero-tag">🦉 夜訪動物園</span>
+        <span class="hero-tag">📅 點我看行事曆</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-wrap" style="margin-top: 24px;">
+    <div class="main-content">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="section-title-emoji">🎪</span>
+          <span>本週親子情報</span>
+        </div>
+        <span class="section-count" id="homeCount">--</span>
+      </div>
+      <div class="section-subtitle">點擊卡片看完整內容 ✨</div>
+      <div class="articles-grid" id="homeGrid"></div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar-card calendar">
+        <div class="sidebar-title">📅 5~8 月行事曆</div>
+        <p class="sidebar-desc">
+          端午連假、宜蘭童玩節、九族水樂園、大阪萬博公園開幕... 暑假怎麼玩一次規劃好！
+        </p>
+        <button class="sidebar-btn" onclick="switchTab('calendar')">📖 看完整行事曆</button>
+      </div>
+
+      <div class="sidebar-card featured">
+        <div class="sidebar-title">💡 本週爸媽撇步</div>
+        <ul class="tip-list">
+          <li>兒童月博物館、動物園優惠延到 <strong>5/5</strong></li>
+          <li>1 歲以上用 SPF 30+ 兒童防曬，每 2 小時補擦</li>
+          <li>宜蘭童玩節 <strong>6 月開放售票</strong>，5 月先訂住宿</li>
+          <li>日本暑假行程 5 月中可開始比票 + 訂餐廳</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-title">📬 週報訂閱</div>
+        <p class="sidebar-desc">每週一自動發送親子情報週報<br>包含活動、發展建議、健康提醒</p>
+        <a href="mailto:eddiechu1009@gmail.com?subject=訂閱親子週報" class="sidebar-btn orange">✉️ 訂閱週報</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PAGE: BROWSE ═══════════════════════ -->
+<section class="page" id="page-browse">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="section-title-emoji">🎨</span>
+      <span>活動瀏覽</span>
+    </div>
+    <span class="section-count" id="browseCount">--</span>
+  </div>
+  <div class="section-subtitle">多維度篩選，找到最適合你家的活動 🔍</div>
+
+  <div class="filter-bar">
+    <div class="filter-group">
+      <span class="filter-label">🌏 地區</span>
+      <span class="filter-chips" id="filterRegion"></span>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">🎨 類型</span>
+      <span class="filter-chips" id="filterType"></span>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">🏠 場域</span>
+      <span class="filter-chips" id="filterVenue"></span>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">👶 年齡</span>
+      <span class="filter-chips" id="filterAge"></span>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">💰 費用</span>
+      <span class="filter-chips" id="filterCost"></span>
+    </div>
+    <div class="filter-group" style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+      <span class="filter-label">🔍 搜尋</span>
+      <input class="search-input" type="text" id="searchInput" placeholder="搜尋活動名稱、地點...">
+      <button class="btn-reset" onclick="resetFilters()">重設篩選</button>
+    </div>
+  </div>
+
+  <div class="articles-grid" id="browseGrid" style="margin-top: 24px;"></div>
+</section>
+
+<!-- ═══════════════════════ PAGE: MAP ═══════════════════════ -->
+<section class="page" id="page-map">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="section-title-emoji">🗺️</span>
+      <span>活動地圖</span>
+    </div>
+    <span class="section-count" id="mapCount">--</span>
+  </div>
+  <div class="section-subtitle">點 pin 看資訊 · 拖曳地圖找附近活動</div>
+
+  <div class="map-wrapper">
+    <div class="map-controls">
+      <span class="filter-label">🌏 區域</span>
+      <span class="filter-chips" id="mapRegionChips"></span>
+      <div class="map-legend" style="margin-left:auto;">
+        <span class="legend-item"><span class="legend-dot" style="background:#ff7a45;"></span>大台北</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#2ba89a;"></span>全台其他</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#e8657e;"></span>日本</span>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PAGE: CALENDAR ═══════════════════════ -->
+<section class="page" id="page-calendar">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="section-title-emoji">📅</span>
+      <span>2026 · 5~8 月親子行事曆</span>
+    </div>
+    <span class="section-count">春夏旺季</span>
+  </div>
+  <div class="section-subtitle">端午 · 暑假 · 父親節 · 花火節 · 一次規劃好</div>
+
+  <div class="calendar-wrap" id="calendarWrap"></div>
+</section>
+
+<!-- ═══════════════════════ PAGE: TOPICS ═══════════════════════ -->
+<section class="page" id="page-topics">
+  <div class="section-header">
+    <div class="section-title">
+      <span class="section-title-emoji">💡</span>
+      <span>親子議題專區</span>
+    </div>
+    <span class="section-count">6 大分類</span>
+  </div>
+  <div class="section-subtitle">爸媽的深度閱讀站，陸續更新中 🌱</div>
+
+  <div class="topics-wrap">
+    <div class="topics-intro">
+      <h2>🌈 陪伴孩子成長，爸媽自己也在長大</h2>
+      <p>
+        每個議題會整理實用文章、專家觀點、常見問題 Q&A 與推薦書單。<br>
+        本週起逐步上線，有想了解的主題請回信告訴我們！
+      </p>
+    </div>
+
+    <div class="topics-grid" id="topicsGrid"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ MODAL ═══════════════════════ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">🧸 🎈 🌈 🎪</div>
+    <div class="footer-title">Kiddo POST · 亞麻親子情報站</div>
+    <div class="footer-sub">for little ones & their grown-ups</div>
+    <div class="footer-text">
+      每週一自動更新 · 由 Kiro AI 彙整 · 資訊僅供參考，請以官方公告為準<br>
+      有活動推薦或意見回饋 → <a href="mailto:eddiechu1009@gmail.com">eddiechu1009@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+<script>
+// ═══════════════════════ CATEGORY CONFIG ═══════════════════════
+const CATEGORY_CONFIG = {
+  taipei:      { cn: '🏙️ 大台北', sticker: '🎪', class: 'cat-taipei', color: '#ff7a45' },
+  outside:     { cn: '🌄 全台',   sticker: '🚂', class: 'cat-outside', color: '#2ba89a' },
+  japan:       { cn: '🗾 日本',   sticker: '🗼', class: 'cat-japan', color: '#e8657e' },
+  development: { cn: '🌱 發展',   sticker: '🌸', class: 'cat-development', color: '#ffc93c' },
+};
+
+const AGE_LABELS = {
+  '0-1': '🍼 0~1歲',
+  '0-3': '🚼 0~3歲',
+  '1-3': '🚼 1~3歲',
+  '3-6': '🎨 3~6歲',
+  '6-12': '🎓 6~12歲',
+};
+
+const TOPICS = [
+  { cls: 't1', emoji: '🌱', title: '發展與里程碑',
+    desc: '各年齡段動作、語言、認知發展指標、學走路 / 學說話 / 學如廁時機、發展遲緩識別。',
+    tags: ['大肌肉', '精細動作', '語言發展', '認知', '發展遲緩'], soon: true },
+  { cls: 't2', emoji: '🧠', title: '教育與學習',
+    desc: '幼兒園挑選、蒙特梭利/華德福比較、繪本選書、英語啟蒙、STEAM、108 課綱陪跑。',
+    tags: ['幼兒園', '雙語', '蒙特梭利', '繪本', '程式啟蒙'], soon: true },
+  { cls: 't3', emoji: '💛', title: '心理與情緒',
+    desc: '情緒管理、手足衝突、社交、爸媽情緒、正向教養、螢幕時間管理。',
+    tags: ['情緒管理', 'Tantrum', '正向教養', '手足關係', '螢幕時間'], soon: true },
+  { cls: 't4', emoji: '🏥', title: '健康與醫療',
+    desc: '疫苗行事曆、常見兒童疾病、視力聽力牙科、營養與副食品、睡眠訓練。',
+    tags: ['疫苗', '副食品', '視力', '過敏', '睡眠'], soon: true },
+  { cls: 't5', emoji: '👨‍👩‍👧', title: '家庭關係',
+    desc: '夫妻育兒分工、祖孫三代溝通、手足關係、家庭理財、教育基金。',
+    tags: ['夫妻分工', '隔代教養', '教育基金', '家庭理財'], soon: true },
+  { cls: 't6', emoji: '🛡️', title: '安全與照護',
+    desc: '居家安全、交通安全、戶外防曬防蚊、性教育、急救 CPR 哈姆立克。',
+    tags: ['居家安全', '汽座', '防蚊', 'CPR', '性教育'], soon: true },
+];
+
+// ═══════════════════════ STATE ═══════════════════════
+let ALL_ARTICLES = [];
+let state = {
+  filterRegion: 'all',
+  filterType: 'all',
+  filterVenue: 'all',
+  filterAge: 'all',
+  filterCost: 'all',
+  keyword: '',
+  mapRegion: 'all',
+};
+let leafletMap = null;
+let mapMarkers = [];
+
+// ═══════════════════════ LOAD DATA ═══════════════════════
+async function loadArticles() {
+  try {
+    const res = await fetch('articles.json?t=' + Date.now());
+    ALL_ARTICLES = await res.json();
+  } catch (e) {
+    console.error('載入 articles.json 失敗', e);
+    ALL_ARTICLES = [];
+  }
+}
+
+// ═══════════════════════ TAB SWITCH ═══════════════════════
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + tab));
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (tab === 'map') setTimeout(initMap, 100);
+  if (tab === 'calendar') renderCalendar();
+  if (tab === 'topics') renderTopics();
+  if (tab === 'browse') renderBrowse();
+}
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+});
+
+// ═══════════════════════ RENDER: HOME ═══════════════════════
+function renderHome() {
+  // 非 development 類的前 6 則
+  const articles = ALL_ARTICLES.filter(a => a.category !== 'development').slice(0, 6);
+  const grid = document.getElementById('homeGrid');
+  document.getElementById('homeCount').textContent = `本週 ${articles.length} 則精選`;
+  grid.innerHTML = articles.map((a, idx) => cardHtml(a, idx)).join('');
+  bindCardClick(grid, articles);
+}
+
+// ═══════════════════════ RENDER: BROWSE (with facets) ═══════════════════════
+function getUnique(key) {
+  const set = new Set();
+  ALL_ARTICLES.forEach(a => {
+    if (Array.isArray(a[key])) a[key].forEach(v => set.add(v));
+    else if (a[key]) set.add(a[key]);
+  });
+  return Array.from(set);
+}
+
+function renderFilterChips() {
+  // region
+  const regions = ['all', ...new Set(ALL_ARTICLES.map(a => a.region).filter(Boolean))];
+  document.getElementById('filterRegion').innerHTML = regions.map(r =>
+    `<button class="filter-chip ${state.filterRegion === r ? 'active' : ''}" data-filter="Region" data-val="${r}">${r === 'all' ? '全部' : r}</button>`
+  ).join('');
+
+  const types = ['all', ...new Set(ALL_ARTICLES.map(a => a.type).filter(Boolean))];
+  document.getElementById('filterType').innerHTML = types.map(t =>
+    `<button class="filter-chip ${state.filterType === t ? 'active' : ''}" data-filter="Type" data-val="${t}">${t === 'all' ? '全部' : t}</button>`
+  ).join('');
+
+  const venues = ['all', '室內', '戶外'];
+  document.getElementById('filterVenue').innerHTML = venues.map(v =>
+    `<button class="filter-chip ${state.filterVenue === v ? 'active' : ''}" data-filter="Venue" data-val="${v}">${v === 'all' ? '全部' : v}</button>`
+  ).join('');
+
+  const ages = ['all', '0-3', '1-3', '3-6', '6-12'];
+  document.getElementById('filterAge').innerHTML = ages.map(a =>
+    `<button class="filter-chip ${state.filterAge === a ? 'active' : ''}" data-filter="Age" data-val="${a}">${a === 'all' ? '全部' : AGE_LABELS[a] || a}</button>`
+  ).join('');
+
+  const costs = ['all', '免費', '付費'];
+  document.getElementById('filterCost').innerHTML = costs.map(c =>
+    `<button class="filter-chip ${state.filterCost === c ? 'active' : ''}" data-filter="Cost" data-val="${c}">${c === 'all' ? '全部' : c}</button>`
+  ).join('');
+
+  document.querySelectorAll('.filter-chip[data-filter]').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const key = 'filter' + chip.dataset.filter;
+      state[key] = chip.dataset.val;
+      renderFilterChips();
+      renderBrowse();
+    });
+  });
+}
+
+function resetFilters() {
+  state = { filterRegion: 'all', filterType: 'all', filterVenue: 'all', filterAge: 'all', filterCost: 'all', keyword: '', mapRegion: 'all' };
+  document.getElementById('searchInput').value = '';
+  renderFilterChips();
+  renderBrowse();
+}
+
+function applyFilters(list) {
+  return list.filter(a => {
+    if (a.category === 'development') return false;
+    if (state.filterRegion !== 'all' && a.region !== state.filterRegion) return false;
+    if (state.filterType !== 'all' && a.type !== state.filterType) return false;
+    if (state.filterVenue !== 'all' && a.venue !== state.filterVenue) return false;
+    if (state.filterCost !== 'all' && a.cost !== state.filterCost) return false;
+    if (state.filterAge !== 'all' && !(a.age_range || []).includes(state.filterAge)) return false;
+    if (state.keyword) {
+      const kw = state.keyword.toLowerCase();
+      const hay = [a.title, a.summary, a.region, a.district, a.type, ...(a.tags || [])].join(' ').toLowerCase();
+      if (!hay.includes(kw)) return false;
+    }
+    return true;
+  });
+}
+
+function renderBrowse() {
+  const filtered = applyFilters(ALL_ARTICLES);
+  const grid = document.getElementById('browseGrid');
+  document.getElementById('browseCount').textContent = `共 ${filtered.length} 則`;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text-muted);">
+      <div style="font-size:48px;margin-bottom:12px;">🔍</div>
+      <div style="font-family:'Fredoka','Noto Sans TC',sans-serif;font-size:20px;font-weight:700;">沒有符合的活動</div>
+      <div style="font-family:'Caveat',cursive;font-size:18px;margin-top:8px;color:var(--orange);">試試放寬篩選條件吧！</div>
+    </div>`;
+    return;
+  }
+  grid.innerHTML = filtered.map((a, idx) => cardHtml(a, idx)).join('');
+  bindCardClick(grid, filtered);
+}
+
+// ═══════════════════════ RENDER: MAP ═══════════════════════
+function initMap() {
+  if (leafletMap) return;
+  leafletMap = L.map('map').setView([23.8, 121.0], 7);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
+    maxZoom: 18,
+  }).addTo(leafletMap);
+
+  // region chips
+  const regions = ['all', ...new Set(ALL_ARTICLES.map(a => a.region).filter(Boolean))];
+  document.getElementById('mapRegionChips').innerHTML = regions.map(r =>
+    `<button class="filter-chip ${state.mapRegion === r ? 'active' : ''}" data-mapregion="${r}">${r === 'all' ? '全部' : r}</button>`
+  ).join('');
+  document.querySelectorAll('.filter-chip[data-mapregion]').forEach(chip => {
+    chip.addEventListener('click', () => {
+      state.mapRegion = chip.dataset.mapregion;
+      document.querySelectorAll('.filter-chip[data-mapregion]').forEach(c => c.classList.toggle('active', c.dataset.mapregion === state.mapRegion));
+      drawMarkers();
+    });
+  });
+
+  drawMarkers();
+}
+
+function drawMarkers() {
+  mapMarkers.forEach(m => leafletMap.removeLayer(m));
+  mapMarkers = [];
+
+  const list = ALL_ARTICLES.filter(a => {
+    if (a.category === 'development') return false;
+    if (!a.coord) return false;
+    if (state.mapRegion !== 'all' && a.region !== state.mapRegion) return false;
+    return true;
+  });
+
+  document.getElementById('mapCount').textContent = `地圖上 ${list.length} 則`;
+
+  list.forEach(a => {
+    const color = CATEGORY_CONFIG[a.category]?.color || '#999';
+    const icon = L.divIcon({
+      className: '',
+      html: `<div style="background:${color};width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;">
+        <span style="transform:rotate(45deg);font-size:15px;">${CATEGORY_CONFIG[a.category]?.sticker || '📍'}</span>
+      </div>`,
+      iconSize: [30, 30],
+      iconAnchor: [15, 30],
+    });
+    const m = L.marker(a.coord, { icon }).addTo(leafletMap);
+    m.bindPopup(`
+      <div class="popup-title">${a.title}</div>
+      <div style="color:var(--text-muted);font-size:12px;margin-bottom:4px;">📍 ${a.region} ${a.district || ''}</div>
+      <div style="color:var(--text-muted);font-size:12px;">📅 ${a.info?.date || '長期'}</div>
+      <a class="popup-btn" onclick="closePopupAndOpen('${a.id}')">查看詳情 →</a>
+    `);
+    mapMarkers.push(m);
+  });
+
+  // 如果有篩選就 fit bounds
+  if (list.length > 0 && state.mapRegion !== 'all') {
+    const group = L.featureGroup(mapMarkers);
+    leafletMap.fitBounds(group.getBounds().pad(0.2));
+  }
+}
+
+function closePopupAndOpen(id) {
+  leafletMap.closePopup();
+  const a = ALL_ARTICLES.find(x => x.id === id);
+  if (a) openModal(a);
+}
+
+// ═══════════════════════ CALENDAR DATA (shared by renderCalendar + global search) ═══════════════════════
+const CALENDAR_MONTHS = [
+  {
+    key: 'may', cls: 'may', title: '🌸 5 月', sub: '兒童月尾聲 · 母親節',
+    items: [
+      { date: '5/4~5/10', title: '夢幻泡泡秀 Bubble Show 最後檔期', meta: '國父紀念館 · 3~10 歲 · $650 起' },
+      { date: '5/10', title: '母親節 · 各百貨親子下午茶活動', meta: '大台北各大百貨 · 全年齡' },
+      { date: '5/17', title: '臺北市立動物園「夜訪動物園」開放報名', meta: '北市動物園 · 6 歲以上 · 一家 $1,200' },
+      { date: '5/23~5/24', title: '花蓮太平洋縱谷音樂節 (親子區免費)', meta: '花蓮太平洋公園 · 3 歲以上' },
+      { date: '5/30~6/7', title: '國家兩廳院「兒童藝術節 2026」', meta: '兩廳院 · 3 歲以上 · $500 起' },
+    ],
+  },
+  {
+    key: 'jun', cls: 'jun', title: '☀️ 6 月', sub: '端午連假 · 暑假前',
+    items: [
+      { date: '6/1', title: '大佳河濱戲水區夏季開放', meta: '大佳河濱 · 0~8 歲 · 免費 · 至 9/30' },
+      { date: '6/7', title: '臺北市親子節「大安森林公園」嘉年華', meta: '大安森林公園 · 全年齡 · 免費' },
+      { date: '6/13~6/15', title: '端午連假 · 大溪龍舟嘉年華 (立蛋 DIY)', meta: '桃園大溪 · 全年齡' },
+      { date: '6/15', title: '大阪萬博公園「兒童水樂園」開幕', meta: '日本大阪 · 3~12 歲 · ¥300' },
+      { date: '6/21', title: '夏至 · 屏東墾丁海生館親子日', meta: '屏東墾丁 · 3 歲以上' },
+      { date: '6/28~6/29', title: '國立故宮博物院「迷你我家」暑期特展', meta: '故宮 · 4 歲以上' },
+      { date: '6/30', title: '大部分小學結業式 · 暑期課表開始', meta: '全台 · 學齡' },
+    ],
+  },
+  {
+    key: 'jul', cls: 'jul', title: '🏖️ 7 月', sub: '暑假旺季 · 提前訂位',
+    items: [
+      { date: '7/1~7/31', title: '宜蘭童玩節 (冬山河親水公園)', meta: '親子年度盛事 · 建議 5 月訂房' },
+      { date: '7/5~7/6', title: '臺北國際童書展 (世貿一館)', meta: '台北世貿一館 · 全年齡' },
+      { date: '7/12~7/13', title: '劍湖山世界「小小特警隊」嘉年華', meta: '雲林劍湖山 · 4 歲以上' },
+      { date: '7/19~7/20', title: '九族文化村「水樂園」全開', meta: '南投九族 · 身高 100cm 免費' },
+      { date: '7/23', title: '臺北 101 觀景台親子科學 workshop', meta: '信義 101 · 5 歲以上' },
+      { date: '7/25~7/27', title: '基隆中元祭兒童遊行 (免費)', meta: '基隆市區 · 全年齡' },
+    ],
+  },
+  {
+    key: 'aug', cls: 'aug', title: '🎆 8 月', sub: '暑末收心 · 夏日花火',
+    items: [
+      { date: '8/1~8/31', title: '臺中科博館昆蟲特展最後一個月', meta: '台中科博館 · 4~12 歲' },
+      { date: '8/1~8/2', title: '大稻埕夏日節 + 永樂市場工藝市集', meta: '大同區大稻埕 · 全年齡 · 免費' },
+      { date: '8/8', title: '父親節 · 各遊樂園爸爸入園優惠', meta: '全台遊樂園' },
+      { date: '8/15~8/16', title: '日本神奈川湘南 Fireworks 煙火大會', meta: '日本湘南 · 親子友善' },
+      { date: '8/20~8/22', title: '澎湖花火節完結篇 · 親子小旅行', meta: '澎湖本島' },
+      { date: '8/23', title: '臺東熱氣球嘉年華 (兒童小熱氣球區)', meta: '台東鹿野 · 全年齡' },
+      { date: '8/30~8/31', title: '開學前「書包整備週」文具特賣', meta: '全台書局' },
+    ],
+  },
+];
+
+// ═══════════════════════ RENDER: CALENDAR ═══════════════════════
+function renderCalendar() {
+  const months = CALENDAR_MONTHS;
+
+  const wrap = document.getElementById('calendarWrap');
+  wrap.innerHTML = months.map(m => `
+    <div class="month-section ${m.cls}">
+      <div class="month-header">
+        <div class="month-title">${m.title}</div>
+        <div class="month-subtitle">${m.sub}</div>
+      </div>
+      ${m.items.map(it => `
+        <div class="cal-event">
+          <div class="cal-date-pill">${it.date}</div>
+          <div class="cal-content">
+            <div class="cal-content-title">${it.title}</div>
+            <div class="cal-content-meta">${it.meta}</div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
+}
+
+// ═══════════════════════ RENDER: TOPICS ═══════════════════════
+function renderTopics() {
+  const grid = document.getElementById('topicsGrid');
+  grid.innerHTML = TOPICS.map(t => `
+    <div class="topic-card ${t.cls}">
+      ${t.soon ? '<span class="topic-badge-soon">籌備中</span>' : ''}
+      <span class="topic-emoji">${t.emoji}</span>
+      <div class="topic-title">${t.title}</div>
+      <div class="topic-desc">${t.desc}</div>
+      <div class="topic-tags">
+        ${t.tags.map(tg => `<span class="topic-tag">${tg}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+// ═══════════════════════ CARD ═══════════════════════
+function cardHtml(a, idx) {
+  const cfg = CATEGORY_CONFIG[a.category] || CATEGORY_CONFIG.taipei;
+  const tagsHtml = (a.tags || []).slice(0, 3).map(t => `<span class="card-tag tag-${t}">${t}</span>`).join('');
+  return `
+    <div class="article-card ${cfg.class}" data-idx="${idx}">
+      <span class="card-sticker">${cfg.sticker}</span>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-cat">${cfg.cn}</span>
+          ${tagsHtml}
+        </div>
+        <h3 class="card-title">${a.title}</h3>
+        <p class="card-excerpt">${a.summary || ''}</p>
+        ${a.info ? `<div class="card-info">
+          ${a.info.date ? `<span>📅 ${a.info.date}</span>` : ''}
+          ${a.info.location ? `<span>📍 ${a.info.location}</span>` : ''}
+          ${a.info.age ? `<span>👶 ${a.info.age}</span>` : ''}
+        </div>` : ''}
+      </div>
+      <div class="card-footer">
+        <span class="card-read-more">查看詳情 →</span>
+        <span class="card-source">${a.source_name || ''}</span>
+      </div>
+    </div>
+  `;
+}
+
+function bindCardClick(container, list) {
+  container.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('click', () => openModal(list[card.dataset.idx]));
+  });
+}
+
+// ═══════════════════════ MODAL ═══════════════════════
+function openModal(a) {
+  const cfg = CATEGORY_CONFIG[a.category] || CATEGORY_CONFIG.taipei;
+  const modal = document.getElementById('modalOverlay');
+  const content = document.getElementById('modalContent');
+
+  const tagsHtml = (a.tags || []).map(t => `<span class="card-tag tag-${t}">${t}</span>`).join('');
+  const sourcesHtml = (a.sources || []).map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`).join(' · ');
+
+  content.innerHTML = `
+    <div class="modal-header ${cfg.class}">
+      <button class="modal-close" onclick="closeModal()" aria-label="關閉">×</button>
+      <div class="card-meta">
+        <span class="card-cat" style="${a.category === 'taipei' ? 'background:var(--orange);color:#fff' :
+                                        a.category === 'outside' ? 'background:var(--teal);color:#fff' :
+                                        a.category === 'japan' ? 'background:#e8657e;color:#fff' :
+                                        'background:var(--yellow);color:#7a5901'}">${cfg.cn}</span>
+        ${tagsHtml}
+      </div>
+      <h2 class="modal-title">${a.title}</h2>
+    </div>
+    <div class="modal-body">
+      ${a.info ? `<div class="info-grid">
+        ${a.info.date ? `<div class="info-item"><div class="info-label">📅 時間</div><div class="info-value">${a.info.date}</div></div>` : ''}
+        ${a.info.location ? `<div class="info-item"><div class="info-label">📍 地點</div><div class="info-value">${a.info.location}</div></div>` : ''}
+        ${a.info.age ? `<div class="info-item"><div class="info-label">👶 年齡</div><div class="info-value">${a.info.age}</div></div>` : ''}
+        ${a.info.price ? `<div class="info-item"><div class="info-label">💰 費用</div><div class="info-value">${a.info.price}</div></div>` : ''}
+      </div>` : ''}
+      <div class="summary">${a.summary || ''}</div>
+      ${a.highlight ? `<div class="highlight"><strong>💡 推薦理由：</strong>${a.highlight}</div>` : ''}
+      ${sourcesHtml ? `<div class="source"><strong>來源：</strong>${sourcesHtml}</div>` : ''}
+    </div>
+  `;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('modalOverlay').addEventListener('click', (e) => {
+  if (e.target.id === 'modalOverlay') closeModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') { closeModal(); closeSearchDropdown(); }
+  // Ctrl/Cmd + K 聚焦搜尋
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    document.getElementById('globalSearchInput').focus();
+  }
+});
+
+// ═══════════════════════ GLOBAL SEARCH ═══════════════════════
+const TOPIC_SEARCH_ITEMS = TOPICS.map(t => ({
+  title: t.title,
+  desc: t.desc,
+  tags: t.tags.join(' '),
+  emoji: t.emoji,
+}));
+
+function highlight(text, kw) {
+  if (!kw) return text;
+  const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return text.replace(new RegExp(escaped, 'gi'), m => `<mark>${m}</mark>`);
+}
+
+function doGlobalSearch(kw) {
+  const dropdown = document.getElementById('searchDropdown');
+  const body = document.getElementById('searchDropdownBody');
+  const titleEl = document.getElementById('searchDropdownTitle');
+
+  if (!kw || kw.length < 1) {
+    closeSearchDropdown();
+    return;
+  }
+  dropdown.classList.add('open');
+  const q = kw.toLowerCase();
+
+  // 1. Articles (活動)
+  const articleMatches = ALL_ARTICLES.filter(a => {
+    const hay = [a.title, a.summary, a.highlight, a.region, a.district, a.type,
+                 a.source_name, ...(a.tags || [])].filter(Boolean).join(' ').toLowerCase();
+    return hay.includes(q);
+  }).slice(0, 8);
+
+  // 2. Calendar events (行事曆)
+  const calMatches = [];
+  CALENDAR_MONTHS.forEach(m => {
+    m.items.forEach(it => {
+      const hay = [it.title, it.meta, it.date, m.title].join(' ').toLowerCase();
+      if (hay.includes(q)) calMatches.push({ ...it, monthTitle: m.title });
+    });
+  });
+  const calSlice = calMatches.slice(0, 6);
+
+  // 3. Topics (親子議題)
+  const topicMatches = TOPIC_SEARCH_ITEMS.filter(t => {
+    return (t.title + ' ' + t.desc + ' ' + t.tags).toLowerCase().includes(q);
+  });
+
+  const totalHits = articleMatches.length + calMatches.length + topicMatches.length;
+  titleEl.textContent = totalHits === 0 ? '沒有找到結果' : `找到 ${totalHits} 項結果`;
+
+  if (totalHits === 0) {
+    body.innerHTML = `
+      <div class="search-empty">
+        <div class="search-empty-emoji">🔍</div>
+        <div class="search-empty-title">找不到「${kw}」相關內容</div>
+        <div class="search-empty-sub">試試「泡泡」「動物園」「日本」「免費」...</div>
+      </div>
+    `;
+    return;
+  }
+
+  let html = '';
+
+  if (articleMatches.length > 0) {
+    html += `<div class="search-group">
+      <div class="search-group-title">🎨 活動情報 · ${articleMatches.length} 則</div>`;
+    articleMatches.forEach((a, i) => {
+      const cfg = CATEGORY_CONFIG[a.category] || CATEGORY_CONFIG.taipei;
+      html += `<div class="search-item" data-action="article" data-id="${a.id}">
+        <div class="search-item-icon">${cfg.sticker}</div>
+        <div class="search-item-body">
+          <div class="search-item-title">${highlight(a.title, kw)}</div>
+          <div class="search-item-meta">
+            <span>${cfg.cn}</span>
+            ${a.info?.date ? `<span>📅 ${a.info.date}</span>` : ''}
+            ${a.info?.age ? `<span>👶 ${a.info.age}</span>` : ''}
+          </div>
+        </div>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  if (calSlice.length > 0) {
+    html += `<div class="search-group">
+      <div class="search-group-title">📅 行事曆 · ${calMatches.length} 項${calMatches.length > calSlice.length ? `（顯示前 ${calSlice.length}）` : ''}</div>`;
+    calSlice.forEach(it => {
+      html += `<div class="search-item" data-action="calendar">
+        <div class="search-item-icon">📅</div>
+        <div class="search-item-body">
+          <div class="search-item-title">${highlight(it.title, kw)}</div>
+          <div class="search-item-meta">
+            <span>${it.monthTitle}</span>
+            <span>${it.date}</span>
+            <span>${it.meta}</span>
+          </div>
+        </div>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  if (topicMatches.length > 0) {
+    html += `<div class="search-group">
+      <div class="search-group-title">💡 親子議題 · ${topicMatches.length} 則</div>`;
+    topicMatches.forEach(t => {
+      html += `<div class="search-item" data-action="topics">
+        <div class="search-item-icon">${t.emoji}</div>
+        <div class="search-item-body">
+          <div class="search-item-title">${highlight(t.title, kw)}</div>
+          <div class="search-item-meta"><span>${highlight(t.desc, kw).slice(0, 80)}...</span></div>
+        </div>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  body.innerHTML = html;
+
+  // Bind click
+  body.querySelectorAll('.search-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const action = item.dataset.action;
+      if (action === 'article') {
+        const article = ALL_ARTICLES.find(x => x.id === item.dataset.id);
+        if (article) { closeSearchDropdown(); clearGlobalSearch(); openModal(article); }
+      } else if (action === 'calendar') {
+        closeSearchDropdown();
+        clearGlobalSearch();
+        switchTab('calendar');
+      } else if (action === 'topics') {
+        closeSearchDropdown();
+        clearGlobalSearch();
+        switchTab('topics');
+      }
+    });
+  });
+}
+
+function closeSearchDropdown() {
+  document.getElementById('searchDropdown').classList.remove('open');
+}
+function clearGlobalSearch() {
+  document.getElementById('globalSearchInput').value = '';
+}
+
+// 點擊外部關閉下拉
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.global-search')) closeSearchDropdown();
+});
+
+// ═══════════════════════ INIT ═══════════════════════
+(async function init() {
+  await loadArticles();
+  renderHome();
+  renderFilterChips();
+  // Browse tab internal search
+  document.getElementById('searchInput').addEventListener('input', (e) => {
+    state.keyword = e.target.value.trim();
+    renderBrowse();
+  });
+  // Global search (nav bar)
+  const globalInput = document.getElementById('globalSearchInput');
+  let searchTimer = null;
+  globalInput.addEventListener('input', (e) => {
+    const val = e.target.value.trim();
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => doGlobalSearch(val), 120);
+  });
+  globalInput.addEventListener('focus', (e) => {
+    const val = e.target.value.trim();
+    if (val) doGlobalSearch(val);
+  });
+})();
+</script>
+
+</body>
+</html>
