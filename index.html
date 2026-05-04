@@ -416,6 +416,13 @@ body::before {
   flex-wrap: wrap;
   gap: 12px;
 }
+/* 首頁:NEW banner 緊接著的 section-header 減少上方留白 */
+#featuredArticleBanner + .section-header {
+  padding-top: 12px;
+}
+#featuredArticleBanner + .section-header + .section-subtitle {
+  margin-top: -4px;
+}
 .section-title {
   font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
   font-size: 28px;
@@ -986,13 +993,17 @@ body::before {
   background: linear-gradient(135deg, #f3e8ff 0%, #fff5eb 50%, #ffeef3 100%);
   border: 3px solid #d9b8f0;
   border-radius: 24px;
-  padding: 26px 24px 18px;
-  margin-bottom: 22px;
+  padding: 28px 24px 24px;
+  margin-bottom: 0;
+  min-height: 210px;
   position: relative;
   overflow: visible;
   cursor: pointer;
   transition: all 0.3s;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .featured-article-banner:hover {
   transform: translateY(-2px);
@@ -1020,6 +1031,7 @@ body::before {
   align-items: center;
   gap: 22px;
   flex-wrap: wrap;
+  height: 100%;
 }
 .featured-article-emoji {
   font-size: 56px;
