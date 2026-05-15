@@ -1620,10 +1620,15 @@ const AGE_LABELS = {
 };
 
 const TOPICS = [
+  { cls: 't4', emoji: '🥦', title: '2-5 歲挑食不是你煮得不好',
+    desc: '從基因（TAS2R38 苦味受體）、神經機制、到 Ellyn Satter 餐桌責任分工 + 12 招實證做法。為什麼「強迫吃完」反而養出更挑的孩子？',
+    tags: ['挑食', '幼兒營養', '餐桌教養', '2-5歲'], soon: false,
+    url: 'topics/picky-eating-2to5.html', featured: true,
+    readMinutes: 12, sourceCount: 18 },
   { cls: 't3', emoji: '💥', title: '3-4 歲 Tantrum 情緒風暴',
     desc: '前額葉發展解讀 + 13 招正向應對（預防 / 當下 / 善後三階段）。這個階段爆走背後的腦科學。',
     tags: ['情緒管理', 'Tantrum', '正向教養', '3-4歲'], soon: false,
-    url: 'topics/tantrum-3to4.html', featured: true },
+    url: 'topics/tantrum-3to4.html', featured: false },
   { cls: 't1', emoji: '🌱', title: '發展與里程碑',
     desc: '各年齡段動作、語言、認知發展指標、學走路 / 學說話 / 學如廁時機、發展遲緩識別。',
     tags: ['大肌肉', '精細動作', '語言發展', '認知', '發展遲緩'], soon: true },
@@ -1724,9 +1729,9 @@ function renderFeaturedArticle() {
           <div class="featured-article-title">${featured.title}</div>
           <div class="featured-article-desc">${featured.desc}</div>
           <div class="featured-article-meta">
-            <span>⏱️ 閱讀約 10 分鐘</span>
+            <span>⏱️ 閱讀約 ${featured.readMinutes || 10} 分鐘</span>
             <span>✍️ 嚴謹引用版</span>
-            <span>📚 14 篇學術來源</span>
+            <span>📚 ${featured.sourceCount || 14} 篇學術來源</span>
           </div>
           <a class="featured-article-btn" href="${featured.url}" onclick="event.stopPropagation();">📖 立即閱讀 →</a>
         </div>

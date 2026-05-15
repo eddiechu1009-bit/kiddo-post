@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2-5 歲挑食不是你煮得不好：從基因、神經到餐桌權力的科學全解 | Kiddo POST</title>
+<meta name="description" content="挑食（picky eating）是 1.5-5 歲兒童最常見的飲食現象。本文從 NIH StatPearls、AAP、Merck Manual 與 Generation R / ALSPAC 兩大長期世代研究出發，整合 Ellyn Satter 餐桌責任分工、12 招實戰策略，並討論台灣家庭的「強迫吃光」誤區。">
+<meta name="author" content="Kiddo POST">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23ffb088'/><stop offset='60%25' stop-color='%23ff7a45'/><stop offset='100%25' stop-color='%23ff9eb5'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='72' font-family='Fredoka, Nunito, sans-serif' font-size='62' font-weight='700' text-anchor='middle' fill='%23fff'>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #fdf6ec; --bg-cream: #fff8ec; --surface: #ffffff;
+  --text: #3d2b1f; --text-soft: #6b4f3a; --text-muted: #9e8670;
+  --orange: #ff7a45; --orange-light: #ffb088; --orange-soft: #fff0e5;
+  --teal: #2ba89a; --teal-soft: #e0f5f2;
+  --pink: #ff9eb5; --pink-soft: #ffeef3;
+  --yellow: #ffc93c; --yellow-soft: #fff4d1;
+  --green: #82c468; --green-soft: #e8f5e0;
+  --purple: #b794e0; --purple-soft: #f3e8ff;
+  --blue: #5fb1d4; --blue-soft: #e3f2f9;
+  --border: #f0e4d4;
+  --shadow: 0 6px 20px rgba(212, 163, 115, 0.15);
+}
+body {
+  font-family: 'Noto Sans TC', 'Nunito', -apple-system, sans-serif;
+  background: var(--bg); color: var(--text);
+  font-size: 16px; line-height: 1.85;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+.back-bar {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(253, 246, 236, 0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 2px dotted var(--border);
+  padding: 14px 24px;
+}
+.back-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; color: var(--orange);
+  font-weight: 700; font-size: 14px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+}
+.article { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+
+.topic-hero {
+  background: linear-gradient(135deg, #e3f2f9 0%, #fff0e5 100%);
+  border: 3px solid var(--blue);
+  border-radius: 28px;
+  padding: 36px 32px; margin-bottom: 32px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.topic-hero::before {
+  content: '🥦 🍅 🍞 🥕 🐟';
+  position: absolute; top: 14px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px; letter-spacing: 10px; opacity: 0.55;
+}
+.topic-category {
+  display: inline-block; background: #0c4a6e; color: #fff;
+  padding: 4px 14px; border-radius: 16px;
+  font-size: 12px; font-weight: 800; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 14px;
+}
+.topic-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 26px; font-weight: 600; line-height: 1.4;
+  color: var(--text); letter-spacing: -0.01em; margin-bottom: 12px;
+}
+.topic-sub {
+  font-size: 15px; color: var(--text-soft); line-height: 1.75; font-weight: 500;
+}
+.topic-meta {
+  display: flex; justify-content: center; gap: 14px;
+  margin-top: 18px; font-size: 13px; color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.topic-meta span::before { content: ' · '; }
+.topic-meta span:first-child::before { content: ''; }
+
+h2 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 22px; font-weight: 600; color: var(--orange);
+  margin: 44px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px dotted var(--orange-light);
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 18px; font-weight: 600; color: var(--text);
+  margin: 28px 0 10px;
+}
+p { margin-bottom: 16px; color: var(--text); }
+strong { color: var(--orange); font-weight: 700; }
+em { color: var(--text-soft); font-style: italic; }
+
+/* 論述區塊 */
+.argument {
+  background: linear-gradient(135deg, #f3e8ff 0%, #fff 100%);
+  border-left: 5px solid #b794e0;
+  padding: 22px 24px;
+  border-radius: 14px;
+  margin: 28px 0;
+  position: relative;
+}
+.argument::before {
+  content: '💡 觀點';
+  position: absolute;
+  top: -10px; left: 18px;
+  background: #b794e0; color: #fff;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 11px; font-weight: 700;
+  padding: 3px 12px; border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+.argument h3 {
+  margin-top: 6px; margin-bottom: 12px;
+  color: #6b21a8; font-size: 19px;
+}
+.argument p:last-child { margin-bottom: 0; }
+.argument strong { color: #6b21a8; }
+
+.callout {
+  background: var(--yellow-soft);
+  border: 2px dashed var(--yellow);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin: 20px 0;
+}
+.callout-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 15px; font-weight: 700;
+  color: #92400e; margin-bottom: 8px;
+}
+.callout p { margin-bottom: 0; font-size: 14.5px; line-height: 1.8; color: #78350f; }
+.callout strong { color: #92400e; }
+
+/* 引用腳註 */
+sup.ref {
+  font-size: 11px; color: var(--orange);
+  font-weight: 700; vertical-align: super;
+  line-height: 0;
+}
+sup.ref a {
+  color: var(--orange); text-decoration: none;
+  padding: 0 2px;
+}
+sup.ref a:hover { text-decoration: underline; }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px; margin: 20px 0;
+}
+.stat-item {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 26px; font-weight: 700;
+  color: var(--orange); line-height: 1.1;
+}
+.stat-label {
+  font-size: 12px; color: var(--text-muted);
+  margin-top: 6px; line-height: 1.5;
+}
+
+.tip-list { counter-reset: tip; margin: 20px 0; }
+.tip-card {
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 18px;
+  padding: 22px 24px 20px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+  position: relative; counter-increment: tip;
+}
+.tip-card::before {
+  content: counter(tip);
+  position: absolute; top: -10px; left: 20px;
+  background: var(--orange); color: #fff;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700; font-size: 15px;
+  padding: 3px 10px; border-radius: 12px;
+  border: 2px solid #fff;
+}
+.tip-card .tip-source {
+  display: inline-block;
+  font-size: 11px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.tip-card h4 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 17px; font-weight: 600;
+  color: var(--text); margin-bottom: 10px;
+}
+.tip-card p { font-size: 14.5px; margin-bottom: 6px; line-height: 1.8; }
+.tip-card .example {
+  background: var(--teal-soft);
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: #1e6e5f;
+  line-height: 1.75;
+}
+.tip-card .example strong { color: #1e6e5f; }
+
+.warning-box {
+  background: #fff0e5;
+  border: 2px solid var(--orange-light);
+  border-left: 5px solid var(--orange);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+.warning-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 16px; font-weight: 700;
+  color: var(--orange);
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.related-activities {
+  background: var(--teal-soft);
+  border: 2px solid var(--teal);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin: 32px 0;
+}
+.related-activities h3 {
+  color: #1e6e5f; margin-top: 0; margin-bottom: 12px;
+}
+.related-activities ul {
+  padding-left: 22px; font-size: 14.5px;
+  line-height: 1.85; color: #1e6e5f;
+}
+.related-activities li { margin-bottom: 6px; }
+.related-activities a { color: var(--teal); font-weight: 700; text-decoration: none; }
+
+.references {
+  background: var(--bg-cream);
+  border-radius: 14px;
+  padding: 22px 26px;
+  margin: 28px 0;
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+.references h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 16px;
+}
+.references ol {
+  padding-left: 20px;
+  counter-reset: ref;
+}
+.references ol li {
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+.references a {
+  color: var(--orange);
+  text-decoration: none;
+  word-break: break-word;
+}
+.references a:hover { text-decoration: underline; }
+.references .ref-type {
+  display: inline-block;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  padding: 1px 8px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.disclaimer {
+  background: #fff0e5;
+  border: 2px dashed var(--orange-light);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin: 28px 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-soft);
+}
+.disclaimer strong { color: var(--orange); }
+
+.article-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 28px 20px;
+  background: linear-gradient(135deg, #ff7a45 0%, #ff9eb5 100%);
+  border-radius: 20px;
+  color: #fff;
+}
+.article-footer h3 { color: #fff; margin: 0 0 6px; font-size: 18px; }
+.article-footer p { color: rgba(255,255,255,0.92); margin: 0 0 14px; font-size: 14px; }
+.article-footer .btn {
+  display: inline-block;
+  background: #fff;
+  color: var(--orange);
+  padding: 10px 24px;
+  border-radius: 22px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+}
+
+@media (max-width: 640px) {
+  .topic-title { font-size: 22px; }
+  .topic-hero { padding: 28px 22px; }
+  .article { padding: 24px 16px 60px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 16px; }
+  body { font-size: 15px; }
+  .argument { padding: 18px 20px; }
+  .references { padding: 18px 20px; font-size: 12.5px; }
+}
+</style>
+</head>
+<body>
+
+<div class="back-bar">
+  <a href="../index.html" class="back-link">← 回 Kiddo POST 首頁</a>
+</div>
+
+<article class="article">
+
+  <!-- Hero -->
+  <header class="topic-hero">
+    <div class="topic-category">🏥 健康與醫療 · 深度文</div>
+    <h1 class="topic-title">2-5 歲挑食不是你煮得不好</h1>
+    <p class="topic-sub">
+      從基因、神經機制到餐桌權力的科學全解<br>
+      為什麼「強迫他吃完」可能正在養出一個更挑的孩子？
+    </p>
+    <div class="topic-meta">
+      <span>📆 2026-05-15</span>
+      <span>⏱️ 閱讀約 12 分鐘</span>
+      <span>👶 適用 1.5~6 歲</span>
+      <span>✍️ 嚴謹引用版</span>
+    </div>
+  </header>
+
+  <!-- 開場 -->
+  <p>
+    晚餐桌上，你 3 歲的孩子盯著盤裡的青花菜，把它一根一根挑到桌邊。
+    你說：「再吃一口就好。」他閉緊嘴巴搖頭。你提高音量：「不吃就不准下桌。」
+    他開始哭——從晚餐 6 點哭到睡前 8 點。第二天，他連青花菜的碗都不肯靠近。
+  </p>
+  <p>
+    這個情境每天在數百萬個台灣家庭上演。爸媽心裡的問題是：<em>「我是不是煮得不夠好？要怎麼讓他吃？」</em>
+    但科學給出的答案，比你想的更顛覆。
+  </p>
+  <p>
+    挑食（picky eating，或稱「fussy eating」）是 1.5-6 歲兒童最普遍的飲食現象。
+    根據荷蘭 Generation R 世代研究（n=4,018），<strong>1.5 歲兒童挑食率為 26.5%、3 歲達 27.6%、6 歲降至 13.2%</strong>
+    <sup class="ref"><a href="#ref-1">[1]</a></sup>。
+    換句話說，<em>幾乎一半（46%）的孩子在學齡前某個時期都會經歷挑食</em>，而其中 <strong>三分之二會在 3 年內自然消退</strong>
+    <sup class="ref"><a href="#ref-1">[1]</a></sup>。
+  </p>
+  <p>
+    這篇文章會從基因、神經機制、餐桌動力三個角度，重新解構挑食現象，再給你 12 招實證做法。
+    最重要的是：你會發現「強迫他吃完」這件事，可能正是你愈努力，孩子愈挑的原因。
+  </p>
+
+  <!-- 統計 -->
+  <div class="stat-grid">
+    <div class="stat-item">
+      <div class="stat-num">26-28%</div>
+      <div class="stat-label">學齡前兒童<br>挑食盛行率高峰</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">10-15 次</div>
+      <div class="stat-label">新食物被接受<br>需要的暴露次數</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">~60-78%</div>
+      <div class="stat-label">食物挑剔<br>遺傳影響比例</div>
+    </div>
+  </div>
+  <p style="font-size:12px;color:var(--text-muted);text-align:center;margin-top:-12px;">
+    資料來源：Cardona Cano (Generation R)<sup class="ref"><a href="#ref-1">[1]</a></sup>、
+    AAP HealthyChildren<sup class="ref"><a href="#ref-2">[2]</a></sup>、
+    Cooke / Fildes / UCL Gemini twin study<sup class="ref"><a href="#ref-3">[3]</a></sup><sup class="ref"><a href="#ref-4">[4]</a></sup>
+  </p>
+
+  <!-- 論述 1 -->
+  <div class="argument">
+    <h3>觀點一：挑食不是「教養失敗」，而是「演化出的生存本能」</h3>
+    <p>
+      想像 2 萬年前的人類幼兒：剛學會走路就到處摸到處嚐。如果他來者不拒，毒漿果一口下肚，遺傳就斷在這裡。
+      所以演化壓力篩選出一個機制——<strong>「食物新奇性恐懼症」（food neophobia）：對沒看過、沒嚐過的食物產生本能性的拒斥</strong>
+      <sup class="ref"><a href="#ref-5">[5]</a></sup>。
+      這個機制大約在孩子 1.5-2 歲、開始能自主探索環境時被啟動，到 6 歲後逐漸減弱。
+    </p>
+    <p>
+      AAP（美國兒科學會）在 HealthyChildren.org 上明確指出：<em>「18 個月到 2 歲之間，許多孩子會開始對不熟悉的食物表現出厭惡，這就是 neophobia。順其自然，不要強迫，也不要遷就」</em>
+      <sup class="ref"><a href="#ref-2">[2]</a></sup>。
+    </p>
+    <p>
+      換個 frame 看：<strong>2-5 歲孩子拒絕綠色蔬菜，不是「學壞」，而是他的大腦正在執行一個 2 萬年前救過他祖先的程式</strong>。
+      這個視角的轉換很重要——它讓你從「我要矯正一個壞行為」變成「我要陪伴一個正在發展的本能」。
+      這兩種心態，會決定你在餐桌上的所有後續動作。
+    </p>
+  </div>
+
+  <!-- 神經科學 -->
+  <h2>🧬 三個科學機制：基因、感官、自主性</h2>
+
+  <h3>1. 基因：挑食有 60-78% 的遺傳影響</h3>
+
+  <p>
+    倫敦大學學院（UCL）的 Gemini 雙胞胎世代研究（n=1,921 對 16 個月雙胞胎家庭）有一個顛覆性的發現：
+    <strong>食物挑剔（food fussiness）和食物新奇恐懼（neophobia）的個別差異，主要是基因決定的，不是父母教養造成的</strong>
+    <sup class="ref"><a href="#ref-3">[3]</a></sup><sup class="ref"><a href="#ref-4">[4]</a></sup>。
+  </p>
+
+  <p>
+    Cooke 等人（2007）使用超過 5,000 對雙胞胎的資料估算，<em>食物新奇恐懼的遺傳力（heritability）為 0.78（95% CI 0.76-0.79）</em>
+    <sup class="ref"><a href="#ref-6">[6]</a></sup>。
+    UCL 後續研究（Fildes et al., 2016, Am J Clin Nutr）則發現，<strong>食物挑剔和「不喜歡蔬菜水果」之間，68-70% 的相關性來自共同基因</strong>
+    <sup class="ref"><a href="#ref-3">[3]</a></sup>。
+  </p>
+
+  <p>
+    UCL 資深研究員 Clare Llewellyn 博士特別強調：
+    <em>「確認這兩個特質有強烈的遺傳基礎，對爸媽是一種解脫——他們常因孩子挑食而被批評或自責，理解這多半是天生的，能幫他們脫罪。」</em>
+    <sup class="ref"><a href="#ref-4">[4]</a></sup>
+  </p>
+
+  <div class="callout">
+    <div class="callout-title">🧬 一個基因細節：苦味受體（TAS2R38）</div>
+    <p>
+      人類舌頭上的苦味受體基因 TAS2R38 有兩種版本，由父母各遺傳一套。
+      帶有「強苦味感受」版本的孩子，吃青花菜、苦瓜、芥蘭、菠菜時，<strong>嚐到的苦味強度是其他孩子的 2-3 倍</strong>
+      <sup class="ref"><a href="#ref-7">[7]</a></sup>。
+      所以當你 3 歲女兒吐掉青花菜，她不是在演——她真的覺得超苦。
+      Bell &amp; Tepper（2006, Am J Clin Nutr）證實，這群「強苦味感受者」的蔬菜攝取量顯著較低
+      <sup class="ref"><a href="#ref-7">[7]</a></sup>。
+    </p>
+  </div>
+
+  <h3>2. 感官：質地、氣味、視覺都會觸發拒絕</h3>
+
+  <p>
+    挑食不只關於味道。研究指出，2-5 歲兒童拒絕食物的常見原因依序是：
+  </p>
+
+  <p>
+    <strong>(1) 質地（texture）：</strong>軟硬、Q彈、滑黏、纖維粗細。許多孩子拒絕茄子、秋葵的滑黏質地，
+    或是某些肉類的纖維口感<sup class="ref"><a href="#ref-2">[2]</a></sup>。
+  </p>
+
+  <p>
+    <strong>(2) 視覺（visual）：</strong>顏色、形狀、外觀的「對不對」。有研究（Maratos &amp; Staples, 2015）發現，
+    挑食兒童對「不熟悉的食物」會表現出類似「恐懼相關注意偏誤」的視覺反應——他們會更快、更頻繁注視陌生食物，
+    類似看到害怕事物的反應模式<sup class="ref"><a href="#ref-8">[8]</a></sup>。
+  </p>
+
+  <p>
+    <strong>(3) 氣味（smell）：</strong>嗅覺敏感的孩子，光是聞到味道就會反胃。
+    這在「感覺處理敏感」的孩子身上更明顯<sup class="ref"><a href="#ref-9">[9]</a></sup>。
+  </p>
+
+  <p>
+    台灣兒福聯盟 2015 年的兒童飲食習慣調查也驗證了這個感官優先原則：
+    詢問孩子不吃某些食物的原因，<strong>74.4% 是「不喜歡食物的味道」、55.6% 是「覺得吃起來很噁心」</strong>
+    <sup class="ref"><a href="#ref-10">[10]</a></sup>。
+    被討厭排行榜的前 5 名都是蔬菜：苦瓜（68.5%）、茄子（51.0%）、芥蘭（47.1%）、山藥（44.2%）、青椒（41.1%）
+    <sup class="ref"><a href="#ref-10">[10]</a></sup>——
+    全部都是<em>苦味或特殊質地的蔬菜</em>，與基因和感官機制完全吻合。
+  </p>
+
+  <h3>3. 自主性：吃飯是孩子能掌控的少數事情之一</h3>
+
+  <p>
+    2-4 歲是兒童發展學中所謂「自主 vs 羞愧」階段（Erikson 第 2 階段）。孩子強烈想要「我自己決定」，
+    但能力又跟不上欲望。
+    <strong>身體裡能完全自主控制的事其實不多——什麼進到嘴裡，是其中之一</strong>。
+    所以餐桌變成一個權力競技場：你愈用力推，他愈用力推回。
+  </p>
+
+  <p>
+    Generation R 世代研究（Jansen et al., 2017, <em>Physiology &amp; Behavior</em>）發現了一個雙向的因果關係：
+    <em>4 歲時的挑食會預測 6 歲時的家長施壓行為；但 4 歲時的家長施壓，也會預測 6 歲時更嚴重的挑食</em>
+    <sup class="ref"><a href="#ref-11">[11]</a></sup>。
+    這就是惡性循環的起點——你愈施壓，他愈挑；他愈挑，你愈想施壓。
+  </p>
+
+  <!-- 論述 2 -->
+  <div class="argument">
+    <h3>觀點二：台灣餐桌最大的迷思——「吃光光」文化</h3>
+    <p>
+      台灣許多家庭仍把「把飯吃光」當成乖孩子的指標。「不准剩」「再一口」「我數到三」是餐桌標配。
+      但<strong>國際兒童營養共識認為，這正是把暫時性挑食變成長期戰爭的關鍵</strong>。
+    </p>
+    <p>
+      AAP 在 <em>10 Tips for Parents of Picky Eaters</em> 第 2 條開門見山：<em>「如果孩子拒絕一餐，不要大驚小怪。
+      讓孩子學會聆聽身體、用飢餓當指引，這是好事。<strong>提供食物是父母的責任，吃不吃是孩子的決定</strong>」</em>
+      <sup class="ref"><a href="#ref-12">[12]</a></sup>。
+      AAP 進一步指出：<em>「強迫孩子吃，或因不吃而懲罰他，會讓他主動討厭原本可能會喜歡的食物」</em>
+      <sup class="ref"><a href="#ref-12">[12]</a></sup>。
+    </p>
+    <p>
+      美國家庭治療師 Ellyn Satter 在 1980 年代提出的<strong>「餐桌責任分工」（Division of Responsibility, sDOR）</strong>已經是
+      AAP、CDC、密西根大學醫學中心等機構公開推薦的核心架構<sup class="ref"><a href="#ref-13">[13]</a></sup>：
+    </p>
+    <p>
+      <strong>👨‍👩‍👧 父母的責任：</strong>提供「吃什麼、什麼時候吃、在哪裡吃」（What / When / Where）<br>
+      <strong>👶 孩子的責任：</strong>決定「吃多少、要不要吃」（How much / Whether）
+    </p>
+    <p>
+      這條界線一旦劃清楚，餐桌的火藥味會立刻降一半。<em>你不再為「他吃了多少」負責，你只負責讓「桌上有營養食物、氛圍是平靜的」</em>。
+      這聽起來放任，其實是更高難度的紀律——因為你必須相信孩子的身體會自我調節，
+      也必須忍住不在他不吃的時候端出零食或牛奶來「補充營養」。
+    </p>
+    <p>
+      兒福聯盟 2015 調查也支持這個方向：當父母「會跟孩子解釋為什麼要吃某些食物」，孩子的偏食比例為 5.3%；
+      <strong>從未解釋的家庭，偏食比例則達 11.9%——超過 2 倍</strong><sup class="ref"><a href="#ref-10">[10]</a></sup>。
+      換句話說，命令不能改變挑食，溝通才能。
+    </p>
+  </div>
+
+  <!-- 12 招實戰 -->
+  <h2>🍽️ 12 招實證做法：氛圍、暴露、分工三軌並進</h2>
+
+  <p>
+    這 12 招整合自 AAP HealthyChildren 官方建議<sup class="ref"><a href="#ref-2">[2]</a></sup><sup class="ref"><a href="#ref-12">[12]</a></sup>、
+    Ellyn Satter 餐桌責任分工<sup class="ref"><a href="#ref-13">[13]</a></sup>、
+    USDA 2025 飲食指南諮詢委員會的「重複暴露」系統性回顧<sup class="ref"><a href="#ref-14">[14]</a></sup>，
+    以及 Taylor &amp; Emmett（2018, Proceedings of the Nutrition Society）的綜述<sup class="ref"><a href="#ref-15">[15]</a></sup>。
+    每招都會標明出處。
+  </p>
+
+  <h3>🌱 Part 1 · 餐桌氛圍（先把火滅掉，才能談教育）</h3>
+
+  <div class="tip-list">
+
+    <div class="tip-card">
+      <span class="tip-source">來自：Ellyn Satter sDOR</span>
+      <h4>劃清「父母 vs 孩子」的責任界線</h4>
+      <p>父母只負責 <strong>What / When / Where</strong>（菜色、時間、地點）；
+      孩子負責 <strong>How much / Whether</strong>（吃多少、要不要吃）。<em>絕對不要插手孩子那一邊的職責</em><sup class="ref"><a href="#ref-13">[13]</a></sup>。</p>
+      <div class="example"><strong>實例：</strong>桌上擺好飯、青菜、肉、湯，放在他面前後就閉嘴。他吃多少都好，但下次正餐前不再供應任何食物（除了水）。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP HealthyChildren</span>
+      <h4>不要為他另開菜單</h4>
+      <p>AAP 明確建議：<em>「不要因為孩子拒絕，就另外做一道他喜歡的」</em><sup class="ref"><a href="#ref-12">[12]</a></sup>。
+      這只會教會他：抗議有用，下次更會抗議。但每一餐至少包含<strong>一樣他確定喜歡的食物</strong>，這是底線。</p>
+      <div class="example"><strong>實例：</strong>主菜是糖醋排骨，配菜青花菜（他不愛）和白飯（他愛）。即使青花菜一口未動，也不另外做炒蛋。但白飯確保他能吃飽。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP / Ellyn Satter</span>
+      <h4>不威脅、不獎勵、不交換</h4>
+      <p>AAP 第 3 條：<em>「不要用甜點或玩具賄賂孩子吃菜——這會讓『獎勵食物』變得更誘人，而你想他吃的食物變成苦差事」</em><sup class="ref"><a href="#ref-12">[12]</a></sup>。
+      威脅同樣有害（「不吃就不准看卡通」）——孩子的食物焦慮會升高，挑食會更嚴重。</p>
+      <div class="example"><strong>實例：</strong>取消「吃完才有甜點」這條家規。改成「甜點是隨機的，跟你吃多少無關」。一兩個月後，他對甜點的執念會明顯下降。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：兒福聯盟 2015 調查</span>
+      <h4>共食天數比共食內容更重要</h4>
+      <p>台灣兒福聯盟 2015 調查發現：<em>每週與爸媽共食 3 天以下的孩子，偏食比例 15.0%；幾乎每天共食的孩子，偏食比例 8.3%</em>
+      <sup class="ref"><a href="#ref-10">[10]</a></sup>——差了將近 1 倍。共食的氛圍、聊天、互動本身就是飲食教育。</p>
+      <div class="example"><strong>實例：</strong>每週至少 3 天全家一起吃晚餐，關掉電視和手機，談今天發生的事。這比「煮什麼」對孩子飲食習慣的影響更大。</div>
+    </div>
+
+  </div>
+
+  <h3>🔁 Part 2 · 重複暴露（讓陌生食物變熟悉）</h3>
+
+  <div class="tip-list">
+
+    <div class="tip-card">
+      <span class="tip-source">來自：USDA 2025 NESR 系統性回顧</span>
+      <h4>新食物要重複出現 8-15 次</h4>
+      <p>美國農業部 2025 年飲食指南諮詢委員會的系統性回顧（中度證據等級）結論：
+      <em>對 2-6 歲兒童，重複暴露於某蔬菜「可能增加」對該蔬菜的接受度</em><sup class="ref"><a href="#ref-14">[14]</a></sup>。
+      AAP HealthyChildren 則指出，<strong>新食物要嘗試 10-15 次（甚至 15-20 次），孩子的味蕾才會接受</strong><sup class="ref"><a href="#ref-12">[12]</a></sup><sup class="ref"><a href="#ref-2">[2]</a></sup>。
+      但問題是——<em>大多數爸媽試 3-5 次就放棄了</em><sup class="ref"><a href="#ref-15">[15]</a></sup>。</p>
+      <div class="example"><strong>實例：</strong>第一週每天放 2 朵青花菜在他盤裡。他不吃也沒關係，<strong>就是讓食物出現在那裡</strong>。第二週還是一樣。可能要到第 12-15 次他才願意嚐一口。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP「food bridges」</span>
+      <h4>用「食物橋」延伸偏好</h4>
+      <p>AAP 推薦的營養學技巧：<em>從孩子已經接受的食物出發，慢慢搭橋到相似但稍微陌生的食物</em><sup class="ref"><a href="#ref-2">[2]</a></sup>。
+      利用顏色、口感、味道的相似性。</p>
+      <div class="example"><strong>實例：</strong>他喜歡吃地瓜泥 → 試試南瓜泥 → 再試紅蘿蔔泥 → 然後燉煮的紅蘿蔔。每一步只變化一點點。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP 視覺暴露原則</span>
+      <h4>新食物先看、再聞、最後吃</h4>
+      <p>AAP 指出，<em>視覺和氣味的「非進食暴露」也能增加孩子對新食物的接受度</em><sup class="ref"><a href="#ref-14">[14]</a></sup>。
+      讓孩子在超市指認、在廚房洗、在桌上看別人吃，都是有效的非進食暴露。</p>
+      <div class="example"><strong>實例：</strong>帶他去市場，讓他親自挑一顆紅蘿蔔。回家請他幫忙洗、看你切。今晚不一定要他吃，但這顆紅蘿蔔已經被他「擁有」過。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP / Ross Greene 教養原則</span>
+      <h4>少量、不催促，每次只放一小塊</h4>
+      <p>AAP：<em>「為了避免浪費，新食物用小份量端上來。等 1-2 週後再重新出現一次」</em><sup class="ref"><a href="#ref-2">[2]</a></sup>。
+      把蛋糕大的青花菜端上來會嚇死孩子；放半朵在盤角就只是一個邀請，不是命令。</p>
+      <div class="example"><strong>實例：</strong>「這個我做了一點點，你可以聞一下、舔一下、咬一小口或不要。隨便你。」這句話比「你要吃」有用 10 倍。</div>
+    </div>
+
+  </div>
+
+  <h3>👨‍👩‍👧 Part 3 · 自主與儀式（把吃飯還給孩子）</h3>
+
+  <div class="tip-list">
+
+    <div class="tip-card">
+      <span class="tip-source">來自：Ellyn Satter / AAP 自主性原則</span>
+      <h4>讓他選盤子、自己舀</h4>
+      <p>3-5 歲孩子最需要的是「選擇感」。<em>讓他選用哪個盤子、自己舀飯、自己決定份量</em>——這些動作把控制權還回去了，餐桌上的權力鬥爭就會自動降溫<sup class="ref"><a href="#ref-12">[12]</a></sup>。</p>
+      <div class="example"><strong>實例：</strong>準備 2 個顏色的小盤子讓他選。把飯和菜端上桌，由他自己舀（哪怕只舀兩粒飯）。一開始可能很混亂，但 2 週後吃飯效率會明顯上升。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP「Tiny Chefs」</span>
+      <h4>讓他參與備餐</h4>
+      <p>AAP 第 8 條：<em>讓孩子參與烹飪——洗菜、攪拌、撕菜葉、用刷子刷油</em><sup class="ref"><a href="#ref-2">[2]</a></sup>。
+      參與備餐的孩子，吃下去的機率顯著上升，因為他「擁有」這道菜。</p>
+      <div class="example"><strong>實例：</strong>週末的早餐讓他幫忙打蛋、撕生菜、擺水果盤。他做的「自製吐司」絕對會被吃光，比你做的好吃 100 倍——這就是擁有感的力量。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP「Make Food Fun」</span>
+      <h4>用造型、沾醬、手指食物降低門檻</h4>
+      <p>AAP 第 6 條：<em>把食物排成有趣的形狀、提供沾醬、做成手指食物</em><sup class="ref"><a href="#ref-2">[2]</a></sup>。
+      青花菜變恐龍、紅蘿蔔變星星，加上一碗番茄醬或希臘優格沾醬，接受度可以翻倍。</p>
+      <div class="example"><strong>實例：</strong>把蒸蛋上面用海苔做笑臉、青花菜變樹林、紅蘿蔔切成星星。做菜時間只多 3 分鐘，但他願意嚐試的機率會明顯上升。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP 飲食結構原則</span>
+      <h4>固定吃飯時間，餐間只給水</h4>
+      <p>AAP 在「How do I help my picky eater」一文強調：<em>「規律和結構化的正餐和點心時間，孩子坐到桌上，沒有 3C 干擾」</em>
+      <sup class="ref"><a href="#ref-12">[12]</a></sup>。<strong>正餐間如果不斷餵牛奶、餅乾、果汁，到吃飯時間孩子根本不餓，當然挑食</strong>。</p>
+      <div class="example"><strong>實例：</strong>3 餐 + 2 點心，每餐間隔 3-4 小時。中間只給水。你會驚訝地發現，「最挑食的孩子」其實只是「整天不餓的孩子」。</div>
+    </div>
+
+  </div>
+
+  <!-- 論述 3 -->
+  <div class="argument">
+    <h3>觀點三：挑食是給爸媽的功課，不只是孩子的</h3>
+    <p>
+      這篇文章最後一個觀點，可能是最不舒服的：<strong>許多家庭對挑食的焦慮，並不是來自孩子的健康，而是來自爸媽自己的內在劇本</strong>。
+    </p>
+    <p>
+      <strong>劇本一：「孩子吃不夠 = 我是失敗的父母」。</strong>這常見於把照顧者價值綁在「孩子吃了多少」上的爸媽。
+      但 ALSPAC 英國長期世代研究（追蹤超過 6,000 名兒童到 17 歲）的結論很清楚：
+      <em>「挑食兒童的成長軌跡，雖然略低於非挑食兒童，但仍維持在 50 分位以上的正常範圍——他們的身高體重發展是正常的」</em>
+      <sup class="ref"><a href="#ref-15">[15]</a></sup>。
+      你愈焦慮，餐桌氣氛愈緊繃，孩子愈挑食。
+    </p>
+    <p>
+      <strong>劇本二：「我小時候被逼吃光，現在輪到我」。</strong>這是世代複製。
+      被強迫吃飯長大的爸媽，常無意識把同樣的劇本演給孩子看。
+      <em>但你現在有選擇——你可以決定，這個劇本到你這一代結束</em>。
+    </p>
+    <p>
+      <strong>劇本三：「他不吃就會營養不良」。</strong>除非孩子達到 ARFID 診斷標準
+      （見下節 Merck Manual 引述），<em>絕大多數的「挑食」並不會造成顯著的能量攝取不足</em>
+      <sup class="ref"><a href="#ref-15">[15]</a></sup>。
+      但持續的低鐵、低鋅攝取確實是值得關注的議題（可能來自肉類和蔬菜攝取不足），這部分需要小兒科醫師評估，不是靠強迫吃飯解決。
+    </p>
+    <p>
+      所以挑食是一面鏡子，照出爸媽自己對失控、對失敗、對營養的焦慮。
+      <strong>你要做的，是放下「他吃了多少」這個 KPI，把它換成「我們吃飯時開心嗎」</strong>。
+      這樣的轉換不容易，但孩子會用 6 個月後突然開始嚐青花菜來謝謝你。
+    </p>
+  </div>
+
+  <!-- 就醫指引 -->
+  <h2>🚨 什麼時候是「真正的問題」？</h2>
+
+  <p>
+    一般的挑食 ≠ 醫學上的飲食障礙。
+    根據 NIH StatPearls（2025 更新）和 Merck Manual 的標準，以下情況需要尋求專業評估：
+  </p>
+
+  <div class="warning-box">
+    <div class="warning-title">⚠️ 5 個訊號建議找小兒科或兒童心智科</div>
+    <p style="margin-bottom: 10px;">
+      <strong>1. 體重停滯或下降。</strong>連續 2-3 個月在生長曲線上往下掉
+      （StatPearls<sup class="ref"><a href="#ref-16">[16]</a></sup>）。
+    </p>
+    <p style="margin-bottom: 10px;">
+      <strong>2. 接受的食物極少（&lt; 20 樣）。</strong>整天只吃白飯、麵、雞塊、餅乾——這個程度可能是 ARFID 的早期警訊
+      （Merck Manual<sup class="ref"><a href="#ref-17">[17]</a></sup>）。
+    </p>
+    <p style="margin-bottom: 10px;">
+      <strong>3. 完全排斥某一整類食物。</strong>例如完全不吃任何蔬菜、任何蛋白質、任何水果
+      （Brown University Health<sup class="ref"><a href="#ref-18">[18]</a></sup>）。
+    </p>
+    <p style="margin-bottom: 10px;">
+      <strong>4. 進食時有嗆到、噎到、嘔吐反應。</strong>可能是吞嚥功能或感覺處理議題
+      （StatPearls 指出 5-20% 兒童有兒童進食障礙，發展遲緩兒童中比例可達 80%<sup class="ref"><a href="#ref-16">[16]</a></sup>）。
+    </p>
+    <p style="margin-bottom: 0;">
+      <strong>5. 明顯影響社交與學校生活。</strong>不能在學校吃午餐、不能參加同學家的派對——這個程度已不是單純挑食。
+      Merck Manual 對 ARFID 的標準是：<em>顯著體重減輕（兒童則為發育不如預期）、顯著營養缺乏、依賴管灌或營養補充品、心理社會功能明顯受損</em><sup class="ref"><a href="#ref-17">[17]</a></sup>。
+    </p>
+  </div>
+
+  <h3>台灣可用的求助管道</h3>
+  <p>
+    <strong>1. 各縣市兒童發展聯合評估中心</strong>——0-6 歲疑似發展遲緩兒童免費評估，含進食評估。
+    可至衛福部兒童發展資訊網查詢，全台 42 間。
+  </p>
+  <p>
+    <strong>2. 各大醫院兒童胃腸科 + 兒童心智科</strong>——體重停滯或疑似 ARFID 時，由兒童胃腸科排除生理因素，
+    再由兒童心智科或臨床心理師評估行為與情緒議題。
+  </p>
+  <p>
+    <strong>3. 兒科營養師門診</strong>——馬偕、台大、長庚、新光等大型醫院都有兒科營養師門診，可做飲食評估與個別化計畫。
+  </p>
+  <p>
+    <strong>4. 職能治療（OT）/ 語言治療</strong>——感覺處理敏感、口腔動作議題的孩子，職能治療可做感覺整合介入。
+  </p>
+
+  <!-- 延伸活動 -->
+  <div class="related-activities">
+    <h3>🥕 本月適合「食農教育」的親子活動</h3>
+    <p style="margin: 0 0 12px 0;">讓孩子去看、去摸、去採——非進食暴露是降低 neophobia 最有效的方法之一：</p>
+    <ul>
+      <li><strong>陽明山竹子湖海芋季 / 繡球花季</strong>——順道走訪附近草莓園或農場</li>
+      <li><strong>宜蘭三星蔥農場 / 宜蘭花海農場</strong>——孩子親自拔蔥、認識蔬菜</li>
+      <li><strong>新北市坪林採茶體驗 / 桃園仙草農場</strong>——從採摘到品嚐的完整體驗</li>
+      <li><strong>居家陽台菜園</strong>——種一盆青蔥或羅勒，讓他每天澆水。3 週後他會主動想吃自己種的菜</li>
+    </ul>
+    <p style="margin: 12px 0 0 0;"><a href="../index.html">→ 點開地圖看更多親子農場與市集</a></p>
+  </div>
+
+  <!-- 引用清單 -->
+  <h2>📚 完整引用清單</h2>
+  <div class="references">
+    <h3>學術 &amp; 醫學機構來源</h3>
+    <ol>
+      <li id="ref-1">
+        <span class="ref-type">論文</span>
+        Cardona Cano S, Tiemeier H, Van Hoeken D, et al.
+        <em>Trajectories of picky eating during childhood: A general population study.</em>
+        Int J Eat Disord. 2015;48(6):570-579. DOI: 10.1002/eat.22384.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25644130/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/25644130</a>
+      </li>
+      <li id="ref-2">
+        <span class="ref-type">AAP</span>
+        American Academy of Pediatrics. <em>10 Tips for Parents of Picky Eaters.</em> HealthyChildren.org.
+        <a href="https://www.healthychildren.org/English/ages-stages/toddler/nutrition/Pages/Picky-Eaters.aspx" target="_blank" rel="noopener">healthychildren.org/.../Picky-Eaters.aspx</a>
+      </li>
+      <li id="ref-3">
+        <span class="ref-type">論文</span>
+        Fildes A, van Jaarsveld CHM, Cooke L, Wardle J, Llewellyn CH.
+        <em>Common genetic architecture underlying young children's food fussiness and liking for vegetables and fruit.</em>
+        Am J Clin Nutr. 2016;103(4):1099-1104.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26864359/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/26864359</a>
+      </li>
+      <li id="ref-4">
+        <span class="ref-type">UCL</span>
+        University College London News. <em>Toddlers' food fussiness is heavily influenced by genes.</em> 2016 Oct 14.
+        <a href="https://www.ucl.ac.uk/news/2016/oct/toddlers-food-fussiness-heavily-influenced-genes" target="_blank" rel="noopener">ucl.ac.uk/news/2016/oct/toddlers-food-fussiness-heavily-influenced-genes</a>
+      </li>
+      <li id="ref-5">
+        <span class="ref-type">論文</span>
+        Dovey TM, Staples PA, Gibson EL, Halford JC.
+        <em>Food neophobia and 'picky/fussy' eating in children: a review.</em>
+        Appetite. 2008;50(2-3):181-193.
+      </li>
+      <li id="ref-6">
+        <span class="ref-type">論文</span>
+        Cooke LJ, Haworth CMA, Wardle J.
+        <em>Genetic and environmental influences on children's food neophobia.</em>
+        Am J Clin Nutr. 2007;86(2):428-433.（雙胞胎研究 n &gt; 5,000，估遺傳力 0.78）
+      </li>
+      <li id="ref-7">
+        <span class="ref-type">論文</span>
+        Bell KI, Tepper BJ.
+        <em>Short-term vegetable intake by young children classified by 6-n-propylthiouracil bitter-taste phenotype.</em>
+        Am J Clin Nutr. 2006;84(1):245-251.（TAS2R38 苦味基因型與蔬菜攝取）
+      </li>
+      <li id="ref-8">
+        <span class="ref-type">論文</span>
+        Maratos FA, Staples P. <em>Attentional biases towards familiar and unfamiliar foods in children. The role of food neophobia.</em>
+        Appetite. 2015;91:220-225. DOI: 10.1016/j.appet.2015.04.003.
+      </li>
+      <li id="ref-9">
+        <span class="ref-type">論文</span>
+        Coulthard H, Blissett J. <em>Fruit and vegetable consumption in children and their mothers. Moderating effects of child sensory sensitivity.</em>
+        Appetite. 2009;52(2):410-415.
+      </li>
+      <li id="ref-10">
+        <span class="ref-type">台灣</span>
+        兒童福利聯盟文教基金會。<em>2015 年兒童飲食習慣調查報告。</em> 2015。
+        <a href="https://www.children.org.tw/uploads/images/private/23/files/report_2015_child_diet_habits.pdf" target="_blank" rel="noopener">children.org.tw/.../report_2015_child_diet_habits.pdf</a>
+      </li>
+      <li id="ref-11">
+        <span class="ref-type">論文</span>
+        Jansen PW, de Barse LM, Jaddoe VWV, et al.
+        <em>Bi-directional associations between child fussy eating and parents' pressure to eat: Who influences whom?</em>
+        Physiol Behav. 2017;176:101-106. DOI: 10.1016/j.physbeh.2017.02.015.
+      </li>
+      <li id="ref-12">
+        <span class="ref-type">AAP</span>
+        Muth ND. <em>How do I help my picky eater try more healthy foods?</em>
+        HealthyChildren.org (American Academy of Pediatrics).
+        <a href="https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-Do-I-Help-My-Picky-Eater-Try-More-Foods.aspx" target="_blank" rel="noopener">healthychildren.org/.../How-Do-I-Help-My-Picky-Eater-Try-More-Foods.aspx</a>
+      </li>
+      <li id="ref-13">
+        <span class="ref-type">框架</span>
+        Satter E. <em>Ellyn Satter's Division of Responsibility in Feeding (sDOR).</em> Ellyn Satter Institute. 2015.
+        <a href="https://www.ellynsatterinstitute.org/wp-content/uploads/2015/08/ELLYN-SATTER%E2%80%99S-DIVISION-OF-RESPONSIBILITY-IN-FEEDING.pdf" target="_blank" rel="noopener">ellynsatterinstitute.org/.../ELLYN-SATTER-DIVISION-OF-RESPONSIBILITY-IN-FEEDING.pdf</a>
+      </li>
+      <li id="ref-14">
+        <span class="ref-type">USDA</span>
+        Fisher JO, et al. <em>Repeated Exposure to Foods and Food Acceptance: A Systematic Review.</em>
+        Nutrition Evidence Systematic Review (NESR), USDA. 2024 Nov.
+        2025 Dietary Guidelines Advisory Committee Systematic Reviews.
+        <a href="https://nesr.usda.gov/2025-dietary-guidelines-advisory-committee-systematic-reviews/repeated-exposure_acceptance" target="_blank" rel="noopener">nesr.usda.gov/.../repeated-exposure_acceptance</a>
+      </li>
+      <li id="ref-15">
+        <span class="ref-type">論文</span>
+        Taylor CM, Emmett PM. <em>Picky eating in children: causes and consequences.</em>
+        Proc Nutr Soc. 2018;78(2):1-9. DOI: 10.1017/S0029665118002586.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6398579/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC6398579</a>
+      </li>
+      <li id="ref-16">
+        <span class="ref-type">NIH</span>
+        Daley SF, Riaz Y, Sergi C. <em>Pediatric Feeding Disorders: Recognition, Diagnosis, and Management.</em>
+        StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jun 13.
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK564306/" target="_blank" rel="noopener">ncbi.nlm.nih.gov/books/NBK564306/</a>
+      </li>
+      <li id="ref-17">
+        <span class="ref-type">Merck</span>
+        Merck Manual Professional Edition. <em>Avoidant/Restrictive Food Intake Disorder (ARFID).</em>
+        2024（DSM-5-TR 診斷標準）。
+        <a href="https://www.merckmanuals.com/professional/psychiatric-disorders/feeding-and-eating-disorders/avoidant-restrictive-food-intake-disorder-arfid" target="_blank" rel="noopener">merckmanuals.com/.../avoidant-restrictive-food-intake-disorder-arfid</a>
+      </li>
+      <li id="ref-18">
+        <span class="ref-type">醫院</span>
+        Brown University Health. <em>Picky Eaters and Common Childhood Feeding Problems.</em>
+        <a href="https://www.brownhealth.org/be-well/picky-eaters-and-common-childhood-feeding-problems" target="_blank" rel="noopener">brownhealth.org/.../picky-eaters-and-common-childhood-feeding-problems</a>
+      </li>
+    </ol>
+    <h3 style="margin-top:22px;">📖 建議延伸閱讀（書單）</h3>
+    <ol start="19">
+      <li>
+        <span class="ref-type">書籍</span>
+        Satter E. <em>Child of Mine: Feeding with Love and Good Sense.</em>
+        Bull Publishing; 2000 (4th ed). ISBN: 978-0923521516.（餐桌責任分工最完整版本）
+      </li>
+      <li>
+        <span class="ref-type">書籍</span>
+        Castle J, Jacobsen M. <em>Fearless Feeding: How to Raise Healthy Eaters from High Chair to High School.</em>
+        Jossey-Bass; 2013. ISBN: 978-1118308592.
+      </li>
+      <li>
+        <span class="ref-type">書籍</span>
+        Muth ND, Sampsell S. <em>The Picky Eater Project: 6 Weeks to Happier, Healthier Family Mealtimes.</em>
+        American Academy of Pediatrics; 2016. ISBN: 978-1610020169.（AAP 出版，6 週實作計畫）
+      </li>
+      <li>
+        <span class="ref-type">書籍</span>
+        Rapley G, Murkett T. <em>Baby-Led Weaning: The Essential Guide to Introducing Solid Foods.</em>
+        繁中版：《讓寶寶自己決定吃什麼》（采實文化）。預防挑食的根本——從副食品階段開始建立餐桌自主。
+      </li>
+    </ol>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    <strong>📋 內容守則聲明：</strong>
+    本文整合自 AAP（American Academy of Pediatrics）HealthyChildren.org、
+    NIH StatPearls、Merck Manual、USDA 2025 Dietary Guidelines NESR 系統性回顧、
+    Generation R 與 ALSPAC 兩大長期世代研究、UCL Gemini 雙胞胎研究，
+    以及 Ellyn Satter 餐桌責任分工框架與台灣兒福聯盟 2015 兒童飲食習慣調查。
+    <strong>本文內容僅供教育與參考，不能取代小兒科醫師、兒童胃腸科醫師、兒科營養師或臨床心理師的個別診斷與建議。</strong>
+    若您對孩子的成長曲線、進食量或行為有具體擔憂，請諮詢專業醫療人員。
+  </div>
+
+  <!-- Footer CTA -->
+  <div class="article-footer">
+    <h3>🌈 Kiddo POST · 每週三更新</h3>
+    <p>活動情報 + 發展議題 + 行事曆 · 爸媽專屬情報站</p>
+    <a href="../index.html" class="btn">✨ 回首頁看更多 →</a>
+  </div>
+
+</article>
+
+</body>
+</html>
