@@ -346,7 +346,7 @@ sup.ref a:hover { text-decoration: underline; }
   font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
 }
 
-/* Video cards */
+/* Video cards (lazy iframe) */
 .video-card {
   margin: 24px 0;
   border-radius: 16px;
@@ -355,31 +355,42 @@ sup.ref a:hover { text-decoration: underline; }
   box-shadow: var(--shadow);
   background: var(--surface);
 }
-.video-thumb {
-  display: block;
+.video-wrapper {
   position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
   overflow: hidden;
+  background: #000;
+  cursor: pointer;
 }
-.video-thumb img {
-  width: 100%;
-  height: auto;
-  display: block;
+.video-wrapper img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
   transition: transform 0.3s;
 }
-.video-thumb:hover img { transform: scale(1.03); }
+.video-wrapper:hover img { transform: scale(1.03); }
 .video-play {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 64px; height: 64px;
-  background: rgba(255, 122, 69, 0.9);
+  width: 68px; height: 68px;
+  background: rgba(255, 122, 69, 0.92);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 16px rgba(0,0,0,0.3);
   transition: transform 0.2s;
+  z-index: 2;
 }
-.video-thumb:hover .video-play { transform: translate(-50%, -50%) scale(1.1); }
-.video-play span { color: #fff; font-size: 26px; margin-left: 4px; }
+.video-wrapper:hover .video-play { transform: translate(-50%, -50%) scale(1.1); }
+.video-play span { color: #fff; font-size: 28px; margin-left: 4px; }
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
 .video-meta {
   padding: 14px 18px;
   font-size: 13.5px;
@@ -430,12 +441,12 @@ sup.ref a:hover { text-decoration: underline; }
 
   <!-- 官方 Trailer -->
   <div class="video-card">
-    <a href="https://www.youtube.com/watch?v=No34HQuKSEg" target="_blank" class="video-thumb">
+    <div class="video-wrapper" data-vid="No34HQuKSEg">
       <img src="https://img.youtube.com/vi/No34HQuKSEg/hqdefault.jpg" alt="PokePark KANTO 官方預告片">
       <div class="video-play"><span>&#9654;</span></div>
-    </a>
+    </div>
     <div class="video-meta">
-      &#x1F4FA; <strong>Pokemon Asia ENG</strong> &middot; Official PokePark KANTO Trailer（90 秒園區全覽）&middot; <a href="https://www.youtube.com/watch?v=No34HQuKSEg" target="_blank">點圖觀看</a>
+      &#x1F4FA; <strong>Pokemon Asia ENG</strong> &middot; Official PokePark KANTO Trailer（90 秒園區全覽）&middot; 點擊播放
     </div>
   </div>
 
@@ -476,12 +487,12 @@ sup.ref a:hover { text-decoration: underline; }
 
   <!-- First Look 影片 -->
   <div class="video-card">
-    <a href="https://www.youtube.com/watch?v=KM_scDS0hfM" target="_blank" class="video-thumb">
+    <div class="video-wrapper" data-vid="KM_scDS0hfM">
       <img src="https://img.youtube.com/vi/KM_scDS0hfM/hqdefault.jpg" alt="A First Look At PokePark KANTO">
       <div class="video-play"><span>&#9654;</span></div>
-    </a>
+    </div>
     <div class="video-meta">
-      &#x1F4FA; <strong>The Official Pokemon YouTube Channel</strong> &middot; A First Look At PokePark KANTO（官方園區初公開）&middot; <a href="https://www.youtube.com/watch?v=KM_scDS0hfM" target="_blank">點圖觀看</a>
+      &#x1F4FA; <strong>The Official Pokemon YouTube Channel</strong> &middot; A First Look At PokePark KANTO（官方園區初公開）&middot; 點擊播放
     </div>
   </div>
 
@@ -606,14 +617,14 @@ sup.ref a:hover { text-decoration: underline; }
   <!-- 第 3 段：推薦路線 -->
   <h2>&#x1F3C3; 必玩設施 &amp; 推薦路線</h2>
 
-  <!-- 無旁白完整 Tour，爸媽可以先讓小孩看影片熟悉環境 -->
+  <!-- 無旁白完整 Tour -->
   <div class="video-card">
-    <a href="https://www.youtube.com/watch?v=5R3IhSQlnbw" target="_blank" class="video-thumb">
+    <div class="video-wrapper" data-vid="5R3IhSQlnbw">
       <img src="https://img.youtube.com/vi/5R3IhSQlnbw/hqdefault.jpg" alt="PokePark KANTO Full Tour">
       <div class="video-play"><span>&#9654;</span></div>
-    </a>
+    </div>
     <div class="video-meta">
-      &#x1F4FA; <strong>Full Tour at the World's First Pokemon Theme Park</strong> &middot; 無旁白實拍走一遍，出發前讓小孩先看會超興奮 &middot; <a href="https://www.youtube.com/watch?v=5R3IhSQlnbw" target="_blank">點圖觀看</a>
+      &#x1F4FA; <strong>Full Tour at the World's First Pokemon Theme Park</strong> &middot; 無旁白實拍走一遍，出發前讓小孩先看會超興奮 &middot; 點擊播放
     </div>
   </div>
 
@@ -649,12 +660,12 @@ sup.ref a:hover { text-decoration: underline; }
 
   <!-- 全商品實拍影片 -->
   <div class="video-card">
-    <a href="https://www.youtube.com/watch?v=wZAfHsRiszw" target="_blank" class="video-thumb">
+    <div class="video-wrapper" data-vid="wZAfHsRiszw">
       <img src="https://img.youtube.com/vi/wZAfHsRiszw/hqdefault.jpg" alt="PokePark Kanto Full Merch Tour">
       <div class="video-play"><span>&#9654;</span></div>
-    </a>
+    </div>
     <div class="video-meta">
-      &#x1F4FA; <strong>EVERY Item in PokePark Kanto w/Prices</strong> &middot; 全商品含價格實拍，出發前決定預算用 &middot; <a href="https://www.youtube.com/watch?v=wZAfHsRiszw" target="_blank">點圖觀看</a>
+      &#x1F4FA; <strong>EVERY Item in PokePark Kanto w/Prices</strong> &middot; 全商品含價格實拍，出發前決定預算用 &middot; 點擊播放
     </div>
   </div>
 
@@ -849,6 +860,15 @@ sup.ref a:hover { text-decoration: underline; }
   </div>
 
 </article>
+
+<script>
+document.querySelectorAll('.video-wrapper[data-vid]').forEach(function(el) {
+  el.addEventListener('click', function() {
+    var vid = this.getAttribute('data-vid');
+    this.innerHTML = '<iframe src="https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+  });
+});
+</script>
 
 </body>
 </html>
