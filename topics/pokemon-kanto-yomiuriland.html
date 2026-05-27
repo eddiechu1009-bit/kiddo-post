@@ -346,6 +346,50 @@ sup.ref a:hover { text-decoration: underline; }
   font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
 }
 
+/* Video cards */
+.video-card {
+  margin: 24px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow);
+  background: var(--surface);
+}
+.video-thumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.video-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+.video-thumb:hover img { transform: scale(1.03); }
+.video-play {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px; height: 64px;
+  background: rgba(255, 122, 69, 0.9);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+.video-thumb:hover .video-play { transform: translate(-50%, -50%) scale(1.1); }
+.video-play span { color: #fff; font-size: 26px; margin-left: 4px; }
+.video-meta {
+  padding: 14px 18px;
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+.video-meta strong { color: var(--text); }
+.video-meta a { color: var(--orange); text-decoration: none; font-weight: 600; }
+.video-meta a:hover { text-decoration: underline; }
+
 @media (max-width: 640px) {
   .topic-title { font-size: 22px; }
   .topic-hero { padding: 28px 22px; }
@@ -384,6 +428,17 @@ sup.ref a:hover { text-decoration: underline; }
     </div>
   </header>
 
+  <!-- 官方 Trailer -->
+  <div class="video-card">
+    <a href="https://www.youtube.com/watch?v=No34HQuKSEg" target="_blank" class="video-thumb">
+      <img src="https://img.youtube.com/vi/No34HQuKSEg/hqdefault.jpg" alt="PokePark KANTO 官方預告片">
+      <div class="video-play"><span>&#9654;</span></div>
+    </a>
+    <div class="video-meta">
+      &#x1F4FA; <strong>Pokemon Asia ENG</strong> &middot; Official PokePark KANTO Trailer（90 秒園區全覽）&middot; <a href="https://www.youtube.com/watch?v=No34HQuKSEg" target="_blank">點圖觀看</a>
+    </div>
+  </div>
+
   <!-- 開場 -->
   <p>
     帶小孩去東京，如果你家有個寶可夢控（3 歲到 12 歲通吃），2026 年最重要的行程大概就是這個：
@@ -418,6 +473,17 @@ sup.ref a:hover { text-decoration: underline; }
 
   <!-- 第 1 段：樂園概覽 -->
   <h2>&#x1F30F; 樂園概覽：這到底是什麼？</h2>
+
+  <!-- First Look 影片 -->
+  <div class="video-card">
+    <a href="https://www.youtube.com/watch?v=KM_scDS0hfM" target="_blank" class="video-thumb">
+      <img src="https://img.youtube.com/vi/KM_scDS0hfM/hqdefault.jpg" alt="A First Look At PokePark KANTO">
+      <div class="video-play"><span>&#9654;</span></div>
+    </a>
+    <div class="video-meta">
+      &#x1F4FA; <strong>The Official Pokemon YouTube Channel</strong> &middot; A First Look At PokePark KANTO（官方園區初公開）&middot; <a href="https://www.youtube.com/watch?v=KM_scDS0hfM" target="_blank">點圖觀看</a>
+    </div>
+  </div>
 
   <p>
     PokePark KANTO 位在東京近郊的<strong>讀賣樂園（よみうりランド）</strong>園區內，
@@ -540,6 +606,17 @@ sup.ref a:hover { text-decoration: underline; }
   <!-- 第 3 段：推薦路線 -->
   <h2>&#x1F3C3; 必玩設施 &amp; 推薦路線</h2>
 
+  <!-- 無旁白完整 Tour，爸媽可以先讓小孩看影片熟悉環境 -->
+  <div class="video-card">
+    <a href="https://www.youtube.com/watch?v=5R3IhSQlnbw" target="_blank" class="video-thumb">
+      <img src="https://img.youtube.com/vi/5R3IhSQlnbw/hqdefault.jpg" alt="PokePark KANTO Full Tour">
+      <div class="video-play"><span>&#9654;</span></div>
+    </a>
+    <div class="video-meta">
+      &#x1F4FA; <strong>Full Tour at the World's First Pokemon Theme Park</strong> &middot; 無旁白實拍走一遍，出發前讓小孩先看會超興奮 &middot; <a href="https://www.youtube.com/watch?v=5R3IhSQlnbw" target="_blank">點圖觀看</a>
+    </div>
+  </div>
+
   <h3>5-12 歲路線（完整體驗，建議停留 4-5 小時）</h3>
   <ol style="margin-bottom:16px; padding-left:22px; line-height:2.2;">
     <li>入場後先衝<strong>寶可夢森林</strong>（上午人最少，氣溫也較涼爽）</li>
@@ -568,6 +645,17 @@ sup.ref a:hover { text-decoration: underline; }
       都會出現。菅草鎮的入口廣場通常有大型皮卡丘立像。<strong>Ace Trainer Pass</strong>
       含進入「Sedge Mansion」與皮卡丘/伊布近距離合照的機會——這是限定名額，一般票買不到。
     </p>
+  </div>
+
+  <!-- 全商品實拍影片 -->
+  <div class="video-card">
+    <a href="https://www.youtube.com/watch?v=wZAfHsRiszw" target="_blank" class="video-thumb">
+      <img src="https://img.youtube.com/vi/wZAfHsRiszw/hqdefault.jpg" alt="PokePark Kanto Full Merch Tour">
+      <div class="video-play"><span>&#9654;</span></div>
+    </a>
+    <div class="video-meta">
+      &#x1F4FA; <strong>EVERY Item in PokePark Kanto w/Prices</strong> &middot; 全商品含價格實拍，出發前決定預算用 &middot; <a href="https://www.youtube.com/watch?v=wZAfHsRiszw" target="_blank">點圖觀看</a>
+    </div>
   </div>
 
   <h3>限定商品必買清單</h3>
@@ -683,6 +771,13 @@ sup.ref a:hover { text-decoration: underline; }
       <li><strong>Wikipedia "PokePark Kanto" 條目（英文）</strong>——背景脈絡與沿革整理清楚，含官方 LLC 成立資訊<sup class="ref"><a href="#ref-3">[3]</a></sup></li>
       <li><strong>讀賣樂園官網（よみうりランド公式）</strong>——票價若有調整以官網為準：<a href="https://www.yomiuriland.com/" target="_blank" rel="noopener">yomiuriland.com</a></li>
       <li><strong>PokePark KANTO 官網</strong>——抽選購票唯一入口：pokepark-kanto.co.jp（開幕後資訊會持續更新）</li>
+    </ul>
+    <h3 style="margin-top:20px;">&#x1F3AC; 推薦影片 &middot; 出發前先看一遍</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=vIlyEemQrQQ" target="_blank" rel="noopener"><strong>【全て分かる】ポケパークカントー完全紹介（日文）</strong></a>——商品、餐點、設施、森林全攻略，最詳盡的日文攻略影片</li>
+      <li><a href="https://www.youtube.com/watch?v=LqtJgKPR-3M" target="_blank" rel="noopener"><strong>Japan's NEW Pokemon Theme Park is FINALLY Open</strong></a>——親子向視角，涵蓋遊樂設施實搭體驗</li>
+      <li><a href="https://www.youtube.com/watch?v=TIM0Gfpqr8k" target="_blank" rel="noopener"><strong>TBS NEWS：600 匹超のポケモンに出会える</strong></a>——開幕日新聞報導，快速看全園區實景</li>
+      <li><a href="https://www.youtube.com/watch?v=OO8a1O6u0EM" target="_blank" rel="noopener"><strong>PokePark Kanto Review: Inside Pokemon's new theme park!</strong></a>——英文評測，含實際遊園體驗分享</li>
     </ul>
   </div>
 
