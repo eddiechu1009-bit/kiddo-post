@@ -104,7 +104,7 @@ git push -u origin main
 
 ## 🔄 每週更新流程
 
-1. 產出新的 `parent-intel/weekly-report-YYYY-Www.html`
+1. 產出新的 `parent-intel/weekly/weekly-report-YYYY-Www.html`
 2. 從週報抽出活動卡片，更新 `articles.json`（加入新活動、移除已結束的）
 3. `git commit -am "update W19" && git push`
 4. GitHub Pages 1~2 分鐘內自動發佈
