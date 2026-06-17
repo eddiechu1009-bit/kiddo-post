@@ -1381,17 +1381,17 @@ body::before {
       <img class="hero-kids" src="kids.png" alt="" aria-hidden="true"
            onerror="this.style.display='none'">
 
-      <div class="hero-badge">THIS WEEK · W22</div>
-      <div class="hero-date">5/27 → 6/10 · 未來兩週精選</div>
-      <h1 class="hero-title">櫻桃小丸子 40 週年 + 冬山熱氣球</h1>
+      <div class="hero-badge">THIS WEEK · W25</div>
+      <div class="hero-date">6/17 → 7/1 · 未來兩週精選</div>
+      <h1 class="hero-title">暑假水樂園開跑 + 波特羅療癒特展</h1>
       <p class="hero-excerpt">
-        <strong>櫻桃小丸子原作 40 週年特展</strong>首度登台,互動體驗區超好拍。<br>
-        冬山熱氣球嘉年華 6 月啟航,<strong>免費繫留體驗</strong>先搶先贏。斯拉法《下雪了》親子劇場好評加場中。
+        <strong>兒童新樂園 PILIGILI 水樂園</strong>、花蓮知卡宣、內湖與鶯歌免費戲水池接力開園,暑假消暑全攻略。<br>
+        <strong>波特羅「圓潤的魔法」特展</strong>6/19 登場中正紀念堂。台東博覽會「活的學校」6/26 試營運。
       </p>
       <div class="hero-tags">
-        <span class="hero-tag">🌸 小丸子特展</span>
-        <span class="hero-tag">🎈 熱氣球</span>
-        <span class="hero-tag">🎭 親子劇場</span>
+        <span class="hero-tag">💦 暑假水樂園</span>
+        <span class="hero-tag">🎨 波特羅特展</span>
+        <span class="hero-tag">🎈 台東博覽會</span>
       </div>
       <button class="hero-cta" onclick="switchTab('calendar')">📅 看完整行事曆 →</button>
     </div>
@@ -1425,9 +1425,9 @@ body::before {
       <div class="sidebar-card featured">
         <div class="sidebar-title">💡 本週爸媽撇步</div>
         <ul class="tip-list">
-          <li>兒童月博物館優惠延到 <strong>5/5</strong>，把握最後幾天</li>
-          <li>1 歲以上用 SPF 30+ 兒童防曬，每 2 小時補擦</li>
-          <li>宜蘭童玩節 <strong>6 月開放售票</strong>，住宿 5 月就要訂</li>
+          <li>戲水區水溫偏涼，每玩 <strong>30 分</strong>起來擦乾保暖</li>
+          <li>暑假作息每天只往後挪 <strong>30 分內</strong>，維持規律</li>
+          <li>USJ、teamLab 都要 <strong>線上購票</strong>，現場不售</li>
         </ul>
       </div>
 
@@ -2002,36 +2002,27 @@ function closePopupAndOpen(id) {
 // ═══════════════════════ CALENDAR DATA (shared by renderCalendar + global search) ═══════════════════════
 const CALENDAR_MONTHS = [
   {
-    key: 'may', cls: 'may', title: '🌸 5 月', sub: '兒童月尾聲 · 母親節',
+    key: 'jun', cls: 'jun', title: '☀️ 6 月下旬', sub: '學期尾聲 · 暑假前哨',
     items: [
-      { date: '5/4~5/10', title: '夢幻泡泡秀 Bubble Show 最後檔期', meta: '國父紀念館 · 3~10 歲 · $650 起' },
-      { date: '5/10', title: '母親節 · 各百貨親子下午茶活動', meta: '大台北各大百貨 · 全年齡' },
-      { date: '5/17', title: '臺北市立動物園「夜訪動物園」開放報名', meta: '北市動物園 · 6 歲以上 · 一家 $1,200' },
-      { date: '5/23~5/24', title: '花蓮太平洋縱谷音樂節 (親子區免費)', meta: '花蓮太平洋公園 · 3 歲以上' },
-      { date: '5/30~6/7', title: '國家兩廳院「兒童藝術節 2026」', meta: '兩廳院 · 3 歲以上 · $500 起' },
-    ],
-  },
-  {
-    key: 'jun', cls: 'jun', title: '☀️ 6 月', sub: '端午連假 · 暑假前',
-    items: [
-      { date: '6/1', title: '大佳河濱戲水區夏季開放', meta: '大佳河濱 · 0~8 歲 · 免費 · 至 9/30' },
-      { date: '6/7', title: '臺北市親子節「大安森林公園」嘉年華', meta: '大安森林公園 · 全年齡 · 免費' },
-      { date: '6/13~6/15', title: '端午連假 · 大溪龍舟嘉年華 (立蛋 DIY)', meta: '桃園大溪 · 全年齡' },
-      { date: '6/15', title: '大阪萬博公園「兒童水樂園」開幕', meta: '日本大阪 · 3~12 歲 · ¥300' },
-      { date: '6/21', title: '夏至 · 屏東墾丁海生館親子日', meta: '屏東墾丁 · 3 歲以上' },
-      { date: '6/28~6/29', title: '國立故宮博物院「迷你我家」暑期特展', meta: '故宮 · 4 歲以上' },
+      { date: '6/18~9/28', title: '櫻桃小丸子原作 40 週年特展', meta: '松山文創園區 · 3 歲以上 · 預售親子票 $1,100' },
+      { date: '6/19', title: '波特羅「圓潤的魔法」特展登場', meta: '中正紀念堂 1 展廳 · 3 歲以上 · 售票中' },
+      { date: '5/28~9/13', title: '愛麗絲夢遊仙境沉浸式特展 (亞洲首站)', meta: '松山文創園區 · 3 歲以上 · $480 起' },
+      { date: '6/21~22', title: '東海岸大地藝術節《身即海洋》音樂會', meta: '台東都歷 · 3 歲以上 · 免費' },
+      { date: '6/25~8/31', title: '鶯歌陶博館陶藝園區戲水池開放', meta: '鶯歌陶博館 · 2~10 歲 · 免費' },
+      { date: '6/26~30', title: '台東博覽會「活的學校」試營運', meta: '台東縣立體育館 · 全齡' },
+      { date: '6/27~8/30', title: '臺北親水節 · 自來水園區水鄉庭園開幕', meta: '公館自來水園區 · 6 歲以下免費 · $80 起' },
       { date: '6/30', title: '大部分小學結業式 · 暑期課表開始', meta: '全台 · 學齡' },
     ],
   },
   {
     key: 'jul', cls: 'jul', title: '🏖️ 7 月', sub: '暑假旺季 · 提前訂位',
     items: [
-      { date: '7/1~7/31', title: '宜蘭童玩節 (冬山河親水公園)', meta: '親子年度盛事 · 建議 5 月訂房' },
-      { date: '7/5~7/6', title: '臺北國際童書展 (世貿一館)', meta: '台北世貿一館 · 全年齡' },
-      { date: '7/12~7/13', title: '劍湖山世界「小小特警隊」嘉年華', meta: '雲林劍湖山 · 4 歲以上' },
-      { date: '7/19~7/20', title: '九族文化村「水樂園」全開', meta: '南投九族 · 身高 100cm 免費' },
-      { date: '7/23', title: '臺北 101 觀景台親子科學 workshop', meta: '信義 101 · 5 歲以上' },
-      { date: '7/25~7/27', title: '基隆中元祭兒童遊行 (免費)', meta: '基隆市區 · 全年齡' },
+      { date: '7/1~8/26', title: '大阪環球影城 · 霓虹夏日祭典 (25 週年)', meta: '大阪 USJ · 3 歲以上 · 線上購票' },
+      { date: '7/4~8/31', title: '兒童新樂園 PILIGILI 水樂園 + 華市集', meta: '士林 兒童新樂園 · 1~12 歲' },
+      { date: '7/4~8/23', title: '花蓮知卡宣玩水趣開園', meta: '花蓮知卡宣公園 · 全齡 · 免費' },
+      { date: '7/4~8/20', title: '台東熱氣球嘉年華 × 吉伊卡哇', meta: '台東鹿野高台 · 全齡 · 入園免費' },
+      { date: '7/4~8/16', title: '宜蘭國際童玩節 (冬山河親水公園)', meta: '親子年度盛事 · 建議提前訂房' },
+      { date: '7/25~9/23', title: 'teamLab 學習！未來遊樂園 函館', meta: '北海道立函館美術館 · 3 歲以上' },
     ],
   },
   {
