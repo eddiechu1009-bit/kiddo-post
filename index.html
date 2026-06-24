@@ -1685,7 +1685,9 @@ let ALL_PLACES = [];
 async function loadArticles() {
   try {
     const res = await fetch('articles.json?t=' + Date.now());
-    ALL_ARTICLES = await res.json();
+    const raw = await res.json();
+    // 過濾已收起的活動(status === 'archived');無 status 視為 active 照常顯示
+    ALL_ARTICLES = raw.filter(a => a.status !== 'archived');
   } catch (e) {
     console.error('載入 articles.json 失敗', e);
     ALL_ARTICLES = [];

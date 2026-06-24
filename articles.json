@@ -46,7 +46,9 @@
         "name": "KKday 親子展覽懶人包",
         "url": "https://www.kkday.com/zh-tw/blog/234030/asia-taiwan-family-friendly-exhibition"
       }
-    ]
+    ],
+    "end_date": "2026-09-28",
+    "status": "active"
   },
   {
     "id": "animal-kingdom-adventure-2026",
@@ -95,7 +97,9 @@
         "name": "桃桃的旅人手札",
         "url": "https://momoblog.tw/taipeishow201712"
       }
-    ]
+    ],
+    "end_date": "2026-10-11",
+    "status": "active"
   },
   {
     "id": "slime-glow-lab-2026",
@@ -143,7 +147,9 @@
         "name": "桃桃的旅人手札",
         "url": "https://momoblog.tw/taipeishow201712"
       }
-    ]
+    ],
+    "end_date": "2026-08-30",
+    "status": "active"
   },
   {
     "id": "egypt-mummy-eternal-2026",
@@ -190,7 +196,9 @@
         "name": "桃桃的旅人手札",
         "url": "https://momoblog.tw/taipeishow201712"
       }
-    ]
+    ],
+    "end_date": "2026-09-28",
+    "status": "active"
   },
   {
     "id": "fulong-sand-art-2026",
@@ -239,7 +247,9 @@
         "name": "桃桃的旅人手札",
         "url": "https://momoblog.tw/taipeishow201712"
       }
-    ]
+    ],
+    "end_date": "2026-10-26",
+    "status": "active"
   },
   {
     "id": "hualien-summer-love-2026",
@@ -285,7 +295,9 @@
         "name": "生活情報整理",
         "url": "https://lovefree365.pixnet.net/blog/posts/11403149005"
       }
-    ]
+    ],
+    "end_date": "2026-07-05",
+    "status": "active"
   },
   {
     "id": "hualien-onepiece-liyutan-2026",
@@ -332,7 +344,9 @@
         "name": "生活情報整理",
         "url": "https://lovefree365.pixnet.net/blog/posts/11403149005"
       }
-    ]
+    ],
+    "end_date": "2026-08-16",
+    "status": "active"
   },
   {
     "id": "dongshi-sea-summer-2026",
@@ -381,7 +395,9 @@
         "name": "生活情報整理",
         "url": "https://lovefree365.pixnet.net/blog/posts/11403149005"
       }
-    ]
+    ],
+    "end_date": "2026-07-26",
+    "status": "active"
   },
   {
     "id": "window-on-china-water-2026",
@@ -428,7 +444,9 @@
         "name": "Mark 與 Hazyl 親子旅遊",
         "url": "https://gowithmarkhazyl.com/must-visit-places-for-family-in-taoyuan"
       }
-    ]
+    ],
+    "end_date": "2026-08-31",
+    "status": "active"
   },
   {
     "id": "handmade-japan-fes-2026",
@@ -475,7 +493,9 @@
         "name": "Isabelle 日本零時差",
         "url": "https://japanzerolag.com?p=18388"
       }
-    ]
+    ],
+    "end_date": "2026-07-12",
+    "status": "active"
   },
   {
     "id": "yamanaka-kaba-bus-2026",
@@ -521,7 +541,9 @@
         "name": "永安旅遊 2026 夏日日本",
         "url": "https://www.wingontravel.com/promotion/activity/japanhotpicks"
       }
-    ]
+    ],
+    "end_date": null,
+    "status": "active"
   },
   {
     "id": "piligili-water-park-2026",
@@ -569,7 +591,9 @@
         "name": "臺北市兒童新樂園",
         "url": "https://www.instagram.com/p/DZKpmfbD2ui"
       }
-    ]
+    ],
+    "end_date": "2026-08-31",
+    "status": "active"
   },
   {
     "id": "botero-magic-2026",
@@ -616,7 +640,9 @@
         "name": "聯合數位文創 / 遠傳心發現",
         "url": "https://www.fetnet.net/content/cbu/tw/lifecircle/life/2026/05/PnCexhibition.html"
       }
-    ]
+    ],
+    "end_date": null,
+    "status": "active"
   },
   {
     "id": "neihu-sports-park-water-2026",
@@ -661,7 +687,9 @@
         "name": "莊董莎莎 生活情報",
         "url": "https://lovefree365.pixnet.net/blog/posts/11403810976"
       }
-    ]
+    ],
+    "end_date": "2026-09-30",
+    "status": "active"
   },
   {
     "id": "yingge-ceramics-water-2026",
@@ -707,7 +735,9 @@
         "name": "udn 女子漾",
         "url": "https://woman.udn.com/woman/story/123162/8938752"
       }
-    ]
+    ],
+    "end_date": "2026-08-31",
+    "status": "active"
   },
   {
     "id": "hualien-zhihka-water-2026",
@@ -754,7 +784,9 @@
         "name": "觀傳媒",
         "url": "https://www.watchmedia01.com/archives/522592"
       }
-    ]
+    ],
+    "end_date": "2026-08-23",
+    "status": "active"
   },
   {
     "id": "taitung-expo-living-school-2026",
@@ -799,7 +831,9 @@
         "name": "風傳媒",
         "url": "https://www.storm.mg/article/11141064"
       }
-    ]
+    ],
+    "end_date": "2026-08-20",
+    "status": "active"
   },
   {
     "id": "xiaowulai-creek-water-2026",
@@ -843,7 +877,9 @@
         "name": "莊董莎莎 生活情報",
         "url": "https://lovefree365.pixnet.net/blog/posts/11403810976"
       }
-    ]
+    ],
+    "end_date": "2026-09-28",
+    "status": "active"
   },
   {
     "id": "usj-summer-matsuri-2026",
@@ -889,7 +925,9 @@
         "name": "Flyday · 日本環球影城",
         "url": "https://flyday.hk/universal-studios-japan"
       }
-    ]
+    ],
+    "end_date": "2026-08-26",
+    "status": "active"
   },
   {
     "id": "teamlab-hakodate-2026",
@@ -935,7 +973,9 @@
         "name": "iwafu 日本展覽情報",
         "url": "https://www.iwafu.com/tw/articles/160"
       }
-    ]
+    ],
+    "end_date": "2026-09-23",
+    "status": "active"
   },
   {
     "id": "alice-rabbit-hole-2026",
@@ -981,7 +1021,9 @@
         "name": "Klook · 愛麗絲特展",
         "url": "https://www.klook.com/zh-TW/activity/200839-2026-alice-in-wonderland-down-the-rabbit-hole"
       }
-    ]
+    ],
+    "end_date": "2026-09-13",
+    "status": "active"
   },
   {
     "id": "newtaipei-sea-world-water-2026",
@@ -1028,7 +1070,9 @@
         "name": "食尚玩家 · 海世界水樂園",
         "url": "https://supertaste.tvbs.com.tw/pack/359826"
       }
-    ]
+    ],
+    "end_date": "2026-09-30",
+    "status": "active"
   },
   {
     "id": "taipei-water-festival-2026",
@@ -1075,7 +1119,9 @@
         "name": "EventGo · 臺北親水節",
         "url": "https://eventgo.tw/event/067249ac-f460-4ecf-901f-d36b50d41857"
       }
-    ]
+    ],
+    "end_date": "2026-08-30",
+    "status": "active"
   },
   {
     "id": "tfam-make-a-park-2026",
@@ -1123,7 +1169,9 @@
         "name": "KKday · 親子展覽懶人包",
         "url": "https://www.kkday.com/zh-tw/blog/234030/asia-taiwan-family-friendly-exhibition"
       }
-    ]
+    ],
+    "end_date": "2026-08-30",
+    "status": "active"
   },
   {
     "id": "qiaohu-galaxy-thief-2026",
@@ -1168,7 +1216,9 @@
         "name": "巧連智官網",
         "url": "https://www.benesse.com.tw/magazine/show/26summer/index.html"
       }
-    ]
+    ],
+    "end_date": null,
+    "status": "active"
   },
   {
     "id": "eastcoast-land-arts-2026",
@@ -1213,7 +1263,9 @@
         "name": "東部海岸國家風景區管理處",
         "url": "https://www.eastcoast-nsa.gov.tw/zh-tw/event/activity/5777"
       }
-    ]
+    ],
+    "end_date": null,
+    "status": "active"
   },
   {
     "id": "taitung-balloon-chiikawa-2026",
@@ -1260,7 +1312,9 @@
         "name": "臺灣國際熱氣球嘉年華官網",
         "url": "https://balloontaiwan.taitung.gov.tw/zh-tw/overview/night-glows"
       }
-    ]
+    ],
+    "end_date": "2026-08-20",
+    "status": "active"
   },
   {
     "id": "lihpao-malawan-2026",
@@ -1306,7 +1360,9 @@
         "name": "麗寶樂園渡假區官網",
         "url": "https://www.lihpaoresort.com/LihpaolandApp/Home/Mala"
       }
-    ]
+    ],
+    "end_date": "2026-08-31",
+    "status": "active"
   },
   {
     "id": "farglory-ocean-attack-summer-2026",
@@ -1353,7 +1409,9 @@
         "name": "遠雄海洋公園官網",
         "url": "https://www.farglory-oceanpark.com.tw"
       }
-    ]
+    ],
+    "end_date": "2026-08-31",
+    "status": "active"
   },
   {
     "id": "teamlab-planets-tokyo-2026",
@@ -1399,7 +1457,9 @@
         "name": "teamLab 官網",
         "url": "https://www.teamlab.art/zh-hant/e/planets"
       }
-    ]
+    ],
+    "end_date": null,
+    "status": "active"
   },
   {
     "id": "tokyo-summerland-water-2026",
@@ -1445,7 +1505,9 @@
         "name": "東京 Summerland 官網",
         "url": "https://www.summerland.co.jp"
       }
-    ]
+    ],
+    "end_date": "2026-09-27",
+    "status": "active"
   },
   {
     "id": "tokyo-ikimono-world-2026",
@@ -1491,7 +1553,9 @@
         "name": "生物超世界展官方網站",
         "url": "https://ikimonoworld.jp"
       }
-    ]
+    ],
+    "end_date": "2026-10-12",
+    "status": "active"
   },
   {
     "id": "taipei-kids-art-festival-2026",
@@ -1536,7 +1600,9 @@
         "name": "臺北表演藝術中心",
         "url": "https://tpac.org.taipei/"
       }
-    ]
+    ],
+    "end_date": "2026-08-06",
+    "status": "active"
   },
   {
     "id": "songshan-luminous-garden-2026",
@@ -1583,7 +1649,9 @@
         "name": "松山文創園區",
         "url": "https://www.songshanculturalpark.org/"
       }
-    ]
+    ],
+    "end_date": "2026-06-30",
+    "status": "active"
   },
   {
     "id": "taipei-zoo-night-2026",
@@ -1627,7 +1695,9 @@
         "name": "臺北市立動物園",
         "url": "https://www.zoo.gov.taipei/"
       }
-    ]
+    ],
+    "end_date": "2026-06-28",
+    "status": "active"
   },
   {
     "id": "kids-science-dino-2026",
@@ -1675,7 +1745,9 @@
         "name": "國立臺灣科學教育館",
         "url": "https://www.ntsec.gov.tw/"
       }
-    ]
+    ],
+    "end_date": "2026-12-31",
+    "status": "active"
   },
   {
     "id": "dajia-riverside-swim-2026",
@@ -1722,7 +1794,9 @@
         "name": "北市水利處",
         "url": "https://dhre.gov.taipei/"
       }
-    ]
+    ],
+    "end_date": "2026-09-30",
+    "status": "active"
   },
   {
     "id": "chibimaruko-40th-2026",
@@ -1768,7 +1842,9 @@
         "name": "松山文創園區",
         "url": "https://www.songshanculturalpark.org/"
       }
-    ]
+    ],
+    "end_date": "2026-09-28",
+    "status": "active"
   },
   {
     "id": "anna-daniel-wonder-2026",
@@ -1815,7 +1891,9 @@
         "name": "國立臺灣科學教育館",
         "url": "https://www.ntsec.gov.tw/"
       }
-    ]
+    ],
+    "end_date": "2026-09-28",
+    "status": "active"
   },
   {
     "id": "yilan-kids-folk-festival-2026",
@@ -1861,7 +1939,9 @@
         "name": "2026 宜蘭童玩節",
         "url": "https://www.yicfff.tw/"
       }
-    ]
+    ],
+    "end_date": "2026-08-16",
+    "status": "active"
   },
   {
     "id": "kaohsiung-snow-park-2026",
@@ -1908,7 +1988,9 @@
         "name": "國立科工館",
         "url": "https://www.nstm.gov.tw/"
       }
-    ]
+    ],
+    "end_date": "2026-12-31",
+    "status": "active"
   },
   {
     "id": "taichung-insect-2026",
@@ -1955,7 +2037,9 @@
         "name": "國立自然科學博物館",
         "url": "https://www.nmns.edu.tw/"
       }
-    ]
+    ],
+    "end_date": "2026-08-31",
+    "status": "active"
   },
   {
     "id": "eda-summer-2026",
@@ -2001,7 +2085,9 @@
         "name": "義大遊樂世界",
         "url": "https://www.edathemepark.com.tw/"
       }
-    ]
+    ],
+    "end_date": "2026-08-31",
+    "status": "active"
   },
   {
     "id": "yomiuriland-pokemon-2026",
@@ -2047,7 +2133,9 @@
         "name": "讀賣樂園",
         "url": "https://www.yomiuriland.com/"
       }
-    ]
+    ],
+    "end_date": null,
+    "status": "active"
   },
   {
     "id": "expo-park-water-2026",
@@ -2092,7 +2180,9 @@
         "name": "萬博記念公園",
         "url": "https://www.expo70-park.jp/"
       }
-    ]
+    ],
+    "end_date": "2026-08-31",
+    "status": "active"
   },
   {
     "id": "sanrio-puroland-2026",
@@ -2140,7 +2230,9 @@
         "name": "Sanrio Puroland",
         "url": "https://www.puroland.jp/"
       }
-    ]
+    ],
+    "end_date": "2026-12-31",
+    "status": "active"
   },
   {
     "id": "yokohama-anpanman-2026",
@@ -2186,6 +2278,8 @@
         "name": "麵包超人博物館",
         "url": "https://www.yokohama-anpanman.jp/"
       }
-    ]
+    ],
+    "end_date": null,
+    "status": "active"
   }
 ]
