@@ -30,6 +30,11 @@ from collections import Counter
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+try:
+    sys.stdout.reconfigure(encoding="utf-8")  # 排程 OEM 終端中文 print 防亂碼
+except Exception:
+    pass
+
 SITE_DIR = Path(__file__).resolve().parent
 ARTICLES_JSON = SITE_DIR / "articles.json"
 TOPICS_DIR = SITE_DIR / "topics"
