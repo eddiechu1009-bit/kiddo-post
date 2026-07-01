@@ -846,6 +846,7 @@ body::before {
 .month-section.jun { border-color: #ffd966; }
 .month-section.jul { border-color: var(--teal-light); }
 .month-section.aug { border-color: #f7b8c7; }
+.month-section.sep { border-color: #c7a8f0; }
 
 .month-header {
   display: flex;
@@ -1381,17 +1382,17 @@ body::before {
       <img class="hero-kids" src="kids.png" alt="" aria-hidden="true"
            onerror="this.style.display='none'">
 
-      <div class="hero-badge">THIS WEEK · W26</div>
-      <div class="hero-date">6/24 → 7/8 · 未來兩週精選</div>
-      <h1 class="hero-title">暑假展覽季開展 + 海邊嘉年華起跑</h1>
+      <div class="hero-badge">THIS WEEK · W27</div>
+      <div class="hero-date">7/1 → 7/15 · 未來兩週精選</div>
+      <h1 class="hero-title">暑假正式開跑 + IP 特展 &amp; 免費玩水場</h1>
       <p class="hero-excerpt">
-        <strong>華山波隆那世界插畫展</strong>7/4 開展、<strong>科教館動物王國大探險展</strong>7/11 登場,埃及木乃伊、史萊姆夜光實驗室接力放暑假。<br>
-        <strong>福隆沙雕季</strong>玩沙看 IP、<strong>花蓮夏戀嘉年華</strong>7/1 開唱,海邊放電全攻略。
+        <strong>華山吉伊卡哇特展</strong>7/4 登場、<strong>松菸小熊維尼 100 週年</strong>7/10 免費快閃,史努比海灘祭接力放暑假。<br>
+        <strong>新店陽光綠洲共融戲水場</strong>暑假免費玩水、<strong>新北兒藝節</strong>7/11 起、<strong>京都祇園祭</strong>整月登場。
       </p>
       <div class="hero-tags">
-        <span class="hero-tag">🎨 暑假展覽季</span>
-        <span class="hero-tag">🏖️ 福隆沙雕</span>
-        <span class="hero-tag">🎤 花蓮夏戀</span>
+        <span class="hero-tag">🐹 吉伊卡哇特展</span>
+        <span class="hero-tag">🌈 免費玩水共融場</span>
+        <span class="hero-tag">⛩️ 京都祇園祭</span>
       </div>
       <button class="hero-cta" onclick="switchTab('calendar')">📅 看完整行事曆 →</button>
     </div>
@@ -1415,9 +1416,9 @@ body::before {
 
     <aside class="sidebar">
       <div class="sidebar-card calendar">
-        <div class="sidebar-title">📅 5~8 月行事曆</div>
+        <div class="sidebar-title">📅 7~9 月行事曆</div>
         <p class="sidebar-desc">
-          端午連假、宜蘭童玩節、大阪萬博水樂園... 暑假一次規劃好。
+          IP 特展、免費玩水共融場、兒藝節、日本祇園祭與花火... 暑假一次規劃好。
         </p>
         <button class="sidebar-btn" onclick="switchTab('calendar')">📖 看完整行事曆</button>
       </div>
@@ -2009,26 +2010,16 @@ function closePopupAndOpen(id) {
 // ═══════════════════════ CALENDAR DATA (shared by renderCalendar + global search) ═══════════════════════
 const CALENDAR_MONTHS = [
   {
-    key: 'jun', cls: 'jun', title: '☀️ 6 月底', sub: '學期尾聲 · 暑假前哨',
-    items: [
-      { date: '6/25~8/31', title: '鶯歌陶博館陶藝園區戲水池開放', meta: '鶯歌陶博館 · 2~10 歲 · 免費' },
-      { date: '6/26~30', title: '台東博覽會「活的學校」試營運', meta: '台東縣立體育館 · 全齡' },
-      { date: '6/27~8/30', title: '臺北親水節 · 自來水園區水鄉庭園開幕', meta: '公館自來水園區 · 6 歲以下免費 · $80 起' },
-      { date: '6/28', title: '夜訪動物園最後一場', meta: '北市動物園 · 6 歲以上 · 報名制' },
-      { date: '至 9/28', title: '櫻桃小丸子 40 週年 / 愛麗絲沉浸式特展熱展中', meta: '松山文創園區 · 3 歲以上' },
-      { date: '6/30~8/6', title: '臺北兒童藝術節開跑', meta: '全台北 · 多場親子展演' },
-    ],
-  },
-  {
     key: 'jul', cls: 'jul', title: '🏖️ 7 月', sub: '暑假旺季 · 提前訂位',
     items: [
-      { date: '7/1~7/5', title: '花蓮夏戀嘉年華 (親子放電之夜)', meta: '花蓮東大門廣場 · 全齡 · 免費' },
+      { date: '7/4', title: '兒童新樂園 PILIGILI 水樂園 + 華市集開幕', meta: '士林 兒童新樂園 · 1~12 歲' },
       { date: '7/4~9/28', title: '華山波隆那世界插畫大獎展', meta: '華山 1914 · 3 歲以上 · 預售 $290 起' },
-      { date: '7/4~8/31', title: '兒童新樂園 PILIGILI 水樂園 + 華市集', meta: '士林 兒童新樂園 · 1~12 歲' },
-      { date: '7/4~8/16', title: '宜蘭國際童玩節 (冬山河親水公園)', meta: '親子年度盛事 · 建議提前訂房' },
+      { date: '7/4~9/27', title: '華山 CHIIKAWA DAYS 吉伊卡哇特展', meta: '華山 1914 · 3 歲以上 · 售票中' },
+      { date: '7/10~10/11', title: '松菸 小熊維尼 100 週年免費快閃店', meta: '松山文創園區 · 全齡 · 免費' },
+      { date: '7/11~7/19', title: '新北市兒童藝術節 (市民廣場)', meta: '板橋 · 全齡 · 多數免費' },
       { date: '7/11~10/11', title: '科教館動物王國大探險展開展', meta: '士林 科教館 7F · 3~12 歲 · 預售 $350' },
-      { date: '7/11~12', title: '東京 HandMade In Japan Fes 手作祭', meta: '東京國際展示場 · 3 歲以上 · 預售 ¥1,300' },
-      { date: '7/25~9/23', title: 'teamLab 學習！未來遊樂園 函館', meta: '北海道立函館美術館 · 3 歲以上' },
+      { date: '7/17', title: '京都祇園祭 山鉾巡行', meta: '日本京都 · 全齡 · 免費' },
+      { date: '7/25', title: '東京隅田川花火大會', meta: '東京淺草 · 全齡 · 免費觀賞' },
     ],
   },
   {
@@ -2036,11 +2027,22 @@ const CALENDAR_MONTHS = [
     items: [
       { date: '8/1~8/31', title: '臺中科博館昆蟲特展最後一個月', meta: '台中科博館 · 4~12 歲' },
       { date: '8/1~8/2', title: '大稻埕夏日節 + 永樂市場工藝市集', meta: '大同區大稻埕 · 全年齡 · 免費' },
+      { date: '8/6', title: '臺北兒童藝術節閉幕', meta: '全台北 · 多場親子展演' },
       { date: '8/8', title: '父親節 · 各遊樂園爸爸入園優惠', meta: '全台遊樂園' },
-      { date: '8/15~8/16', title: '日本神奈川湘南 Fireworks 煙火大會', meta: '日本湘南 · 親子友善' },
-      { date: '8/20~8/22', title: '澎湖花火節完結篇 · 親子小旅行', meta: '澎湖本島' },
-      { date: '8/23', title: '臺東熱氣球嘉年華 (兒童小熱氣球區)', meta: '台東鹿野 · 全年齡' },
-      { date: '8/30~8/31', title: '開學前「書包整備週」文具特賣', meta: '全台書局' },
+      { date: '8/16', title: '宜蘭國際童玩節最後一天', meta: '冬山河親水公園 · 建議提前訂房' },
+      { date: '8/20', title: '臺東熱氣球嘉年華完結篇', meta: '台東鹿野 · 全年齡' },
+      { date: '8/30', title: '多檔暑假特展下檔前衝刺 (小丸子/史努比等)', meta: '雙北展館 · 3 歲以上' },
+    ],
+  },
+  {
+    key: 'sep', cls: 'sep', title: '🍂 9 月', sub: '開學過渡 · 秋日活動',
+    items: [
+      { date: '9/1', title: '開學日 · 收心與作息回歸', meta: '全台 · 學齡兒童' },
+      { date: '至 9/13', title: '愛麗絲夢遊仙境沉浸式特展最後檔期', meta: '松山文創園區 · 3 歲以上' },
+      { date: '至 9/23', title: 'teamLab 學習！未來遊樂園 函館', meta: '北海道立函館美術館 · 3 歲以上' },
+      { date: '至 9/28', title: '波隆那插畫展 / 埃及木乃伊特展收尾', meta: '華山・史博館 · 3 歲以上' },
+      { date: '至 9/30', title: '多處免費戲水場季末開放', meta: '大台北・桃園 · 全齡 · 免費' },
+      { date: '9 月起', title: '2026 MUZIKids 兒童古典音樂節', meta: '親子音樂會 · 全齡' },
     ],
   },
 ];
