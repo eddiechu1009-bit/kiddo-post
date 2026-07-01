@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腸病毒不是普通感冒：0-6 歲重症前兆、科學防護與 EV71 疫苗全解 | Kiddo POST</title>
+<meta name="description" content="腸病毒是台灣夏季幼兒頭號傳染病。本文從台灣疾管署、美國 CDC、WHO/PAHO、NIH StatPearls 與台灣兒童感染症醫學會出發，拆解 7 個重症前兆、酒精為何無效、EV71 疫苗該不該打，以及居家照護與脫水判斷。">
+<meta name="author" content="Kiddo POST">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23ffb088'/><stop offset='60%25' stop-color='%23ff7a45'/><stop offset='100%25' stop-color='%23ff9eb5'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='72' font-family='Fredoka, Nunito, sans-serif' font-size='62' font-weight='700' text-anchor='middle' fill='%23fff'>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #fdf6ec; --bg-cream: #fff8ec; --surface: #ffffff;
+  --text: #3d2b1f; --text-soft: #6b4f3a; --text-muted: #9e8670;
+  --orange: #ff7a45; --orange-light: #ffb088; --orange-soft: #fff0e5;
+  --teal: #2ba89a; --teal-soft: #e0f5f2;
+  --pink: #ff9eb5; --pink-soft: #ffeef3;
+  --yellow: #ffc93c; --yellow-soft: #fff4d1;
+  --green: #82c468; --green-soft: #e8f5e0;
+  --purple: #b794e0; --purple-soft: #f3e8ff;
+  --border: #f0e4d4;
+  --shadow: 0 6px 20px rgba(212, 163, 115, 0.15);
+}
+body {
+  font-family: 'Noto Sans TC', 'Nunito', -apple-system, sans-serif;
+  background: var(--bg); color: var(--text);
+  font-size: 16px; line-height: 1.85;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+.back-bar {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(253, 246, 236, 0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 2px dotted var(--border);
+  padding: 14px 24px;
+}
+.back-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; color: var(--orange);
+  font-weight: 700; font-size: 14px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+}
+.article { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+
+.topic-hero {
+  background: linear-gradient(135deg, #e0f5f2 0%, #fff0e5 100%);
+  border: 3px solid var(--teal);
+  border-radius: 28px;
+  padding: 36px 32px; margin-bottom: 32px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.topic-hero::before {
+  content: '🦠 🖐️ 🦶 👄 💧';
+  position: absolute; top: 14px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px; letter-spacing: 10px; opacity: 0.55;
+}
+.topic-category {
+  display: inline-block; background: var(--teal); color: #fff;
+  padding: 4px 14px; border-radius: 16px;
+  font-size: 12px; font-weight: 800; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 14px;
+}
+.topic-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 26px; font-weight: 600; line-height: 1.4;
+  color: var(--text); letter-spacing: -0.01em; margin-bottom: 12px;
+}
+.topic-sub {
+  font-size: 15px; color: var(--text-soft); line-height: 1.75; font-weight: 500;
+}
+.topic-meta {
+  display: flex; justify-content: center; gap: 14px;
+  margin-top: 18px; font-size: 13px; color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.topic-meta span::before { content: ' · '; }
+.topic-meta span:first-child::before { content: ''; }
+
+h2 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 22px; font-weight: 600; color: var(--orange);
+  margin: 44px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px dotted var(--orange-light);
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 18px; font-weight: 600; color: var(--text);
+  margin: 28px 0 10px;
+}
+p { margin-bottom: 16px; color: var(--text); }
+strong { color: var(--orange); font-weight: 700; }
+em { color: var(--text-soft); font-style: italic; }
+
+/* 論述區塊 */
+.argument {
+  background: linear-gradient(135deg, #f3e8ff 0%, #fff 100%);
+  border-left: 5px solid #b794e0;
+  padding: 22px 24px;
+  border-radius: 14px;
+  margin: 28px 0;
+  position: relative;
+}
+.argument::before {
+  content: '💡 觀點';
+  position: absolute;
+  top: -10px; left: 18px;
+  background: #b794e0; color: #fff;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 11px; font-weight: 700;
+  padding: 3px 12px; border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+.argument h3 {
+  margin-top: 6px; margin-bottom: 12px;
+  color: #6b21a8; font-size: 19px;
+}
+.argument p:last-child { margin-bottom: 0; }
+.argument strong { color: #6b21a8; }
+
+.callout {
+  background: var(--yellow-soft);
+  border: 2px dashed var(--yellow);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin: 20px 0;
+}
+.callout-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 15px; font-weight: 700;
+  color: #92400e; margin-bottom: 8px;
+}
+.callout p { margin-bottom: 0; font-size: 14.5px; line-height: 1.8; color: #78350f; }
+.callout strong { color: #92400e; }
+
+/* 引用腳註 */
+sup.ref {
+  font-size: 11px; color: var(--orange);
+  font-weight: 700; vertical-align: super;
+  line-height: 0;
+}
+sup.ref a {
+  color: var(--orange); text-decoration: none;
+  padding: 0 2px;
+}
+sup.ref a:hover { text-decoration: underline; }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px; margin: 20px 0;
+}
+.stat-item {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 26px; font-weight: 700;
+  color: var(--orange); line-height: 1.1;
+}
+.stat-label {
+  font-size: 12px; color: var(--text-muted);
+  margin-top: 6px; line-height: 1.5;
+}
+
+.tip-list { counter-reset: tip; margin: 20px 0; }
+.tip-card {
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 18px;
+  padding: 22px 24px 20px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+  position: relative; counter-increment: tip;
+}
+.tip-card::before {
+  content: counter(tip);
+  position: absolute; top: -10px; left: 20px;
+  background: var(--orange); color: #fff;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700; font-size: 15px;
+  padding: 3px 10px; border-radius: 12px;
+  border: 2px solid #fff;
+}
+.tip-card .tip-source {
+  display: inline-block;
+  font-size: 11px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.tip-card h4 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 17px; font-weight: 600;
+  color: var(--text); margin-bottom: 10px;
+}
+.tip-card p { font-size: 14.5px; margin-bottom: 6px; line-height: 1.8; }
+.tip-card .example {
+  background: var(--teal-soft);
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: #1e6e5f;
+  line-height: 1.75;
+}
+.tip-card .example strong { color: #1e6e5f; }
+
+.warning-box {
+  background: #fff0e5;
+  border: 2px solid var(--orange-light);
+  border-left: 5px solid var(--orange);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+.warning-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 16px; font-weight: 700;
+  color: var(--orange);
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.related-activities {
+  background: var(--teal-soft);
+  border: 2px solid var(--teal);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin: 32px 0;
+}
+.related-activities h3 {
+  color: #1e6e5f; margin-top: 0; margin-bottom: 12px;
+}
+.related-activities ul {
+  padding-left: 22px; font-size: 14.5px;
+  line-height: 1.85; color: #1e6e5f;
+}
+.related-activities li { margin-bottom: 6px; }
+.related-activities a { color: var(--teal); font-weight: 700; text-decoration: none; }
+
+.references {
+  background: var(--bg-cream);
+  border-radius: 14px;
+  padding: 22px 26px;
+  margin: 28px 0;
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+.references h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 16px;
+}
+.references ol {
+  padding-left: 20px;
+  counter-reset: ref;
+}
+.references ol li {
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+.references a {
+  color: var(--orange);
+  text-decoration: none;
+  word-break: break-word;
+}
+.references a:hover { text-decoration: underline; }
+.references .ref-type {
+  display: inline-block;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  padding: 1px 8px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.disclaimer {
+  background: #fff0e5;
+  border: 2px dashed var(--orange-light);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin: 28px 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-soft);
+}
+.disclaimer strong { color: var(--orange); }
+
+.article-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 28px 20px;
+  background: linear-gradient(135deg, #ff7a45 0%, #ff9eb5 100%);
+  border-radius: 20px;
+  color: #fff;
+}
+.article-footer h3 { color: #fff; margin: 0 0 6px; font-size: 18px; }
+.article-footer p { color: rgba(255,255,255,0.92); margin: 0 0 14px; font-size: 14px; }
+.article-footer .btn {
+  display: inline-block;
+  background: #fff;
+  color: var(--orange);
+  padding: 10px 24px;
+  border-radius: 22px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+}
+
+@media (max-width: 640px) {
+  .topic-title { font-size: 22px; }
+  .topic-hero { padding: 28px 22px; }
+  .article { padding: 24px 16px 60px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 16px; }
+  body { font-size: 15px; }
+  .argument { padding: 18px 20px; }
+  .references { padding: 18px 20px; font-size: 12.5px; }
+}
+</style>
+</head>
+<body>
+
+<div class="back-bar">
+  <a href="../index.html" class="back-link">← 回 Kiddo POST 首頁</a>
+</div>
+
+<article class="article">
+
+  <!-- Hero -->
+  <header class="topic-hero">
+    <div class="topic-category">🏥 健康與醫療 · 深度文</div>
+    <h1 class="topic-title">腸病毒不是普通感冒</h1>
+    <p class="topic-sub">
+      0-6 歲重症前兆、科學防護與 EV71 疫苗全解<br>
+      為什麼「酒精乾洗手」擋不住腸病毒？疫苗又該不該自費打？
+    </p>
+    <div class="topic-meta">
+      <span>📆 2026-07-01</span>
+      <span>⏱️ 閱讀約 11 分鐘</span>
+      <span>👶 適用 0~6 歲</span>
+      <span>✍️ 嚴謹引用版</span>
+    </div>
+  </header>
+
+  <!-- 開場 -->
+  <p>
+    暑假第一週，你 2 歲的孩子從托嬰中心回來就發燒，隔天嘴巴裡冒出幾顆潰瘍，手掌腳底出現一點一點的紅疹，
+    喝水就哭、不肯吃飯。你上網一查——「腸病毒」。心裡一沉：這是不是很嚴重？要不要衝急診？
+  </p>
+  <p>
+    先深呼吸。<strong>腸病毒（Enterovirus）</strong>感染在絕大多數孩子身上，就是一場 7 到 10 天、會自己好的病
+    <sup class="ref"><a href="#ref-1">[1]</a></sup>。它最常見的表現就是<strong>手足口病（HFMD）</strong>與<strong>皰疹性咽峽炎</strong>。
+    但腸病毒有一個和普通感冒最關鍵的差別：<em>極少數型別（尤其是 EV71）可能在很短時間內進展成重症</em>，侵犯腦幹、心肺
+    <sup class="ref"><a href="#ref-2">[2]</a></sup><sup class="ref"><a href="#ref-3">[3]</a></sup>。
+  </p>
+  <p>
+    所以這篇文章的目標不是嚇你，而是幫你分清楚兩件事：<strong>什麼時候可以安心在家照顧、什麼時候必須立刻送大醫院</strong>。
+    我們會依序談流行現況、重症前兆、正確防護（為什麼酒精沒用），以及台灣家長最常問的「EV71 疫苗到底要不要打」。
+  </p>
+
+  <!-- 統計 -->
+  <div class="stat-grid">
+    <div class="stat-item">
+      <div class="stat-num">&lt; 5 歲</div>
+      <div class="stat-label">重症高危險群<br>（台灣疾管署）</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">7-10 天</div>
+      <div class="stat-label">多數輕症<br>自行痊癒（CDC）</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">1.7%</div>
+      <div class="stat-label">EV71 重症致死率<br>（系統性回顧）</div>
+    </div>
+  </div>
+  <p style="font-size:12px;color:var(--text-muted);text-align:center;margin-top:-12px;">
+    資料來源：台灣疾管署<sup class="ref"><a href="#ref-2">[2]</a></sup>、
+    美國 CDC<sup class="ref"><a href="#ref-1">[1]</a></sup>、
+    NIH StatPearls<sup class="ref"><a href="#ref-3">[3]</a></sup>
+  </p>
+
+  <!-- 論述 1 -->
+  <div class="argument">
+    <h3>觀點一：腸病毒真正的風險，不在「得到」，而在「沒看出重症前兆」</h3>
+    <p>
+      很多爸媽把焦慮放錯地方——拚命想「怎麼不要得到」。但腸病毒型別多達數十種、傳染力極強，
+      在托嬰中心、幼兒園這種密集環境幾乎防不勝防，<strong>多數孩子這輩子都會得個幾次</strong>。
+    </p>
+    <p>
+      真正該投注注意力的，是<strong>「早期警覺」</strong>。台灣公衛體系從 1998 年那場奪走 78 條幼小生命的大流行學到的最重要一課，
+      就是<em>建立一套家長看得懂的重症前兆清單</em><sup class="ref"><a href="#ref-8">[8]</a></sup>。因為 EV71 重症的可怕在於「快」——
+      孩子可能上午還在玩，傍晚就進展到心肺衰竭。所以與其問「怎麼不要得到」，不如把力氣放在
+      <strong>「得到之後，我看得出危險訊號嗎？」</strong>
+    </p>
+    <p>
+      這個 reframe 很重要：它把你從「無力預防的焦慮」拉回到「我能做到的具體行動」——在發病的黃金 7 天內，
+      當一個會觀察、會判斷的照顧者。
+    </p>
+  </div>
+
+  <!-- 流行現況 + 科學 -->
+  <h2>🦠 先搞懂：腸病毒到底是什麼？</h2>
+
+  <p>
+    「腸病毒」不是單一種病毒，而是一大群病毒的總稱，包括克沙奇病毒（Coxsackievirus）A、B 群、
+    伊科病毒（Echovirus）以及腸病毒 71 型（EV71）、D68 型等<sup class="ref"><a href="#ref-3">[3]</a></sup>。
+    名字裡有「腸」，是因為它主要在腸胃道複製、經糞便排出，但它引起的症狀反而多在<em>口腔、皮膚與神經系統</em>。
+  </p>
+
+  <h3>典型症狀：像感冒開場，接著長疹子</h3>
+  <p>
+    美國兒科醫學會（AAP）指出，手足口病通常先出現<strong>發燒、喉嚨痛、流鼻水</strong>，很像一般感冒；
+    接著 1-2 天內，嘴巴內、舌側、牙齦冒出<strong>疼痛的潰瘍</strong>，手掌、腳底、有時臀部與四肢出現
+    <strong>不太癢的紅疹或小水泡</strong><sup class="ref"><a href="#ref-4">[4]</a></sup>。皰疹性咽峽炎則以喉嚨深處的水泡潰瘍與高燒為主，不一定有手腳疹子。
+  </p>
+
+  <h3>為什麼夏天特別多？</h3>
+  <p>
+    腸病毒在溫暖潮濕的環境傳播力最強，東南亞與台灣每年 <strong>5、6 月進入高峰</strong>，一路延續整個夏季
+    <sup class="ref"><a href="#ref-2">[2]</a></sup>。腸病毒重症在亞太地區明顯高於歐美，1998 年台灣更曾爆發大流行、造成數十名幼童死亡
+    <sup class="ref"><a href="#ref-8">[8]</a></sup>；也正因深受其害，台灣後來自己投入研發並成功做出 EV71 疫苗
+    <sup class="ref"><a href="#ref-13">[13]</a></sup>（後面會詳談）。
+  </p>
+
+  <div class="callout">
+    <div class="callout-title">🔢 2026 年台灣現況（疾管署監測）</div>
+    <p>
+      根據疾病管制署 2026 年監測，今年已出現腸病毒併發重症死亡個案（南部一名女童感染克沙奇 A4 型併發心肌炎、多重器官衰竭）；
+      近期社區以<strong>克沙奇 A6 型</strong>為多，其次為 A16、A4 與 D68 型<sup class="ref"><a href="#ref-6">[6]</a></sup>。
+      提醒你：<em>疫情數字每週都在變，就醫前請以疾管署官網最新週報為準</em>。
+    </p>
+  </div>
+
+  <h2>🧠 腦幹與心肺：EV71 為什麼特別危險？</h2>
+  <p>
+    絕大多數腸病毒感染是輕症。但<strong>腸病毒 71 型（EV71）</strong>是個例外——它比其他型別更容易侵犯中樞神經系統，
+    引起無菌性腦膜炎、腦幹腦炎、急性無力肢體麻痺（AFP）<sup class="ref"><a href="#ref-7">[7]</a></sup>。
+    一份統合 43 篇研究、涵蓋近 600 名重症兒童的系統性回顧指出，
+    <em>重症手足口病後出現神經後遺症或死亡的風險，與疾病嚴重度分級高度相關</em>——分級愈嚴重，預後愈差
+    <sup class="ref"><a href="#ref-9">[9]</a></sup>。
+  </p>
+  <p>
+    台灣學者根據多年臨床觀察，把 EV71 感染分成四個階段：<strong>第一期</strong>手足口病／皰疹性咽峽炎、
+    <strong>第二期</strong>中樞神經侵犯、<strong>第三期</strong>心肺衰竭、<strong>第四期</strong>恢復期
+    <sup class="ref"><a href="#ref-10">[10]</a></sup>。多數孩子停在第一期就痊癒，只有少數進展到第二期，極少數惡化到最危險的第三期——
+    但一旦到第三期，可能引發神經性肺水腫與肺出血，這正是 EV71 致命的主因。
+  </p>
+  <p>
+    根據一份系統性回顧與統合分析，EV71 相關重症的<strong>致死率約 1.7%</strong>，死亡的危險因子包括嗜睡、
+    肺水腫／肺出血、抽搐、呼吸困難與昏迷<sup class="ref"><a href="#ref-3">[3]</a></sup>。
+    重症也特別集中在<strong>3 歲以下</strong>的幼兒身上<sup class="ref"><a href="#ref-9">[9]</a></sup>。
+    這就是為什麼台灣疾管署把「5 歲以下嬰幼兒」列為重症高危險群，反覆呼籲家長注意前兆<sup class="ref"><a href="#ref-2">[2]</a></sup>。
+  </p>
+
+  <!-- 就醫指引：重症前兆 -->
+  <h2>🚨 最重要的一段：7 個重症前兆，出現任一就送大醫院</h2>
+  <p>
+    這是全篇你最該記住、甚至截圖存起來的內容。台灣疾管署明確列出以下重症前兆病徵。
+    <strong>在孩子確診腸病毒後的 7 天內</strong>，只要出現下列<em>任何一項</em>，請立刻送到<strong>大醫院</strong>（非診所）就醫
+    <sup class="ref"><a href="#ref-2">[2]</a></sup><sup class="ref"><a href="#ref-6">[6]</a></sup>：
+  </p>
+
+  <div class="warning-box">
+    <div class="warning-title">⚠️ 腸病毒重症 7 大前兆（疾管署）</div>
+    <p style="margin-bottom: 8px;"><strong>1. 嗜睡</strong>——昏昏欲睡、叫不太醒、意識不清。</p>
+    <p style="margin-bottom: 8px;"><strong>2. 活力不佳</strong>——精神變差、對周遭反應冷淡。</p>
+    <p style="margin-bottom: 8px;"><strong>3. 手腳無力</strong>——或肢體麻痺、突然不太能動。</p>
+    <p style="margin-bottom: 8px;"><strong>4. 肌抽躍（Myoclonic jerk）</strong>——無故驚嚇、或突然間全身肌肉收縮，尤其在睡覺時特別明顯。這是<em>最典型也最容易被忽略</em>的前兆。</p>
+    <p style="margin-bottom: 8px;"><strong>5. 持續嘔吐</strong>——不是吐一次，是反覆嘔吐。</p>
+    <p style="margin-bottom: 8px;"><strong>6. 呼吸急促</strong>——呼吸變快、變喘。</p>
+    <p style="margin-bottom: 0;"><strong>7. 心跳加快</strong>——安靜狀態下心跳明顯加速。</p>
+  </div>
+
+  <p>
+    請特別記住<strong>「肌抽躍」</strong>——很多家長不知道這是什麼，其實就是孩子好像被嚇到一樣，
+    身體突然一縮、手腳一彈，尤其在快睡著或睡著時頻繁發生。這是中樞神經受侵犯的重要早期訊號，
+    <em>看到請不要等到天亮，直接送急診</em><sup class="ref"><a href="#ref-2">[2]</a></sup>。
+    美國兒科界的照護指引也提醒，出現<em>異常嗜睡、叫不醒、頸部僵硬、劇烈頭痛、反覆嘔吐、抽搐或呼吸困難</em>時，
+    應立即就醫<sup class="ref"><a href="#ref-4">[4]</a></sup>。
+  </p>
+
+  <!-- 論述 2 -->
+  <div class="argument">
+    <h3>觀點二：真正把孩子送進急診的，往往不是腸病毒本身，而是「脫水」</h3>
+    <p>
+      這是很多台灣家長沒意識到的事。<strong>手足口病最常見的併發症其實是脫水</strong>——不是腦炎、不是心肌炎。
+      美國 CDC 明確指出，因為嘴巴潰瘍太痛，孩子不敢吞嚥，喝水吃東西都拒絕，很容易脫水，
+      而<em>脫水正是幼兒因手足口病送急診最常見的原因</em><sup class="ref"><a href="#ref-1">[1]</a></sup><sup class="ref"><a href="#ref-11">[11]</a></sup>。
+    </p>
+    <p>
+      所以照顧腸病毒的孩子，你每天最重要的兩個任務其實是：<strong>一、盯住重症前兆；二、確保他有喝進足夠的水。</strong>
+      這兩件事做好，絕大多數的腸病毒都能在家平安度過。
+    </p>
+    <p>
+      這也帶出一個常被忽略的照護重點：<em>止痛不是為了「不痛就好」，而是為了讓孩子願意喝水</em>。
+      當爸媽把目標從「消滅病毒」（做不到，也不必做）轉成「維持水分、守住前兆」，照顧就會從慌亂變成有方向。
+    </p>
+  </div>
+
+  <!-- 居家照護 -->
+  <h2>💧 居家照護：6 個實證做法</h2>
+  <p>
+    目前<strong>沒有專門殺死腸病毒的抗病毒藥</strong>，治療以「支持性療法」為主——也就是緩解症狀、維持水分、等身體自己康復
+    <sup class="ref"><a href="#ref-3">[3]</a></sup><sup class="ref"><a href="#ref-4">[4]</a></sup>。以下做法整合自美國 CDC 與 AAP 的官方指引。
+  </p>
+
+  <div class="tip-list">
+
+    <div class="tip-card">
+      <span class="tip-source">來自：美國 CDC / AAP 補水建議</span>
+      <h4>把「補水」當成第一要務</h4>
+      <p>確保孩子喝足液體是最重要的任務。CDC 與 AAP 都強調：若懷疑脫水，應立即聯絡兒科醫師或就醫<sup class="ref"><a href="#ref-1">[1]</a></sup><sup class="ref"><a href="#ref-4">[4]</a></sup>。</p>
+      <div class="example"><strong>脫水警訊：</strong>嘴唇乾、哭時沒眼淚、眼窩凹陷、活動力下降；嬰兒一天少於 4 片濕尿布，或 8 小時沒有排尿，就要打電話問醫師<sup class="ref"><a href="#ref-1">[1]</a></sup>。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：兒科臨床照護原則</span>
+      <h4>「冰的」比「熱的」好吞</h4>
+      <p>嘴破時，冰涼的東西能麻痺潰瘍、減輕疼痛。少量多次、每 10-15 分鐘喝幾口，比一次逼喝一大杯有效得多。</p>
+      <div class="example"><strong>實例：</strong>冰開水、冰牛奶、優格、布丁、冰棒都好入口；<em>避開柳橙汁、檸檬水等酸性飲料</em>，酸會刺激潰瘍讓孩子更抗拒。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP 症狀緩解建議</span>
+      <h4>發燒與疼痛可用退燒止痛藥</h4>
+      <p>發燒與口腔疼痛可依醫囑使用 acetaminophen（如普拿疼）或 ibuprofen（布洛芬，6 個月以上）。目的是讓孩子舒服到願意喝水<sup class="ref"><a href="#ref-4">[4]</a></sup>。</p>
+      <div class="example"><strong>提醒：</strong>劑量依體重，請照兒科醫師或藥師指示；<em>不要用一般成人漱口水</em>，會刺痛潰瘍。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：兒科軟質飲食建議</span>
+      <h4>準備不刺激的軟質食物</h4>
+      <p>嘴痛期給軟、涼、不需大力咀嚼的食物，維持基本熱量與電解質——只喝白開水不足以提供能量與鹽分。</p>
+      <div class="example"><strong>實例：</strong>粥、麵、優格、香蕉泥、蒸蛋、冰淇淋、思樂冰。避開太燙、太鹹、太酸、太硬（餅乾、洋芋片）的食物。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：美國 CDC 照護建議</span>
+      <h4>水泡保持乾淨、不要弄破</h4>
+      <p>手腳的疹子通常不癢，也會自己好、不留疤。保持水泡清潔、避免抓破；<em>水泡內的液體含有病毒</em>，破掉後要洗手<sup class="ref"><a href="#ref-5">[5]</a></sup>。</p>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：美國 CDC / 疾管署 返校原則</span>
+      <h4>生病在家休息，別急著回學校</h4>
+      <p>疾管署提醒<em>腸病毒發病後一週內傳染力最高</em>，落實「生病不上課」能大幅降低交叉感染<sup class="ref"><a href="#ref-6">[6]</a></sup>。何時可返校，以退燒、無新水泡與醫師評估為準<sup class="ref"><a href="#ref-1">[1]</a></sup>。</p>
+      <div class="example"><strong>實例：</strong>指甲脫落是手足口病痊癒後數週偶爾出現的現象，通常會自行長回，不必驚慌<sup class="ref"><a href="#ref-5">[5]</a></sup>。</div>
+    </div>
+
+  </div>
+
+  <!-- 防護：洗手 vs 酒精 -->
+  <h2>🧼 防護關鍵：為什麼「酒精乾洗手」擋不住腸病毒？</h2>
+  <p>
+    這是台灣家長最常犯的錯。COVID-19 之後，大家習慣用酒精乾洗手，但<strong>酒精對腸病毒的殺滅效果有限</strong>
+    <sup class="ref"><a href="#ref-12">[12]</a></sup>。原因是腸病毒屬於「無套膜病毒」（non-enveloped virus），
+    沒有那層讓酒精容易破壞的脂質外膜，所以光靠乾洗手是不夠的。
+  </p>
+  <p>
+    疾管署的建議很明確：<strong>用肥皂與清水，按「濕、搓、沖、捧、擦」5 步驟洗手</strong>，把病毒「洗掉」而不是「殺掉」，
+    才是對腸病毒最有效的個人防護<sup class="ref"><a href="#ref-12">[12]</a></sup>。特別是「<em>吃東西前、跟小寶寶玩前、擤鼻涕後、上廁所後、看病前後</em>」。
+  </p>
+  <p>
+    環境消毒也一樣：酒精無效，要用<strong>500 ppm 含氯漂白水</strong>（約 10 公升清水加 100 毫升含氯漂白水）
+    擦拭孩子常接觸的桌面、玩具、門把<sup class="ref"><a href="#ref-6">[6]</a></sup>。
+    外出返家、摟抱或餵食嬰幼兒前，大人也務必先用肥皂洗手——很多嬰兒的腸病毒，是被大人帶回家的。
+  </p>
+
+  <!-- 論述 3：疫苗 -->
+  <div class="argument">
+    <h3>觀點三：EV71 疫苗——一個「台灣做給世界看」的選擇題</h3>
+    <p>
+      這是 2023 年後台灣爸媽的新選擇，也是最多人困惑的部分。先講結論：
+      <strong>腸病毒 71 型疫苗值得認真考慮，但你要清楚它「能」與「不能」做什麼。</strong>
+    </p>
+    <p>
+      台灣自民國 91 年（2002）投入研發，歷經 10 多年，於<strong>民國 112 年（2023）由食藥署核准上市</strong>，
+      目前有兩款全病毒不活化疫苗：國光／安特羅的「安拓伏」與高端的「恩穩健」，
+      適用於<strong>滿 2 個月至未滿 6 歲</strong>幼兒<sup class="ref"><a href="#ref-13">[13]</a></sup>。
+      臨床試驗顯示保護力相當高（國光約 99.21%、高端約 96.8%）<sup class="ref"><a href="#ref-13">[13]</a></sup>。
+      台灣兒童感染症醫學會建議：<em>所有滿 2 個月至未滿 6 歲的兒童都可接種，且不需考慮是否曾感染過腸病毒</em>
+      <sup class="ref"><a href="#ref-14">[14]</a></sup>。
+    </p>
+    <p>
+      但這裡有兩個<strong>誠實的但書</strong>，一定要講清楚：
+      <strong>第一，它只防 EV71 這一種型別</strong>，對克沙奇 A16、A6、D68 等其他型別「沒有交叉保護力」——
+      也就是打了還是可能得到別種腸病毒的手足口病<sup class="ref"><a href="#ref-13">[13]</a></sup>。
+      <strong>第二，中央目前尚未納入公費</strong>，多數家庭需自費（部分縣市對特定弱勢對象有補助）<sup class="ref"><a href="#ref-13">[13]</a></sup>。
+    </p>
+    <p>
+      所以疫苗的價值定位很清楚：<em>它專門降低「最可能致命」的那一型（EV71）的重症風險，而不是讓孩子從此不得腸病毒。</em>
+      要不要自費打，建議帶孩子的健康手冊，直接和你的兒科醫師討論孩子的年齡、體質與家庭狀況再決定。
+    </p>
+  </div>
+
+  <!-- 求助管道 -->
+  <h2>🏥 台灣可用的求助與查詢管道</h2>
+  <p>
+    <strong>1. 疾管署防疫專線 1922</strong>（或 0800-001922）——全年無休免付費，可查詢最新疫情與防治資訊。
+  </p>
+  <p>
+    <strong>2. 疾管署腸病毒疫情週報</strong>——想知道社區現在流行哪一型、疫情升降，官網每週更新，比社群謠言可靠。
+  </p>
+  <p>
+    <strong>3. 各大醫院小兒科／小兒感染科急診</strong>——出現重症前兆時，請直接前往<em>有加護病房的大醫院</em>，
+    而非一般診所，以爭取搶救時間。
+  </p>
+  <p>
+    <strong>4. 兒科診所</strong>——輕症的診斷、止痛與衛教，以及 EV71 疫苗接種諮詢，可先找固定看診的兒科醫師。
+  </p>
+
+  <!-- 延伸活動 -->
+  <div class="related-activities">
+    <h3>🎯 腸病毒流行季，這樣安排親子活動</h3>
+    <p style="margin: 0 0 12px 0;">高峰期不必把孩子關在家，但可以聰明選擇場地、降低群聚交叉感染：</p>
+    <ul>
+      <li><strong>優先戶外、通風的空間</strong>——公園、河濱、共融遊戲場，比密閉的室內遊戲區風險低</li>
+      <li><strong>避開生病高峰時段的密集室內球池</strong>——這類場地手部接觸多、消毒不易</li>
+      <li><strong>玩完立刻用肥皂洗手</strong>——回家先洗手再抱孩子、再吃東西</li>
+      <li><strong>孩子生病期間乖乖在家</strong>——發病一週內傳染力最強，這是對其他家庭最基本的體貼</li>
+    </ul>
+    <p style="margin: 12px 0 0 0;"><a href="../index.html">→ 回首頁看本週戶外親子活動與地圖</a></p>
+  </div>
+
+  <!-- 引用清單 -->
+  <h2>📚 完整引用清單</h2>
+  <div class="references">
+    <h3>學術 &amp; 醫學機構來源</h3>
+    <ol>
+      <li id="ref-1">
+        <span class="ref-type">US CDC</span>
+        Centers for Disease Control and Prevention. <em>About Hand, Foot, and Mouth Disease.</em> 2024.
+        <a href="https://www.cdc.gov/hand-foot-mouth/about/index.html" target="_blank" rel="noopener">cdc.gov/hand-foot-mouth/about/index.html</a>
+      </li>
+      <li id="ref-2">
+        <span class="ref-type">台灣疾管署</span>
+        衛生福利部疾病管制署. <em>腸病毒感染併發重症（疾病介紹與重症前兆）.</em>
+        <a href="https://www.cdc.gov.tw/Disease/SubIndex/m3zdUk3u9GJVvddeSnhkiA" target="_blank" rel="noopener">cdc.gov.tw/Disease/SubIndex/m3zdUk3u9GJVvddeSnhkiA</a>
+      </li>
+      <li id="ref-3">
+        <span class="ref-type">NIH</span>
+        Guerra AM, Orille E, Waseem M. <em>Hand, Foot, and Mouth Disease.</em> StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2024.
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK431082" target="_blank" rel="noopener">ncbi.nlm.nih.gov/books/NBK431082</a>
+      </li>
+      <li id="ref-4">
+        <span class="ref-type">AAP</span>
+        Hussain SR, MD, FAAP. <em>Hand, Foot &amp; Mouth Disease: Symptoms, Treatment &amp; Prevention.</em> HealthyChildren.org (American Academy of Pediatrics).
+        <a href="https://www.healthychildren.org/English/health-issues/conditions/infections/Pages/Hand-Foot-and-Mouth-Disease.aspx" target="_blank" rel="noopener">healthychildren.org/.../Hand-Foot-and-Mouth-Disease</a>
+      </li>
+      <li id="ref-5">
+        <span class="ref-type">US CDC</span>
+        Centers for Disease Control and Prevention. <em>HFMD Signs &amp; Symptoms and Complications.</em> 2024.
+        <a href="https://www.cdc.gov/hand-foot-mouth/signs-symptoms/index.html" target="_blank" rel="noopener">cdc.gov/hand-foot-mouth/signs-symptoms/index.html</a>
+      </li>
+      <li id="ref-6">
+        <span class="ref-type">台灣疾管署</span>
+        衛生福利部疾病管制署. <em>國內新增腸病毒感染併發重症病例／腸病毒好發季節防治提醒（新聞稿）.</em> 2026.
+        <a href="https://www.cdc.gov.tw/Bulletin/Detail/D0SVf_dRZ4GJDUYtix8y-g?typeid=9" target="_blank" rel="noopener">cdc.gov.tw/Bulletin/Detail/D0SVf_dRZ4GJDUYtix8y-g</a>
+      </li>
+      <li id="ref-7">
+        <span class="ref-type">NIH/PMC</span>
+        <em>Current status of hand-foot-and-mouth disease</em>（EV-A71 侵犯中樞神經系統與心肺併發症之綜論）. PMC/NCBI. 2023.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9951172" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC9951172</a>
+      </li>
+      <li id="ref-8">
+        <span class="ref-type">論文</span>
+        Ho M, et al.; Taiwan Enterovirus Epidemic Working Group. <em>An epidemic of enterovirus 71 infection in Taiwan.</em>
+        N Engl J Med. 1999;341(13):929-935. PMID: 10498487.（1998 年台灣大流行）
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10498487/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/10498487/</a>
+      </li>
+      <li id="ref-9">
+        <span class="ref-type">NIH/PMC</span>
+        <em>Outcomes following severe hand foot and mouth disease: A systematic review and meta-analysis.</em>
+        Eur J Paediatr Neurol. 2018.（Oxford 熱帶醫學中心團隊；統合 43 篇研究、599 名兒童，評估重症後神經後遺症與死亡風險）PMID: 29778429.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6148319" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC6148319</a>
+      </li>
+      <li id="ref-10">
+        <span class="ref-type">論文</span>
+        Lee KY. <em>Enterovirus 71 infection and neurological complications</em>（EV71 感染四階段臨床分期）.
+        Clin Exp Pediatr（Korean J Pediatr）. 2016.
+        <a href="https://e-cep.org/m/journal/view.php?number=20125550572" target="_blank" rel="noopener">e-cep.org/m/journal/view.php?number=20125550572</a>
+      </li>
+      <li id="ref-11">
+        <span class="ref-type">兒童醫院</span>
+        Children's Hospital of Philadelphia (CHOP). <em>What to Do if Your Child Has Hand, Foot and Mouth Disease.</em>
+        <a href="https://www.chop.edu/news/health-tip/hand-foot-and-mouth-disease-what-you-need-know" target="_blank" rel="noopener">chop.edu/news/health-tip/hand-foot-and-mouth-disease-what-you-need-know</a>
+      </li>
+      <li id="ref-12">
+        <span class="ref-type">台灣疾管署</span>
+        衛生福利部疾病管制署. <em>國內已進入腸病毒好發季節 籲請家長及教托育機構留意嬰幼兒健康及衛生</em>（洗手 5 步驟、酒精對腸病毒效果有限、500 ppm 含氯漂白水消毒）. 2026.
+        <a href="https://www.cdc.gov.tw/Bulletin/Detail/TwK1wW9dD65xtZ6pMEJ79Q?typeid=9" target="_blank" rel="noopener">cdc.gov.tw/Bulletin/Detail/TwK1wW9dD65xtZ6pMEJ79Q</a>
+      </li>
+      <li id="ref-13">
+        <span class="ref-type">台灣官方</span>
+        臺北市政府衛生局. <em>腸病毒 71 型疫苗常見問答（2023 核准上市、國光「安拓伏」與高端「恩穩健」、僅防 EV71、無交叉保護力、中央尚未公費）.</em>
+        <a href="https://health.gov.taipei/cp.aspx?n=CA2923CA85929DBA&s=2F698B115EF4439E" target="_blank" rel="noopener">health.gov.taipei/cp.aspx?n=CA2923CA85929DBA</a>
+      </li>
+      <li id="ref-14">
+        <span class="ref-type">學會指引</span>
+        台灣兒童感染症醫學會. <em>腸病毒 A71 型疫苗使用建議</em>（建議滿 2 個月至未滿 6 歲兒童均可接種，不需考慮是否曾感染腸病毒）。
+        該建議亦見於臺北市政府衛生局疫苗問答（見文獻 13）。〔學會網站 pids.org.tw 教育專區〕
+      </li>
+    </ol>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    <strong>📋 內容守則聲明：</strong>
+    本文整合自台灣衛生福利部疾病管制署、美國 CDC、WHO/PAHO、NIH StatPearls、
+    美國兒科醫學會（AAP HealthyChildren）、台灣兒童感染症醫學會等權威來源。
+    疫情數字與流行型別每週變動，請以疾管署官網最新公告為準。
+    <strong>本文僅供教育與參考，不能取代小兒科醫師、兒童感染科醫師或臨床心理師的個別診斷與建議。若您對孩子的病況或發展有具體擔憂，請諮詢專業醫療人員；出現重症前兆請立即送大醫院就醫。</strong>
+  </div>
+
+  <!-- Footer CTA -->
+  <div class="article-footer">
+    <h3>🌈 Kiddo POST · 每週三更新</h3>
+    <p>活動情報 + 發展議題 + 行事曆 · 爸媽專屬情報站</p>
+    <a href="../index.html" class="btn">✨ 回首頁看更多 →</a>
+  </div>
+
+</article>
+
+</body>
+</html>
