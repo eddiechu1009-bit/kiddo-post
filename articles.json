@@ -146,7 +146,7 @@
       }
     ],
     "end_date": "2026-07-19",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "sunshine-oasis-water-2026",
@@ -442,7 +442,7 @@
       }
     ],
     "end_date": "2026-07-19",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "hakata-gion-yamakasa-2026",
@@ -2961,7 +2961,7 @@
       }
     ],
     "end_date": "2026-07-20",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "lego-summer-playground-2026",
@@ -3008,7 +3008,7 @@
       }
     ],
     "end_date": "2026-07-19",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "postal-fairytale-stamp-2026",
@@ -3436,6 +3436,600 @@
       }
     ],
     "end_date": "2026-09-14",
+    "status": "active"
+  },
+  {
+    "id": "tamsui-fisherman-fireworks-2026",
+    "date": "2026-08-09",
+    "week": "2026-W30",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "淡水區",
+    "type": "節慶",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "輕軌可達",
+      "河濱步道",
+      "市集"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "煙火",
+      "水舞",
+      "無人機"
+    ],
+    "coord": [
+      25.183,
+      121.4106
+    ],
+    "title": "淡水漁人碼頭 · 2026 仲夏繽紛樂(煙火＋水舞＋無人機)",
+    "summary": "新北代表性夏日盛會回歸，高空煙火首度結合無人機燈光秀，港區木棧道每晚水舞展演，還有假日市集與河岸浪漫夜景。",
+    "highlight": "煙火多在週日晚間 8 點施放，淡海輕軌漁人碼頭站可直達；散場人潮多，帶推車家庭建議提早卡位並牽緊孩子。實際場次以新北漁業處官方公告為準。",
+    "info": {
+      "date": "8/9 ~ 8/23(週末煙火)",
+      "location": "新北淡水漁人碼頭",
+      "age": "全齡",
+      "price": "免費觀賞"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-08-23",
+    "status": "active"
+  },
+  {
+    "id": "pickles-frog-songyan-2026",
+    "date": "2026-07-22",
+    "week": "2026-W30",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "信義區",
+    "type": "快閃店",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "冷氣",
+      "拍照打卡"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "快閃",
+      "拍照",
+      "角色"
+    ],
+    "coord": [
+      25.0438,
+      121.5606
+    ],
+    "title": "松菸 · pickles the frog 萌蛙匹克台北快閃店",
+    "summary": "日本超人氣療癒系青蛙 pickles 快閃登台，設有錢湯主題拍照打卡區與台灣限定周邊，冷氣室內、行程短，適合帶學齡前孩子順遊松菸。",
+    "highlight": "免費入場、逛起來輕鬆，可與松菸其他展覽(小丸子、小熊維尼快閃)排成半日行程。假日午後易排隊，建議一開門就到。",
+    "info": {
+      "date": "6/13 ~ 8/25",
+      "location": "松山文創園區 藝異空間",
+      "age": "0 歲以上",
+      "price": "免費入場"
+    },
+    "source_name": "Funliday 2026 暑假展覽",
+    "sources": [
+      {
+        "name": "Funliday 2026 暑假展覽",
+        "url": "https://www.funliday.com/posts/2026-exhibition"
+      }
+    ],
+    "end_date": "2026-08-25",
+    "status": "active"
+  },
+  {
+    "id": "sanx-90th-breeze-2026",
+    "date": "2026-07-22",
+    "week": "2026-W30",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "松山區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "冷氣",
+      "賣場美食"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "展覽",
+      "角色",
+      "拉拉熊"
+    ],
+    "coord": [
+      25.051,
+      121.544
+    ],
+    "title": "微風廣場 · San-X 90 週年紀念展 in 台灣(拉拉熊)",
+    "summary": "拉拉熊母公司 San-X 成立 90 週年紀念大展，集結拉拉熊、角落小夥伴等經典角色的沉浸式場景與限定周邊，孩子大人都有共鳴。",
+    "highlight": "全室內冷氣場，下雨天備案首選；微風廣場地下街好覓食，可搭配用餐。門票建議線上先購省排隊。",
+    "info": {
+      "date": "6/27 ~ 8/30",
+      "location": "微風廣場 8F-C／9F-D 廳",
+      "age": "3 歲以上",
+      "price": "需購票"
+    },
+    "source_name": "桃桃's 台北展覽懶人包",
+    "sources": [
+      {
+        "name": "桃桃's 台北展覽懶人包",
+        "url": "https://momoblog.tw/taipeishow201712"
+      }
+    ],
+    "end_date": "2026-08-30",
+    "status": "active"
+  },
+  {
+    "id": "whose-gameroom-skm-2026",
+    "date": "2026-07-29",
+    "week": "2026-W30",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "中正區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "車站商圈",
+      "冷氣"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "展覽",
+      "互動",
+      "集章"
+    ],
+    "coord": [
+      25.0459,
+      121.514
+    ],
+    "title": "新光三越站前店 · 2026 是誰的遊戲間",
+    "summary": "主打互動遊戲與集章闖關的親子室內展，7/29 開展正好接續暑假中段，捷運台北車站直達、雨天不掃興。",
+    "highlight": "位於車站商圈交通極便，適合搭火車、高鐵順遊；有集章活動，帶孩子玩得投入。展期短，把握 8 月上旬。",
+    "info": {
+      "date": "7/29 ~ 8/23",
+      "location": "新光三越台北站前店 12F",
+      "age": "3 歲以上",
+      "price": "需購票"
+    },
+    "source_name": "17+PJ 暑假活動彙整",
+    "sources": [
+      {
+        "name": "17+PJ 暑假活動彙整",
+        "url": "https://pinje1225.pixnet.net/blog/posts/8230022556"
+      }
+    ],
+    "end_date": "2026-08-23",
+    "status": "active"
+  },
+  {
+    "id": "taoyuan-landscape-arts-2026",
+    "date": "2026-07-22",
+    "week": "2026-W30",
+    "category": "outside",
+    "region": "桃園市",
+    "district": "桃園市",
+    "type": "藝術節",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "草坪",
+      "停車場",
+      "戶外裝置"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "藝術",
+      "地景",
+      "放電"
+    ],
+    "coord": [
+      24.9937,
+      121.301
+    ],
+    "title": "桃園 · 2026 桃園地景藝術節",
+    "summary": "結合在地地景的大型戶外藝術裝置節，孩子可在草地與作品間自由奔跑探索，免費入場、暑假一整月都能安排。",
+    "highlight": "戶外大空間適合放電，建議清晨或傍晚避開高溫；展區分散，出發前先確認當日開放的主展區與接駁。",
+    "info": {
+      "date": "7/4 ~ 8/30",
+      "location": "桃園(依展區)",
+      "age": "全齡",
+      "price": "免費"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-08-30",
+    "status": "active"
+  },
+  {
+    "id": "keelung-chaojing-bay-2026",
+    "date": "2026-07-22",
+    "week": "2026-W30",
+    "category": "outside",
+    "region": "基隆市",
+    "district": "中正區",
+    "type": "節慶",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "停車場",
+      "大草坪",
+      "海濱"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "海洋",
+      "生態",
+      "放電"
+    ],
+    "coord": [
+      25.147,
+      121.802
+    ],
+    "title": "基隆 · 2026 潮境海灣節",
+    "summary": "結合海洋生態與藝術裝置的濱海節慶，望海巷海灣看飛魚、逛潮境公園大草坪，是北海岸避暑放電的親子首選。",
+    "highlight": "潮境公園草坪好野餐，搭配國立海洋科技博物館室內展一起排；夏日紫外線強，防曬與帽子備齊。",
+    "info": {
+      "date": "6/15 ~ 8/15",
+      "location": "基隆潮境公園",
+      "age": "全齡",
+      "price": "免費(部分體驗付費)"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-08-15",
+    "status": "active"
+  },
+  {
+    "id": "npm-south-water-dance-2026",
+    "date": "2026-07-22",
+    "week": "2026-W30",
+    "category": "outside",
+    "region": "嘉義縣",
+    "district": "太保市",
+    "type": "展演",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "停車場",
+      "博物館",
+      "湖畔步道"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "水舞",
+      "燈光",
+      "國寶"
+    ],
+    "coord": [
+      23.5069,
+      120.2905
+    ],
+    "title": "嘉義 · 故宮南院水舞之夜(夏日親子藝術月)",
+    "summary": "至善湖畔以「水韻墨舞」為主題，日間水舞 16:30 起、夜間結合雷射與國樂展演，把翠玉白菜等國寶化為光影水幕，暑假兼具避暑與美學。",
+    "highlight": "戶外水舞免費觀賞，搭配館內夏日親子藝術月一起排；高鐵嘉義站旁，南下北上都好安排。",
+    "info": {
+      "date": "6/26 ~ 8/30",
+      "location": "嘉義太保 故宮南院",
+      "age": "全齡",
+      "price": "戶外水舞免費"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-08-30",
+    "status": "active"
+  },
+  {
+    "id": "tainan-niau-cat-hunt-2026",
+    "date": "2026-07-22",
+    "week": "2026-W30",
+    "category": "outside",
+    "region": "台南市",
+    "district": "中西區",
+    "type": "闖關遊戲",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "古蹟",
+      "集點任務",
+      "散步路線"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "古蹟",
+      "集章",
+      "探索"
+    ],
+    "coord": [
+      22.997,
+      120.202
+    ],
+    "title": "台南 · 巷仔 Niau 古蹟尋貓大冒險",
+    "summary": "串連赤崁樓、安平樹屋、億載金城等 6 大古蹟的集點闖關遊戲，一邊探索老城一邊完成任務，還能把巷仔 Niau 限定好禮帶回家。",
+    "highlight": "集點免費(景點門票另計)，把台南文化景點串成一日遊；夏日炎熱，行程拆成上午與傍晚兩段較舒服。",
+    "info": {
+      "date": "7/3 ~ 8/23",
+      "location": "台南 6 大文化景點",
+      "age": "4 歲以上",
+      "price": "集點免費(景點門票另計)"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-08-23",
+    "status": "active"
+  },
+  {
+    "id": "taichung-shigang-balloon-2026",
+    "date": "2026-08-22",
+    "week": "2026-W30",
+    "category": "outside",
+    "region": "台中市",
+    "district": "石岡區",
+    "type": "嘉年華",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "停車場",
+      "綠廊",
+      "光雕音樂會"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "熱氣球",
+      "嘉年華",
+      "小旅行"
+    ],
+    "coord": [
+      24.276,
+      120.78
+    ],
+    "title": "台中 · 石岡熱氣球嘉年華 2026",
+    "summary": "中台灣暑末限定的熱氣球盛會，清晨繫留升空體驗與光雕音樂會，適合安排 8 月下旬的兩天一夜小旅行。",
+    "highlight": "繫留體驗需付費且天候影響大，清晨場風況最穩；搭配東豐綠廊騎腳踏車一起玩。實際場次以官方公告為準。",
+    "info": {
+      "date": "8/22 ~ 8/24",
+      "location": "台中石岡(東豐綠廊周邊)",
+      "age": "全齡",
+      "price": "繫留體驗付費"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-08-24",
+    "status": "active"
+  },
+  {
+    "id": "nara-tokae-2026",
+    "date": "2026-08-05",
+    "week": "2026-W30",
+    "category": "japan",
+    "region": "日本",
+    "district": "奈良",
+    "type": "祭典",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "公園",
+      "夜間點燈",
+      "賞鹿"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "燈會",
+      "夜間",
+      "關西"
+    ],
+    "coord": [
+      34.6851,
+      135.843
+    ],
+    "title": "奈良 · 奈良燈花會 2026",
+    "summary": "奈良公園夜間點起上萬盞燭光，微風中散步賞燈、遇見小鹿，是關西暑假旅程中相對悠閒、適合帶孩子的夜間活動。",
+    "highlight": "19:00~21:30 點燈，天黑後最美；白天可先逛東大寺、餵鹿，傍晚接燈花會。關西行程順遊首選。",
+    "info": {
+      "date": "8/5 ~ 8/14 · 19:00~21:30",
+      "location": "奈良公園一帶",
+      "age": "3 歲以上",
+      "price": "免費觀賞"
+    },
+    "source_name": "52 訂房 2026 日本夏季活動",
+    "sources": [
+      {
+        "name": "52 訂房 2026 日本夏季活動",
+        "url": "https://52discount.com/travel-info/2026-japan-summer-events-july-august-september"
+      }
+    ],
+    "end_date": "2026-08-14",
+    "status": "active"
+  },
+  {
+    "id": "tokyo-fukagawa-matsuri-2026",
+    "date": "2026-08-15",
+    "week": "2026-W30",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京",
+    "type": "祭典",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "神社",
+      "街道遊行",
+      "潑水"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "祭典",
+      "潑水",
+      "消暑"
+    ],
+    "coord": [
+      35.6717,
+      139.7995
+    ],
+    "title": "東京 · 深川八幡祭(潑水祭 · 江戶三大祭)",
+    "summary": "江戶三大祭之一，沿街觀眾會把清淨的水潑向神轎，故稱「潑水祭」，熱鬧又消暑，是帶孩子體驗日本傳統祭典的經典場合。",
+    "highlight": "會被水潑到，幫孩子準備替換衣物與防水包；人潮多請牽緊。大型本祭數年一次，一般年為規模較小的例祭，出發前查官方。",
+    "info": {
+      "date": "8/15 前後",
+      "location": "東京 富岡八幡宮",
+      "age": "全齡",
+      "price": "免費觀賞"
+    },
+    "source_name": "GO TOKYO 東京旅遊官網",
+    "sources": [
+      {
+        "name": "GO TOKYO 東京旅遊官網",
+        "url": "https://www.gotokyo.org/tc/story/guide/the-best-festivals-in-tokyo-and-japan/index.html"
+      }
+    ],
+    "end_date": "2026-08-16",
+    "status": "active"
+  },
+  {
+    "id": "tokyo-koenji-awaodori-2026",
+    "date": "2026-08-29",
+    "week": "2026-W30",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京",
+    "type": "祭典",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "街道",
+      "踩街",
+      "車站周邊"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "阿波舞",
+      "踩街",
+      "晚夏"
+    ],
+    "coord": [
+      35.7056,
+      139.6497
+    ],
+    "title": "東京 · 高圓寺阿波舞 2026",
+    "summary": "東京晚夏最具代表性的阿波舞盛會，數千名舞者在街頭列隊踩街，節奏明快、氣氛熱鬧，孩子看得目不轉睛。暑假尾聲赴東京很值得排入。",
+    "highlight": "17:00~20:00 街頭連演，JR 高圓寺站周邊都是舞台；人潮擁擠，幼兒建議坐推車或抱著避免走失。",
+    "info": {
+      "date": "8/29 ~ 8/30 · 17:00~20:00",
+      "location": "東京 高圓寺站周邊街道",
+      "age": "全齡",
+      "price": "免費觀賞"
+    },
+    "source_name": "52 訂房 2026 日本夏季活動",
+    "sources": [
+      {
+        "name": "52 訂房 2026 日本夏季活動",
+        "url": "https://52discount.com/travel-info/2026-japan-summer-events-july-august-september"
+      }
+    ],
+    "end_date": "2026-08-30",
     "status": "active"
   }
 ]
