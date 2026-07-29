@@ -292,7 +292,7 @@
       }
     ],
     "end_date": "2026-07-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "crayon-shinchan-pingtung-2026",
@@ -581,7 +581,7 @@
       }
     ],
     "end_date": "2026-07-25",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "bologna-illustration-2026",
@@ -981,7 +981,7 @@
       }
     ],
     "end_date": "2026-07-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "window-on-china-water-2026",
@@ -3338,7 +3338,7 @@
       }
     ],
     "end_date": "2026-07-25",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "kawagoe-wind-chime-2026",
@@ -4030,6 +4030,683 @@
       }
     ],
     "end_date": "2026-08-30",
+    "status": "active"
+  },
+  {
+    "id": "teletubbies-qsquare-2026",
+    "date": "2026-07-30",
+    "week": "2026-W31",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "大同區",
+    "type": "快閃店",
+    "venue": "室內",
+    "age_range": [
+      "0-1",
+      "1-3",
+      "3-6"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "育嬰室",
+      "百貨美食"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "快閃店",
+      "幼齡友善"
+    ],
+    "coord": [
+      25.0478,
+      121.5171
+    ],
+    "title": "京站 · 《天線寶寶》首度來台快閃店",
+    "summary": "陪伴無數家庭長大的天線寶寶首度在台灣開設快閃店，設有五組沉浸式場景，適合家有學步兒與學齡前孩子的家庭。",
+    "highlight": "0~3 歲首選：免費、全室內冷氣、動線短，孩子鬧脾氣可隨時離場。京站緊鄰台北車站，捷運直達且育嬰室完善；建議平日上午前往。",
+    "info": {
+      "date": "7/30 ~ 9/5",
+      "location": "台北京站時尚廣場 1F",
+      "age": "0 歲以上",
+      "price": "免費入場"
+    },
+    "source_name": "Funliday 2026 展覽彙整",
+    "sources": [
+      {
+        "name": "Funliday 2026 展覽彙整",
+        "url": "https://www.funliday.com/posts/2026-exhibition"
+      }
+    ],
+    "end_date": "2026-09-05",
+    "status": "active"
+  },
+  {
+    "id": "huashan-family-arts-fest-2026",
+    "date": "2026-07-29",
+    "week": "2026-W31",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "中正區",
+    "type": "劇場",
+    "venue": "室內",
+    "age_range": [
+      "0-1",
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "分齡場次",
+      "哺乳室"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "劇場",
+      "音樂會"
+    ],
+    "coord": [
+      25.0442,
+      121.5292
+    ],
+    "title": "華山親子表藝節 · 暑假親子劇場檔期",
+    "summary": "華山親子表藝節集結《再見，馬麻！》寶寶劇場、《把書吃掉｜西遊太空篇》、《星空下的魔笛》與《擁抱海洋永續親子音樂會》等節目，一次滿足不同年齡層。",
+    "highlight": "寶寶劇場是 0~3 歲少見的正式表演形式，燈光音量都經過調整，不怕孩子出聲。各節目分齡限制與場次差異大，購票前請於 OPENTIX 確認建議年齡。",
+    "info": {
+      "date": "暑假檔期進行中",
+      "location": "華山 1914 文創園區",
+      "age": "0 歲以上(分齡場次)",
+      "price": "需購票"
+    },
+    "source_name": "OPENTIX 兩廳院文化生活",
+    "sources": [
+      {
+        "name": "OPENTIX 兩廳院文化生活",
+        "url": "https://www.opentix.life/"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "jurassic-dino-encounter-2026",
+    "date": "2026-06-26",
+    "week": "2026-W31",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "士林區",
+    "type": "特展",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "親子廁所",
+      "同館多展"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "恐龍",
+      "互動"
+    ],
+    "coord": [
+      25.0977,
+      121.5203
+    ],
+    "title": "科教館 · 侏羅紀恐龍奇遇記",
+    "summary": "室內動態恐龍展，設有餵食互動與 13 公尺高的暴龍場景，全程冷氣且展期長到 10 月，是雨天與酷暑的穩定備案。",
+    "highlight": "恐龍音效與體型對膽小的孩子可能偏刺激，建議先在家看預告片做心理準備。科教館同層還有動物王國大探險、史萊姆夜光實驗室，可安排一整天並購買套票。",
+    "info": {
+      "date": "6/26 ~ 10/11",
+      "location": "科教館 7F 南側",
+      "age": "3 歲以上",
+      "price": "NT$480"
+    },
+    "source_name": "Funliday 2026 展覽彙整",
+    "sources": [
+      {
+        "name": "Funliday 2026 展覽彙整",
+        "url": "https://www.funliday.com/posts/2026-exhibition"
+      }
+    ],
+    "end_date": "2026-10-11",
+    "status": "active"
+  },
+  {
+    "id": "postal-ocean-stamp-2026",
+    "date": "2026-06-17",
+    "week": "2026-W31",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "中正區",
+    "type": "特展",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "蓋章活動",
+      "低價門票"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "海洋",
+      "蓋章"
+    ],
+    "coord": [
+      25.0322,
+      121.5152
+    ],
+    "title": "郵政博物館 · Oh！海郵 海洋生物郵票特展",
+    "summary": "以海洋生物郵票串連貝殼標本、海龜繪畫活動與六色蓋章站，門票只要 30 元，是高 CP 值的室內半日行程。",
+    "highlight": "蓋章站對 3~6 歲特別有吸引力，記得帶自己的小本子收集。館內人潮遠少於熱門商場特展，適合怕擁擠的家庭；鄰近中正紀念堂可順遊。",
+    "info": {
+      "date": "6/17 ~ 11/29",
+      "location": "郵政博物館 6F 特展室",
+      "age": "3 歲以上",
+      "price": "NT$30"
+    },
+    "source_name": "Funliday 2026 展覽彙整",
+    "sources": [
+      {
+        "name": "Funliday 2026 展覽彙整",
+        "url": "https://www.funliday.com/posts/2026-exhibition"
+      }
+    ],
+    "end_date": "2026-11-29",
+    "status": "active"
+  },
+  {
+    "id": "doraemon-sakura-songyan-2026",
+    "date": "2026-07-10",
+    "week": "2026-W31",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "信義區",
+    "type": "快閃店",
+    "venue": "室內",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "園區多展",
+      "餐飲"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "快閃店",
+      "拍照"
+    ],
+    "coord": [
+      25.0435,
+      121.5606
+    ],
+    "title": "松菸 · 100% 哆啦A夢櫻花節 in 台北",
+    "summary": "櫻花版哆啦A夢拍照場景與東京限定公仔展示，免費入場且與同園區的小熊維尼 100 週年快閃相鄰，一趟看兩展。",
+    "highlight": "松菸同期有哆啦A夢、小熊維尼、萌蛙匹克、NishimuraYuji 四檔免費快閃，走一圈就是完整半日遊，幾乎零花費。園區戶外段沒有遮蔭，建議傍晚再去。",
+    "info": {
+      "date": "7/10 ~ 10/11",
+      "location": "松山文創園區 北向製菸工廠東側",
+      "age": "全齡",
+      "price": "免費入場"
+    },
+    "source_name": "Funliday 2026 展覽彙整",
+    "sources": [
+      {
+        "name": "Funliday 2026 展覽彙整",
+        "url": "https://www.funliday.com/posts/2026-exhibition"
+      }
+    ],
+    "end_date": "2026-10-11",
+    "status": "active"
+  },
+  {
+    "id": "xpark-animalcrossing-2026",
+    "date": "2026-07-01",
+    "week": "2026-W31",
+    "category": "outside",
+    "region": "桃園市",
+    "district": "中壢區",
+    "type": "水族館",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "高鐵可達",
+      "親子廁所",
+      "室內冷氣"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "水族館",
+      "集章闖關"
+    ],
+    "coord": [
+      25.0417,
+      121.2168
+    ],
+    "title": "桃園 Xpark × 動物森友會海洋生物互動展",
+    "summary": "水族館結合《動物森友會》40 種海洋生物解說與貼紙集章挑戰，把逛水族館變成闖關遊戲，全室內不受天氣影響。",
+    "highlight": "遊戲化導覽讓孩子願意讀解說牌，對 6~12 歲效果最明顯。館內動線單向、假日極擁擠，建議開館時段入場；高鐵桃園站轉乘可達，適合不開車的家庭。",
+    "info": {
+      "date": "7/1 ~ 9/30",
+      "location": "桃園中壢 Xpark 水族館",
+      "age": "3 歲以上",
+      "price": "需購票"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-09-30",
+    "status": "active"
+  },
+  {
+    "id": "pingtung-summer-carnival-2026",
+    "date": "2026-07-04",
+    "week": "2026-W31",
+    "category": "outside",
+    "region": "屏東縣",
+    "district": "屏東市",
+    "type": "嘉年華",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "免費遊具",
+      "表演舞台",
+      "停車場"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "遊樂設施",
+      "表演"
+    ],
+    "coord": [
+      22.6789,
+      120.4886
+    ],
+    "title": "屏東夏日狂歡祭 · 免費海盜船與六項新遊具",
+    "summary": "縣民公園化身免費遊樂園，海盜船與六項新遊具不收費，加上巧虎、YOYO、POLI 與馬戲團表演，還有 6 公尺高的蠟筆小新氣偶。",
+    "highlight": "遊樂設施免費在全台相當罕見，很適合預算有限的家庭。週三遊具與展覽休息，務必避開；南部日照強，安排傍晚場並備足飲水與防曬。",
+    "info": {
+      "date": "7/4 ~ 8/30(週三休)",
+      "location": "屏東縣民公園",
+      "age": "全齡",
+      "price": "遊具免費"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-08-30",
+    "status": "active"
+  },
+  {
+    "id": "taoyuan-kids-museum-same-2026",
+    "date": "2026-07-04",
+    "week": "2026-W31",
+    "category": "outside",
+    "region": "桃園市",
+    "district": "八德區",
+    "type": "美術館",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "兒童美術館",
+      "親子廁所",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "美術館",
+      "共融"
+    ],
+    "coord": [
+      24.9345,
+      121.2846
+    ],
+    "title": "桃園市兒童美術館 · 《一樣不一樣》",
+    "summary": "由法國、美國與台灣共 9 組藝術家團隊創作的兒童展，以「一樣不一樣」談差異與共融，是少見專為孩子策劃的美術館展覽。",
+    "highlight": "共融議題適合開學前和孩子聊「同學和我不一樣」，回家能延續討論。展期到 11 月不必急著暑假衝，開學後人潮更少、體驗更好。",
+    "info": {
+      "date": "7/4 ~ 11/30",
+      "location": "桃園市兒童美術館",
+      "age": "3 歲以上",
+      "price": "NT$100"
+    },
+    "source_name": "Funliday 2026 展覽彙整",
+    "sources": [
+      {
+        "name": "Funliday 2026 展覽彙整",
+        "url": "https://www.funliday.com/posts/2026-exhibition"
+      }
+    ],
+    "end_date": "2026-11-30",
+    "status": "active"
+  },
+  {
+    "id": "hsinchu-kite-festival-2026",
+    "date": "2026-08-29",
+    "week": "2026-W31",
+    "category": "outside",
+    "region": "新竹市",
+    "district": "北區",
+    "type": "節慶",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "親子沙灘",
+      "自行車道",
+      "停車場"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "風箏",
+      "夜光"
+    ],
+    "coord": [
+      24.8494,
+      120.9268
+    ],
+    "title": "新竹市國際風箏節 2026",
+    "summary": "國際隊伍帶來大型風箏與特技表演，入夜還有夜光風箏，南寮漁港腹地開闊、風力穩定，是暑末最後一個週末的戶外選擇。",
+    "highlight": "海邊風大、日照強，帽子與防曬缺一不可；夜光風箏場次值得留到傍晚。旁邊有南寮親子沙灘與自行車道，可安排一整天。",
+    "info": {
+      "date": "8/29 ~ 8/30",
+      "location": "新竹漁港(南寮)",
+      "age": "全齡",
+      "price": "免費觀賞"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-08-30",
+    "status": "active"
+  },
+  {
+    "id": "babyshark-pier2-2026",
+    "date": "2026-07-01",
+    "week": "2026-W31",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "鹽埕區",
+    "type": "特展",
+    "venue": "室內",
+    "age_range": [
+      "1-3",
+      "3-6"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "氣墊設施",
+      "捷運可達",
+      "周邊餐飲"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "氣墊",
+      "幼齡友善"
+    ],
+    "coord": [
+      22.6203,
+      120.2814
+    ],
+    "title": "高雄駁二 · Baby Shark 守護海洋大冒險",
+    "summary": "以 Baby Shark 為主題的氣墊迷宮與海洋守護闖關遊戲，圍繞 SDG 14 海洋保育設計，是南部少見主打幼齡的放電型室內展。",
+    "highlight": "氣墊設施對 1~3 歲很友善，室內冷氣不怕中暑。建議帶防滑襪(多數氣墊區要求)，並準備替換衣物；駁二周邊餐飲選擇多。",
+    "info": {
+      "date": "7/1 ~ 9/6",
+      "location": "駁二大勇區 P2 倉庫",
+      "age": "1 歲以上",
+      "price": "親子套票 NT$550"
+    },
+    "source_name": "Funliday 2026 展覽彙整",
+    "sources": [
+      {
+        "name": "Funliday 2026 展覽彙整",
+        "url": "https://www.funliday.com/posts/2026-exhibition"
+      }
+    ],
+    "end_date": "2026-09-06",
+    "status": "active"
+  },
+  {
+    "id": "nantou-starry-season-2026",
+    "date": "2026-04-25",
+    "week": "2026-W31",
+    "category": "outside",
+    "region": "南投縣",
+    "district": "仁愛鄉",
+    "type": "觀星",
+    "venue": "戶外",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "山區住宿",
+      "停車場",
+      "暗空環境"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "觀星",
+      "七夕"
+    ],
+    "coord": [
+      24.0578,
+      121.1653
+    ],
+    "title": "南投星空季 · 暑假觀星(含 8/15 七夕場)",
+    "summary": "以「星投列車」為主題的暗空觀星系列，8/15 於清境有七夕觀星場，山區入夜涼爽，適合帶學齡孩子體驗真正的星空。",
+    "highlight": "山區夜間溫差大，即使盛夏也要帶薄外套；活動多在 19:00 後，建議當地住一晚別趕夜路下山。學齡前孩子容易撐不到重點時段，6 歲以上體驗較完整。",
+    "info": {
+      "date": "4/25 ~ 9/5",
+      "location": "南投清境 / 溪頭 / 猴探井等",
+      "age": "6 歲以上",
+      "price": "部分場次付費"
+    },
+    "source_name": "好好玩 FUNIT 八月活動",
+    "sources": [
+      {
+        "name": "好好玩 FUNIT 八月活動",
+        "url": "https://gofunit.com/%E5%85%AB%E6%9C%88%E6%B4%BB%E5%8B%95"
+      }
+    ],
+    "end_date": "2026-09-05",
+    "status": "active"
+  },
+  {
+    "id": "aomori-nebuta-2026",
+    "date": "2026-08-02",
+    "week": "2026-W31",
+    "category": "japan",
+    "region": "日本",
+    "district": "青森縣",
+    "type": "祭典",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "付費看台席",
+      "市區可達"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "夏祭",
+      "花車遊行"
+    ],
+    "coord": [
+      40.8228,
+      140.7471
+    ],
+    "title": "青森 · 睡魔祭 Nebuta 2026",
+    "summary": "日本東北三大祭之一，巨型燈籠花車與跳人隊伍夜間遊行，最後一天還有海上遊行與花火，視覺震撼度對孩子極高。",
+    "highlight": "帶孩子建議買付費看台席，不必久站卡位也不怕人潮推擠。太鼓音量偏大，敏感的孩子可準備兒童耳罩；青森市區住宿極早滿，需提前訂房。",
+    "info": {
+      "date": "8/2 ~ 8/7",
+      "location": "日本青森市區",
+      "age": "3 歲以上",
+      "price": "免費觀賞(看台席另計)"
+    },
+    "source_name": "52 訂房 2026 日本夏季活動",
+    "sources": [
+      {
+        "name": "52 訂房 2026 日本夏季活動",
+        "url": "https://52discount.com/travel-info/2026-japan-summer-events-july-august-september"
+      }
+    ],
+    "end_date": "2026-08-07",
+    "status": "active"
+  },
+  {
+    "id": "atami-sea-fireworks-2026",
+    "date": "2026-08-05",
+    "week": "2026-W31",
+    "category": "japan",
+    "region": "日本",
+    "district": "靜岡縣",
+    "type": "花火",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "溫泉住宿",
+      "車站可達"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "花火",
+      "多場次"
+    ],
+    "coord": [
+      35.0959,
+      139.0756
+    ],
+    "title": "靜岡 · 熱海海上花火大會(8 月多場)",
+    "summary": "三面環山的熱海灣讓煙火聲響環繞回盪，一個月內有多場可選，從東京當天往返或安排一晚溫泉都很輕鬆。",
+    "highlight": "場次多，不必硬擠特定日期，是帶孩子看日本花火最省力的選擇。建議選容易離場的位置而非最前排；山谷回音較大，幼兒可帶耳罩。",
+    "info": {
+      "date": "8/5、8/9、8/18、8/24",
+      "location": "日本靜岡 熱海灣",
+      "age": "全齡",
+      "price": "免費觀賞"
+    },
+    "source_name": "52 訂房 2026 日本夏季活動",
+    "sources": [
+      {
+        "name": "52 訂房 2026 日本夏季活動",
+        "url": "https://52discount.com/travel-info/2026-japan-summer-events-july-august-september"
+      }
+    ],
+    "end_date": "2026-08-24",
+    "status": "active"
+  },
+  {
+    "id": "sendai-tanabata-2026",
+    "date": "2026-08-06",
+    "week": "2026-W31",
+    "category": "japan",
+    "region": "日本",
+    "district": "宮城縣",
+    "type": "祭典",
+    "venue": "室內",
+    "age_range": [
+      "0-1",
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "有頂商店街",
+      "推車友善",
+      "車站可達"
+    ],
+    "tags": [
+      "免費",
+      "半室內",
+      "夏祭",
+      "推車友善"
+    ],
+    "coord": [
+      38.26,
+      140.8825
+    ],
+    "title": "仙台 · 七夕祭 2026(依例 8/6 ~ 8/8)",
+    "summary": "日本規模最大的七夕祭典，數千條巨型和紙吹流裝飾整條有頂商店街，遮陽避雨且路面平坦，是最適合推推車家庭的日本夏祭。",
+    "highlight": "有頂商店街不曬不淋，對嬰幼兒與長輩同行的家庭特別友善，也是少數白天就能參與的夏祭。2026 確切日期尚未公告，訂票訂房前請先確認官方公告。",
+    "info": {
+      "date": "依往年 8/6 ~ 8/8(2026 待公告)",
+      "location": "日本仙台 商店街一帶",
+      "age": "全齡",
+      "price": "免費觀賞"
+    },
+    "source_name": "52 訂房 2026 日本夏季活動",
+    "sources": [
+      {
+        "name": "52 訂房 2026 日本夏季活動",
+        "url": "https://52discount.com/travel-info/2026-japan-summer-events-july-august-september"
+      }
+    ],
+    "end_date": "2026-08-08",
     "status": "active"
   }
 ]

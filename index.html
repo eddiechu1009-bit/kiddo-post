@@ -847,6 +847,7 @@ body::before {
 .month-section.jul { border-color: var(--teal-light); }
 .month-section.aug { border-color: #f7b8c7; }
 .month-section.sep { border-color: #c7a8f0; }
+.month-section.oct { border-color: #fbbf24; }
 
 .month-header {
   display: flex;
@@ -1382,17 +1383,17 @@ body::before {
       <img class="hero-kids" src="kids.png" alt="" aria-hidden="true"
            onerror="this.style.display='none'">
 
-      <div class="hero-badge">THIS WEEK · W30</div>
-      <div class="hero-date">7/22 → 8/5 · 未來兩週精選</div>
-      <h1 class="hero-title">淡水碼頭煙火接棒 + 暑假中場加碼</h1>
+      <div class="hero-badge">THIS WEEK · W31</div>
+      <div class="hero-date">7/29 → 8/12 · 未來兩週精選</div>
+      <h1 class="hero-title">天線寶寶首度來台 + 屏東遊具免費玩</h1>
       <p class="hero-excerpt">
-        <strong>淡水漁人碼頭仲夏繽紛樂</strong>8/9 起煙火＋無人機＋水舞每週登場,松菸<strong>萌蛙匹克快閃</strong>與<strong>San-X 90 週年展</strong>冷氣室內躲暑最舒服。<br>
-        日本這邊<strong>奈良燈花會</strong>8/5 起萬盞燭光、<strong>深川八幡潑水祭</strong>消暑熱鬧,<strong>高圓寺阿波舞</strong>暑末踩街收尾。
+        <strong>《天線寶寶》快閃店</strong>7/30 首度登台,五組沉浸場景免費逛,0~3 歲最友善;<strong>屏東夏日狂歡祭</strong>海盜船與六項新遊具通通免費玩。<br>
+        日本這邊<strong>青森睡魔祭</strong>8/2 起巨型燈籠花車遊行、<strong>熱海海上花火</strong>8 月四場任選,<strong>仙台七夕祭</strong>有頂商店街推車最好走。
       </p>
       <div class="hero-tags">
-        <span class="hero-tag">🎆 淡水碼頭煙火</span>
-        <span class="hero-tag">🐸 萌蛙匹克快閃</span>
-        <span class="hero-tag">🕯️ 奈良燈花會</span>
+        <span class="hero-tag">📺 天線寶寶快閃</span>
+        <span class="hero-tag">🎠 屏東免費遊具</span>
+        <span class="hero-tag">🏮 青森睡魔祭</span>
       </div>
       <button class="hero-cta" onclick="switchTab('calendar')">📅 看完整行事曆 →</button>
     </div>
@@ -2020,36 +2021,45 @@ function closePopupAndOpen(id) {
 // ═══════════════════════ CALENDAR DATA (shared by renderCalendar + global search) ═══════════════════════
 const CALENDAR_MONTHS = [
   {
-    key: 'jul', cls: 'jul', title: '🏖️ 7 月下半', sub: '暑假旺季 · 提前訂位',
-    items: [
-      { date: '7/23~7/27', title: '第 25 屆漫畫博覽會', meta: '世貿一館 · 需購票' },
-      { date: '7/25', title: '大稻埕夏日節 · 大阪天神祭 · 東京隅田川花火', meta: '台北大稻埕 / 日本 · 全齡 · 免費觀賞' },
-      { date: '7/25~8/2', title: '高雄旗津風箏節暨氣墊水樂園', meta: '旗津海岸 · 全齡 · 免費玩' },
-      { date: '7/29~8/23', title: '新光三越站前店「是誰的遊戲間」', meta: '台北車站 · 3 歲以上 · 需購票' },
-    ],
-  },
-  {
     key: 'aug', cls: 'aug', title: '🎆 8 月', sub: '暑末收心 · 夏日花火',
     items: [
+      { date: '8/2~8/7', title: '青森睡魔祭 (東北三大祭 · 花車遊行)', meta: '日本青森市區 · 3 歲以上 · 免費觀賞' },
+      { date: '8/5、8/9、8/18、8/24', title: '熱海海上花火大會 (8 月四場任選)', meta: '日本靜岡熱海灣 · 全齡 · 免費觀賞' },
       { date: '8/5~8/14', title: '奈良燈花會 (關西旅程夜間點燈)', meta: '日本奈良公園 · 全齡 · 免費觀賞' },
       { date: '8/6', title: '臺北兒童藝術節閉幕', meta: '全台北 · 多場親子展演' },
+      { date: '8/6~8/8', title: '仙台七夕祭 (有頂商店街 · 推車友善)', meta: '日本仙台 · 全齡 · 2026 場次待公告' },
       { date: '8/8', title: '父親節 · 各遊樂園爸爸入園優惠', meta: '全台遊樂園' },
       { date: '8/9~8/23', title: '淡水漁人碼頭仲夏繽紛樂 (煙火+水舞)', meta: '新北淡水 · 全齡 · 免費觀賞' },
+      { date: '8/15', title: '大稻埕夏日節最後一天 · 南投清境七夕觀星', meta: '台北大稻埕 / 南投 · 全齡' },
       { date: '8/16', title: '宜蘭國際童玩節最後一天', meta: '冬山河親水公園 · 建議提前訂房' },
       { date: '8/22~8/24', title: '台中石岡熱氣球嘉年華', meta: '台中石岡 · 全齡 · 繫留付費' },
-      { date: '8/29~8/30', title: '東京高圓寺阿波舞 (暑末踩街)', meta: '日本東京 · 全齡 · 免費觀賞' },
-      { date: '8/30', title: '多檔暑假特展下檔前衝刺 (小丸子/史努比等)', meta: '雙北展館 · 3 歲以上' },
+      { date: '8/29~8/30', title: '新竹國際風箏節 · 東京高圓寺阿波舞', meta: '新竹南寮 / 日本東京 · 全齡 · 免費' },
+      { date: '8/30', title: '多檔暑假特展下檔衝刺 (史萊姆/San-X/屏東狂歡祭)', meta: '雙北・屏東 · 3 歲以上' },
     ],
   },
   {
     key: 'sep', cls: 'sep', title: '🍂 9 月', sub: '開學過渡 · 秋日活動',
     items: [
       { date: '9/1', title: '開學日 · 收心與作息回歸', meta: '全台 · 學齡兒童' },
+      { date: '至 9/5', title: '天線寶寶快閃店 · 南投星空季收尾', meta: '台北京站 / 南投 · 0 歲以上' },
+      { date: '至 9/6', title: 'Baby Shark 高雄站 · 通霄沙雕藝術節', meta: '駁二 P2 / 苗栗通霄 · 1 歲以上' },
       { date: '至 9/13', title: '愛麗絲夢遊仙境沉浸式特展最後檔期', meta: '松山文創園區 · 3 歲以上' },
       { date: '至 9/23', title: 'teamLab 學習！未來遊樂園 函館', meta: '北海道立函館美術館 · 3 歲以上' },
       { date: '至 9/28', title: '波隆那插畫展 / 埃及木乃伊特展收尾', meta: '華山・史博館 · 3 歲以上' },
-      { date: '至 9/30', title: '多處免費戲水場季末開放', meta: '大台北・桃園 · 全齡 · 免費' },
+      { date: '至 9/30', title: 'Xpark 動森聯名 · 多處免費戲水場季末', meta: '桃園中壢・大台北 · 全齡' },
       { date: '9 月起', title: '2026 MUZIKids 兒童古典音樂節', meta: '親子音樂會 · 全齡' },
+    ],
+  },
+  {
+    key: 'oct', cls: 'oct', title: '🍁 10 月', sub: '秋高氣爽 · 戶外走走',
+    items: [
+      { date: '至 10/11', title: '侏羅紀恐龍奇遇記 · 動物王國大探險展', meta: '科教館 7F · 3 歲以上 · 需購票' },
+      { date: '至 10/11', title: '小熊維尼 100 週年 · 哆啦A夢櫻花節 (免費)', meta: '松山文創園區 · 全齡 · 免費' },
+      { date: '至 10/11', title: '蠟筆小新《玩轉！時空大冒險》', meta: '屏東縣民公園 · 3 歲以上 · 需購票' },
+      { date: '至 10/26', title: '福隆國際沙雕藝術季 (環球夏日派對)', meta: '新北貢寮 · 全齡 · 需購票' },
+      { date: '10 月上旬', title: '雙十連假 · 建議提前訂房與門票', meta: '全台 · 旅遊旺季' },
+      { date: '至 11/29', title: 'Oh！海郵 海洋郵票特展 (NT$30)', meta: '郵政博物館 · 3 歲以上' },
+      { date: '至 11/30', title: '桃園兒美館《一樣不一樣》共融特展', meta: '桃園八德 · 3 歲以上 · NT$100' },
     ],
   },
 ];
