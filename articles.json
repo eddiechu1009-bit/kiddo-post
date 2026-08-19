@@ -930,7 +930,7 @@
       }
     ],
     "end_date": "2026-08-16",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "dongshi-sea-summer-2026",
@@ -2186,7 +2186,7 @@
       }
     ],
     "end_date": "2026-08-06",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "songshan-luminous-garden-2026",
@@ -2525,7 +2525,7 @@
       }
     ],
     "end_date": "2026-08-16",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "kaohsiung-snow-park-2026",
@@ -2913,7 +2913,7 @@
       }
     ],
     "end_date": "2026-08-15",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "toy-space-hq-skm-2026",
@@ -3151,7 +3151,7 @@
       }
     ],
     "end_date": "2026-08-16",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "qigu-seafood-fes-2026",
@@ -3734,7 +3734,7 @@
       }
     ],
     "end_date": "2026-08-15",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "npm-south-water-dance-2026",
@@ -3931,7 +3931,7 @@
       }
     ],
     "end_date": "2026-08-14",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tokyo-fukagawa-matsuri-2026",
@@ -3981,7 +3981,7 @@
       }
     ],
     "end_date": "2026-08-16",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tokyo-koenji-awaodori-2026",
@@ -4609,7 +4609,7 @@
       }
     ],
     "end_date": "2026-08-07",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "atami-sea-fireworks-2026",
@@ -4707,7 +4707,7 @@
       }
     ],
     "end_date": "2026-08-08",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "focasa-jimmy-100brave-2026",
@@ -4756,7 +4756,7 @@
       }
     ],
     "end_date": "2026-08-16",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "pokemon-go-10th-daan-2026",
@@ -5256,7 +5256,7 @@
       }
     ],
     "end_date": "2026-08-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tokyo-azabujuban-noryo-2026",
@@ -5305,6 +5305,551 @@
       }
     ],
     "end_date": "2026-08-23",
+    "status": "active"
+  },
+  {
+    "id": "ocean-will-ntsec-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "士林區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "親子廁所",
+      "冷氣",
+      "無障礙"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "展覽",
+      "科學",
+      "海洋"
+    ],
+    "coord": [
+      25.0955,
+      121.515
+    ],
+    "title": "科教館 · 《海洋未來式》The Ocean Will… 巡迴特展",
+    "summary": "位在科教館 3F 公益展區的海洋主題巡迴特展，用「海洋將會如何」的提問切入塑膠污染與海洋保育，是館內少見不必另外加購特展票的展區。",
+    "highlight": "就在 3~6F 常設展範圍內，一張 120 元常設展票能連 3F 探索區、6F 綠色轉型展與恐龍實驗室一起走完，是暑假尾聲最划算的室內行程。開學後（非寒暑假）週二至週五只開到 17:00、16:00 停止售票，週一休館。",
+    "info": {
+      "date": "5/29 ~ 10/11",
+      "location": "科教館 3F 公益展區",
+      "age": "3 歲以上",
+      "price": "需常設展票（全票 120 / 優待 90 元）"
+    },
+    "source_name": "國立臺灣科學教育館官網",
+    "sources": [
+      {
+        "name": "國立臺灣科學教育館官網",
+        "url": "https://www.ntsec.gov.tw/"
+      }
+    ],
+    "end_date": "2026-10-11",
+    "status": "active"
+  },
+  {
+    "id": "spotlight-poland-illustration-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "信義區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室",
+      "親子廁所",
+      "冷氣"
+    ],
+    "tags": [
+      "室內",
+      "展覽",
+      "繪本",
+      "插畫",
+      "藝術"
+    ],
+    "coord": [
+      25.044,
+      121.5606
+    ],
+    "title": "松菸 · 《Spotlight ─ 波蘭兒童插畫的狂歡舞台》",
+    "summary": "以波蘭當代兒童插畫為主題的專題展，把繪本原畫從書頁搬上展場，看得到波蘭插畫特有的大膽用色與敘事構圖。",
+    "highlight": "台灣看得到的兒童插畫展多半來自日本與義大利（波隆那），波蘭插畫在台曝光少、畫風也和孩子平常看的繪本很不一樣，是很好的美感啟發。9/20 收展，開學後只剩三個週末。松菸官網僅公告檔期未列票價，出門前請先確認展間與收費。",
+    "info": {
+      "date": "7/14 ~ 9/20",
+      "location": "松山文創園區",
+      "age": "3 歲以上",
+      "price": "票價依松菸官方公告"
+    },
+    "source_name": "松山文創園區 展演資訊",
+    "sources": [
+      {
+        "name": "松山文創園區 展演資訊",
+        "url": "https://www.songshanculturalpark.org/exhibition"
+      }
+    ],
+    "end_date": "2026-09-20",
+    "status": "active"
+  },
+  {
+    "id": "snoopy-art-life-songyan-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "信義區",
+    "type": "快閃店",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室",
+      "親子廁所",
+      "冷氣"
+    ],
+    "tags": [
+      "室內",
+      "快閃店",
+      "IP",
+      "打卡"
+    ],
+    "coord": [
+      25.044,
+      121.5606
+    ],
+    "title": "松菸 · 史努比的藝術人生：快閃小巡迴（台北站）",
+    "summary": "延續 PEANUTS 75 週年大展精神的快閃小巡迴，主視覺用上日本藝術家崔雅喜新作《影之律動》，現場有數百款藝術家聯名獨家商品。",
+    "highlight": "華山的 PEANUTS 夏日海灘祭 9/14 收攤、松菸這站撐到 9/28，是史努比迷的延長賽。規模比正式大展小，逛完約 30~40 分鐘，適合當松菸半日遊的其中一站。商品線是主打，帶孩子去前先講好預算。",
+    "info": {
+      "date": "8/6 ~ 9/28",
+      "location": "松山文創園區",
+      "age": "全齡",
+      "price": "入場資訊依松菸官方公告"
+    },
+    "source_name": "松山文創園區 展演資訊",
+    "sources": [
+      {
+        "name": "松山文創園區 展演資訊",
+        "url": "https://www.songshanculturalpark.org/exhibition"
+      }
+    ],
+    "end_date": "2026-09-28",
+    "status": "active"
+  },
+  {
+    "id": "maze-forest-market-songyan-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "信義區",
+    "type": "市集",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "親子廁所",
+      "推車友善"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "市集",
+      "手作"
+    ],
+    "coord": [
+      25.044,
+      121.5606
+    ],
+    "title": "松菸 · 迷路森林夏季市集「迷路動物園」（8/22~8/23 兩天）",
+    "summary": "以「動物園」為題的兩日夏季市集，集合手作、插畫與選物攤位，走逛型行程不需排隊，是暑假最後一個週末在市區就能完成的輕鬆安排。",
+    "highlight": "市集型行程對小小孩最友善：隨時能離場、不必守場次、推車好走，免費入場失望成本低。只有 8/22、8/23 兩天。松菸戶外區八月中午曬得兇，建議 16:00 後再到，順路把史努比快閃店、波蘭插畫展與夜光花園一起收進同一趟。",
+    "info": {
+      "date": "8/22 ~ 8/23（僅兩天）",
+      "location": "松山文創園區",
+      "age": "全齡",
+      "price": "免費入場（攤位消費另計）"
+    },
+    "source_name": "松山文創園區 展演資訊",
+    "sources": [
+      {
+        "name": "松山文創園區 展演資訊",
+        "url": "https://www.songshanculturalpark.org/exhibition"
+      }
+    ],
+    "end_date": "2026-08-23",
+    "status": "active"
+  },
+  {
+    "id": "songyan-luminous-garden-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "信義區",
+    "type": "光影展",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "推車友善",
+      "夜間開放"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "光影",
+      "夜間",
+      "打卡"
+    ],
+    "coord": [
+      25.044,
+      121.5606
+    ],
+    "title": "松菸夜光花園 光影展 THE LUMINOUS GARDEN",
+    "summary": "古蹟巴洛克花園入夜後的常設光影展，燈光沿著老建築的線條鋪開，園區戶外空間全天開放，散步型行程不必買票也不必預約。",
+    "highlight": "夏末最實用的一招是白天躲室內、傍晚才出門，這個免費夜間光影展正好接在任何松菸室內行程之後。展期到年底，不需要跟時間搶，當備案而不是主行程。花園草地夜間視線差，學步兒建議牽好手或帶手電筒。",
+    "info": {
+      "date": "展至 12/31",
+      "location": "松山文創園區 巴洛克花園",
+      "age": "全齡",
+      "price": "免費觀賞"
+    },
+    "source_name": "松山文創園區 展演資訊",
+    "sources": [
+      {
+        "name": "松山文創園區 展演資訊",
+        "url": "https://www.songshanculturalpark.org/exhibition"
+      }
+    ],
+    "end_date": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "nmns-snake-puppet-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "outside",
+    "region": "台中市",
+    "district": "北區",
+    "type": "劇場",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "親子廁所",
+      "冷氣",
+      "無障礙"
+    ],
+    "tags": [
+      "室內",
+      "劇場",
+      "偶戲",
+      "科普"
+    ],
+    "coord": [
+      24.158,
+      120.666
+    ],
+    "title": "台中科博館 · 《吃軟不吃硬的蛇》科普生命偶劇（8/23 單日）",
+    "summary": "科博館的科普生命偶劇系列，用偶戲把蛇「吃軟不吃硬」的取食行為演給孩子看，把課本上的動物知識變成 20~30 分鐘的故事。",
+    "highlight": "偶劇是把「怕蛇」翻轉成「懂蛇」最溫和的入口。8/23 只有這一天，是暑假最後一個週日、也是今年的祖父母節，適合祖孫三代同行。科博館週一休館、9:00~17:00；偶劇為限定場次且座位有限，出發前務必先上官網查當日場次與是否需索票。",
+    "info": {
+      "date": "8/23（單日）",
+      "location": "國立自然科學博物館",
+      "age": "3 歲以上",
+      "price": "場次與收費依館方公告"
+    },
+    "source_name": "國立自然科學博物館官網",
+    "sources": [
+      {
+        "name": "國立自然科學博物館官網",
+        "url": "https://www.nmns.edu.tw/"
+      }
+    ],
+    "end_date": "2026-08-23",
+    "status": "active"
+  },
+  {
+    "id": "nstm-if-rain-doesnt-stop-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "三民區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "親子廁所",
+      "冷氣",
+      "無障礙"
+    ],
+    "tags": [
+      "室內",
+      "展覽",
+      "防災",
+      "科學"
+    ],
+    "coord": [
+      22.6555,
+      120.332
+    ],
+    "title": "高雄科工館 · 《如果雨不停：給勇者的生存攻略》特展",
+    "summary": "科工館「氣候任性．臺灣韌性」系列的新特展，7/31 開展，以極端降雨為題設計成「生存攻略」的闖關敘事，把防災知識做成孩子看得懂的行動指南。",
+    "highlight": "9 月是國家防災日月份（9/21），這檔展正好是帶孩子談颱風、淹水、停電怎麼辦的現成教材。用「勇者攻略」包裝，學齡孩子接受度高；6 歲以下較難跟上災害因果，可改去同館 B1 熱雪天堂或彩虹童畫親子樂園。館方尚未公告結束日，票價與展區位置請先上官網確認。",
+    "info": {
+      "date": "7/31 起（未公告結束日）",
+      "location": "科工館 1F",
+      "age": "6 歲以上",
+      "price": "票價依科工館官方公告"
+    },
+    "source_name": "國立科學工藝博物館官網",
+    "sources": [
+      {
+        "name": "國立科學工藝博物館官網",
+        "url": "https://www.nstm.gov.tw/"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "nstm-rainbow-kids-park-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "三民區",
+    "type": "親子展區",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "親子廁所",
+      "冷氣",
+      "無障礙"
+    ],
+    "tags": [
+      "室內",
+      "親子展區",
+      "學齡前",
+      "常設"
+    ],
+    "coord": [
+      22.6555,
+      120.332
+    ],
+    "title": "高雄科工館 · 彩虹童畫親子樂園特展（長期檔）",
+    "summary": "科工館 B1 的常設型親子展區，走繪畫與遊戲結合的路線，是館內少數把主客群設定在學齡前的空間，和同樓層的熱雪天堂兒童滑雪樂園 3.0 相鄰。",
+    "highlight": "南部家庭最缺「不受天氣影響又不必一直排隊」的低齡室內選項，這檔展期一路開到 2027/8，適合當回訪型基地。搭配 B1 熱雪天堂（展至 2028/12）與 Fun 城市兒童電動車，可在同一層待上半天。熱雪天堂偶有單場次停開公告，出門前先看官網。",
+    "info": {
+      "date": "展至 2027/8/31",
+      "location": "科工館 B1",
+      "age": "0~6 歲",
+      "price": "票價依科工館官方公告"
+    },
+    "source_name": "國立科學工藝博物館官網",
+    "sources": [
+      {
+        "name": "國立科學工藝博物館官網",
+        "url": "https://www.nstm.gov.tw/"
+      }
+    ],
+    "end_date": "2027-08-31",
+    "status": "active"
+  },
+  {
+    "id": "miraikan-antarctic-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "japan",
+    "region": "東京都",
+    "district": "江東區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "親子廁所",
+      "冷氣",
+      "無障礙",
+      "推車友善"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "展覽",
+      "科學",
+      "日本"
+    ],
+    "coord": [
+      35.6194,
+      139.7766
+    ],
+    "title": "東京 · 大南極展 · 南極觀測 70 週年特展（日本科學未來館）",
+    "summary": "日本南極觀測 70 週年特展，摸得到真的南極冰、從 2,499 公尺深鑽取的冰芯（內含 34 萬年前的空氣）、30 件以上南極隕石（含可拿起的鐵隕石與火星隕石切片），還有暴風雪體驗與企鵝觀察圓頂。",
+    "highlight": "今年日本親子展的頭號推薦，有兩層時效：展覽 9/27 結束，館方更公告 10/1 起全館整修休館到 2027/4/22，這是未來一年半內最後窗口。門票含常設展，一張票能連 ジオ・コスモス 地球儀一起看。休館日是週二（9/1、9/8、9/15），別排錯；ドームシアター 另外收費且需預約。8 人以上有團體票。",
+    "info": {
+      "date": "7/1 ~ 9/27",
+      "location": "日本科學未來館 1F 企畫展示區（台場）",
+      "age": "3 歲以上",
+      "price": "大人 2,000 円 / 18 歲以下 1,300 円 / 未就學（3 歲以上）900 円 / 2 歲以下免費"
+    },
+    "source_name": "日本科學未來館 大南極展官方頁",
+    "sources": [
+      {
+        "name": "日本科學未來館 大南極展官方頁",
+        "url": "https://www.miraikan.jst.go.jp/exhibitions/spexhibition/dainankyokuten.html"
+      }
+    ],
+    "end_date": "2026-09-27",
+    "status": "active"
+  },
+  {
+    "id": "pixar-world-tokyo-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "japan",
+    "region": "東京都",
+    "district": "江東區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "冷氣",
+      "停車場",
+      "推車友善"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "展覽",
+      "IP",
+      "日本"
+    ],
+    "coord": [
+      35.633,
+      139.792
+    ],
+    "title": "東京 · 「皮克斯的世界展」ピクサーの世界展",
+    "summary": "把《玩具總動員》《怪獸電力公司》等皮克斯動畫場景以大尺度重現的體驗型展覽，主打「走進你夢裡的那部電影」，適合已看過幾部皮克斯作品的孩子。",
+    "highlight": "和大南極展同在江東區、都靠台場／有明一帶，可排成同一天兩站，省下東京交通轉乘時間。皮克斯展屬於「有共同記憶才有感」的類型，出發前先陪孩子重看一兩部電影。展期到 10/12 比大南極展多兩週，若要取捨先卡 9/27 收攤的大南極展。場館有停車場。",
+    "info": {
+      "date": "展至 10/12",
+      "location": "CREVIA BASE Tokyo（江東區）",
+      "age": "全齡",
+      "price": "票價依官方售票資訊"
+    },
+    "source_name": "Walkerplus 東京活動一覽",
+    "sources": [
+      {
+        "name": "Walkerplus 東京活動一覽",
+        "url": "https://www.walkerplus.com/event_list/ar0313/"
+      }
+    ],
+    "end_date": "2026-10-12",
+    "status": "active"
+  },
+  {
+    "id": "doraemon-100-tokyo-2026",
+    "date": "2026-08-19",
+    "week": "2026-W34",
+    "category": "japan",
+    "region": "東京都",
+    "district": "江東區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "冷氣",
+      "停車場",
+      "推車友善"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "展覽",
+      "IP",
+      "日本"
+    ],
+    "coord": [
+      35.624,
+      139.779
+    ],
+    "title": "東京 · 100％ 哆啦A夢＆FRIENDS in 東京",
+    "summary": "官方稱為「史上最大級」的哆啦A夢展覽，把等身高的哆啦A夢與夥伴群像搬進台場的 TOKYO DREAM PARK，9/30 結束。",
+    "highlight": "台北松菸的「100% 哆啦A夢櫻花節」展到 10/12，東京這檔是規模更大的版本；只想在台灣看的話留在松菸就夠，不必為它專程飛一趟。同在江東區台場一帶，和大南極展、皮克斯展三檔可串成一日「台場展覽日」。9/30 收展，和大南極展只差三天，9 月中下旬去日本要一次排完。",
+    "info": {
+      "date": "3/27 ~ 9/30",
+      "location": "TOKYO DREAM PARK（江東區）",
+      "age": "全齡",
+      "price": "票價依官方售票資訊"
+    },
+    "source_name": "Walkerplus 東京活動一覽",
+    "sources": [
+      {
+        "name": "Walkerplus 東京活動一覽",
+        "url": "https://www.walkerplus.com/event_list/ar0313/"
+      }
+    ],
+    "end_date": "2026-09-30",
     "status": "active"
   }
 ]
