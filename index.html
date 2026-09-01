@@ -849,6 +849,7 @@ body::before {
 .month-section.sep { border-color: #c7a8f0; }
 .month-section.oct { border-color: #fbbf24; }
 .month-section.nov { border-color: #86efac; }
+.month-section.dec { border-color: #93c5fd; }
 
 .month-header {
   display: flex;
@@ -1384,17 +1385,17 @@ body::before {
       <img class="hero-kids" src="kids.png" alt="" aria-hidden="true"
            onerror="this.style.display='none'">
 
-      <div class="hero-badge">THIS WEEK · W34</div>
-      <div class="hero-date">8/19 → 9/2 · 未來兩週精選</div>
-      <h1 class="hero-title">大南極展 9/27 倒數 + 暑假展覽下檔大關</h1>
+      <div class="hero-badge">THIS WEEK · W35</div>
+      <div class="hero-date">8/31 → 9/14 · 未來兩週精選</div>
+      <h1 class="hero-title">開學週兩檔免費市集 + 中秋連假先卡位</h1>
       <p class="hero-excerpt">
-        <strong>日本科學未來館</strong>「大南極展」9/27 收攤,館方更公告<strong>10/1 起全館休館到 2027/4</strong>,這是未來一年半最後窗口;現場摸得到南極冰與含 34 萬年前空氣的冰芯。<br>
-        台灣端有 <strong>8/30、8/31 兩道下檔大關</strong>,一次收掉史萊姆夜光實驗室、造公園、暖暖親水 2.0、文博會與多座水樂園;松菸 <strong>8/22~8/23 迷路森林市集</strong>免費入場,還有波蘭兒童插畫展看到 9/20。
+        開學第一週別排太滿。松菸連兩個週末有免費市集可以隨到隨走:<strong>9/5~9/6 Fun 飛福島物產展</strong>、<strong>9/12~9/13 小鳥時光 6.0 動物派對</strong>,都是不必買票、隨時能離場的類型。<br>
+        <strong>9/25 中秋是週五、連著三天假</strong>,訂房訂票要現在動手;海科館「賞花賞月賞秋兔」9/25 起跑,《鯊魚王國》9/2 新片上映,夜航僅到 9/18。<strong>9/21 國家防災日</strong>可搭科工館避難包整備。⚠️ 南科考古館 8/31~9/7 全館休館。
       </p>
       <div class="hero-tags">
-        <span class="hero-tag">🐧 大南極展倒數</span>
-        <span class="hero-tag">🎪 暑假下檔大關</span>
-        <span class="hero-tag">🦊 松菸免費市集</span>
+        <span class="hero-tag">🐦 松菸免費市集</span>
+        <span class="hero-tag">🐰 中秋連假卡位</span>
+        <span class="hero-tag">🎒 防災日應景展</span>
       </div>
       <button class="hero-cta" onclick="switchTab('calendar')">📅 看完整行事曆 →</button>
     </div>
@@ -1623,10 +1624,15 @@ const AGE_LABELS = {
 };
 
 const TOPICS = [
+  { cls: 't4', emoji: '💉', title: '6 個月到 6 歲流感疫苗全解：為什麼有些孩子要打 2 劑？從 10/1 開打到 11 月下旬的時間表',
+    desc: '115 年度公費流感疫苗 10/1 開打、11/2 第二階段。從疾管署接種計畫與工作手冊、AAP 2026-2027 政策聲明到《Pediatrics》2026 年最新研究（疫苗對兒童流感死亡保護力 80%），拆解幼兒劑次規則、月齡認定沒有寬限期、兩劑間隔提前 5 天就白打、蛋過敏可否接種，以及為什麼要在 11 月下旬前打完。',
+    tags: ['流感疫苗', '公費疫苗', '幼兒接種', '劑次規則', '6個月-6歲'], soon: false,
+    url: 'topics/flu-vaccine-6m-to-6y.html', featured: true,
+    readMinutes: 12, sourceCount: 18 },
   { cls: 't6', emoji: '🌊', title: '1-6 歲防溺全解：為什麼溺水是「無聲」的？從 WHO、AAP 到 CPR 新指引',
     desc: '溺水是 1-4 歲兒童頭號意外死因，而且幾乎無聲——88% 事故發生時有大人在場。從 WHO、美國兒科學會（AAP）、2024 AHA/AAP 心肺復甦新指引到台灣國健署防溺六式，拆解「本能溺水反應」、多層防護、戲水徵兆辨識與正確急救步驟。',
     tags: ['防溺', '戲水安全', 'CPR', '本能溺水反應', '1-6歲'], soon: false,
-    url: 'topics/water-safety-drowning-1to6.html', featured: true,
+    url: 'topics/water-safety-drowning-1to6.html', featured: false,
     readMinutes: 12, sourceCount: 13 },
   { cls: 't4', emoji: '🦠', title: '腸病毒不是普通感冒：0-6 歲重症前兆、科學防護與 EV71 疫苗全解',
     desc: '台灣夏季幼兒頭號傳染病。從疾管署、美國 CDC、WHO/PAHO、NIH StatPearls 到台灣兒童感染症醫學會，拆解 7 大重症前兆、為什麼酒精乾洗手擋不住腸病毒、居家補水照護，以及 2023 上市的 EV71 疫苗該不該自費打。',
@@ -2022,37 +2028,31 @@ function closePopupAndOpen(id) {
 // ═══════════════════════ CALENDAR DATA (shared by renderCalendar + global search) ═══════════════════════
 const CALENDAR_MONTHS = [
   {
-    key: 'aug', cls: 'aug', title: '🎆 8 月', sub: '暑末收心 · 下檔衝刺',
-    items: [
-      { date: '8/20', title: '台東博覽會「活的學校」· 熱氣球嘉年華最後一天', meta: '台東 · 全齡' },
-      { date: '8/22~8/23', title: '松菸 迷路森林夏季市集「迷路動物園」', meta: '松山文創園區 · 全齡 · 免費入場' },
-      { date: '8/23', title: '祖父母節 · 科博館《吃軟不吃硬的蛇》科普偶劇', meta: '台中科博館 · 3 歲以上 · 場次見官網' },
-      { date: '8/23', title: '北海潮與火 · 知卡宣玩水趣 · 淡水仲夏繽紛樂 · 麻布十番納涼祭 最後一天', meta: '金山・花蓮・淡水 / 東京 · 全齡' },
-      { date: '8/24', title: '台中石岡熱氣球嘉年華 · 熱海海上花火 最後一場', meta: '台中石岡 / 日本靜岡 · 全齡' },
-      { date: '8/25', title: '松菸 pickles 萌蛙匹克 & NishimuraYuji 快閃店最後一天', meta: '松山文創園區 · 全齡' },
-      { date: '8/26', title: '大阪環球影城 霓虹夏日祭典結束', meta: '日本大阪 USJ · 3 歲以上' },
-      { date: '8/29~8/30', title: '新竹國際風箏節 · 東京高圓寺阿波舞', meta: '新竹南寮 / 日本東京 · 全齡 · 免費' },
-      { date: '8/30', title: '下檔大關一：史萊姆夜光實驗室 / San-X 90 週年 / 造公園 / 暖暖親水 2.0 / 桃園地景藝術節', meta: '雙北・基隆・桃園 · 3 歲以上' },
-      { date: '8/31', title: '下檔大關二：文博會 / 小人國水樂園 / PILIGILI 水樂園 / 麗寶馬拉灣 / 義大童趣夏日節 / 花蓮金針花季', meta: '全台 · 全齡' },
-    ],
-  },
-  {
     key: 'sep', cls: 'sep', title: '🍂 9 月', sub: '開學過渡 · 中秋連假',
     items: [
       { date: '9/1', title: '開學日 · 收心與作息回歸', meta: '全台 · 學齡兒童' },
+      { date: '9/1 起', title: '宜蘭亞太傳統藝術節「眾水之境」分階段索票／DIY 報名', meta: '宜蘭傳藝園區 · 全齡 · 索票制' },
+      { date: '9/2', title: '海科館 海洋劇場《鯊魚王國》新片上映 (至 12/31)', meta: '基隆海科館 · 3 歲以上 · 需購票' },
+      { date: '8/31~9/7', title: '⚠️ 南科考古館全館休館 (維護)', meta: '台南新市 · 台南行程請避開' },
       { date: '至 9/5', title: '天線寶寶快閃店 · 南投星空季收尾', meta: '台北京站 / 南投 · 0 歲以上' },
-      { date: '至 9/6', title: 'Baby Shark 高雄站 · 通霄沙雕藝術節 · 川越冰川神社風鈴祭', meta: '駁二 P2・苗栗 / 日本埼玉 · 1 歲以上' },
-      { date: '9/12~9/13', title: '松菸 小鳥時光 6.0｜Animal Party 動物派對', meta: '松山文創園區 · 全齡' },
+      { date: '9/5~9/6', title: '松菸 Fun 飛福島｜福島縣觀光物產展', meta: '松山文創園區 · 全齡 · 免費入場' },
+      { date: '至 9/6', title: 'Baby Shark 高雄站 · 通霄沙雕藝術節 · 川越冰川神社風鈴祭 · 東京哈利波特影城限定企畫', meta: '駁二 P2・苗栗 / 日本埼玉・練馬 · 1 歲以上' },
+      { date: '9/12', title: '南科考古館《舊時代新玩藝》金工考古所', meta: '台南新市 · 6 歲以上 · 需報名' },
+      { date: '9/12 起', title: '海科館 潮境《中秋節烤肉海鮮精選》小展 (至 10/30)', meta: '潮境智能海洋館 · 全齡' },
+      { date: '9/12~9/13', title: '松菸 小鳥時光 6.0｜Animal Party 動物派對', meta: '松山文創園區 · 全齡 · 免費入場' },
       { date: '至 9/13', title: '愛麗絲沉浸式特展 · Pokémon GO 10 週年特展', meta: '松山文創園區 / 大安森林公園站 · 3 歲以上' },
       { date: '至 9/14', title: 'PEANUTS 夏日海灘祭 · 東京迪士尼清涼一夏', meta: '華山 / 日本千葉 · 全齡' },
+      { date: '至 9/18', title: '海科館 潮境方舟遊「夜航」季末', meta: '基隆海科館 · 6 歲以上 · 需預約' },
+      { date: '9/20', title: '史前館 臺灣文化日親子說故事《我的名字》', meta: '台東康樂本館 · 3 歲以上' },
       { date: '至 9/20', title: '松菸《Spotlight》波蘭兒童插畫的狂歡舞台', meta: '松山文創園區 · 3 歲以上' },
-      { date: '9/21', title: '國家防災日 (科工館《如果雨不停》正是應景展)', meta: '全台 / 高雄科工館 · 6 歲以上' },
+      { date: '9/21', title: '國家防災日 (科工館避難包整備 &《如果雨不停》正應景)', meta: '全台 / 高雄科工館 · 6 歲以上' },
       { date: '至 9/23', title: 'teamLab 學習！未來遊樂園 函館', meta: '北海道立函館美術館 · 3 歲以上' },
-      { date: '9/25', title: '中秋節 (週五) · 連假訂房與門票要早', meta: '全台 · 全齡' },
+      { date: '9/25', title: '中秋節 (週五·連三天假) · 海科館「賞花賞月賞秋兔」起跑', meta: '全台 / 基隆海科館 · 全齡 · 訂房要早' },
       { date: '至 9/27', title: '華山 CHIIKAWA DAYS · 東京大南極展', meta: '華山 / 日本科學未來館 · 全齡' },
-      { date: '至 9/28', title: '八里沙雕展 · 波隆那插畫展 · 埃及木乃伊 · 櫻桃小丸子 40 週年 · 史努比快閃小巡迴', meta: '八里・華山・史博館・松菸 · 3 歲以上' },
-      { date: '至 9/30', title: 'Xpark 動森聯名 · 東京 100% 哆啦A夢 · 多處免費戲水場季末', meta: '桃園中壢 / 日本台場 · 全齡' },
+      { date: '至 9/28', title: '八里沙雕展 · 波隆那插畫展 · 埃及木乃伊 · 櫻桃小丸子 40 週年 · 史努比快閃 · 松菸《消失的法老》VR', meta: '八里・華山・史博館・松菸 · 3 歲以上' },
+      { date: '至 9/30', title: 'Xpark 動森聯名 · 東京 100% 哆啦A夢 · はてな展 · 多處免費戲水場季末', meta: '桃園中壢 / 日本台場・渋谷 · 全齡' },
       { date: '9/30', title: '日本科學未來館最後開館日 (10/1 起休館至 2027/4/22)', meta: '日本東京台場 · 全齡 · 行程要提早' },
+      { date: '9 月全月', title: '科工館 國際失智症月「憶起來科工館玩」(祖孫共遊)', meta: '高雄科工館 · 全齡' },
       { date: '9 月起', title: '2026 MUZIKids 兒童古典音樂節', meta: '親子音樂會 · 全齡' },
     ],
   },
@@ -2067,6 +2067,7 @@ const CALENDAR_MONTHS = [
       { date: '至 10/11', title: '蠟筆小新《玩轉！時空大冒險》', meta: '屏東縣民公園 · 3 歲以上 · 需購票' },
       { date: '至 10/12', title: '東京 皮克斯的世界展 · 生物超世界展 (科博館)', meta: 'CREVIA BASE / 東京上野 · 全齡' },
       { date: '至 10/26', title: '福隆國際沙雕藝術季 (環球夏日派對)', meta: '新北貢寮 · 全齡 · 需購票' },
+      { date: '至 10/30', title: '海科館 潮境《中秋節烤肉海鮮精選》小展', meta: '潮境智能海洋館 · 全齡' },
       { date: '至 10/31', title: '科工館 Next Power 氫能站特展', meta: '高雄科工館 1F · 6 歲以上' },
     ],
   },
@@ -2079,6 +2080,20 @@ const CALENDAR_MONTHS = [
       { date: '11 月', title: '東京 提姆波頓展登場 (暗黑童話風，年紀小要斟酌)', meta: '日本東京 · 6 歲以上' },
       { date: '至 11/29', title: 'Oh！海郵 海洋郵票特展 (NT$30)', meta: '郵政博物館 · 3 歲以上' },
       { date: '至 11/30', title: '桃園兒美館《一樣不一樣》共融特展', meta: '桃園八德 · 3 歲以上 · NT$100' },
+      { date: '全月', title: '日本科學未來館休館中 (至 2027/4/22)，東京行程請避開', meta: '日本東京台場 · 提醒' },
+    ],
+  },
+  {
+    key: 'dec', cls: 'dec', title: '🎄 12 月', sub: '年末檔期 · 聖誕跨年',
+    items: [
+      { date: '12 月上旬', title: '新北歡樂耶誕城 (往年 11 月中開城、耶誕夜前後最熱)', meta: '板橋車站周邊 · 全齡 · 免費 · 檔期待官方公告' },
+      { date: '12/18~12/20', title: '松菸 毛孩藝術生活節 FURever Art Festival', meta: '松山文創園區 · 全齡' },
+      { date: '至 12/31', title: '松菸夜光花園 光影展 THE LUMINOUS GARDEN', meta: '松菸巴洛克花園 · 全齡 · 免費' },
+      { date: '至 12/31', title: '科教館 恐龍實驗室互動特展', meta: '科教館 · 3 歲以上 · 需購票' },
+      { date: '至 12/31', title: '海科館《SEA YOU》海洋的見證與再造特展', meta: '基隆海科館 · 3 歲以上' },
+      { date: '至 12/31', title: '海科館 海洋劇場《鯊魚王國》', meta: '基隆海科館 · 3 歲以上 · 需購票' },
+      { date: '至 12/31', title: '科工館 熱雪天堂兒童滑雪樂園 3.0 (檔期至 2028/12)', meta: '高雄科工館 B1 · 3 歲以上' },
+      { date: '長期檔', title: '科工館 彩虹童畫親子樂園 (至 2027/8) · 東京 Sanrio Hotel Floria (至 2027/5)', meta: '高雄 / 日本新宿 · 0~6 歲・全齡' },
       { date: '全月', title: '日本科學未來館休館中 (至 2027/4/22)，東京行程請避開', meta: '日本東京台場 · 提醒' },
     ],
   },

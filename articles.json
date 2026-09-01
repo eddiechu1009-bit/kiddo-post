@@ -1,5 +1,679 @@
 [
   {
+    "id": "fukushima-fair-songyan-2026",
+    "date": "2026-09-05",
+    "week": "2026-W35",
+    "category": "taipei",
+    "region": "臺北市",
+    "district": "信義區",
+    "type": "市集/物產展",
+    "venue": "室內",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "親子廁所",
+      "捷運可達",
+      "推車友善"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "市集",
+      "兩天限定"
+    ],
+    "coord": [
+      25.0438,
+      121.5605
+    ],
+    "title": "松菸 · Fun 飛福島｜福島縣觀光物產展（9/5~9/6 兩天）",
+    "summary": "福島縣官方來台辦的觀光物產展，兩天的走逛型市集，有縣內物產試吃與觀光攤位，不必買票也不必守場次。",
+    "highlight": "開學第一個週末最省力的市區行程：隨時能離場、推車好走、免費入場失望成本低。順路可把小熊維尼 100 週年、哆啦A夢櫻花節與傍晚的夜光花園一起收進來。",
+    "info": {
+      "date": "2026/9/5 ~ 9/6（僅兩天）",
+      "location": "松山文創園區",
+      "age": "全齡",
+      "price": "免費入場（攤位消費另計）"
+    },
+    "source_name": "松山文創園區 展演資訊",
+    "sources": [
+      {
+        "name": "松山文創園區 展演資訊",
+        "url": "https://www.songshanculturalpark.org/exhibition"
+      }
+    ],
+    "end_date": "2026-09-06",
+    "status": "active"
+  },
+  {
+    "id": "birdtime-animal-party-songyan-2026",
+    "date": "2026-09-12",
+    "week": "2026-W35",
+    "category": "taipei",
+    "region": "臺北市",
+    "district": "信義區",
+    "type": "市集",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "親子廁所",
+      "捷運可達",
+      "推車友善"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "市集",
+      "插畫",
+      "兩天限定"
+    ],
+    "coord": [
+      25.0438,
+      121.5605
+    ],
+    "title": "松菸 · 小鳥時光 6.0｜Animal Party 動物派對（9/12~9/13 兩天）",
+    "summary": "「小鳥時光」系列辦到第 6 屆，以「動物派對」為主題，集合插畫、手作與動物主題選物攤位。",
+    "highlight": "動物主題對 2~6 歲幾乎無敵，而市集能讓孩子自己「挑一個」——給他 100~200 元預算自行決定，比大人挑好塞給他更有學習價值。建議 16:00 後再到，接著散步看免費夜光花園。",
+    "info": {
+      "date": "2026/9/12 ~ 9/13（僅兩天）",
+      "location": "松山文創園區",
+      "age": "全齡",
+      "price": "免費入場（攤位消費另計）"
+    },
+    "source_name": "松山文創園區 展演資訊",
+    "sources": [
+      {
+        "name": "松山文創園區 展演資訊",
+        "url": "https://www.songshanculturalpark.org/exhibition"
+      }
+    ],
+    "end_date": "2026-09-13",
+    "status": "active"
+  },
+  {
+    "id": "chaojing-ark-nightsail-2026",
+    "date": "2026-08-16",
+    "week": "2026-W35",
+    "category": "taipei",
+    "region": "基隆市",
+    "district": "中正區",
+    "type": "戶外體驗/遊船",
+    "venue": "戶外",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "需預約",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "遊船",
+      "季節限定"
+    ],
+    "coord": [
+      25.1372,
+      121.8036
+    ],
+    "title": "基隆海科館 · 潮境方舟遊「夜航」（僅到 9/18）",
+    "summary": "海科館「潮境方舟」的季節限定夜間航班，天黑後從基隆港域出海，把白天的海線行程延長成夜晚的海上體驗。",
+    "highlight": "檔期最短的一項：母船季節限定營運到 9/30，夜航更早在 9/18 收班。夜間出海對學齡前偏刺激，建議 6 歲以上；易暈船者出發前 30 分鐘先吃藥、坐中段靠窗，並自備薄外套。",
+    "info": {
+      "date": "2026/8/16 ~ 9/18",
+      "location": "國立海洋科技博物館 · 潮境方舟",
+      "age": "6 歲以上較適合",
+      "price": "費用與場次詳見海科館官網"
+    },
+    "source_name": "國立海洋科技博物館官網",
+    "sources": [
+      {
+        "name": "國立海洋科技博物館官網",
+        "url": "https://www.nmmst.gov.tw/chhtml/index/"
+      }
+    ],
+    "end_date": "2026-09-18",
+    "status": "active"
+  },
+  {
+    "id": "nmmst-shark-kingdom-2026",
+    "date": "2026-09-02",
+    "week": "2026-W35",
+    "category": "taipei",
+    "region": "基隆市",
+    "district": "中正區",
+    "type": "影片放映",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "親子廁所",
+      "哺乳室",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "海洋",
+      "影片"
+    ],
+    "coord": [
+      25.1372,
+      121.8036
+    ],
+    "title": "基隆海科館 · 海洋劇場《鯊魚王國》9/2 新片上映",
+    "summary": "海洋劇場 9/2 換上新片《鯊魚王國》接檔暑假片單，是館內少見「一票看完、不必排隊、有冷氣」的定點行程，一路開到年底。",
+    "highlight": "鯊魚幾乎是所有小孩心裡第一名的海洋生物，大銀幕比水族箱更能講清楚牠住在哪、吃什麼、為什麼在減少。可搭配《SEA YOU》（至 12/31）與《極地探險》（至 2027/5/2）一天走三檔。劇場為限時放映，先查當日場次表。",
+    "info": {
+      "date": "2026/9/2 ~ 12/31",
+      "location": "海科館 海洋劇場",
+      "age": "3 歲以上",
+      "price": "票價與場次詳見海科館官網"
+    },
+    "source_name": "國立海洋科技博物館官網",
+    "sources": [
+      {
+        "name": "國立海洋科技博物館官網",
+        "url": "https://www.nmmst.gov.tw/chhtml/index/"
+      }
+    ],
+    "end_date": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "nmmst-midautumn-rabbit-2026",
+    "date": "2026-09-12",
+    "week": "2026-W35",
+    "category": "taipei",
+    "region": "基隆市",
+    "district": "中正區",
+    "type": "節慶活動/小展",
+    "venue": "室內",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "親子廁所",
+      "哺乳室",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "中秋",
+      "海洋教育"
+    ],
+    "coord": [
+      25.145,
+      121.8036
+    ],
+    "title": "基隆海科館 · 中秋「賞花、賞月、賞秋兔」＋潮境《中秋節烤肉海鮮精選》小展",
+    "summary": "海科館中秋雙檔：潮境智能海洋館 9/12 起推出小展《中秋節烤肉海鮮精選》，中秋節（9/25）當天起再接上「賞花、賞月、賞秋兔」主題活動。",
+    "highlight": "《中秋節烤肉海鮮精選》這題目意外好用——逛完回家挑烤肉食材就有話題：哪種是養殖、哪種是野撈、哪些正在減少。9/25 中秋是週五連三天假，潮境一帶中午到傍晚最擠，建議一早或 15:00 後到、搭台鐵到海科館站。",
+    "info": {
+      "date": "小展 2026/9/12 起 · 中秋活動 9/25 起",
+      "location": "海科館 · 潮境智能海洋館",
+      "age": "全齡",
+      "price": "詳見海科館官方公告"
+    },
+    "source_name": "國立海洋科技博物館官網",
+    "sources": [
+      {
+        "name": "國立海洋科技博物館官網",
+        "url": "https://www.nmmst.gov.tw/chhtml/index/"
+      }
+    ],
+    "end_date": "2026-10-30",
+    "status": "active"
+  },
+  {
+    "id": "vanished-pharaoh-vr-songyan-2026",
+    "date": "2026-01-29",
+    "week": "2026-W35",
+    "category": "taipei",
+    "region": "臺北市",
+    "district": "信義區",
+    "type": "VR 沉浸體驗",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "親子廁所"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "VR",
+      "埃及",
+      "有年齡限制"
+    ],
+    "coord": [
+      25.0438,
+      121.5605
+    ],
+    "title": "松菸 · 《消失的法老》古夫金字塔 VR 沉浸體驗（僅到 9/28）",
+    "summary": "戴上 VR 頭顯走進古夫金字塔內部的自由行動式沉浸體驗，可以「走進」平常連考古學家都難以進入的墓室空間。",
+    "highlight": "和史博館埃及木乃伊「永生傳說」特展（同到 9/28）是絕配：一邊看真實文物、一邊用 VR 走進金字塔。⚠️ 自由行動式 VR 有明確年齡下限與身高限制、頭顯對學齡前頸部負擔大，訂票前務必先確認官方年齡規定。",
+    "info": {
+      "date": "2026/1/29 ~ 9/28",
+      "location": "松山文創園區",
+      "age": "年齡與身高限制以官方為準",
+      "price": "票價詳見官方售票資訊"
+    },
+    "source_name": "松山文創園區 展演資訊",
+    "sources": [
+      {
+        "name": "松山文創園區 展演資訊",
+        "url": "https://www.songshanculturalpark.org/exhibition"
+      }
+    ],
+    "end_date": "2026-09-28",
+    "status": "active"
+  },
+  {
+    "id": "nstm-emergency-kit-sep-2026",
+    "date": "2026-09-01",
+    "week": "2026-W35",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "三民區",
+    "type": "防災教育活動",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "親子廁所",
+      "哺乳室",
+      "無障礙",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "防災",
+      "動手做"
+    ],
+    "coord": [
+      22.6552,
+      120.313
+    ],
+    "title": "高雄科工館 · 「防災，從『開箱』開始！」9 月整備避難包",
+    "summary": "科工館 9 月邀家庭一起「開箱」整備避難包，把防災從抽象宣導變成動手清點的具體行動，正好對上 9/21 國家防災日。",
+    "highlight": "防災教育最難的一關是「講了但沒做」。孩子親手放進手電筒、口哨、飲水與備藥，比聽十次演講記得牢。回家延伸一步：讓孩子畫自家疏散路線圖貼在門後、約好集合點。可搭配同館《如果雨不停》特展同日排完。",
+    "info": {
+      "date": "2026 年 9 月（配合 9/21 國家防災日）",
+      "location": "國立科學工藝博物館",
+      "age": "6 歲以上",
+      "price": "場次與收費詳見科工館官網"
+    },
+    "source_name": "國立科學工藝博物館官網",
+    "sources": [
+      {
+        "name": "國立科學工藝博物館官網",
+        "url": "https://www.nstm.gov.tw/"
+      }
+    ],
+    "end_date": "2026-09-30",
+    "status": "active"
+  },
+  {
+    "id": "nstm-dementia-month-2026",
+    "date": "2026-09-01",
+    "week": "2026-W35",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "三民區",
+    "type": "主題月活動",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "親子廁所",
+      "哺乳室",
+      "無障礙",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "三代同遊",
+      "生命教育"
+    ],
+    "coord": [
+      22.6552,
+      120.313
+    ],
+    "title": "高雄科工館 · 國際失智症月「憶起來科工館玩」（9 月限定）",
+    "summary": "配合 9 月國際失智症月推出的特別活動，主打三代同遊，把「陪長輩」與「帶小孩」放在同一趟行程裡。",
+    "highlight": "少數同時服務阿公阿嬤與孫子的博物館企劃，對「假日要陪長輩、也要顧小孩」的三明治世代特別實用。也是很好的機會用「大腦也會老」代替責備，跟孩子解釋阿嬤為什麼會忘記剛說過的話。館內動線平坦有電梯，推車與輪椅同行沒問題。",
+    "info": {
+      "date": "2026 年 9 月（國際失智症月）",
+      "location": "國立科學工藝博物館",
+      "age": "全齡（祖孫共遊）",
+      "price": "優惠與場次詳見科工館官網"
+    },
+    "source_name": "國立科學工藝博物館官網",
+    "sources": [
+      {
+        "name": "國立科學工藝博物館官網",
+        "url": "https://www.nstm.gov.tw/"
+      }
+    ],
+    "end_date": "2026-09-30",
+    "status": "active"
+  },
+  {
+    "id": "nmns-amigo-species-2026",
+    "date": "2026-09-01",
+    "week": "2026-W35",
+    "category": "outside",
+    "region": "臺中市",
+    "district": "北區",
+    "type": "實境解謎",
+    "venue": "戶外",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "親子廁所",
+      "哺乳室",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "解謎",
+      "生態"
+    ],
+    "coord": [
+      24.158,
+      120.666
+    ],
+    "title": "台中科博館 · 「阿謎GO」2026 新戶外主題《物種大魔境》",
+    "summary": "科博館實境解謎遊戲「阿謎GO」推出 2026 全新戶外主題《物種大魔境》，支援單人與多人同玩，把館外植物園與園區變成解謎場地。",
+    "highlight": "解謎是把「逛博物館」翻轉成「有任務」最有效的方式：有任務的孩子會主動讀標示牌，沒任務的十分鐘就想走。適合覺得「又要再逛一次」的回訪家庭。建議 6 歲以上，年紀小的可由大人念題、讓他找答案。九月台中午後有雷雨，抓上午時段。",
+    "info": {
+      "date": "常設型（2026 新主題）",
+      "location": "國立自然科學博物館 戶外園區",
+      "age": "6 歲以上",
+      "price": "玩法與收費詳見科博館官網"
+    },
+    "source_name": "國立自然科學博物館官網",
+    "sources": [
+      {
+        "name": "國立自然科學博物館官網",
+        "url": "https://www.nmns.edu.tw/"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "apitf-waters-yilan-2026",
+    "date": "2026-09-01",
+    "week": "2026-W35",
+    "category": "outside",
+    "region": "宜蘭縣",
+    "district": "五結鄉",
+    "type": "藝術節/表演",
+    "venue": "室內＋戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "親子廁所",
+      "哺乳室",
+      "停車場",
+      "推車友善"
+    ],
+    "tags": [
+      "免費",
+      "索票制",
+      "表演",
+      "預售",
+      "戶外"
+    ],
+    "coord": [
+      24.6866,
+      121.8228
+    ],
+    "title": "宜蘭傳藝 · 2026 亞太傳統藝術節「眾水之境」9/1 起分階段索票【預售】",
+    "summary": "國立傳統藝術中心公告，2026 亞太傳統藝術節「眾水之境」自 9/1 起分階段開放劇場索票與「文化漫遊 DIY」活動報名。",
+    "highlight": "傳藝中心一年一度的旗艦節目，索票制等於「免費但要搶」——9/1 開放當天就要動作。亞太各國傳統音樂與偶戲是難得的接觸機會，演出長度通常比一般兒童劇短，對坐不住的孩子更友善。「文化漫遊 DIY」適合 4 歲以上，名額比劇場更快滿。",
+    "info": {
+      "date": "2026/9/1 起分階段索票／報名",
+      "location": "宜蘭傳藝園區（五結鄉）",
+      "age": "全齡",
+      "price": "劇場索票 · 文化漫遊 DIY 另行報名"
+    },
+    "source_name": "國立傳統藝術中心官網",
+    "sources": [
+      {
+        "name": "國立傳統藝術中心官網",
+        "url": "https://www.ncfta.gov.tw/"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "nmp-metal-archaeology-2026",
+    "date": "2026-09-12",
+    "week": "2026-W35",
+    "category": "outside",
+    "region": "臺南市",
+    "district": "新市區",
+    "type": "手作工作坊",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "親子廁所",
+      "哺乳室",
+      "停車場",
+      "無障礙"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "手作",
+      "考古"
+    ],
+    "coord": [
+      23.1027,
+      120.279
+    ],
+    "title": "台南 · 南科考古館《舊時代新玩藝》金工考古所（9/12）｜⚠️ 8/31~9/7 休館",
+    "summary": "史前館南科考古館的「舊時代新玩藝」系列 9/12 推出「金工考古所」，用金屬工藝的動手做，把考古出土的金屬器物做成孩子能帶回家的成品。",
+    "highlight": "⚠️ 南科考古館 8/31~9/7 因維護全館休館，這兩週有台南行程請避開。9/12 金工體驗是「摸得到的歷史」，比看展櫃更能理解古人怎麼做出這東西，適合 6 歲以上。名額少、線上一開就滿，建議 9/8 復館後立刻查報名。同系統康樂本館 9/20 有臺灣文化日親子說故事《我的名字》。",
+    "info": {
+      "date": "2026/9/12（單日）· 8/31~9/7 全館休館",
+      "location": "南科考古館（台南新市）",
+      "age": "6 歲以上",
+      "price": "報名方式與收費詳見官網"
+    },
+    "source_name": "國立臺灣史前文化博物館官網",
+    "sources": [
+      {
+        "name": "國立臺灣史前文化博物館官網",
+        "url": "https://www.nmp.gov.tw/"
+      }
+    ],
+    "end_date": "2026-09-12",
+    "status": "active"
+  },
+  {
+    "id": "hogwarts-invitation-tokyo-2026",
+    "date": "2026-03-18",
+    "week": "2026-W35",
+    "category": "japan",
+    "region": "東京都",
+    "district": "練馬區",
+    "type": "影城限定企畫",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "需預約",
+      "餐廳",
+      "無障礙"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "哈利波特",
+      "即將結束"
+    ],
+    "coord": [
+      35.7565,
+      139.6389
+    ],
+    "title": "東京 · 「霍格華茲的邀請函」ホグワーツからの招待状（9/6 結束）",
+    "summary": "華納兄弟哈利波特影城東京的期間限定企畫，把「收到霍格華茲入學通知」這件事做成入場體驗，9/6 就結束。",
+    "highlight": "已標「終了間近」，9/6 之後換季，臨時飛不過去不必勉強——影城本身是常設的。⚠️ 全區完全預約制、當天現場買不到票，完整走完需 3.5~4 小時，對學齡前偏長；建議 6 歲以上且至少看過一部電影再去。從池袋搭西武線到豊島園站約 15 分鐘。",
+    "info": {
+      "date": "2026/3/18 ~ 9/6（即將結束）",
+      "location": "華納兄弟哈利波特影城 東京（練馬區）",
+      "age": "6 歲以上",
+      "price": "需事先線上預約購票，詳見官方"
+    },
+    "source_name": "Walkerplus 東京 9 月活動一覽",
+    "sources": [
+      {
+        "name": "Walkerplus 東京 9 月活動一覽",
+        "url": "https://www.walkerplus.com/event_list/09/ar0313/"
+      }
+    ],
+    "end_date": "2026-09-06",
+    "status": "active"
+  },
+  {
+    "id": "sanrio-hotel-floria-tokyo-2026",
+    "date": "2026-07-15",
+    "week": "2026-W35",
+    "category": "japan",
+    "region": "東京都",
+    "district": "新宿區",
+    "type": "體驗型展覽",
+    "venue": "室內",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "親子廁所",
+      "餐廳",
+      "電車可達"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "三麗鷗",
+      "長檔期"
+    ],
+    "coord": [
+      35.6952,
+      139.7005
+    ],
+    "title": "東京 · Sanrio characters Exhibition「Hotel Floria Tokyo」",
+    "summary": "以「三麗鷗飯店」為概念的體驗型展覽，把 Hello Kitty 與夥伴們的世界做成一間虛構飯店，開到 2027/5 底。",
+    "highlight": "展期近兩年，價值在於它是「無論何時去東京都能排」的穩定選項，適合當雨天或行程空檔的備案而非專程安排。地點在新宿歌舞伎町，白天環境單純、夜間氣氛較濃，帶小孩建議排中午到下午。想看更完整的三麗鷗世界，多摩的彩虹樂園仍是首選，兩者不必都去。",
+    "info": {
+      "date": "2026/7/15 ~ 2027/5/31",
+      "location": "東急歌舞伎町 Tower（新宿區）",
+      "age": "全齡",
+      "price": "票價詳見官方售票資訊"
+    },
+    "source_name": "Walkerplus 東京 9 月活動一覽",
+    "sources": [
+      {
+        "name": "Walkerplus 東京 9 月活動一覽",
+        "url": "https://www.walkerplus.com/event_list/09/ar0313/"
+      }
+    ],
+    "end_date": "2027-05-31",
+    "status": "active"
+  },
+  {
+    "id": "hatena-ten-shibuya-2026",
+    "date": "2026-06-27",
+    "week": "2026-W35",
+    "category": "japan",
+    "region": "東京都",
+    "district": "渋谷區",
+    "type": "體驗型展覽",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "親子廁所",
+      "餐廳",
+      "電車可達"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "思考",
+      "親子對話"
+    ],
+    "coord": [
+      35.6614,
+      139.701
+    ],
+    "title": "東京 · 「はてな展」（西武渋谷店，至 9/30）",
+    "summary": "以「價值觀的差異」為主題的體驗型展覽，用一連串問題讓觀眾發現「原來別人不是這樣想的」，9/30 收展。",
+    "highlight": "難得適合「跟小學生一起看」的展：主題不是知識而是觀點，每一題都能變成親子對話，回程電車上還能繼續聊。對 6 歲以上、開始有自己意見的孩子特別有意思；學齡前看不懂題目。位在百貨公司裡，逛完就有餐廳與洗手間。日文題目為主，需要大人翻譯。",
+    "info": {
+      "date": "2026/6/27 ~ 9/30",
+      "location": "西武渋谷店（渋谷區）",
+      "age": "6 歲以上",
+      "price": "詳見官方售票資訊"
+    },
+    "source_name": "Walkerplus 東京 9 月活動一覽",
+    "sources": [
+      {
+        "name": "Walkerplus 東京 9 月活動一覽",
+        "url": "https://www.walkerplus.com/event_list/09/ar0313/"
+      }
+    ],
+    "end_date": "2026-09-30",
+    "status": "active"
+  },
+  {
     "id": "chiikawa-days-huashan-2026",
     "date": "2026-07-01",
     "week": "2026-W27",
@@ -733,7 +1407,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "egypt-mummy-eternal-2026",
@@ -1030,7 +1704,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "handmade-japan-fes-2026",
@@ -1177,7 +1851,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "botero-magic-2026",
@@ -1321,7 +1995,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "hualien-zhihka-water-2026",
@@ -1370,7 +2044,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taitung-expo-living-school-2026",
@@ -1417,7 +2091,7 @@
       }
     ],
     "end_date": "2026-08-20",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "xiaowulai-creek-water-2026",
@@ -1511,7 +2185,7 @@
       }
     ],
     "end_date": "2026-08-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "teamlab-hakodate-2026",
@@ -1705,7 +2379,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tfam-make-a-park-2026",
@@ -1755,7 +2429,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "qiaohu-galaxy-thief-2026",
@@ -1802,7 +2476,7 @@
       }
     ],
     "end_date": null,
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "eastcoast-land-arts-2026",
@@ -1898,7 +2572,7 @@
       }
     ],
     "end_date": "2026-08-20",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "lihpao-malawan-2026",
@@ -1946,7 +2620,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "farglory-ocean-attack-summer-2026",
@@ -1995,7 +2669,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "teamlab-planets-tokyo-2026",
@@ -2623,7 +3297,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "eda-summer-2026",
@@ -2671,7 +3345,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "yomiuriland-pokemon-2026",
@@ -2766,7 +3440,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "sanrio-puroland-2026",
@@ -3103,7 +3777,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "zhuangwei-dune-arts-2026",
@@ -3198,7 +3872,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "cijin-kite-water-fes-2026",
@@ -3486,7 +4160,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "pickles-frog-songyan-2026",
@@ -3537,7 +4211,7 @@
       }
     ],
     "end_date": "2026-08-25",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "sanx-90th-breeze-2026",
@@ -3586,7 +4260,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "whose-gameroom-skm-2026",
@@ -3635,7 +4309,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taoyuan-landscape-arts-2026",
@@ -3685,7 +4359,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "keelung-chaojing-bay-2026",
@@ -3784,7 +4458,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tainan-niau-cat-hunt-2026",
@@ -3833,7 +4507,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taichung-shigang-balloon-2026",
@@ -3882,7 +4556,7 @@
       }
     ],
     "end_date": "2026-08-24",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nara-tokae-2026",
@@ -4030,7 +4704,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "teletubbies-qsquare-2026",
@@ -4129,7 +4803,7 @@
       }
     ],
     "end_date": null,
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "jurassic-dino-encounter-2026",
@@ -4371,7 +5045,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taoyuan-kids-museum-same-2026",
@@ -4467,7 +5141,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "babyshark-pier2-2026",
@@ -4657,7 +5331,7 @@
       }
     ],
     "end_date": "2026-08-24",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "sendai-tanabata-2026",
@@ -4904,7 +5578,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "creative-expo-taiwan-2026",
@@ -4954,7 +5628,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "keelung-nuannuan-water-2026",
@@ -5004,7 +5678,7 @@
       }
     ],
     "end_date": "2026-08-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "kaohsiung-kids-playground-2026",
@@ -5107,7 +5781,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "kaohsiung-ice-age-fossil-2026",
@@ -5206,7 +5880,7 @@
       }
     ],
     "end_date": "2026-08-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tokyo-asagaya-tanabata-2026",
@@ -5305,7 +5979,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "ocean-will-ntsec-2026",
@@ -5504,7 +6178,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "songyan-luminous-garden-2026",
@@ -5603,7 +6277,7 @@
       }
     ],
     "end_date": "2026-08-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nstm-if-rain-doesnt-stop-2026",
