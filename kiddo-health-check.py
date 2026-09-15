@@ -16,19 +16,24 @@ kiddo-health-check.py — Kiddo POST 親子網站健檢腳本
   python parent-intel-site/kiddo-health-check.py
   python parent-intel-site/kiddo-health-check.py --json     # 輸出 JSON 到 stdout
   python parent-intel-site/kiddo-health-check.py --report   # 產出 health-YYYY-WXX.md
+  python parent-intel-site/kiddo-health-check.py --links    # 加驗 topics/*.html 外部引用(會連外網)
 
 退出碼:
   0 - 健康(無異常)
-  2 - 有警報(過期 ≥3 OR 未來 2 週 < 4)
+  2 - 有警報(過期 ≥3 OR 未來 2 週 < 4 OR --links 抓到死連結)
   1 - 腳本本身錯誤
 """
 import json
 import os
 import re
 import sys
+import urllib.error
+import urllib.request
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from urllib.parse import urlsplit
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")  # 排程 OEM 終端中文 print 防亂碼
@@ -206,6 +211,112 @@ def check_topics() -> dict:
     }
 
 
+# ════════════════════ 深度文章外部連結驗證 (--links) ════════════════════
+# 2026-09 健檢實測出來的四條判準,純看狀態碼會全踩:
+#   1. 真 404 / 410 / 451           → 死連結
+#   2. 3xx 跟到底,最終 200          → 存活(要記 url_effective)
+#   3. 最終網址 path 塌成 / 或 /En   → **死連結**,即使回 200
+#      (政府網站檔案下架的典型行為:cdc.gov.tw/File/Get/<token> 失效不回 404,
+#       靜默重導首頁。2026-09-15 的真死連結就藏在 105 個 200 裡面)
+#   4. 403 → 反爬蟲,不算死。再抓一次該網域首頁,首頁也 403 = 網域級封鎖
+#   另:PubMed 一律回 203,203 是存活,不要當失敗;一定要帶真實 UA,
+#      沒 UA 會製造大量假 403。
+BROWSER_HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                   "AppleWebKit/537.36 (KHTML, like Gecko) "
+                   "Chrome/140.0.0.0 Safari/537.36"),
+    "Accept": ("text/html,application/xhtml+xml,application/xml;q=0.9,"
+               "image/avif,image/webp,*/*;q=0.8"),
+    "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+}
+# 靜態資源不算引用來源
+LINK_SKIP_HOSTS = {"fonts.googleapis.com", "fonts.gstatic.com"}
+ROOT_PATHS = {"", "/", "/En", "/en", "/En/", "/en/"}
+HREF_RE = re.compile(r'href=[\'"](https?://[^\'"]+)[\'"]', re.I)
+
+
+def fetch_status(url: str, timeout: int = 25) -> tuple[int | None, str, str]:
+    """回傳 (status_code, url_effective, error)。3xx 由 urllib 自動跟完。"""
+    req = urllib.request.Request(url, headers=BROWSER_HEADERS, method="GET")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            resp.read(2048)  # 只讀開頭,避免整份 PDF 拉下來
+            return resp.status, resp.geturl(), ""
+    except urllib.error.HTTPError as e:
+        return e.code, e.geturl() if hasattr(e, "geturl") else url, ""
+    except Exception as e:
+        return None, url, f"{type(e).__name__}: {e}"
+
+
+def classify_link(url: str) -> dict:
+    """單一連結分類:alive / dead / blocked / error。"""
+    code, final, err = fetch_status(url)
+    out = {"url": url, "status": code, "url_effective": final, "error": err}
+    if code is None:
+        out["verdict"] = "error"
+        return out
+    # 判準 3:最終網址塌回網域根目錄 → 檔案已下架(即使回 200)
+    orig_path = urlsplit(url).path
+    final_path = urlsplit(final).path
+    if (200 <= code < 300 and orig_path not in ROOT_PATHS
+            and final_path in ROOT_PATHS):
+        out["verdict"] = "dead"
+        out["reason"] = "重導到網域根目錄(檔案已下架),狀態碼仍是 200"
+        return out
+    if 200 <= code < 300:
+        out["verdict"] = "alive"      # 含 PubMed 的 203
+        return out
+    if code == 403:
+        # 判準 4:首頁也 403 = 網域級 bot 封鎖,不是這條 path 失效
+        host_root = f"{urlsplit(url).scheme}://{urlsplit(url).netloc}/"
+        root_code, _, _ = fetch_status(host_root, timeout=15)
+        out["verdict"] = "blocked"
+        out["reason"] = ("網域級封鎖(首頁也 403)" if root_code == 403
+                         else f"path 403 但首頁 {root_code},需人工複驗")
+        return out
+    if code in (404, 410, 451):
+        out["verdict"] = "dead"
+        out["reason"] = f"HTTP {code}"
+        return out
+    out["verdict"] = "error"
+    out["reason"] = f"HTTP {code}"
+    return out
+
+
+def check_links(max_workers: int = 8) -> dict:
+    """掃 topics/*.html 的外部 href,全量逐一驗(不抽樣)。"""
+    if not TOPICS_DIR.exists():
+        return {"checked": 0, "note": "topics/ 不存在"}
+    url_sources: dict[str, list[str]] = {}
+    for f in sorted(TOPICS_DIR.glob("*.html")):
+        html = f.read_text(encoding="utf-8", errors="replace")
+        for u in HREF_RE.findall(html):
+            if urlsplit(u).netloc in LINK_SKIP_HOSTS:
+                continue
+            url_sources.setdefault(u, []).append(f.name)
+    urls = sorted(url_sources)
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        results = list(pool.map(classify_link, urls))
+    for r in results:
+        r["articles"] = sorted(set(url_sources[r["url"]]))
+    buckets = Counter(r["verdict"] for r in results)
+    return {
+        "checked": len(urls),
+        "alive": buckets.get("alive", 0),
+        "dead": buckets.get("dead", 0),
+        "blocked": buckets.get("blocked", 0),
+        "error": buckets.get("error", 0),
+        "dead_links": [r for r in results if r["verdict"] == "dead"],
+        "blocked_links": [r for r in results if r["verdict"] == "blocked"],
+        "error_links": [r for r in results if r["verdict"] == "error"],
+    }
+
+
 def check_files() -> dict:
     """檔案大小檢查。"""
     out = {}
@@ -258,6 +369,7 @@ def main():
 
     topics = check_topics()
     files = check_files()
+    links = check_links() if "--links" in sys.argv else None
 
     # === 健康判斷 ===
     n_expired = len(expired)
@@ -273,6 +385,8 @@ def main():
         alerts.append(f"另有 {n_review} 個疑似過期需人工確認 (無 end_date,字串推測)")
     if n_future < 4:
         alerts.append(f"未來 2 週可去活動只有 {n_future} 個 < 4 (空窗警報)")
+    if links and links.get("dead"):
+        alerts.append(f"深度文章有 {links['dead']} 個死連結 (含回 200 但重導首頁的)")
 
     has_alert = bool(alerts)
 
@@ -290,6 +404,7 @@ def main():
         "region_distribution": dict(region_dist.most_common()),
         "age_range_distribution": dict(age_dist.most_common()),
         "topics": topics,
+        "links": links,
         "file_sizes": files,
         "alerts": alerts,
         "has_alert": has_alert,
@@ -325,6 +440,17 @@ def main():
                 print(f"  - [{ev['region']}] {ev['title'][:50]}")
             if n_future > 10:
                 print(f"  ... 還有 {n_future - 10} 個")
+            print()
+        if links:
+            print(f"[外部引用連結 {links['checked']} 個]")
+            print(f"  存活 {links.get('alive', 0)} · 死連結 {links.get('dead', 0)}"
+                  f" · 403 反爬蟲 {links.get('blocked', 0)}"
+                  f" · 需複驗 {links.get('error', 0)}")
+            for r in links.get("dead_links", []):
+                print(f"  ❌ [{','.join(r['articles'])}] {r['url']}")
+                print(f"     → {r.get('reason', '')} | 最終 {r['url_effective']}")
+            for r in links.get("error_links", []):
+                print(f"  ⚠️ {r['url']} | {r.get('reason') or r['error']}")
             print()
         if alerts:
             print("[警報]")

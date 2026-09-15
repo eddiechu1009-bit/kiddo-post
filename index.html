@@ -966,6 +966,8 @@ body::before {
 .topic-card.t5:hover { background: var(--yellow-soft); }
 .topic-card.t6 { border-color: var(--red); }
 .topic-card.t6:hover { background: #fee4e0; }
+.topic-card.t7 { border-color: var(--orange); }
+.topic-card.t7:hover { background: var(--orange-soft); }
 .topic-emoji { font-size: 42px; margin-bottom: 10px; display: block; }
 .topic-title {
   font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
@@ -1540,7 +1542,7 @@ body::before {
       <span class="section-title-emoji">💡</span>
       <span>親子議題專區</span>
     </div>
-    <span class="section-count">6 大分類</span>
+    <span class="section-count">7 大分類</span>
   </div>
   <div class="section-subtitle">爸媽的深度閱讀站，陸續更新中 🌱</div>
 
@@ -1659,7 +1661,7 @@ const TOPICS = [
     tags: ['睡眠', '生理時鐘', '暑假作息', '3-6歲'], soon: false,
     url: 'topics/summer-sleep-routine-3to6.html', featured: false,
     readMinutes: 10, sourceCount: 13 },
-  { cls: 't6', emoji: '✈️', title: '讀賣樂園 PokePark KANTO 親子完整攻略',
+  { cls: 't7', emoji: '✈️', title: '讀賣樂園 PokePark KANTO 親子完整攻略',
     desc: '全球首座常設寶可夢主題園區：票價分級、5歲以下限制、推薦路線、交通住宿一次搞定。',
     tags: ['親子旅遊', '日本', '主題樂園', '3-12歲'], soon: false,
     url: 'topics/pokemon-kanto-yomiuriland.html', featured: false,
@@ -1682,12 +1684,18 @@ const TOPICS = [
   { cls: 't4', emoji: '🏥', title: '健康與醫療',
     desc: '疫苗行事曆、常見兒童疾病、視力聽力牙科、營養與副食品、睡眠訓練。',
     tags: ['疫苗', '副食品', '視力', '過敏', '睡眠'], soon: true },
+  { cls: 't3', emoji: '💛', title: '心理與情緒',
+    desc: '情緒辨識與命名、分離焦慮、挫折忍受度、手足吃醋、上學適應、正向教養工具箱。',
+    tags: ['情緒教育', '分離焦慮', '挫折忍受', '正向教養'], soon: true },
   { cls: 't5', emoji: '👨‍👩‍👧', title: '家庭關係',
     desc: '夫妻育兒分工、祖孫三代溝通、手足關係、家庭理財、教育基金。',
     tags: ['夫妻分工', '隔代教養', '教育基金', '家庭理財'], soon: true },
   { cls: 't6', emoji: '🛡️', title: '安全與照護',
     desc: '居家安全、交通安全、戶外防曬防蚊、性教育、急救 CPR 哈姆立克。',
     tags: ['居家安全', '汽座', '防蚊', 'CPR', '性教育'], soon: true },
+  { cls: 't7', emoji: '🗺️', title: '旅遊與外出',
+    desc: '親子友善行程規劃、主題樂園攻略、長途交通與時差、外出裝備清單、日本自由行實戰。',
+    tags: ['親子旅遊', '主題樂園', '日本自由行', '外出裝備'], soon: true },
 ];
 
 // ═══════════════════════ STATE ═══════════════════════
@@ -1711,7 +1719,12 @@ async function loadArticles() {
     const res = await fetch('articles.json?t=' + Date.now());
     const raw = await res.json();
     // 過濾已收起的活動(status === 'archived');無 status 視為 active 照常顯示
-    ALL_ARTICLES = raw.filter(a => a.status !== 'archived');
+    // 另外擋掉 end_date 已過但還沒標 archived 的活動 —— 歸檔靠每週週報,
+    // 週末結束的活動會有幾天空窗,這道前端保險讓過期資訊不會等到下次週報才消失。
+    const todayISO = new Date().toLocaleDateString('sv-SE');  // 依瀏覽器本地時區取 YYYY-MM-DD
+    ALL_ARTICLES = raw.filter(a =>
+      a.status !== 'archived' && !(a.end_date && a.end_date < todayISO)
+    );
   } catch (e) {
     console.error('載入 articles.json 失敗', e);
     ALL_ARTICLES = [];
@@ -1763,6 +1776,7 @@ function renderFeaturedArticle() {
     t4: { name: '🏥 健康與醫療', color: '#0c4a6e' },
     t5: { name: '👨‍👩‍👧 家庭關係', color: '#854d0e' },
     t6: { name: '🛡️ 安全與照護', color: '#991b1b' },
+    t7: { name: '🗺️ 旅遊與外出', color: '#b7410e' },
   };
   const cat = catMap[featured.cls] || { name: '深度文章', color: '#e8657e' };
 

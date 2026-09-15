@@ -102,7 +102,7 @@
       }
     ],
     "end_date": "2026-09-13",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "formosa-northcoast-arts-2026",
@@ -503,15 +503,15 @@
       }
     ],
     "end_date": "2026-09-13",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "ghibli-park-exhibition-osaka-2026",
     "date": "2026-09-09",
     "week": "2026-W37",
     "category": "japan",
-    "region": "大阪",
-    "district": "住之江區",
+    "region": "日本",
+    "district": "大阪府 住之江區",
     "type": "展覽",
     "venue": "室內",
     "age_range": [
@@ -560,8 +560,8 @@
     "date": "2026-09-09",
     "week": "2026-W37",
     "category": "japan",
-    "region": "千葉",
-    "district": "習志野市",
+    "region": "日本",
+    "district": "千葉縣 習志野市",
     "type": "親子展區",
     "venue": "室內",
     "age_range": [
@@ -613,8 +613,8 @@
     "date": "2026-09-09",
     "week": "2026-W37",
     "category": "japan",
-    "region": "東京",
-    "district": "港區",
+    "region": "日本",
+    "district": "東京都 港區",
     "type": "展覽",
     "venue": "室內",
     "age_range": [
@@ -951,7 +951,7 @@
       }
     ],
     "end_date": "2026-09-14",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nmns-921-rescue-dogs-2026",
@@ -1050,7 +1050,7 @@
       }
     ],
     "end_date": "2026-09-13",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "sunmoonlake-fireworks-2026",
@@ -1153,8 +1153,8 @@
     "date": "2026-09-02",
     "week": "2026-W36",
     "category": "japan",
-    "region": "日本 東京",
-    "district": "中央區 日本橋・八重洲",
+    "region": "日本",
+    "district": "東京都 中央區 日本橋・八重洲",
     "type": "街區活動",
     "venue": "室內＋戶外",
     "age_range": [
@@ -1203,8 +1203,8 @@
     "date": "2026-09-02",
     "week": "2026-W36",
     "category": "japan",
-    "region": "日本 埼玉",
-    "district": "飯能市",
+    "region": "日本",
+    "district": "埼玉縣 飯能市",
     "type": "主題樂園",
     "venue": "戶外",
     "age_range": [
@@ -1252,8 +1252,8 @@
     "date": "2026-09-02",
     "week": "2026-W36",
     "category": "japan",
-    "region": "日本 東京",
-    "district": "多摩市",
+    "region": "日本",
+    "district": "東京都 多摩市",
     "type": "主題樂園",
     "venue": "室內",
     "age_range": [
@@ -1303,7 +1303,7 @@
     "date": "2026-09-05",
     "week": "2026-W35",
     "category": "taipei",
-    "region": "臺北市",
+    "region": "台北市",
     "district": "信義區",
     "type": "市集/物產展",
     "venue": "室內",
@@ -1352,7 +1352,7 @@
     "date": "2026-09-12",
     "week": "2026-W35",
     "category": "taipei",
-    "region": "臺北市",
+    "region": "台北市",
     "district": "信義區",
     "type": "市集",
     "venue": "戶外",
@@ -1395,7 +1395,7 @@
       }
     ],
     "end_date": "2026-09-13",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "chaojing-ark-nightsail-2026",
@@ -1545,7 +1545,7 @@
     "date": "2026-01-29",
     "week": "2026-W35",
     "category": "taipei",
-    "region": "臺北市",
+    "region": "台北市",
     "district": "信義區",
     "type": "VR 沉浸體驗",
     "venue": "室內",
@@ -1689,7 +1689,7 @@
     "date": "2026-09-01",
     "week": "2026-W35",
     "category": "outside",
-    "region": "臺中市",
+    "region": "台中市",
     "district": "北區",
     "type": "實境解謎",
     "venue": "戶外",
@@ -1786,7 +1786,7 @@
     "date": "2026-09-12",
     "week": "2026-W35",
     "category": "outside",
-    "region": "臺南市",
+    "region": "台南市",
     "district": "新市區",
     "type": "手作工作坊",
     "venue": "室內",
@@ -1827,15 +1827,15 @@
       }
     ],
     "end_date": "2026-09-12",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "hogwarts-invitation-tokyo-2026",
     "date": "2026-03-18",
     "week": "2026-W35",
     "category": "japan",
-    "region": "東京都",
-    "district": "練馬區",
+    "region": "日本",
+    "district": "東京都 練馬區",
     "type": "影城限定企畫",
     "venue": "室內",
     "age_range": [
@@ -1881,8 +1881,8 @@
     "date": "2026-07-15",
     "week": "2026-W35",
     "category": "japan",
-    "region": "東京都",
-    "district": "新宿區",
+    "region": "日本",
+    "district": "東京都 新宿區",
     "type": "體驗型展覽",
     "venue": "室內",
     "age_range": [
@@ -1930,8 +1930,8 @@
     "date": "2026-06-27",
     "week": "2026-W35",
     "category": "japan",
-    "region": "東京都",
-    "district": "渋谷區",
+    "region": "日本",
+    "district": "東京都 渋谷區",
     "type": "體驗型展覽",
     "venue": "室內",
     "age_range": [
@@ -2216,7 +2216,7 @@
       }
     ],
     "end_date": "2026-09-14",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taoyuan-kids-art-festival-2026",
@@ -3301,7 +3301,7 @@
     "date": "2026-06-17",
     "week": "2026-W25",
     "category": "outside",
-    "region": "花蓮",
+    "region": "花蓮縣",
     "district": "吉安鄉",
     "type": "水樂園",
     "venue": "戶外",
@@ -3350,7 +3350,7 @@
     "date": "2026-06-17",
     "week": "2026-W25",
     "category": "outside",
-    "region": "台東",
+    "region": "台東縣",
     "district": "台東市",
     "type": "展覽",
     "venue": "室內",
@@ -3580,7 +3580,7 @@
       }
     ],
     "end_date": "2026-09-13",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "newtaipei-sea-world-water-2026",
@@ -3782,7 +3782,7 @@
     "date": "2026-06-03",
     "week": "2026-W23",
     "category": "outside",
-    "region": "台東",
+    "region": "台東縣",
     "district": "成功鎮",
     "type": "音樂節",
     "venue": "戶外",
@@ -3829,7 +3829,7 @@
     "date": "2026-06-03",
     "week": "2026-W23",
     "category": "outside",
-    "region": "台東",
+    "region": "台東縣",
     "district": "鹿野鄉",
     "type": "嘉年華",
     "venue": "戶外",
@@ -3878,7 +3878,7 @@
     "date": "2026-06-03",
     "week": "2026-W23",
     "category": "outside",
-    "region": "台中",
+    "region": "台中市",
     "district": "后里區",
     "type": "水樂園",
     "venue": "戶外",
@@ -3926,7 +3926,7 @@
     "date": "2026-06-03",
     "week": "2026-W23",
     "category": "outside",
-    "region": "花蓮",
+    "region": "花蓮縣",
     "district": "壽豐鄉",
     "type": "遊樂園",
     "venue": "室內+戶外",
@@ -3975,8 +3975,8 @@
     "date": "2026-06-03",
     "week": "2026-W23",
     "category": "japan",
-    "region": "東京",
-    "district": "江東區",
+    "region": "日本",
+    "district": "東京都 江東區",
     "type": "展覽",
     "venue": "室內",
     "age_range": [
@@ -4023,8 +4023,8 @@
     "date": "2026-06-03",
     "week": "2026-W23",
     "category": "japan",
-    "region": "東京",
-    "district": "秋留野市",
+    "region": "日本",
+    "district": "東京都 秋留野市",
     "type": "水樂園",
     "venue": "室內+戶外",
     "age_range": [
@@ -4071,8 +4071,8 @@
     "date": "2026-06-03",
     "week": "2026-W23",
     "category": "japan",
-    "region": "東京",
-    "district": "台東區",
+    "region": "日本",
+    "district": "東京都 台東區",
     "type": "展覽",
     "venue": "室內",
     "age_range": [
@@ -5272,8 +5272,8 @@
     "date": "2026-07-25",
     "week": "2026-W29",
     "category": "japan",
-    "region": "大阪",
-    "district": "北區",
+    "region": "日本",
+    "district": "大阪府 北區",
     "type": "祭典",
     "venue": "戶外",
     "age_range": [
@@ -5318,8 +5318,8 @@
     "date": "2026-07-15",
     "week": "2026-W29",
     "category": "japan",
-    "region": "埼玉",
-    "district": "川越市",
+    "region": "日本",
+    "district": "埼玉縣 川越市",
     "type": "祭典",
     "venue": "戶外",
     "age_range": [
@@ -5366,8 +5366,8 @@
     "date": "2026-07-15",
     "week": "2026-W29",
     "category": "japan",
-    "region": "千葉",
-    "district": "浦安市",
+    "region": "日本",
+    "district": "千葉縣 浦安市",
     "type": "主題樂園",
     "venue": "戶外",
     "age_range": [
@@ -5409,7 +5409,7 @@
       }
     ],
     "end_date": "2026-09-14",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tamsui-fisherman-fireworks-2026",
@@ -5863,7 +5863,7 @@
     "week": "2026-W30",
     "category": "japan",
     "region": "日本",
-    "district": "奈良",
+    "district": "奈良縣",
     "type": "祭典",
     "venue": "戶外",
     "age_range": [
@@ -5912,7 +5912,7 @@
     "week": "2026-W30",
     "category": "japan",
     "region": "日本",
-    "district": "東京",
+    "district": "東京都",
     "type": "祭典",
     "venue": "戶外",
     "age_range": [
@@ -5962,7 +5962,7 @@
     "week": "2026-W30",
     "category": "japan",
     "region": "日本",
-    "district": "東京",
+    "district": "東京都",
     "type": "祭典",
     "venue": "戶外",
     "age_range": [
@@ -6779,7 +6779,7 @@
       }
     ],
     "end_date": "2026-09-13",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "bali-sand-sculpture-2026",
@@ -7186,8 +7186,8 @@
     "date": "2026-08-05",
     "week": "2026-W32",
     "category": "japan",
-    "region": "日本 東京",
-    "district": "杉並區",
+    "region": "日本",
+    "district": "東京都 杉並區",
     "type": "祭典",
     "venue": "半室內",
     "age_range": [
@@ -7236,8 +7236,8 @@
     "date": "2026-08-05",
     "week": "2026-W32",
     "category": "japan",
-    "region": "日本 東京",
-    "district": "港區",
+    "region": "日本",
+    "district": "東京都 港區",
     "type": "祭典",
     "venue": "戶外",
     "age_range": [
@@ -7680,8 +7680,8 @@
     "date": "2026-08-19",
     "week": "2026-W34",
     "category": "japan",
-    "region": "東京都",
-    "district": "江東區",
+    "region": "日本",
+    "district": "東京都 江東區",
     "type": "展覽",
     "venue": "室內",
     "age_range": [
@@ -7731,8 +7731,8 @@
     "date": "2026-08-19",
     "week": "2026-W34",
     "category": "japan",
-    "region": "東京都",
-    "district": "江東區",
+    "region": "日本",
+    "district": "東京都 江東區",
     "type": "展覽",
     "venue": "室內",
     "age_range": [
@@ -7780,8 +7780,8 @@
     "date": "2026-08-19",
     "week": "2026-W34",
     "category": "japan",
-    "region": "東京都",
-    "district": "江東區",
+    "region": "日本",
+    "district": "東京都 江東區",
     "type": "展覽",
     "venue": "室內",
     "age_range": [
