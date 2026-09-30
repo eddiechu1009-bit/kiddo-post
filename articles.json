@@ -1,5 +1,539 @@
 [
   {
+    "id": "keelung-eagle-carnival-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "taipei",
+    "region": "基隆市",
+    "district": "中正區",
+    "type": "嘉年華",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "火車可達"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "踩街",
+      "嘉年華"
+    ],
+    "coord": [
+      25.1318,
+      121.7394
+    ],
+    "title": "基隆 · 2026 基隆國際海洋老鷹嘉年華（10/3 一天 · 踩街免費 · 第 16 年逢基隆 400）",
+    "summary": "觀光署全國級活動，今年主軸「多元共融」。花車邀法國、加拿大、波多黎各藝術家以海洋廢棄物創作；老鷹家族新增台語「永遠」諧音的鷹媽媽「鷹ONE」。國門廣場 CHILL海海市集 13:00~20:00，踩街後接約 2 小時鷹浪派對。",
+    "highlight": "14:00~17:00 遊行路線封路、停車場管制，搭火車最省力；挑路線起點或尾段站、推車換背巾、3 歲以下帶耳罩。讓孩子數花車上認得出幾種海洋垃圾。",
+    "info": {
+      "date": "2026/10/3（六）遊行 14:00~17:00；市集 13:00~20:00",
+      "location": "基隆市 國門廣場（基隆火車站旁）與遊行路線",
+      "age": "全齡",
+      "price": "免費（市集消費另計）"
+    },
+    "source_name": "基隆市政府",
+    "sources": [
+      {
+        "name": "基隆市政府新聞稿",
+        "url": "https://www.klcg.gov.tw/tw/klcg1/3168-322939.html"
+      }
+    ],
+    "end_date": "2026-10-03",
+    "status": "active"
+  },
+  {
+    "id": "chiuout-music-fest-gongguan-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "中正區",
+    "type": "音樂節",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "音樂節",
+      "雙十連假"
+    ],
+    "coord": [
+      25.0105,
+      121.5307
+    ],
+    "title": "公館 · 2026 秋Out音樂節（10/10~10/11 雙十連假 · 自來水園區免費入園 · 古亭河濱新遊憩設施首亮相）",
+    "summary": "台北最大街區音樂節，3 座自由舞台＋2 座售票舞台、約 50 組藝人。活動期間自來水園區免費入園，全新下挖式圓形廣場首次啟用，古亭河濱公園新遊憩設施首度亮相；觀音山蓄水池（地下水宮殿）導覽 4 場、每場 40 名。",
+    "highlight": "蓄水池導覽 10:30、14:30，號碼牌須本人親領、額滿為止，建議提早到售票口；售票舞台偏成人取向，帶小孩待自由舞台區。河濱新設施內容官方未說明。",
+    "info": {
+      "date": "2026/10/10（六）~10/11（日）",
+      "location": "自來水園區、公館水岸廣場、古亭河濱公園（捷運公館站 1 號出口步行約 3 分鐘）",
+      "age": "全齡",
+      "price": "園區、市集、自由舞台免費；售票舞台另購票"
+    },
+    "source_name": "Yahoo 旅遊（引台北自來水事業處）",
+    "sources": [
+      {
+        "name": "Yahoo 旅遊",
+        "url": "https://tw.news.yahoo.com/%E7%A7%8Bout%E9%9F%B3%E6%A8%82%E7%AF%80%E5%9C%8B%E6%85%B6%E9%80%A3%E5%81%87%E7%99%BB%E5%A0%B4%EF%BC%81%E8%87%AA%E4%BE%86%E6%B0%B4%E5%9C%92%E5%8D%80%E5%85%8D%E8%B2%BB%E5%85%A5%E5%9C%92%E3%80%8150%E7%B5%84%E5%8D%A1%E5%8F%B8%E3%80%814%E5%A0%B4%E5%9C%B0%E4%B8%8B%E6%B0%B4%E5%AE%AE%E6%AE%BF%E5%B0%8E%E8%A6%BD%E8%B3%87%E8%A8%8A%E5%A0%B1%E4%BD%A0%E7%9F%A5-013546787.html"
+      }
+    ],
+    "end_date": "2026-10-11",
+    "status": "active"
+  },
+  {
+    "id": "ntm-allosaurus-memory-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "中正區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "恐龍",
+      "博物館"
+    ],
+    "coord": [
+      25.0429,
+      121.515
+    ],
+    "title": "中正 · 臺博館《骨早味：異特龍記憶與化石繪圖》（展至 11/1 · 全票 30 元 · 50 歲的「阿龍」回來了）",
+    "summary": "1975 年來台、1976 年龍年特展首亮相、陪伴台北人約 30 年的異特龍模型重新登場。展覽比較新舊復原姿態（直立拖尾 vs 前傾懸尾），說明「不是弄錯，而是科學持續修正」；另有兩款 AR 互動與館藏化石、古生物繪圖。",
+    "highlight": "30 元一票兩館，看完本館過馬路到古生物館看恐龍骨架；用新舊姿勢跟孩子聊「科學會改答案」。10/3 週末約會場次報名已於 9/29 截止。",
+    "info": {
+      "date": "2026/7/14~11/1 09:30~17:00",
+      "location": "國立臺灣博物館本館（台北市中正區襄陽路 2 號）",
+      "age": "全齡（恐龍控 3 歲以上）",
+      "price": "全票 30 元、半票 15 元（本館與古生物館一票共用）"
+    },
+    "source_name": "國立臺灣博物館",
+    "sources": [
+      {
+        "name": "臺博館 骨早味特展",
+        "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60183"
+      },
+      {
+        "name": "10/3 週末約會場次",
+        "url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60197"
+      }
+    ],
+    "end_date": "2026-11-01",
+    "status": "active"
+  },
+  {
+    "id": "kongzong-awe-exhibition-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "大安區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "互動展",
+      "雨天備案"
+    ],
+    "coord": [
+      25.0395,
+      121.5367
+    ],
+    "title": "大安 · 空總「a-We 臺灣主題特展：a～～～Wemoji！」（免門票 · 展至 11/3 · 大阪世博臺灣吉祥物回國）",
+    "summary": "2025 大阪世博臺灣文化外交吉祥物 a-We 回國主題展，兩層樓 5 大展區：觸摸會變色移動的巨型互動裝置、5 款新演化形態、心理測驗、可躺著看的投影體驗膠囊；東草坪穹頂劇場化身 17 公尺巨大 a-We。",
+    "highlight": "免費室內雨天備案，3 歲就玩得起來；週一休館（10/12 也休）。最後一站周邊區 50 款新品、扭蛋每日限量，進場前先跟孩子約好預算。",
+    "info": {
+      "date": "即日起至 2026/11/3 11:00~19:00（週一休館）",
+      "location": "空總國家文化基地 圖書館展演空間（台北市建國南路一段 177 號）",
+      "age": "全齡",
+      "price": "免門票"
+    },
+    "source_name": "WalkerLand 窩客島",
+    "sources": [
+      {
+        "name": "WalkerLand 窩客島",
+        "url": "https://www.walkerland.com.tw/subject/view/424923"
+      }
+    ],
+    "end_date": "2026-11-03",
+    "status": "active"
+  },
+  {
+    "id": "taipei-zoo-muzha40-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "文山區",
+    "type": "動物園",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "動物園",
+      "昆蟲"
+    ],
+    "coord": [
+      24.9983,
+      121.581
+    ],
+    "title": "木柵 · 臺北市立動物園「木柵40．保育有成」遷園 40 周年園慶系列（10/9 講座起跑 · 10/17~18 昆蟲保育教育市集）",
+    "summary": "遷園木柵 40 年、建園 112 年系列：10/9 講座「從圓山到木柵」；10/17~18 昆蟲年會保育教育市集（蝴蝶、蜻蜓、蜂類保育學會進駐）；10/24 園慶音樂會。10/31 典禮採貴賓制不對外。石虎、大長臂猿 9/30 起、小爪水獺 10/1 起停展。",
+    "highlight": "系列裡屬於孩子的是 10/17~18 昆蟲市集，帶一個想問的問題去；10/9 講座偏成人向。先確認三處停展，大貓熊出不出戶外看氣溫不看日曆。",
+    "info": {
+      "date": "10/9 14:00~15:30 講座；10/17~18 10:00~16:00 市集；10/24 音樂會",
+      "location": "台北市文山區新光路二段 30 號",
+      "age": "全齡（昆蟲市集 3~10 歲最適合）",
+      "price": "活動未另收費，入園依一般票價"
+    },
+    "source_name": "臺北市立動物園",
+    "sources": [
+      {
+        "name": "園慶系列活動公告",
+        "url": "https://www.zoo.gov.taipei/News_Content.aspx?n=FF99E6A67512AD9B&sms=9D72E82EC16F3E64&s=77C7A93B7F1D769C"
+      },
+      {
+        "name": "小爪水獺停展公告",
+        "url": "https://www.zoo.gov.taipei/News_Content.aspx?n=8A860E1B20A9ED40&sms=78D644F2755ACCAA&s=B49337882E632041"
+      }
+    ],
+    "end_date": "2026-10-24",
+    "status": "active"
+  },
+  {
+    "id": "gloria-outlets-pumpkin-valley-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "outside",
+    "region": "桃園市",
+    "district": "中壢區",
+    "type": "萬聖節",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "高鐵可達",
+      "親子廁所"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "萬聖節",
+      "拍照"
+    ],
+    "coord": [
+      25.0133,
+      121.2155
+    ],
+    "title": "桃園青埔 · 華泰名品城「南瓜谷魔法村 2.0」（9/22~11/1 免費拍 · 光復連假送糖果 · 10/31 親子變裝賽）",
+    "summary": "一期廣場變身秋收南瓜村：巨型南瓜飛車舞台、秋收摩天輪造景、醉酒南瓜與夜間營火派對造景。10/24~26 光復連假免費領南瓜糖果，10/31 萬聖節親子變裝爭霸賽（冠軍含購物金最高 5,500 元）。",
+    "highlight": "是商場萬聖節造景不是樂園，白天可愛不嚇人，適合 3~6 歲變裝拍照；變裝賽報名方式報導未公布，請盯官方粉專。",
+    "info": {
+      "date": "2026/9/22~11/1",
+      "location": "桃園市中壢區春德路 189 號（華泰名品城一期廣場）",
+      "age": "全齡",
+      "price": "造景免費"
+    },
+    "source_name": "WalkerLand 窩客島（華泰名品城提供）",
+    "sources": [
+      {
+        "name": "WalkerLand 窩客島",
+        "url": "https://www.walkerland.com.tw/subject/view/425134"
+      }
+    ],
+    "end_date": "2026-11-01",
+    "status": "active"
+  },
+  {
+    "id": "chimei-pharaoh-king-of-egypt-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "outside",
+    "region": "台南市",
+    "district": "仁德區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "博物館",
+      "古埃及"
+    ],
+    "coord": [
+      22.9346,
+      120.2261
+    ],
+    "title": "台南 · 奇美博物館 大英博物館鉅獻《埃及之王：法老》（展至 2027/1/10 · 週末【法老探險隊】親子導覽 150 元）",
+    "summary": "與大英博物館合作、280 件作品，歷年埃及法老文物來臺規模最大。週六日 10:00、14:30【法老探險隊】親子導覽約 60 分鐘、每場 15 人，任務學習單＋集章換「好運護身符」＋動物神祇摺紙。",
+    "highlight": "史博館木乃伊展 9/28 已收，想看古埃及接下來就是這檔；週三休館，親子導覽限 7~12 歲、連假先上官網報名，特展票與導覽費分開計。",
+    "info": {
+      "date": "2026/1/29~2027/1/10 9:30~17:30（週三休館）",
+      "location": "台南市仁德區文華路二段 66 號（奇美博物館 1F 特展廳）",
+      "age": "全齡；親子導覽限 7~12 歲＋成人",
+      "price": "特展門票見官網；親子導覽 NT$150／人（不含門票）"
+    },
+    "source_name": "奇美博物館",
+    "sources": [
+      {
+        "name": "奇美博物館 埃及之王：法老",
+        "url": "https://www.chimeimuseum.org/special-exhibition/68a68f0a422a6"
+      },
+      {
+        "name": "法老探險隊親子導覽",
+        "url": "https://www.chimeimuseum.org/special-exhibition/68a68f0a422a6/69240cf3e7c9a"
+      }
+    ],
+    "end_date": "2027-01-10",
+    "status": "active"
+  },
+  {
+    "id": "nstm-october-workshops-sciencefest-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "三民區",
+    "type": "科學活動",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "工作坊",
+      "報名制"
+    ],
+    "coord": [
+      22.6404,
+      120.3226
+    ],
+    "title": "高雄 · 科工館 10 月假日科學饗宴（10/3 長毛象骨架拼裝 · 10/9 國慶動物小餐車）＋臺灣科學節工作坊 10/7 開放報名",
+    "summary": "10/3「長毛象—冰原古生物探索」用骨骸拼板組裝骨架（小二~小五、限 12 人）；10/9「森林烘焙坊小餐車」繪本＋黏土擬真動物麵包（國小 1~2 年級）。第七屆臺灣科學節 11/7~8、11/14~15，舞台節目多為全齡免費，工作坊 10/7 開放報名。",
+    "highlight": "小班名額比活動本身稀缺，想上就先報名；10/9 剛好是國慶補假。靜電體驗有心臟疾病者建議只觀摩。",
+    "info": {
+      "date": "10/3、10/9 09:30~11:30；科學節 11/7~8、11/14~15",
+      "location": "高雄市三民區九如一路 720 號（科工館北館）",
+      "age": "國小 1~5 年級（依場次）",
+      "price": "工作坊各 300 元；科學節舞台節目免費"
+    },
+    "source_name": "國立科學工藝博物館",
+    "sources": [
+      {
+        "name": "長毛象工作坊",
+        "url": "https://www.nstm.gov.tw/ActivitiesDetailC001110.aspx?Cond=d34ac983-bf14-4edc-859c-38f8bfbac253"
+      },
+      {
+        "name": "森林烘焙坊小餐車",
+        "url": "https://www.nstm.gov.tw/ActivitiesDetailC001110.aspx?Cond=fd86731e-10da-4ee9-a4c5-51e85cd1e60e"
+      },
+      {
+        "name": "2026 臺灣科學節",
+        "url": "https://www.nstm.gov.tw/ActivitiesDetailC001110.aspx?Cond=3a47a825-813d-45e6-8eb1-cfd797ec154d"
+      }
+    ],
+    "end_date": "2026-11-15",
+    "status": "active"
+  },
+  {
+    "id": "legoland-japan-halloween-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "japan",
+    "region": "日本",
+    "district": "愛知縣 名古屋市港區",
+    "type": "主題樂園",
+    "venue": "戶外",
+    "age_range": [
+      "1-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "親子廁所"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "萬聖節",
+      "樂高"
+    ],
+    "coord": [
+      35.0503,
+      136.8437
+    ],
+    "title": "名古屋 · LEGOLAND Japan「レゴランドでハロウィンパーティー」（10/2~11/3 · 6.2 萬顆得寶積木巨型南瓜 · 10/30~11/1 夜間場）",
+    "summary": "孩子變裝主題檔期：約 6.2 萬顆得寶積木巨型南瓜、糖果尋寶、限定迷你人偶交換（前半 10/2~10/17、後半 10/18~11/3，每人每日一次）、15 分鐘萬聖節 4D 電影、學齡前 Hopsy 帶動唱。10/30~11/1 另有夜間場至 21:00。",
+    "highlight": "人偶交換要自備迷你人偶；4D 有水花強風。夜間場對學齡前太晚，日間已有主要活動。日本 10/12 運動之日連休人潮多。",
+    "info": {
+      "date": "2026/10/2~11/3；夜間場 10/30~11/1 至 21:00",
+      "location": "愛知縣名古屋市港區金城ふ頭 2-2-1",
+      "age": "學齡前到國小",
+      "price": "入園票另計；夜間場另購 Night Ticket（2 歲以下免費）"
+    },
+    "source_name": "LEGOLAND Japan",
+    "sources": [
+      {
+        "name": "LEGOLAND Japan ハロウィン 2026",
+        "url": "https://www.legoland.jp/operation/seasonal-events/halloween/2026/"
+      },
+      {
+        "name": "ハロウィン・ナイト",
+        "url": "https://www.legoland.jp/operation/seasonal-events/night/2026/halloweennight/"
+      }
+    ],
+    "end_date": "2026-11-03",
+    "status": "active"
+  },
+  {
+    "id": "teamlab-fukuoka-castle-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "japan",
+    "region": "日本",
+    "district": "福岡縣 福岡市中央區",
+    "type": "光影展",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "付費",
+      "戶外",
+      "夜間",
+      "預售"
+    ],
+    "coord": [
+      33.5846,
+      130.3831
+    ],
+    "title": "福岡 · teamLab 福岡城跡 光之祭 2026-2027（10/30 開展 · 10/1 開賣 · 未就學兒免費）【預售】",
+    "summary": "睽違 7 年第 3 度在福岡城跡展出。推倒會彈回來發光發聲的巨型蛋體、腳步靠近會亮起的石階、一小時演完一年花開花落的生命巨木。平日預售小學生 700 日圓、未就學兒免費；週末採指定日期時段預約，預售售完現場不賣。",
+    "highlight": "10/1 開賣，週末先搶時段；18:15/18:30 開場，學齡前排開場看 1 小時就走。石垣石階推車難推，幼兒用背巾。",
+    "info": {
+      "date": "2026/10/30~2027/1/11 18:30~22:00（11/7~12/31 為 18:15 起）",
+      "location": "福岡市中央區城内 舞鶴公園 福岡城跡",
+      "age": "全齡",
+      "price": "平日預售 大人 2,300／中高生 1,300／小學生 700 日圓，未就學兒免費"
+    },
+    "source_name": "WalkerLand 窩客島（teamLab 提供）",
+    "sources": [
+      {
+        "name": "WalkerLand 窩客島",
+        "url": "https://www.walkerland.com.tw/subject/view/425026"
+      }
+    ],
+    "end_date": "2027-01-11",
+    "status": "active"
+  },
+  {
+    "id": "haneda-aviation-museum-hicity-2026",
+    "date": "2026-09-30",
+    "week": "2026-W40",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 大田區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "車站直結"
+    ],
+    "tags": [
+      "室內",
+      "飛機",
+      "機場順遊"
+    ],
+    "coord": [
+      35.5465,
+      139.752
+    ],
+    "title": "東京羽田 · 第 10 回 羽田航空博物館展 in HICity（至 11/29 · 天空橋站直結 · 10/24~25 旅客機模型祭免費）",
+    "summary": "羽田開港 95 週年、朝日新聞社航空部 100 週年主題史料展，9:00~18:00。10/24~25「旅客機プラモフェス in 羽田 26」參加免費，11/28~29 航空迷市集；週末不定期有航空書籍與周邊販售。",
+    "highlight": "從羽田進出東京的家庭，抵達日或回程前的最佳半天；規模小，別排主行程。官方頁未標示展覽是否收費，以現場為準。",
+    "info": {
+      "date": "2026/9/5~11/29 9:00~18:00",
+      "location": "羽田創新城 HICity 2F Zone C「terminal.0」（天空橋站直結）",
+      "age": "全齡",
+      "price": "官方未標示入場費；活動參加免費"
+    },
+    "source_name": "羽田航空博物館プロジェクト（HASM）",
+    "sources": [
+      {
+        "name": "HASM 展覽公告",
+        "url": "http://hasm.or.jp/hasm/archives/15028"
+      }
+    ],
+    "end_date": "2026-11-29",
+    "status": "active"
+  },
+  {
     "id": "ntpc-juancun-festival-2026",
     "date": "2026-09-23",
     "week": "2026-W39",
@@ -159,7 +693,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "juming-artfest-kidscenter-2026",
@@ -419,7 +953,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "janfusun-pirate-water-2026",
@@ -787,7 +1321,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tam-midautumn-teachersday-2026",
@@ -893,7 +1427,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "leofoo-tombstone-10th-2026",
@@ -997,7 +1531,7 @@
       }
     ],
     "end_date": "2026-09-25",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "conan-30th-kaohsiung-2026",
@@ -1358,7 +1892,7 @@
       }
     ],
     "end_date": "2026-09-27",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "eslite-anime-symphony-2026",
@@ -1456,7 +1990,7 @@
       }
     ],
     "end_date": "2026-09-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taiwan-design-expo-taoyuan-2026",
@@ -1611,7 +2145,7 @@
       }
     ],
     "end_date": "2026-09-27",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "toucheng-fireworks-2026",
@@ -1760,7 +2294,7 @@
       }
     ],
     "end_date": "2026-09-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "snoopy-playful-park-tsudanuma-2026",
@@ -1863,7 +2397,7 @@
       }
     ],
     "end_date": "2026-09-25",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "ntsec-little-prince-vr-2026",
@@ -1961,7 +2495,7 @@
       }
     ],
     "end_date": "2026-09-27",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "muzikids-festival-2026",
@@ -2013,7 +2547,7 @@
       }
     ],
     "end_date": "2026-09-27",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "judrum-magic-percussion-2026",
@@ -2792,7 +3326,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nstm-emergency-kit-sep-2026",
@@ -3226,7 +3760,7 @@
       }
     ],
     "end_date": "2026-09-27",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "winnie-pooh-100th-2026",
@@ -3812,7 +4346,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "animal-kingdom-adventure-2026",
@@ -3962,7 +4496,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "fulong-sand-art-2026",
@@ -4643,7 +5177,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "usj-summer-matsuri-2026",
@@ -4739,7 +5273,7 @@
       }
     ],
     "end_date": "2026-09-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "alice-rabbit-hole-2026",
@@ -5271,7 +5805,7 @@
       }
     ],
     "end_date": "2026-09-27",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tokyo-ikimono-world-2026",
@@ -5608,7 +6142,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "anna-daniel-wonder-2026",
@@ -5657,7 +6191,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "yilan-kids-folk-festival-2026",
@@ -8036,7 +8570,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "north-coast-light-fes-2026",
@@ -8635,7 +9169,7 @@
       }
     ],
     "end_date": "2026-09-28",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "maze-forest-market-songyan-2026",
@@ -8931,7 +9465,7 @@
       }
     ],
     "end_date": "2026-09-27",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "pixar-world-tokyo-2026",
