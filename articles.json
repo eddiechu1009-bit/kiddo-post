@@ -2986,7 +2986,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "puroland-monster-scramble-2026",
@@ -3374,7 +3374,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nstm-dementia-month-2026",
@@ -3423,7 +3423,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nmns-amigo-species-2026",
@@ -3711,7 +3711,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "chiikawa-days-huashan-2026",
@@ -3908,7 +3908,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "peanuts-beach-fes-2026",
@@ -4987,7 +4987,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "yingge-ceramics-water-2026",
@@ -5370,7 +5370,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taipei-water-festival-2026",
@@ -6094,7 +6094,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "chibimaruko-40th-2026",
@@ -8036,7 +8036,7 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "pingtung-summer-carnival-2026",
@@ -9564,6 +9564,6 @@
       }
     ],
     "end_date": "2026-09-30",
-    "status": "active"
+    "status": "archived"
   }
 ]

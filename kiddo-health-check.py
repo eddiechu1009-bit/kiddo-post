@@ -27,6 +27,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from collections import Counter
@@ -256,6 +257,11 @@ def fetch_status(url: str, timeout: int = 25) -> tuple[int | None, str, str]:
 def classify_link(url: str) -> dict:
     """單一連結分類:alive / dead / blocked / error。"""
     code, final, err = fetch_status(url)
+    if code is None:
+        # connection reset / timeout 常是暫時性(2026-10 疾管署首掃 reset、複驗才看出是死連結)
+        # → 隔幾秒重試一次再判
+        time.sleep(3)
+        code, final, err = fetch_status(url, timeout=40)
     out = {"url": url, "status": code, "url_effective": final, "error": err}
     if code is None:
         out["verdict"] = "error"
