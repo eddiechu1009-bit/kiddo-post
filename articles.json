@@ -1,5 +1,480 @@
 [
   {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "tfam-i-spy-love-2026",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "中山區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "美術館",
+      "親子互動展"
+    ],
+    "coord": [
+      25.0726,
+      121.5246
+    ],
+    "title": "中山 · 北美館兒童藝術教育中心「I Spy Love，發現愛」（10/3~2027/2/21 · 未滿 6 歲免費 · 4~7 歲故事日）",
+    "summary": "四位藝術家用聲音、攝影、雕塑、錄像與互動讓孩子「找出愛在哪裡」：用電子聽診器聽自己的心跳做星洞卡、看媽媽刻意失焦的自拍、蜜蜂在孕期身體翻模上築巢、父女影像隨照光消失；看完到圓桌任務區抽情境卡。",
+    "highlight": "週六開到 20:30，17:00 後停止售票、免費參觀；4~7 歲故事日每場 8 組、每組至多 3 人，現場報名額滿為止。",
+    "info": {
+      "date": "2026/10/3~2027/2/21，週二~週日 09:30~17:30，週六至 20:30（週一休館）",
+      "location": "臺北市立美術館 地下樓 兒童藝術教育中心",
+      "age": "全齡（故事日 4~7 歲）",
+      "price": "普通票 30 元、6~12 歲 15 元、未滿 6 歲免費；17:00 後免費"
+    },
+    "source_name": "臺北市立美術館",
+    "sources": [
+      {
+        "name": "媽媽寶寶 · 展覽整理",
+        "url": "https://www.mombaby.com.tw/articles/9938122"
+      },
+      {
+        "name": "北美館 · 時間票價",
+        "url": "https://www.tfam.museum/Common/editor.aspx?id=230&ddlLang=zh-tw"
+      }
+    ],
+    "end_date": "2027-02-21"
+  },
+  {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "taipei-zoo-sloth-insect-weekend-2026",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "文山區",
+    "type": "動物園",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "動物園",
+      "保育",
+      "市集"
+    ],
+    "coord": [
+      24.9983,
+      121.581
+    ],
+    "title": "木柵 · 臺北市立動物園 10/17~10/18 週末：國際樹獺日快閃（10/17）＋ 昆蟲「蛻變」保育教育市集（送昆蟲造型雞蛋糕）",
+    "summary": "10/17 11:00、14:00 在熱帶雨林室內館分享樹獺小知識（慢是低代謝的生存之道，森林被切割就難以移動）；10/17~18 10:00~16:00 教育中心前廣場「蛻變」市集，蝴蝶、蜻蜓、蜂類保育團體擺攤，昆蟲館有頭部知識闖關。",
+    "highlight": "雞蛋糕兌換券 09:30~13:30 每時段 100 張、每人 1 張，逾時視同棄權；棕蜘蛛猴 10/12~21、黑腳企鵝 10/20~22 停展。",
+    "info": {
+      "date": "樹獺快閃 10/17 11:00、14:00；市集 10/17~10/18 10:00~16:00",
+      "location": "臺北市立動物園 熱帶雨林室內館 / 教育中心前廣場",
+      "age": "3~10 歲最適合",
+      "price": "活動不另收費，入園依一般票價"
+    },
+    "source_name": "臺北市立動物園",
+    "sources": [
+      {
+        "name": "臺北市立動物園 · 蛻變市集新聞稿",
+        "url": "https://www.zoo.gov.taipei/News_Content.aspx?n=BD065B2FA7782989&sms=72544237BBE4C5F6&s=89236B2F6AFAE343"
+      },
+      {
+        "name": "中央社 · 樹獺快閃",
+        "url": "https://www.cna.com.tw/news/aloc/202610120288.aspx"
+      }
+    ],
+    "end_date": "2026-10-18"
+  },
+  {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "shilin-halloween-tcap-tianmu-2026",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "士林區",
+    "type": "嘉年華",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "親子廁所"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "萬聖節",
+      "變裝優惠",
+      "討糖"
+    ],
+    "coord": [
+      25.097,
+      121.515
+    ],
+    "title": "士林 · 萬聖三連發：10/23 天母百鬼夜行 → 10/24 天母運動公園討糖 → 10/25~10/26 兒童新樂園「變裝免費入園」",
+    "summary": "10/23 19:00 百鬼夜行（新光三越天母店→大葉高島屋）；10/24 13:00 起天母運動公園見面會與約 250 家店家討糖；兒童新樂園第十屆萬聖嘉年華 10/25~26 9:00 起，穿萬聖裝扮即免費入園，12 歲以下小禮包每日 300 份，1 樓與 3 樓主題市集。",
+    "highlight": "學齡前孩子以兒童新樂園白天場最友善；持天母「搞什麼鬼」DM＋變裝也能免費入園並領士林市場 50 元美食券；夜間遊行敏感的孩子改去 10/24 下午。",
+    "info": {
+      "date": "10/23 19:00；10/24 13:00 起；10/25~10/26 9:00 起",
+      "location": "天母商圈 / 天母運動公園 / 臺北市兒童新樂園",
+      "age": "學齡前～國小",
+      "price": "變裝免費入園；限定套票 999 元起另購"
+    },
+    "source_name": "臺北市兒童新樂園",
+    "sources": [
+      {
+        "name": "兒童新樂園 · 萬聖嘉年華新聞稿",
+        "url": "https://www.tcap.taipei/News_Content.aspx?n=6357C710114849F0&sms=72544237BBE4C5F6&s=81B1D3CBBE80DC4E"
+      },
+      {
+        "name": "媽媽寶寶 · 萬聖節活動懶人包",
+        "url": "https://www.mombaby.com.tw/articles/9938106"
+      }
+    ],
+    "end_date": "2026-10-26"
+  },
+  {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "xinyi-pokemon-teletubbies-picturebook-2026",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "信義區",
+    "type": "快閃店",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "快閃店",
+      "繪本",
+      "打卡"
+    ],
+    "coord": [
+      25.0365,
+      121.567
+    ],
+    "title": "信義 · 免費散步路線：寶可夢 30 週年 9 處打卡點（至 11/2）＋ 天線寶寶快閃店（至 11/8）＋ TSUTAYA 日本「一頁繪本」原畫展",
+    "summary": "伊布、耿鬼 POKÉGENIC 裝置散在松壽廣場、信義安康公園、象山公園等 9 處到 11/2；新光三越 A9 9F 天線寶寶快閃店 6 個打卡點到 11/8；TSUTAYA 信義店 TOKINOIRODORI「一頁繪本」原畫展，一張畫只畫故事的一個瞬間。",
+    "highlight": "一頁繪本適合 3~6 歲練習說故事；作家 10/17 前在現場作畫、買明信片可簽名；戶外打卡＋百貨室內，雨天也能走。",
+    "info": {
+      "date": "打卡點 10/10~11/2；天線寶寶 10/7~11/8；作家在廊 10/8~10/17",
+      "location": "信義區 9 處打卡點 / 新光三越 A9 9F / 統一時代百貨 5F",
+      "age": "2 歲以上",
+      "price": "免費"
+    },
+    "source_name": "WalkerLand 窩客島",
+    "sources": [
+      {
+        "name": "WalkerLand · 寶可夢信義",
+        "url": "https://www.walkerland.com.tw/subject/view/425252"
+      },
+      {
+        "name": "WalkerLand · 天線寶寶快閃店",
+        "url": "https://www.walkerland.com.tw/subject/view/425257"
+      },
+      {
+        "name": "WalkerLand · 一頁繪本原畫展",
+        "url": "https://www.walkerland.com.tw/subject/view/425311"
+      }
+    ],
+    "end_date": "2026-11-08"
+  },
+  {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "tainan-long-flow-nmth-mazu-2026",
+    "category": "outside",
+    "region": "台南市",
+    "district": "中西區",
+    "type": "光影藝術展",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "停車場"
+    ],
+    "tags": [
+      "戶外",
+      "夜間",
+      "光影",
+      "博物館"
+    ],
+    "coord": [
+      22.9946,
+      120.1985
+    ],
+    "title": "台南 · 首屆《暗光祭》河樂廣場夜間光影展（至 11/1 · 17:30~22:00）＋ 台史博「萬相天后」媽祖特展 10/13 開展",
+    "summary": "運河百年，艸非火團隊把七件光影作品放進河樂廣場水域、坡道與橋下，近 200 艘居民與孩子共創的彩船用船眼分出商船與漁船；台史博借荷蘭國家博物館 7 幅清代媽祖聖蹟圖，展至 2027/5/16。",
+    "highlight": "白天台史博、晚餐後河樂廣場；暗光祭週二休展、21:00 最後入場，水霧地面濕滑；台史博 10/26 照常開館、10/27 休館。暗光祭票價報導未列，cost 欄依公共廣場暫列免費，以主辦公告為準。",
+    "info": {
+      "date": "暗光祭 9/1~11/1 每日 17:30~22:00（週二休）；台史博特展 10/13~2027/5/16",
+      "location": "台南河樂廣場（中西區中正路 343-20 號）/ 國立臺灣歷史博物館",
+      "age": "全齡",
+      "price": "暗光祭報導未列票價；台史博依官網"
+    },
+    "source_name": "媽媽寶寶",
+    "sources": [
+      {
+        "name": "媽媽寶寶 · 台南暗光祭",
+        "url": "https://www.mombaby.com.tw/articles/9938130"
+      },
+      {
+        "name": "中央社 · 台史博媽祖特展",
+        "url": "https://www.cna.com.tw/news/aloc/202610050181.aspx"
+      }
+    ],
+    "end_date": "2026-11-01"
+  },
+  {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "taoyuan-halloween-snoopy-lion-2026",
+    "category": "outside",
+    "region": "桃園市",
+    "district": "桃園區",
+    "type": "嘉年華",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "停車場"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "萬聖節",
+      "Snoopy",
+      "DIY"
+    ],
+    "coord": [
+      25.0155,
+      121.301
+    ],
+    "title": "桃園 · 萬聖兩週末：桃園萬聖城 × Snoopy（10/24~11/1 · 免費）＋ 龍潭雄獅文具《魔幻美術館》（10/16~11/1）",
+    "summary": "桃園萬聖城 10/24~11/1 在藝文廣場、綠一、綠二公園，9 座 Snoopy 藝術裝置、每晚主題秀、5 個假日人偶見面會；龍潭雄獅文具想像力製造所《魔幻美術館》週五~日免費闖關導覽（需持票入館），燈罩 DIY 每天 10:00、16:00 兩場，10/31 包館。",
+    "highlight": "10/17 週末去龍潭（可接小人國萬聖黑旋風），光復連假再去市區看 Snoopy；雄獅入館票價報導未列、套組非必買。",
+    "info": {
+      "date": "萬聖城 10/24~11/1；魔幻美術館 10/16~11/1 09:00~17:00（10/31 包館）",
+      "location": "桃園藝文廣場・綠一・綠二公園 / 龍潭區中原路二段 188 號",
+      "age": "全齡",
+      "price": "萬聖城免費；雄獅需購票入館，DIY 套組 800、980 元"
+    },
+    "source_name": "中央社",
+    "sources": [
+      {
+        "name": "中央社 · 桃園萬聖城",
+        "url": "https://www.cna.com.tw/news/aloc/202610070194.aspx"
+      },
+      {
+        "name": "媽媽寶寶 · 雄獅《魔幻美術館》",
+        "url": "https://www.mombaby.com.tw/articles/9938119"
+      }
+    ],
+    "end_date": "2026-11-01"
+  },
+  {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "npm-south-himalaya-month-2026",
+    "category": "outside",
+    "region": "嘉義縣",
+    "district": "太保市",
+    "type": "博物館",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "停車場",
+      "哺乳室",
+      "親子廁所"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "博物館",
+      "18歲以下免費",
+      "科學"
+    ],
+    "coord": [
+      23.4725,
+      120.2925
+    ],
+    "title": "嘉義 · 故宮南院「喜瑪拉雅月」（至 11/8 · 10/17 臺灣文化日全日免費 · 未滿 18 歲本來就免費）＋ 北回太空館「瘋狂科學家特展」",
+    "summary": "南院一、二樓仿不丹宗堡與尼泊爾佛塔佈置，全月 30 場以上活動，攤位 DIY 有頌缽、藏式料理、果殼鈴手串、羊毛氈；特展「穿越喜瑪拉雅」160 件文物至 2027/4/6。嘉義縣北回太空館 10/12 起「瘋狂科學家特展」展一年，動手玩力學電學光學。",
+    "highlight": "未滿 18 歲免費、全票 150 元；10/17 全日免費；嘉義縣市居民 15:00 後免費兌票。太空館開放時間本週未查到，先電話確認。",
+    "info": {
+      "date": "喜瑪拉雅月 10/8~11/8；特展至 2027/4/6（週一休館）",
+      "location": "故宮南院（嘉義縣太保市）/ 嘉義縣北回太空館（水上鄉）",
+      "age": "全齡",
+      "price": "全票 150 元、未滿 18 歲免費、10/17 免費；太空館自由參觀"
+    },
+    "source_name": "國立故宮博物院南部院區",
+    "sources": [
+      {
+        "name": "故宮南院 · 喜瑪拉雅月",
+        "url": "https://south.npm.gov.tw/ActivitiesDetailC006110.aspx?Cond=d43b7765-116a-4577-bdd9-0562a0362237"
+      },
+      {
+        "name": "故宮南院 · 票價",
+        "url": "https://south.npm.gov.tw/Visit/Ticket.htm"
+      },
+      {
+        "name": "中央社 · 瘋狂科學家特展",
+        "url": "https://www.cna.com.tw/news/aloc/202610120132.aspx"
+      }
+    ],
+    "end_date": "2026-11-08"
+  },
+  {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "tokyo-zoos-late-october-2026",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 武藏野市・台東區・日野市",
+    "type": "動物園",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "動物園",
+      "保育",
+      "小學以下免費"
+    ],
+    "coord": [
+      35.6488,
+      139.4045
+    ],
+    "title": "東京 · 都立動物園 10 月下旬三場：井の頭「島のいきもの博」（10/17~18）· 上野「パンダの日」集章（10/20~11/1）· 多摩「Action for KOALA」（10/24~25）",
+    "summary": "井の頭自然文化園介紹對馬山貓等島嶼生物並有集章、導覽、手作（10/15 起公開 2 隻洪堡企鵝）；上野西園「パンダのもり」集章認識大貓熊的鄰居；多摩動物公園 10/24 13:30 コアラ検定（先到先得約 100 名、免報名）。",
+    "highlight": "上野目前沒有飼養大貓熊，別為了看大貓熊特地跑；小學生以下免費入園，大人 400~600 円。",
+    "info": {
+      "date": "10/17~10/18；10/20~11/1；10/24~10/25",
+      "location": "井の頭自然文化園 / 上野動物園 / 多摩動物公園",
+      "age": "全齡",
+      "price": "一般 400~600 円，小學生以下免費"
+    },
+    "source_name": "東京動物園協會",
+    "sources": [
+      {
+        "name": "井の頭 · 島のいきもの博",
+        "url": "https://www.tokyo-zoo.net/inokashira/news/12951/index.html"
+      },
+      {
+        "name": "上野 · パンダの日",
+        "url": "https://www.tokyo-zoo.net/ueno/news/panda_day/2026/index.html"
+      },
+      {
+        "name": "多摩 · Action for KOALA",
+        "url": "https://www.tokyo-zoo.net/tama/action-for-koala/2026/index.html"
+      }
+    ],
+    "end_date": "2026-11-01"
+  },
+  {
+    "date": "2026-10-14",
+    "week": "2026-W42",
+    "status": "active",
+    "id": "kariya-sena-keiko-exhibition-2026",
+    "category": "japan",
+    "region": "日本",
+    "district": "愛知縣 刈谷市",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "停車場"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "繪本",
+      "原畫展",
+      "中學生以下免費"
+    ],
+    "coord": [
+      34.9862,
+      136.997
+    ],
+    "title": "愛知刈谷 · 刈谷市美術館「せなけいこ展 その全仕事」（至 11/8 · 中學生以下免費 · 《ねないこだれだ》原畫）",
+    "summary": "繪本作家せなけいこ（1931-2024）過世後首次大型回顧展，10 個主題約 400 件作品，含《ねないこだれだ》與出道作「いやだいやだの絵本」系列原畫、紙芝居；撕紙拼貼畫風色塊大、好認。",
+    "highlight": "中學生以下免費、一般 1,200 円；《ねないこだれだ》結局偏嚇人，怕黑的孩子先在家讀過再決定；可與名古屋 LEGOLAND 萬聖節排同一趟。",
+    "info": {
+      "date": "9/12~11/8 09:00~17:00（週一休館）",
+      "location": "愛知縣刈谷市住吉町 4-5（刈谷站南口步行約 10 分）",
+      "age": "2 歲以上",
+      "price": "一般 1,200 円、學生 800 円、中學生以下免費"
+    },
+    "source_name": "Walkerplus",
+    "sources": [
+      {
+        "name": "Walkerplus · せなけいこ展",
+        "url": "https://www.walkerplus.com/event/ar0623e603635/"
+      }
+    ],
+    "end_date": "2026-11-08"
+  },
+  {
     "date": "2026-10-07",
     "week": "2026-W41",
     "id": "taipei101-national-day-drone-show-2026",
@@ -52,7 +527,7 @@
       }
     ],
     "end_date": "2026-10-10",
-    "status": "active"
+    "status": "archived"
   },
   {
     "date": "2026-10-07",
@@ -104,7 +579,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "date": "2026-10-07",
@@ -256,7 +731,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "date": "2026-10-07",
@@ -409,7 +884,7 @@
       }
     ],
     "end_date": "2026-10-12",
-    "status": "active"
+    "status": "archived"
   },
   {
     "date": "2026-10-07",
@@ -552,7 +1027,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "ntm-allosaurus-memory-2026",
@@ -1316,7 +1791,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "skm-pokemon-train-2026",
@@ -2096,7 +2571,7 @@
       }
     ],
     "end_date": "2026-10-12",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "galaxcity-autumn-programs-2026",
@@ -2505,7 +2980,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "whoogupo-courage-island-pier2-2026",
@@ -3349,7 +3824,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "pokemon-nihonbashi-legend-2026",
@@ -4272,7 +4747,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "newtaipei-kids-art-festival-2026",
@@ -4517,7 +4992,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tongxiao-sand-art-2026",
@@ -4859,7 +5334,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "slime-glow-lab-2026",
@@ -5402,7 +5877,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "neihu-sports-park-water-2026",
@@ -6315,7 +6790,7 @@
       }
     ],
     "end_date": "2026-10-12",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taipei-kids-art-festival-2026",
@@ -8353,7 +8828,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "postal-ocean-stamp-2026",
@@ -8450,7 +8925,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "xpark-animalcrossing-2026",
@@ -9333,7 +9808,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "hualien-daylily-season-2026",
@@ -9531,7 +10006,7 @@
       }
     ],
     "end_date": "2026-10-11",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "spotlight-poland-illustration-2026",
@@ -9976,7 +10451,7 @@
       }
     ],
     "end_date": "2026-10-12",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "doraemon-100-tokyo-2026",
