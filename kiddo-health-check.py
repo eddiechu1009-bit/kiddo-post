@@ -23,6 +23,7 @@ kiddo-health-check.py — Kiddo POST 親子網站健檢腳本
   2 - 有警報(過期 ≥3 OR 未來 2 週 < 4 OR --links 抓到死連結)
   1 - 腳本本身錯誤
 """
+import html as htmllib
 import json
 import os
 import re
@@ -301,7 +302,7 @@ def check_links(max_workers: int = 8) -> dict:
     url_sources: dict[str, list[str]] = {}
     for f in sorted(TOPICS_DIR.glob("*.html")):
         html = f.read_text(encoding="utf-8", errors="replace")
-        for u in HREF_RE.findall(html):
+        for u in map(htmllib.unescape, HREF_RE.findall(html)):
             if urlsplit(u).netloc in LINK_SKIP_HOSTS:
                 continue
             url_sources.setdefault(u, []).append(f.name)
