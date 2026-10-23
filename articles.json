@@ -1,5 +1,417 @@
 [
   {
+    "id": "yulon-halloween-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "新店區",
+    "type": "萬聖節活動",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "age_basis": "編輯選讀分類，非官方參加年齡限制",
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "萬聖節",
+      "室內"
+    ],
+    "coord": [
+      24.9777,
+      121.5464
+    ],
+    "coord_precision": "場址／街道近似定位",
+    "title": "裕隆城 · 萬聖遊戲與滿額摸彩",
+    "summary": "須符合指定專櫃消費門檻；不是免消費活動。",
+    "highlight": "依媒體整理核對活動日期；出發前再看主辦單位的場次與參加條件。",
+    "info": {
+      "date": "10/1–10/31；摸彩 10/31 13:00–17:00",
+      "location": "裕隆城威秀商場 7F",
+      "age": "親子；實際參加限制以主辦公告為準",
+      "price": "優惠、報名或消費條件依主辦公告，未確認項目不推估"
+    },
+    "source_name": "媽媽寶寶 · 2026 萬聖節活動整理",
+    "sources": [
+      {
+        "name": "日期與活動資料 · 媽媽寶寶",
+        "url": "https://www.mombaby.com.tw/articles/9938106"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "媒體整理",
+    "end_date": "2026-10-31",
+    "status": "active"
+  },
+  {
+    "id": "taimall-halloween-music-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "outside",
+    "region": "桃園市",
+    "district": "蘆竹區",
+    "type": "萬聖節活動",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "age_basis": "編輯選讀分類，非官方參加年齡限制",
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "萬聖節",
+      "戶外"
+    ],
+    "coord": [
+      25.053,
+      121.2877
+    ],
+    "coord_precision": "場址／街道近似定位",
+    "title": "台茂公園 · 萬聖魔法音樂會",
+    "summary": "10/31 另有親子變裝大賽，須先確認報名。",
+    "highlight": "依媒體整理核對活動日期；出發前再看主辦單位的場次與參加條件。",
+    "info": {
+      "date": "10/24、10/26、11/1 15:00–16:30",
+      "location": "台茂購物中心與台茂公園",
+      "age": "親子；實際參加限制以主辦公告為準",
+      "price": "優惠、報名或消費條件依主辦公告，未確認項目不推估"
+    },
+    "source_name": "媽媽寶寶 · 2026 萬聖節活動整理",
+    "sources": [
+      {
+        "name": "日期與活動資料 · 媽媽寶寶",
+        "url": "https://www.mombaby.com.tw/articles/9938106"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "媒體整理",
+    "end_date": "2026-11-01",
+    "status": "active"
+  },
+  {
+    "id": "feds-zhubei-halloween-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "outside",
+    "region": "新竹縣",
+    "district": "竹北市",
+    "type": "萬聖節活動",
+    "venue": "室內 / 戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "age_basis": "編輯選讀分類，非官方參加年齡限制",
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "萬聖節",
+      "室內 / 戶外"
+    ],
+    "coord": [
+      24.8339,
+      121.0267
+    ],
+    "coord_precision": "場址／街道近似定位",
+    "title": "遠百竹北 · 萬聖市集與遊行",
+    "summary": "市集與遊行分樓層，先確認當日場次。",
+    "highlight": "依媒體整理核對活動日期；出發前再看主辦單位的場次與參加條件。",
+    "info": {
+      "date": "市集 10/24–10/26；遊行 10/25 14:40–16:40",
+      "location": "遠百竹北 1F 戶外廣場／8F",
+      "age": "親子；實際參加限制以主辦公告為準",
+      "price": "優惠、報名或消費條件依主辦公告，未確認項目不推估"
+    },
+    "source_name": "媽媽寶寶 · 2026 萬聖節活動整理",
+    "sources": [
+      {
+        "name": "日期與活動資料 · 媽媽寶寶",
+        "url": "https://www.mombaby.com.tw/articles/9938106"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "媒體整理",
+    "end_date": "2026-10-26",
+    "status": "active"
+  },
+  {
+    "id": "ifg-hsinchu-halloween-market-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "outside",
+    "region": "新竹市",
+    "district": "北區",
+    "type": "萬聖節活動",
+    "venue": "室內 / 戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "age_basis": "編輯選讀分類，非官方參加年齡限制",
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "萬聖節",
+      "室內 / 戶外"
+    ],
+    "coord": [
+      24.8184,
+      120.9709
+    ],
+    "coord_precision": "場址／街道近似定位",
+    "title": "iFG 遠雄廣場 · 萬聖闖關市集",
+    "summary": "市集、親子互動與表演；消費項目依現場公告。",
+    "highlight": "依媒體整理核對活動日期；出發前再看主辦單位的場次與參加條件。",
+    "info": {
+      "date": "10/24–10/26、10/31–11/1 12:00–20:00",
+      "location": "新竹 iFG 遠雄廣場",
+      "age": "親子；實際參加限制以主辦公告為準",
+      "price": "優惠、報名或消費條件依主辦公告，未確認項目不推估"
+    },
+    "source_name": "媽媽寶寶 · 2026 萬聖節活動整理",
+    "sources": [
+      {
+        "name": "日期與活動資料 · 媽媽寶寶",
+        "url": "https://www.mombaby.com.tw/articles/9938106"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "媒體整理",
+    "end_date": "2026-11-01",
+    "status": "active"
+  },
+  {
+    "id": "hsinchu-universe-halloween-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "outside",
+    "region": "新竹市",
+    "district": "北區",
+    "type": "萬聖節活動",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "age_basis": "編輯選讀分類，非官方參加年齡限制",
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "萬聖節",
+      "戶外"
+    ],
+    "coord": [
+      24.8067,
+      120.9689
+    ],
+    "coord_precision": "場址／街道近似定位",
+    "title": "新竹州廳周邊 · 宇宙集結令",
+    "summary": "超人力霸王主題；遊行路線與時段再看主辦公告。",
+    "highlight": "依媒體整理核對活動日期；出發前再看主辦單位的場次與參加條件。",
+    "info": {
+      "date": "10/16–10/31；10/31 有遊行與舞台活動",
+      "location": "新竹州廳與市府周邊",
+      "age": "親子；實際參加限制以主辦公告為準",
+      "price": "優惠、報名或消費條件依主辦公告，未確認項目不推估"
+    },
+    "source_name": "媽媽寶寶 · 2026 萬聖節活動整理",
+    "sources": [
+      {
+        "name": "日期與活動資料 · 媽媽寶寶",
+        "url": "https://www.mombaby.com.tw/articles/9938106"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "媒體整理",
+    "end_date": "2026-10-31",
+    "status": "active"
+  },
+  {
+    "id": "haian-halloween-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "outside",
+    "region": "台南市",
+    "district": "中西區",
+    "type": "萬聖節活動",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "age_basis": "編輯選讀分類，非官方參加年齡限制",
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "萬聖節",
+      "戶外"
+    ],
+    "coord": [
+      22.9943,
+      120.1962
+    ],
+    "coord_precision": "場址／街道近似定位",
+    "title": "海安路 · 萬聖夜間街區活動",
+    "summary": "有變裝與街區表演；怕驚嚇的孩子可先走傍晚時段。",
+    "highlight": "依媒體整理核對活動日期；出發前再看主辦單位的場次與參加條件。",
+    "info": {
+      "date": "10/24–10/25 16:00–22:00",
+      "location": "海安路民生路至府前路段",
+      "age": "親子；實際參加限制以主辦公告為準",
+      "price": "優惠、報名或消費條件依主辦公告，未確認項目不推估"
+    },
+    "source_name": "媽媽寶寶 · 2026 萬聖節活動整理",
+    "sources": [
+      {
+        "name": "日期與活動資料 · 媽媽寶寶",
+        "url": "https://www.mombaby.com.tw/articles/9938106"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "媒體整理",
+    "end_date": "2026-10-25",
+    "status": "active"
+  },
+  {
+    "id": "nmmst-halloween-recycling-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "taipei",
+    "region": "基隆市",
+    "district": "中正區",
+    "type": "萬聖節活動",
+    "venue": "室內 / 戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "age_basis": "編輯選讀分類，非官方參加年齡限制",
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "萬聖節",
+      "室內 / 戶外"
+    ],
+    "coord": [
+      25.1402,
+      121.7989
+    ],
+    "coord_precision": "場址／街道近似定位",
+    "title": "海科館 · 海廢造型萬聖活動",
+    "summary": "以回收材料做造型；評選或手作須確認報名名額。",
+    "highlight": "依媒體整理核對活動日期；出發前再看主辦單位的場次與參加條件。",
+    "info": {
+      "date": "10/31 15:00–18:00",
+      "location": "國立海洋科技博物館",
+      "age": "親子；實際參加限制以主辦公告為準",
+      "price": "優惠、報名或消費條件依主辦公告，未確認項目不推估"
+    },
+    "source_name": "媽媽寶寶 · 2026 萬聖節活動整理",
+    "sources": [
+      {
+        "name": "日期與活動資料 · 媽媽寶寶",
+        "url": "https://www.mombaby.com.tw/articles/9938106"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "媒體整理",
+    "end_date": "2026-10-31",
+    "status": "active"
+  },
+  {
+    "id": "ueno-panda-stamp-rally-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 台東區",
+    "type": "動物園活動",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "日本",
+      "保育",
+      "戶外"
+    ],
+    "coord": [
+      35.7166,
+      139.7714
+    ],
+    "title": "上野動物園 · 熊貓森林集章",
+    "summary": "園方說明目前沒有飼養大貓熊；集章認識小貓熊等鄰居，也沒有兌換獎品。",
+    "highlight": "適合已安排東京旅行的家庭，先確認入園與休園資訊。",
+    "info": {
+      "date": "10/20–11/1；材料用完即止",
+      "location": "上野動物園",
+      "age": "集章或互動活動親子可參加；講座另有適讀對象",
+      "price": "入園費另計；募款與紀念品依園方公告"
+    },
+    "source_name": "東京 ZooNet 官方",
+    "sources": [
+      {
+        "name": "東京 ZooNet 官方活動",
+        "url": "https://www.tokyo-zoo.net/ueno/news/panda_day/2026/index.html"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "官方",
+    "end_date": "2026-11-01",
+    "status": "active"
+  },
+  {
+    "id": "tama-koala-conservation-2026",
+    "date": "2026-10-23",
+    "week": "2026-W43",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 日野市",
+    "type": "動物園活動",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "日本",
+      "保育",
+      "戶外"
+    ],
+    "coord": [
+      35.6488,
+      139.4045
+    ],
+    "title": "多摩動物公園 · Action for KOALA",
+    "summary": "保育互動與募款活動；講座需另確認報名，不能把現場互動當講座入場券。",
+    "highlight": "適合已安排東京旅行的家庭，先確認入園與休園資訊。",
+    "info": {
+      "date": "10/24–10/25 9:30–16:30",
+      "location": "多摩動物公園",
+      "age": "集章或互動活動親子可參加；講座另有適讀對象",
+      "price": "入園費另計；募款與紀念品依園方公告"
+    },
+    "source_name": "東京 ZooNet 官方",
+    "sources": [
+      {
+        "name": "東京 ZooNet 官方活動",
+        "url": "https://www.tokyo-zoo.net/tama/action-for-koala/2026/index.html"
+      }
+    ],
+    "source_checked_at": "2026-10-23",
+    "source_kind": "官方",
+    "end_date": "2026-10-25",
+    "status": "active"
+  },
+  {
     "date": "2026-10-14",
     "week": "2026-W42",
     "status": "active",
@@ -54,7 +466,7 @@
   {
     "date": "2026-10-14",
     "week": "2026-W42",
-    "status": "active",
+    "status": "archived",
     "id": "taipei-zoo-sloth-insect-weekend-2026",
     "category": "taipei",
     "region": "台北市",
@@ -373,7 +785,7 @@
   {
     "date": "2026-10-14",
     "week": "2026-W42",
-    "status": "active",
+    "status": "archived",
     "id": "tokyo-zoos-late-october-2026",
     "category": "japan",
     "region": "日本",
@@ -424,7 +836,8 @@
         "url": "https://www.tokyo-zoo.net/tama/action-for-koala/2026/index.html"
       }
     ],
-    "end_date": "2026-11-01"
+    "end_date": "2026-11-01",
+    "archive_reason": "10/23 拆分更新為上野與多摩活動；井之頭場次已結束"
   },
   {
     "date": "2026-10-14",
@@ -675,7 +1088,7 @@
       }
     ],
     "end_date": "2026-10-18",
-    "status": "active"
+    "status": "archived"
   },
   {
     "date": "2026-10-07",
@@ -3533,7 +3946,7 @@
       }
     ],
     "end_date": "2026-10-18",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "guandu-dinosaur-park-2026",
