@@ -1887,7 +1887,7 @@ function applyFilters(list) {
     if (a.category === 'development') return false;
     if (state.filterRegion !== 'all' && a.region !== state.filterRegion) return false;
     if (state.filterType !== 'all' && a.type !== state.filterType) return false;
-    if (state.filterVenue !== 'all' && !(a.venue || '').includes(state.filterVenue)) return false;  // 室內＋戶外 兩邊都算
+    if (state.filterVenue !== 'all' && a.venue !== state.filterVenue && a.venue !== '室內＋戶外') return false;  // 室內＋戶外 兩邊都算
     if (state.filterCost !== 'all' && a.cost !== state.filterCost) return false;
     if (state.filterAge !== 'all' && !(a.age_range || []).includes(state.filterAge)) return false;
     if (state.keyword) {

@@ -13,7 +13,9 @@ venue 篩選是字串相等比對，「室內＋戶外」「室內 / 戶外」�
     展覽 · 表演 · 節慶市集 · 樂園動物園 · 戶外踏青 · 戲水 · 親子體驗
   原本的細類（如「光影展」「花火大會」）不丟：自動補進 tags，關鍵字搜尋照樣找得到。
   venue 收成 3 值：室內 · 戶外 · 室內＋戶外（「半室內」併入 室內＋戶外）。
-  認不出來的值只報不改，請把它加進下面的 TYPE_MAP 再跑。
+  認不出來的值只報不改，請把它加進下面的 _GROUPS 再跑；
+  舊細類名稱判不準主類的個別活動，用活動 id 加進 ID_OVERRIDE。
+  空白、缺值、tags 非 list 都會報出來（exit 2）。
 
 用法:
   python parent-intel-site/normalize-types.py          # 稽核（不改檔），有問題 exit 2
@@ -41,6 +43,7 @@ _GROUPS = {
     "展覽": [
         "展覽", "特展", "主題展", "光影展", "光影藝術展", "光影藝術", "燈光藝術",
         "體驗型展覽", "美術館", "博物館", "兒童館", "親子展區", "VR 沉浸體驗",
+        "快閃店",  # 親子重點多是主題場景與拍照；主打商品的用 ID_OVERRIDE 改回節慶市集
     ],
     "表演": [
         "表演", "音樂會", "音樂節", "劇場", "展演", "藝術節", "藝術節/表演",
@@ -49,7 +52,7 @@ _GROUPS = {
     "節慶市集": [
         "嘉年華", "祭典", "節慶", "節慶活動/小展", "萬聖節活動", "萬聖節",
         "燈節", "花火大會", "花火", "煙火", "文化活動", "文化節", "美食祭",
-        "市集", "市集/物產展", "耶誕市集", "街區活動", "快閃店",
+        "市集", "市集/物產展", "耶誕市集", "街區活動",
         "主題活動", "主題月活動",
     ],
     "樂園動物園": [
@@ -67,6 +70,33 @@ _GROUPS = {
 }
 TYPE_MAP = {raw: canon for canon, raws in _GROUPS.items() for raw in raws}
 
+# 舊細類名稱判不準主類的個別活動（2026-11-06 Codex 審查逐筆看內容後定案）。
+# 每次都會套用，即使 type 已經是 7 類之一 —— 只改 _GROUPS 修不到已轉換過的資料。
+ID_OVERRIDE = {
+    "ntpc-taiwan-trip-village-pass-2026": "戶外踏青",       # 台灣好行山城套票，非樂園
+    "skm-pokemon-train-2026": "親子體驗",                   # 搭彩繪列車
+    "snoopy-playful-park-tsudanuma-2026": "樂園動物園",     # 室內遊樂設施
+    "formosa-northcoast-arts-2026": "展覽",                 # 戶外藝術作品
+    "taoyuan-landscape-arts-2026": "展覽",                  # 地景裝置
+    "zhuangwei-dune-arts-2026": "展覽",                     # 地景裝置
+    "newtaipei-sea-world-water-2026": "戲水",
+    "sunshine-oasis-water-2026": "戲水",
+    "janfusun-pirate-water-2026": "戲水",
+    "window-on-china-water-2026": "戲水",
+    "nstm-dementia-month-2026": "親子體驗",                 # 祖孫共遊、生命教育
+    "hualien-onepiece-liyutan-2026": "展覽",                # 角色裝置與光影
+    "galaxcity-autumn-programs-2026": "表演",               # 圓頂影片＋音樂劇
+    "hogwarts-invitation-tokyo-2026": "親子體驗",           # 入場體驗，非演出
+    "tongxiao-sand-art-2026": "展覽",                       # 沙雕作品（與八里沙雕展一致）
+    "fulong-sand-art-2026": "展覽",
+    "xinyi-pokemon-teletubbies-picturebook-2026": "展覽",   # 裝置、場景、原畫
+    "snoopy-art-life-songyan-2026": "節慶市集",             # 快閃店但主打商品
+    "winnie-pooh-100th-2026": "展覽",                       # 快閃店：主題場景
+    "pickles-frog-songyan-2026": "展覽",                    # 快閃店：錢湯拍照區
+    "teletubbies-qsquare-2026": "展覽",                     # 快閃店：沉浸式場景
+    "doraemon-sakura-songyan-2026": "展覽",                 # 快閃店：場景與公仔展示
+}
+
 VENUE_CANON = {"室內", "戶外", "室內＋戶外"}
 VENUE_MAP = {
     "室內+戶外": "室內＋戶外", "室內 / 戶外": "室內＋戶外", "室內/戶外": "室內＋戶外",
@@ -76,26 +106,44 @@ VENUE_MAP = {
 
 def normalize_record(rec: dict) -> tuple[bool, list[str]]:
     changed, notes = False, []
-    t = (rec.get("type") or "").strip()
-    if t and t not in TYPE_CANON:
-        canon = TYPE_MAP.get(t)
-        if canon:
-            tags = rec.get("tags") or []
-            if t not in tags:
-                tags.append(t)
+    rid = rec.get("id", "?")
+
+    # tags 必須是 list（前端卡片用 .map()）
+    tags = rec.get("tags")
+    if tags is None:
+        tags = []
+    elif isinstance(tags, str):
+        tags = [tags] if tags.strip() else []
+        rec["tags"] = tags
+        changed = True
+    elif not isinstance(tags, list):
+        notes.append(f"{rid}: tags 不是 list（{type(tags).__name__}），請人工修正")
+        tags = None
+
+    raw_t = rec.get("type")
+    t = raw_t.strip() if isinstance(raw_t, str) else ""
+    canon = ID_OVERRIDE.get(rid) or (t if t in TYPE_CANON else TYPE_MAP.get(t))
+    if not t:
+        notes.append(f"{rid}: type 是空的")
+    elif not canon:
+        notes.append(f"{rid}: type 認不出來 {t!r}")
+    elif canon != raw_t:
+        if t not in TYPE_CANON and tags is not None and t not in tags:
+            tags.append(t)
             rec["tags"] = tags
-            rec["type"] = canon
-            changed = True
-        else:
-            notes.append(f"{rec.get('id', '?')}: type 認不出來 {t!r}")
-    v = (rec.get("venue") or "").strip()
-    if v and v not in VENUE_CANON:
-        canon = VENUE_MAP.get(v)
-        if canon:
-            rec["venue"] = canon
-            changed = True
-        else:
-            notes.append(f"{rec.get('id', '?')}: venue 認不出來 {v!r}")
+        rec["type"] = canon
+        changed = True
+
+    raw_v = rec.get("venue")
+    v = raw_v.strip() if isinstance(raw_v, str) else ""
+    vcanon = v if v in VENUE_CANON else VENUE_MAP.get(v)
+    if not v:
+        notes.append(f"{rid}: venue 是空的")
+    elif not vcanon:
+        notes.append(f"{rid}: venue 認不出來 {v!r}")
+    elif vcanon != raw_v:
+        rec["venue"] = vcanon
+        changed = True
     return changed, notes
 
 
@@ -133,7 +181,7 @@ def main() -> int:
             print("  [OK] 已寫回 articles.json")
 
     if manual:
-        print("\n[需人工確認 —— 把新值加進 TYPE_MAP / VENUE_MAP 再跑]")
+        print("\n[需人工確認 —— 新寫法加進 _GROUPS / VENUE_MAP，個別活動加進 ID_OVERRIDE，再跑]")
         for m in manual:
             print(f"  ⚠️ {m}")
     if not quiet:

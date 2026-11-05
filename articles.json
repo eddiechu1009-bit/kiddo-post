@@ -585,7 +585,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "節慶市集",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -2127,7 +2127,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "深坑・平溪・十分・九份・金瓜石",
-    "type": "樂園動物園",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -2232,7 +2232,7 @@
     "category": "outside",
     "region": "全台巡演",
     "district": "台北 → 桃園 → 台中 → 嘉義 → 台南 → 新左營",
-    "type": "樂園動物園",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -2331,7 +2331,7 @@
     "category": "outside",
     "region": "雲林縣",
     "district": "古坑鄉",
-    "type": "樂園動物園",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -3019,7 +3019,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 足立區",
-    "type": "展覽",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -3229,7 +3229,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "三芝・石門・金山・萬里",
-    "type": "表演",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -3684,7 +3684,7 @@
     "category": "japan",
     "region": "日本",
     "district": "千葉縣 習志野市",
-    "type": "展覽",
+    "type": "樂園動物園",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -4774,7 +4774,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "三民區",
-    "type": "節慶市集",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -4972,7 +4972,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 練馬區",
-    "type": "表演",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -5167,7 +5167,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "節慶市集",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -5267,7 +5267,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "新店區",
-    "type": "戶外踏青",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -5462,7 +5462,7 @@
     "category": "outside",
     "region": "苗栗縣",
     "district": "通霄鎮",
-    "type": "節慶市集",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -5905,7 +5905,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "貢寮區",
-    "type": "節慶市集",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6005,7 +6005,7 @@
     "category": "outside",
     "region": "花蓮縣",
     "district": "壽豐鄉",
-    "type": "節慶市集",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -6107,7 +6107,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "龍潭區",
-    "type": "樂園動物園",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -6738,7 +6738,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "三重區",
-    "type": "戶外踏青",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8243,7 +8243,7 @@
     "category": "outside",
     "region": "宜蘭縣",
     "district": "壯圍鄉",
-    "type": "表演",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8632,7 +8632,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "節慶市集",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -8782,7 +8782,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "桃園市",
-    "type": "表演",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -9183,7 +9183,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "大同區",
-    "type": "節慶市集",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "0-1",
@@ -9380,7 +9380,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "節慶市集",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "1-3",
