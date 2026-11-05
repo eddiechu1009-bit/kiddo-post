@@ -43,7 +43,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "媒體整理",
     "end_date": "2026-10-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taimall-halloween-music-2026",
@@ -89,7 +89,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "媒體整理",
     "end_date": "2026-11-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "feds-zhubei-halloween-2026",
@@ -135,7 +135,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "媒體整理",
     "end_date": "2026-10-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "ifg-hsinchu-halloween-market-2026",
@@ -181,7 +181,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "媒體整理",
     "end_date": "2026-11-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "hsinchu-universe-halloween-2026",
@@ -227,7 +227,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "媒體整理",
     "end_date": "2026-10-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "haian-halloween-2026",
@@ -273,7 +273,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "媒體整理",
     "end_date": "2026-10-25",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nmmst-halloween-recycling-2026",
@@ -319,7 +319,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "媒體整理",
     "end_date": "2026-10-31",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "ueno-panda-stamp-rally-2026",
@@ -364,7 +364,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "官方",
     "end_date": "2026-11-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tama-koala-conservation-2026",
@@ -409,7 +409,7 @@
     "source_checked_at": "2026-10-23",
     "source_kind": "官方",
     "end_date": "2026-10-25",
-    "status": "active"
+    "status": "archived"
   },
   {
     "date": "2026-10-14",
@@ -518,7 +518,7 @@
   {
     "date": "2026-10-14",
     "week": "2026-W42",
-    "status": "active",
+    "status": "archived",
     "id": "shilin-halloween-tcap-tianmu-2026",
     "category": "taipei",
     "region": "台北市",
@@ -627,7 +627,7 @@
   {
     "date": "2026-10-14",
     "week": "2026-W42",
-    "status": "active",
+    "status": "archived",
     "id": "tainan-long-flow-nmth-mazu-2026",
     "category": "outside",
     "region": "台南市",
@@ -677,7 +677,7 @@
   {
     "date": "2026-10-14",
     "week": "2026-W42",
-    "status": "active",
+    "status": "archived",
     "id": "taoyuan-halloween-snoopy-lion-2026",
     "category": "outside",
     "region": "桃園市",
@@ -1194,7 +1194,7 @@
       }
     ],
     "end_date": "2026-11-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "date": "2026-10-07",
@@ -1347,7 +1347,7 @@
       }
     ],
     "end_date": "2026-10-25",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "keelung-eagle-carnival-2026",
@@ -1490,7 +1490,7 @@
       }
     ],
     "end_date": "2026-11-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "kongzong-awe-exhibition-2026",
@@ -1537,7 +1537,7 @@
       }
     ],
     "end_date": "2026-11-03",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "taipei-zoo-muzha40-2026",
@@ -1588,7 +1588,7 @@
       }
     ],
     "end_date": "2026-10-24",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "gloria-outlets-pumpkin-valley-2026",
@@ -1636,7 +1636,7 @@
       }
     ],
     "end_date": "2026-11-01",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "chimei-pharaoh-king-of-egypt-2026",
@@ -1792,7 +1792,7 @@
       }
     ],
     "end_date": "2026-11-03",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "teamlab-fukuoka-castle-2026",
@@ -1936,7 +1936,7 @@
       }
     ],
     "end_date": "2026-10-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "beitou-yokai-world-2026",
@@ -2357,7 +2357,7 @@
       }
     ],
     "end_date": "2026-10-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tokyo-9gardens-autumn-stamp-2026",
@@ -4387,7 +4387,7 @@
       }
     ],
     "end_date": "2026-11-03",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "fukushima-fair-songyan-2026",
@@ -4629,7 +4629,7 @@
       }
     ],
     "end_date": "2026-10-30",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "vanished-pharaoh-vr-songyan-2026",
@@ -5897,7 +5897,7 @@
       }
     ],
     "end_date": "2026-10-26",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "hualien-summer-love-2026",
@@ -10915,5 +10915,930 @@
     ],
     "end_date": "2026-09-30",
     "status": "archived"
+  },
+  {
+    "id": "moca-after-museum-2026",
+    "date": "2026-10-28",
+    "week": "2026-W44",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "大同區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "室內",
+      "展覽",
+      "美術館"
+    ],
+    "coord": [
+      25.0505,
+      121.5199
+    ],
+    "title": "大同 · 台北當代藝術館《美術館之後》（至 12/31 · 2027 起閉館整修前最後一檔）",
+    "summary": "25 週年的當代館 2027 年起閉館整修約三年，暫別展把館員、警衛、佈展工作者與建築的聲音帶進展場。",
+    "highlight": "帶孩子當一次美術館偵探：除了藝術家，還有誰讓我們看到展覽？部分作品只在特定時段開放，出發前看時段。",
+    "info": {
+      "date": "9/19 ~ 12/31",
+      "location": "台北當代藝術館（長安西路 39 號）",
+      "age": "6 歲以上最有感",
+      "price": "依館方公告"
+    },
+    "source_name": "台北當代藝術館 · 美術館之後",
+    "sources": [
+      {
+        "name": "台北當代藝術館 · 美術館之後",
+        "url": "https://www.moca.taipei/tw/ExhibitionAndEvent/Info/%E7%BE%8E%E8%A1%93%E9%A4%A8%E4%B9%8B%E5%BE%8C"
+      }
+    ],
+    "end_date": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "aha-textbook-design-2026",
+    "date": "2026-10-28",
+    "week": "2026-W44",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "信義區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "室內",
+      "展覽",
+      "設計"
+    ],
+    "coord": [
+      25.044,
+      121.5606
+    ],
+    "title": "信義 · 松菸「AHA 原來如此！教科書設計展」（至 11/8）",
+    "summary": "第三屆教科書設計獎得獎作品做成互動裝置，看圖表與步驟圖怎麼把難懂的內容變清楚。",
+    "highlight": "孩子說課本無聊時可以換個角度聊：也許是設計不好懂。未查到主辦官網票價公告，出發前確認。",
+    "info": {
+      "date": "10/14 ~ 11/8",
+      "location": "松山文創園區 台灣設計館",
+      "age": "國小以上",
+      "price": "依主辦公告"
+    },
+    "source_name": "媽媽寶寶（展覽整理）",
+    "sources": [
+      {
+        "name": "媽媽寶寶（展覽整理）",
+        "url": "https://www.mombaby.com.tw/articles/9938162"
+      }
+    ],
+    "end_date": "2026-11-08",
+    "status": "active"
+  },
+  {
+    "id": "penguin-stamp-rally-2026",
+    "date": "2026-10-28",
+    "week": "2026-W44",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "文山區",
+    "type": "動物園",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室"
+    ],
+    "tags": [
+      "室內",
+      "集章",
+      "動物園"
+    ],
+    "coord": [
+      24.9983,
+      121.581
+    ],
+    "title": "木柵 · 臺北動物園「企鵝大使跨館集章探險」（至 2027/6/30 · 串聯 5 館）",
+    "summary": "海科館發起，串聯臺北動物園、海生館、台中海洋館與 Xpark，集章 3 個以上可回函抽獎。",
+    "highlight": "適合當成一整年的家庭小任務；集章卡數量有限、遺失不補發。",
+    "info": {
+      "date": "即日起 ~ 2027/6/30",
+      "location": "臺北市立動物園 企鵝館",
+      "age": "3 歲以上",
+      "price": "集章免費，門票依各館"
+    },
+    "source_name": "臺北市立動物園 · 企鵝大使跨館集章探險",
+    "sources": [
+      {
+        "name": "臺北市立動物園 · 企鵝大使跨館集章探險",
+        "url": "https://www.zoo.gov.taipei/News_Content.aspx?n=FF99E6A67512AD9B&sms=9D72E82EC16F3E64&s=CD19D5DB12465DC3"
+      }
+    ],
+    "end_date": "2027-06-30",
+    "status": "active"
+  },
+  {
+    "id": "xinshe-flower-carpet-2026",
+    "date": "2026-10-28",
+    "week": "2026-W44",
+    "category": "outside",
+    "region": "台中市",
+    "district": "新社區",
+    "type": "花海",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "停車場"
+    ],
+    "tags": [
+      "戶外",
+      "花海",
+      "季節限定"
+    ],
+    "coord": [
+      24.229,
+      120.813
+    ],
+    "title": "台中新社 · 2026 新社花海＋台中國際花毯節（10/31~11/22）",
+    "summary": "12.5 公頃、50 多種草花，今年新增食農教育瓜果廊道品種展示區。",
+    "highlight": "估計參訪人次可望破 400 萬，假日一定塞，能請假就排平日；交通管制依主辦公告。",
+    "info": {
+      "date": "10/31 ~ 11/22",
+      "location": "台中市新社區 種苗改良繁殖場一帶",
+      "age": "全齡",
+      "price": "依主辦公告"
+    },
+    "source_name": "中央社 · 新社花海 31 日登場（2026/10/20）",
+    "sources": [
+      {
+        "name": "中央社 · 新社花海 31 日登場（2026/10/20）",
+        "url": "https://www.cna.com.tw/news/ahel/202610200312.aspx"
+      }
+    ],
+    "end_date": "2026-11-22",
+    "status": "active"
+  },
+  {
+    "id": "nstm-science-festival-2026",
+    "date": "2026-10-28",
+    "week": "2026-W44",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "三民區",
+    "type": "科學節",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "哺乳室",
+      "親子廁所"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "科學"
+    ],
+    "coord": [
+      22.64,
+      120.323
+    ],
+    "title": "高雄 · 科工館臺灣科學節（11/7~8、11/14~15 · 魔術科學秀、布農族弓琴與杵音）",
+    "summary": "南部主場科學節排了兩個週末：魔術科學秀、生活發電實驗、節能燈闖關與布農族音樂會。",
+    "highlight": "很適合兄弟姊妹年齡差很多的家庭；高壓靜電體驗有心臟疾病或配戴心律調節器者只觀摩。",
+    "info": {
+      "date": "11/7 ~ 11/8、11/14 ~ 11/15",
+      "location": "國立科學工藝博物館 北館大廳",
+      "age": "全齡",
+      "price": "大廳節目免費，工作坊需報名"
+    },
+    "source_name": "科工館 · 2026 臺灣科學節",
+    "sources": [
+      {
+        "name": "科工館 · 2026 臺灣科學節",
+        "url": "https://www.nstm.gov.tw/ActivitiesDetailC001110.aspx?Cond=3a47a825-813d-45e6-8eb1-cfd797ec154d"
+      }
+    ],
+    "end_date": "2026-11-15",
+    "status": "active"
+  },
+  {
+    "id": "taichung-chiikawa-stamp-2026",
+    "date": "2026-10-28",
+    "week": "2026-W44",
+    "category": "outside",
+    "region": "台中市",
+    "district": "清水區",
+    "type": "集章",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "戶外",
+      "集章",
+      "IP"
+    ],
+    "coord": [
+      24.268,
+      120.568
+    ],
+    "title": "台中清水 · 台中通 × 醜白兔 親子同樂集章趣（11/7 下午）",
+    "summary": "台中市數位發展局與清水區公所合辦，人氣 IP 醜白兔到牛埔仔運動公園帶親子集章。",
+    "highlight": "集章活動常需要先下載 APP 或登入，出門前先裝好台中通。",
+    "info": {
+      "date": "11/7 14:00",
+      "location": "台中市清水區 牛埔仔運動公園",
+      "age": "3~10 歲",
+      "price": "依主辦公告"
+    },
+    "source_name": "中央社 · 台中通 × 醜白兔（2026/10/21）",
+    "sources": [
+      {
+        "name": "中央社 · 台中通 × 醜白兔（2026/10/21）",
+        "url": "https://www.cna.com.tw/news/aloc/202610210207.aspx"
+      }
+    ],
+    "end_date": "2026-11-07",
+    "status": "active"
+  },
+  {
+    "id": "tama-amur-tiger-twins-2026",
+    "date": "2026-10-28",
+    "week": "2026-W44",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 日野市",
+    "type": "動物園",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "推車友善"
+    ],
+    "tags": [
+      "戶外",
+      "動物園",
+      "日本"
+    ],
+    "coord": [
+      35.649,
+      139.404
+    ],
+    "title": "東京日野 · 多摩動物公園 東北虎雙胞胎「ヒバナ」「ツボミ」11/1 起公開",
+    "summary": "5/2 出生的兩隻東北虎寶寶公開，初期可自由進出寢室，不一定看得到。",
+    "highlight": "安靜觀看、不在同一點長時間拍攝；排兩個時段去看比一直守著更有機會。週三休園。",
+    "info": {
+      "date": "11/1 起",
+      "location": "多摩動物公園 アムールトラ展示場",
+      "age": "全齡",
+      "price": "入園費依園方公告"
+    },
+    "source_name": "東京ズーネット · アムールトラ誕生",
+    "sources": [
+      {
+        "name": "東京ズーネット · アムールトラ誕生",
+        "url": "https://www.tokyo-zoo.net/tama/news/11457/index.html"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "nonhoi-autumn-festival-2026",
+    "date": "2026-10-28",
+    "week": "2026-W44",
+    "category": "japan",
+    "region": "日本",
+    "district": "愛知縣 豊橋市",
+    "type": "動物園",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "停車場"
+    ],
+    "tags": [
+      "戶外",
+      "動物園",
+      "博物館",
+      "日本"
+    ],
+    "coord": [
+      34.723,
+      137.437
+    ],
+    "title": "愛知豊橋 · のんほいパーク「オータムフェスティバル 2026」（週末至 12/6）",
+    "summary": "動物園、遊樂園、植物園和自然史博物館一處，秋季祭典週末加開餵食，博物館有寶可夢天文台特展。",
+    "highlight": "白天看動物、晚上看寶可夢天文台；博物館延長開館時戶外區會先關，先走戶外再進館。",
+    "info": {
+      "date": "10/3 ~ 12/6 週末與假日",
+      "location": "豊橋総合動植物公園",
+      "age": "全齡",
+      "price": "入園費依園方公告"
+    },
+    "source_name": "のんほいパーク · オータムフェスティバル 2026",
+    "sources": [
+      {
+        "name": "のんほいパーク · オータムフェスティバル 2026",
+        "url": "https://www.nonhoi.jp/event/p2938/"
+      }
+    ],
+    "end_date": "2026-12-06",
+    "status": "active"
+  },
+  {
+    "id": "ntpc-christmasland-kanahei-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "板橋區",
+    "type": "燈節",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "推車友善"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "耶誕",
+      "IP"
+    ],
+    "coord": [
+      25.0118,
+      121.465
+    ],
+    "title": "板橋 · 2026 新北歡樂耶誕城 × 卡娜赫拉的小動物（11/13~12/27）",
+    "summary": "第 15 年的耶誕城攜手卡娜赫拉的小動物，45 天每晚 17:30~23:00 亮燈；11/14~15 童趣嘉年華、12/4~6 德國耶誕市集。",
+    "highlight": "開城頭兩週比耶誕夜前後好逛；帶小小孩 17:30 亮燈就到、晚餐前離開。官方建議搭大眾運輸。",
+    "info": {
+      "date": "11/13 ~ 12/27，17:30~23:00",
+      "location": "新北市民廣場、板橋車站站前廣場、萬坪公園、府中廣場",
+      "age": "全齡",
+      "price": "免費"
+    },
+    "source_name": "新北市政府 · 市政新聞",
+    "sources": [
+      {
+        "name": "新北市政府 · 市政新聞",
+        "url": "https://www.ntpc.gov.tw/ch/home.jsp?id=28&dataserno=202610220036"
+      },
+      {
+        "name": "新北歡樂耶誕城官網",
+        "url": "https://christmasland.ntpc.gov.tw/special-detail.php?i=109"
+      }
+    ],
+    "end_date": "2026-12-27",
+    "status": "active"
+  },
+  {
+    "id": "caoling-silvergrass-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "貢寮區",
+    "type": "步道",
+    "venue": "戶外",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "步道",
+      "季節限定"
+    ],
+    "coord": [
+      25.0057,
+      121.9285
+    ],
+    "title": "貢寮 · 2026 草嶺古道芒花季（颱風延期：11/14~12/13）",
+    "summary": "原訂 10/31 開始，因颱風步道受損延到 11/14；季內每週有市集、虎字碑拓碑、導覽與手作體驗。",
+    "highlight": "其他懶人包可能還寫 10/31 開始。拓碑對學齡孩子很有感；埡口東北季風強，防風外套一定要帶。",
+    "info": {
+      "date": "11/14 ~ 12/13",
+      "location": "草嶺古道（遠望坑 ↔ 大里）",
+      "age": "6 歲以上走全程",
+      "price": "步道免費"
+    },
+    "source_name": "東北角暨宜蘭海岸國家風景區 · 草嶺古道芒花季",
+    "sources": [
+      {
+        "name": "東北角暨宜蘭海岸國家風景區 · 草嶺古道芒花季",
+        "url": "https://events.necoast-nsa.gov.tw/flower26/"
+      }
+    ],
+    "end_date": "2026-12-13",
+    "status": "active"
+  },
+  {
+    "id": "oshiri-tantei-stage-ntpc-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "板橋區",
+    "type": "表演",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "劇場",
+      "IP"
+    ],
+    "coord": [
+      25.0168,
+      121.4612
+    ],
+    "title": "板橋 · 銀河谷音劇團《屁屁偵探》南方島嶼的神秘遺跡（11/7~8）",
+    "summary": "劇場限定原創案件，結合大型人偶、手操偶與動態投影，觀眾化身小偵探一起破案；全台巡演首站。",
+    "highlight": "建議 3 歲以上、一人一票；全長約 95 分鐘含中場。退換票需演出日 10 天前辦理。",
+    "info": {
+      "date": "11/7 ~ 11/8",
+      "location": "新北市藝文中心演藝廳",
+      "age": "3 歲以上",
+      "price": "依 OPENTIX"
+    },
+    "source_name": "OPENTIX · 屁屁偵探",
+    "sources": [
+      {
+        "name": "OPENTIX · 屁屁偵探",
+        "url": "https://www.opentix.life/event/2086734015886159873"
+      }
+    ],
+    "end_date": "2026-11-08",
+    "status": "active"
+  },
+  {
+    "id": "ntcart-power-dream-factory-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "鶯歌區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "哺乳室",
+      "推車友善"
+    ],
+    "tags": [
+      "室內",
+      "展覽",
+      "互動"
+    ],
+    "coord": [
+      24.9568,
+      121.354
+    ],
+    "title": "鶯歌 · 新北市美術館「動力夢工廠」親子互動展（第一階段至 2027/2/14）",
+    "summary": "邀請藝術家邱昭財、蔡宜婷，從齒輪、鏈條、發條與光影出發，讓 3~10 歲孩子動手操作機械裝置。",
+    "highlight": "長檔期，適合下雨天；讓孩子自己找出「轉這裡、那邊為什麼會動」。開放時間與票價以館方為準。",
+    "info": {
+      "date": "10/3 ~ 2027/2/14（第二階段 2027/2/26 起）",
+      "location": "新北市美術館 探索基地",
+      "age": "3~10 歲",
+      "price": "依館方公告"
+    },
+    "source_name": "新北市美術館 · 動力夢工廠",
+    "sources": [
+      {
+        "name": "新北市美術館 · 動力夢工廠",
+        "url": "https://ntcart.museum/news_content.aspx?id=E2610002"
+      }
+    ],
+    "end_date": "2027-02-14",
+    "status": "active"
+  },
+  {
+    "id": "ntsec-science-carnival-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "士林區",
+    "type": "科學節",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "科學",
+      "嘉年華"
+    ],
+    "coord": [
+      25.0964,
+      121.5155
+    ],
+    "title": "士林 · 臺灣科學節 科教館「科學嘉年華」（11/13~15 · 免費闖關）",
+    "summary": "上百個科學體驗攤位圍著科教館、天文館、兒童新樂園擺開；11/7~8 另有展場活動與工作坊。",
+    "highlight": "11/13 週五是校園日，一般家庭排 11/14~15；和耶誕城開城同週末，學齡前孩子二選一就好。",
+    "info": {
+      "date": "11/7 ~ 11/8；嘉年華 11/13 ~ 11/15",
+      "location": "國立臺灣科學教育館＋臺北科學藝術園區",
+      "age": "全齡",
+      "price": "嘉年華免費，工作坊需報名"
+    },
+    "source_name": "科教館 · 臺灣科學節",
+    "sources": [
+      {
+        "name": "科教館 · 臺灣科學節",
+        "url": "https://www.ntsec.gov.tw/article/detail.aspx?a=6039"
+      }
+    ],
+    "end_date": "2026-11-15",
+    "status": "active"
+  },
+  {
+    "id": "changhua-daxing-flying-park-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "outside",
+    "region": "彰化縣",
+    "district": "福興鄉",
+    "type": "共融遊戲場",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "共融遊戲場"
+    ],
+    "coord": [
+      24.047,
+      120.437
+    ],
+    "title": "彰化福興 · 大興飛行樂園 共融遊戲場（11/4 新啟用）",
+    "summary": "以「原彰化飛行場防空塔」為設計發想，有炮臺遊戲塔、飛機造型遊具、飛行鞦韆、跳床與旋轉盤；彰化第 20 座共融公園。",
+    "highlight": "玩完可以聊當地飛機場與防空塔的歷史；與國小相鄰，外地家庭排週末或放學後較合適。",
+    "info": {
+      "date": "11/4 起（常設）",
+      "location": "彰化縣福興鄉 大興國小旁",
+      "age": "幼兒～學齡",
+      "price": "免費"
+    },
+    "source_name": "國語日報 · 大興飛行樂園啟用",
+    "sources": [
+      {
+        "name": "國語日報 · 大興飛行樂園啟用",
+        "url": "https://www.mdnkids.com/content.asp?Link_String_=24B500000YKSOGX"
+      },
+      {
+        "name": "新唐人 · 大興飛行樂園啟用",
+        "url": "https://www.ntdtv.com.tw/b5/20261104/video/412089.html"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "nmns-science-festival-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "outside",
+    "region": "台中市",
+    "district": "北區",
+    "type": "科學節",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "停車場",
+      "哺乳室"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "科學"
+    ],
+    "coord": [
+      24.1573,
+      120.666
+    ],
+    "title": "台中 · 科博館 第 7 屆臺灣科學節（11/7~15 · 大科學秀＋免費 XR 展演）",
+    "summary": "「大科學」11/7~8 移師戶外橢圓形廣場（NT$100，線上購票）；「XR 奇幻探索」11/8、14、15 入館觀眾免費。",
+    "highlight": "大科學需全員到齊才能入場、不開放佔位；建議 3 歲以上，帶可上網的手機參與互動。",
+    "info": {
+      "date": "11/7 ~ 11/15",
+      "location": "國立自然科學博物館",
+      "age": "3 歲以上",
+      "price": "大科學 NT$100；XR 免費"
+    },
+    "source_name": "科博館 · 第 7 屆臺灣科學節",
+    "sources": [
+      {
+        "name": "科博館 · 第 7 屆臺灣科學節",
+        "url": "https://www.nmns.edu.tw/ch/information/news/News-002620/"
+      }
+    ],
+    "end_date": "2026-11-15",
+    "status": "active"
+  },
+  {
+    "id": "taxt-taoyuan-art-tech-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "outside",
+    "region": "桃園市",
+    "district": "中壢區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "停車場"
+    ],
+    "tags": [
+      "室內",
+      "展覽",
+      "科技藝術"
+    ],
+    "coord": [
+      24.958,
+      121.241
+    ],
+    "title": "桃園中壢 · 2026 TAxT 桃園科技藝術節「Be Tokens 現實世界・生成中」（至 11/22）",
+    "summary": "2017 年開辦的科技藝術節，在中原文創園區展出國內外科技藝術創作。",
+    "highlight": "可以順勢和孩子聊哪些是人做的、哪些是電腦生成的。週一休園。",
+    "info": {
+      "date": "10/30 ~ 11/22，10:00~18:00（週一休）",
+      "location": "中原文創園區",
+      "age": "6 歲以上",
+      "price": "依主辦公告"
+    },
+    "source_name": "TAxT 桃園科技藝術節",
+    "sources": [
+      {
+        "name": "TAxT 桃園科技藝術節",
+        "url": "https://www.taxt.tw"
+      },
+      {
+        "name": "中原文創園區 · 2026 TAxT",
+        "url": "https://cycc.org.tw/zh-hant/2026taxt"
+      }
+    ],
+    "end_date": "2026-11-22",
+    "status": "active"
+  },
+  {
+    "id": "pingtung-christmas-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "outside",
+    "region": "屏東縣",
+    "district": "屏東市",
+    "type": "燈節",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "推車友善"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "耶誕",
+      "泡泡"
+    ],
+    "coord": [
+      22.6727,
+      120.489
+    ],
+    "title": "屏東 · 2026 屏東聖誕節（11/6~2027/1/3 · 週末夢幻泡泡）",
+    "summary": "屏東公園每日 17:30~22:00 亮燈，主燈定時展演；週六日與國定假日 18:00~22:00 耶林大道每整點夢幻泡泡。",
+    "highlight": "幼兒覺得泡泡比燈光好玩，排整點前到；聖誕拍貼機免費、每日限量。",
+    "info": {
+      "date": "11/6 ~ 2027/1/3，17:30~22:00",
+      "location": "屏東公園",
+      "age": "全齡",
+      "price": "燈區免費"
+    },
+    "source_name": "2026 屏東聖誕節官網",
+    "sources": [
+      {
+        "name": "2026 屏東聖誕節官網",
+        "url": "https://www.amazing-pingtung.com/ptcm"
+      }
+    ],
+    "end_date": "2027-01-03",
+    "status": "active"
+  },
+  {
+    "id": "tokyo-christmas-advent-ueno-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 台東區",
+    "type": "耶誕市集",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "戶外",
+      "耶誕",
+      "日本"
+    ],
+    "coord": [
+      35.7115,
+      139.772
+    ],
+    "title": "東京上野 · 東京クリスマスアドベント（11/6~12/25 · 不忍池區 11/18 起）",
+    "summary": "福岡發起的冬季活動，今年主題「Five Senses Christmas」，約 70 萬顆燈泡加上音樂、藝術、戶外馬戲與市集。",
+    "highlight": "白天上野動物園或科博館、傍晚到袴腰廣場看燈；不忍池區 11/18 才開。",
+    "info": {
+      "date": "袴腰廣場 11/6 ~ 12/25 12:00~23:00；不忍池 11/18 ~ 12/25",
+      "location": "上野恩賜公園 袴腰廣場、不忍池周邊",
+      "age": "全齡",
+      "price": "依主辦公告"
+    },
+    "source_name": "るるぶ&more. · 東京クリスマスアドベント",
+    "sources": [
+      {
+        "name": "るるぶ&more. · 東京クリスマスアドベント",
+        "url": "https://rurubu.jp/andmore/article/25594"
+      },
+      {
+        "name": "西日本新聞 · 11/6 開幕",
+        "url": "https://www.nishinippon.co.jp/item/1556783"
+      }
+    ],
+    "end_date": "2026-12-25",
+    "status": "active"
+  },
+  {
+    "id": "tokyo-culture-debut-park-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 江東區",
+    "type": "嘉年華",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "推車友善"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "手作",
+      "日本"
+    ],
+    "coord": [
+      35.6545,
+      139.7935
+    ],
+    "title": "東京豊洲 · TOKYO カルチャーデビュー PARK（11/14~15 · 免費免報名）",
+    "summary": "藝術、工作、音樂體驗攤位，加上草地現場表演、戶外電影與兒童友善餐車。",
+    "highlight": "工作攤位看示範就會做，日文不通也能玩；帶野餐墊。內容可能變更，出發前看官網。",
+    "info": {
+      "date": "11/14 ~ 11/15 10:00~17:00",
+      "location": "豊洲公園",
+      "age": "學齡前～國小",
+      "price": "免費、免報名"
+    },
+    "source_name": "TOKYO カルチャーデビュー PARK",
+    "sources": [
+      {
+        "name": "TOKYO カルチャーデビュー PARK",
+        "url": "https://tokyo-culture-debut.rekibun.or.jp/park"
+      }
+    ],
+    "end_date": "2026-11-15",
+    "status": "active"
+  },
+  {
+    "id": "mirai-tankyu-festa-shinjuku-2026",
+    "date": "2026-11-04",
+    "week": "2026-W45",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 新宿區",
+    "type": "體驗",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "推車友善"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "STEAM",
+      "日本"
+    ],
+    "coord": [
+      35.6905,
+      139.699
+    ],
+    "title": "東京新宿 · ミライ探求フェスタ 2026（11/15 · 東京都主辦 · 12 攤全免費）",
+    "summary": "國語、算數、理科、社會、圖工五區體驗：環保袋、太陽能勞作、親子程式操控宇宙探查機器人，舞台有魔術秀。",
+    "highlight": "熱門攤位要事前網路預約，二次募集只到 11/8 23:59；舞台節目免預約可當備案。",
+    "info": {
+      "date": "11/15 10:00~17:00",
+      "location": "新宿駅西口広場イベントコーナー",
+      "age": "國小為主",
+      "price": "免費（部分需網路預約）"
+    },
+    "source_name": "東京都 · ミライ探求フェスタ 2026",
+    "sources": [
+      {
+        "name": "東京都 · ミライ探求フェスタ 2026",
+        "url": "https://www.miraitankyufesta.metro.tokyo.lg.jp/"
+      }
+    ],
+    "end_date": "2026-11-15",
+    "status": "active"
   }
 ]
