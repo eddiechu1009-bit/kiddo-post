@@ -60,7 +60,7 @@ kiddo-post/ (parent-intel-site)
   "category": "taipei | outside | japan | development",
   "region": "台北市 | 新北市 | 日本 | ...",
   "district": "信義區",
-  "type": "展覽 | 表演 | 節慶市集 | 樂園動物園 | 戶外踏青 | 戲水 | 親子體驗",  // 只能 7 類，細類寫進 tags（normalize-types.py）
+  "type": "展覽 | 表演 | 節慶市集 | 樂園動物園 | 戶外踏青 | 戲水 | 親子體驗",
   "venue": "室內 | 戶外 | 室內＋戶外",
   "age_range": ["0-3", "3-6", "6-12"],
   "cost": "免費 | 付費",
@@ -75,6 +75,8 @@ kiddo-post/ (parent-intel-site)
   "sources": [{ "name": "...", "url": "..." }]
 }
 ```
+
+`type` 只能填上面 7 類，細類（光影展、花火大會…）寫進 `tags`；改完資料跑 `python parent-intel-site/normalize-types.py --fix`。
 
 ## 🚀 本機預覽
 

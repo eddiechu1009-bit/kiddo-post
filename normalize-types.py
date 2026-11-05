@@ -15,7 +15,8 @@ venue 篩選是字串相等比對，「室內＋戶外」「室內 / 戶外」�
   venue 收成 3 值：室內 · 戶外 · 室內＋戶外（「半室內」併入 室內＋戶外）。
   認不出來的值只報不改，請把它加進下面的 _GROUPS 再跑；
   舊細類名稱判不準主類的個別活動，用活動 id 加進 ID_OVERRIDE。
-  空白、缺值、tags 非 list 都會報出來（exit 2）。
+  type／venue 空白或缺值、tags 為物件／數字等非 list 都會報出來（exit 2）；
+  tags 缺少或 null 視為空 list（前端可容忍），字串 tags 自動轉成 list。
 
 用法:
   python parent-intel-site/normalize-types.py          # 稽核（不改檔），有問題 exit 2
