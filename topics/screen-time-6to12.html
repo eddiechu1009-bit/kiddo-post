@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-12 歲螢幕時間：別只算幾小時，先看螢幕擠掉了什麼 | Kiddo POST</title>
+<meta name="description" content="國小孩子一天該用幾小時 3C？從 Nature Human Behaviour 35 萬人分析（科技使用最多只解釋 0.4% 的幸福感差異）、ABCD 研究、丹麥兩週減螢幕隨機試驗、睡前裝置與睡眠統合分析、每多 1 小時螢幕近視勝算 +21% 的劑量反應研究，到台灣小六近視 70.6%、生生用平板與兒少法第 43 條，拆解 6-12 歲家庭該先保護哪些時間、怎麼分學習與娛樂螢幕，以及什麼時候該找專業協助。">
+<meta name="author" content="Kiddo POST">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23ffb088'/><stop offset='60%25' stop-color='%23ff7a45'/><stop offset='100%25' stop-color='%23ff9eb5'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='72' font-family='Fredoka, Nunito, sans-serif' font-size='62' font-weight='700' text-anchor='middle' fill='%23fff'>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #fdf6ec; --bg-cream: #fff8ec; --surface: #ffffff;
+  --text: #3d2b1f; --text-soft: #6b4f3a; --text-muted: #9e8670;
+  --orange: #ff7a45; --orange-light: #ffb088; --orange-soft: #fff0e5;
+  --teal: #2ba89a; --teal-soft: #e0f5f2;
+  --pink: #ff9eb5; --pink-soft: #ffeef3;
+  --yellow: #ffc93c; --yellow-soft: #fff4d1;
+  --green: #82c468; --green-soft: #e8f5e0; --green-deep: #4e8c3a;
+  --purple: #b794e0; --purple-soft: #f3e8ff;
+  --border: #f0e4d4;
+  --shadow: 0 6px 20px rgba(212, 163, 115, 0.15);
+}
+body {
+  font-family: 'Noto Sans TC', 'Nunito', -apple-system, sans-serif;
+  background: var(--bg); color: var(--text);
+  font-size: 16px; line-height: 1.85;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+.back-bar {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(253, 246, 236, 0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 2px dotted var(--border);
+  padding: 14px 24px;
+}
+.back-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; color: var(--orange);
+  font-weight: 700; font-size: 14px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+}
+.article { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+
+.topic-hero {
+  background: linear-gradient(135deg, #ffeef3 0%, #fff8ec 100%);
+  border: 3px solid var(--pink);
+  border-radius: 28px;
+  padding: 36px 32px; margin-bottom: 32px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.topic-hero::before {
+  content: '📱 🌳 😴 👀 💛';
+  position: absolute; top: 14px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px; letter-spacing: 10px; opacity: 0.55;
+}
+.topic-category {
+  display: inline-block; background: #a03a50; color: #fff;
+  padding: 4px 14px; border-radius: 16px;
+  font-size: 12px; font-weight: 800; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 14px;
+}
+.topic-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 26px; font-weight: 600; line-height: 1.4;
+  color: var(--text); letter-spacing: -0.01em; margin-bottom: 12px;
+}
+.topic-sub {
+  font-size: 15px; color: var(--text-soft); line-height: 1.75; font-weight: 500;
+}
+.topic-meta {
+  display: flex; justify-content: center; gap: 14px;
+  margin-top: 18px; font-size: 13px; color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.topic-meta span::before { content: ' · '; }
+.topic-meta span:first-child::before { content: ''; }
+
+h2 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 22px; font-weight: 600; color: var(--orange);
+  margin: 44px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px dotted var(--orange-light);
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 18px; font-weight: 600; color: var(--text);
+  margin: 28px 0 10px;
+}
+p { margin-bottom: 16px; color: var(--text); }
+strong { color: var(--orange); font-weight: 700; }
+em { color: var(--text-soft); font-style: italic; }
+
+/* 論述區塊 */
+.argument {
+  background: linear-gradient(135deg, #f3e8ff 0%, #fff 100%);
+  border-left: 5px solid #b794e0;
+  padding: 22px 24px;
+  border-radius: 14px;
+  margin: 28px 0;
+  position: relative;
+}
+.argument::before {
+  content: '💡 觀點';
+  position: absolute;
+  top: -10px; left: 18px;
+  background: #b794e0; color: #fff;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 11px; font-weight: 700;
+  padding: 3px 12px; border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+.argument h3 {
+  margin-top: 6px; margin-bottom: 12px;
+  color: #6b21a8; font-size: 19px;
+}
+.argument p:last-child { margin-bottom: 0; }
+.argument strong { color: #6b21a8; }
+
+.callout {
+  background: var(--yellow-soft);
+  border: 2px dashed var(--yellow);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin: 20px 0;
+}
+.callout-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 15px; font-weight: 700;
+  color: #92400e; margin-bottom: 8px;
+}
+.callout p { margin-bottom: 0; font-size: 14.5px; line-height: 1.8; color: #78350f; }
+.callout strong { color: #92400e; }
+
+/* 引用腳註 */
+sup.ref {
+  font-size: 11px; color: var(--orange);
+  font-weight: 700; vertical-align: super;
+  line-height: 0;
+}
+sup.ref a {
+  color: var(--orange); text-decoration: none;
+  padding: 0 2px;
+}
+sup.ref a:hover { text-decoration: underline; }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px; margin: 20px 0;
+}
+.stat-item {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 26px; font-weight: 700;
+  color: var(--orange); line-height: 1.1;
+}
+.stat-label {
+  font-size: 12px; color: var(--text-muted);
+  margin-top: 6px; line-height: 1.5;
+}
+
+/* 資料表 */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+  background: var(--surface);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.data-table th, .data-table td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  line-height: 1.7;
+}
+.data-table th {
+  background: var(--teal-soft);
+  color: #1e6e5f;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  font-size: 13.5px;
+}
+.data-table td strong { color: var(--teal); }
+.table-note { font-size: 12px; color: var(--text-muted); margin-top: -8px; }
+
+.tip-list { counter-reset: tip; margin: 20px 0; }
+.tip-card {
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 18px;
+  padding: 22px 24px 20px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+  position: relative; counter-increment: tip;
+}
+.tip-card::before {
+  content: counter(tip);
+  position: absolute; top: -10px; left: 20px;
+  background: var(--orange); color: #fff;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700; font-size: 15px;
+  padding: 3px 10px; border-radius: 12px;
+  border: 2px solid #fff;
+}
+.tip-card .tip-source {
+  display: inline-block;
+  font-size: 11px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.tip-card h4 {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 17px; font-weight: 600;
+  color: var(--text); margin-bottom: 10px;
+}
+.tip-card p { font-size: 14.5px; margin-bottom: 6px; line-height: 1.8; }
+.tip-card .example {
+  background: var(--teal-soft);
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: #1e6e5f;
+  line-height: 1.75;
+}
+.tip-card .example strong { color: #1e6e5f; }
+
+.warning-box {
+  background: #fff0e5;
+  border: 2px solid var(--orange-light);
+  border-left: 5px solid var(--orange);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+.warning-title {
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+  font-size: 16px; font-weight: 700;
+  color: var(--orange);
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.related-activities {
+  background: var(--green-soft);
+  border: 2px solid var(--green);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin: 32px 0;
+}
+.related-activities h3 {
+  color: var(--green-deep); margin-top: 0; margin-bottom: 12px;
+}
+.related-activities ul {
+  padding-left: 22px; font-size: 14.5px;
+  line-height: 1.85; color: #3f6b30;
+}
+.related-activities li { margin-bottom: 6px; }
+.related-activities a { color: var(--green-deep); font-weight: 700; text-decoration: none; }
+.related-activities strong { color: var(--green-deep); }
+
+.references {
+  background: var(--bg-cream);
+  border-radius: 14px;
+  padding: 22px 26px;
+  margin: 28px 0;
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+.references h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 16px;
+}
+.references ol {
+  padding-left: 20px;
+  counter-reset: ref;
+}
+.references ol li {
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+.references a {
+  color: var(--orange);
+  text-decoration: none;
+  word-break: break-word;
+}
+.references a:hover { text-decoration: underline; }
+.references .ref-type {
+  display: inline-block;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  padding: 1px 8px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.disclaimer {
+  background: #fff0e5;
+  border: 2px dashed var(--orange-light);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin: 28px 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-soft);
+}
+.disclaimer strong { color: var(--orange); }
+
+.article-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 28px 20px;
+  background: linear-gradient(135deg, #ff7a45 0%, #ff9eb5 100%);
+  border-radius: 20px;
+  color: #fff;
+}
+.article-footer h3 { color: #fff; margin: 0 0 6px; font-size: 18px; }
+.article-footer p { color: rgba(255,255,255,0.92); margin: 0 0 14px; font-size: 14px; }
+.article-footer .btn {
+  display: inline-block;
+  background: #fff;
+  color: var(--orange);
+  padding: 10px 24px;
+  border-radius: 22px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+}
+
+@media (max-width: 640px) {
+  .topic-title { font-size: 22px; }
+  .topic-hero { padding: 28px 22px; }
+  .article { padding: 24px 16px 60px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 16px; }
+  body { font-size: 15px; }
+  .argument { padding: 18px 20px; }
+  .references { padding: 18px 20px; font-size: 12.5px; }
+  .data-table { font-size: 12.5px; }
+  .data-table th, .data-table td { padding: 8px 8px; }
+}
+</style>
+</head>
+<body>
+
+<div class="back-bar">
+  <a href="../index.html" class="back-link">← 回 Kiddo POST 首頁</a>
+</div>
+
+<article class="article">
+
+  <!-- Hero -->
+  <header class="topic-hero">
+    <div class="topic-category">💛 心理與情緒 · 深度文</div>
+    <h1 class="topic-title">6-12 歲螢幕時間</h1>
+    <p class="topic-sub">
+      別只算幾小時，先看螢幕擠掉了什麼<br>
+      從 35 萬名青少年的資料分析、丹麥兩週減螢幕實驗，到台灣小六近視率 70.6%
+    </p>
+    <div class="topic-meta">
+      <span>📆 2026-11-05</span>
+      <span>⏱️ 閱讀約 15 分鐘</span>
+      <span>🎒 適用 6 ~ 12 歲</span>
+      <span>✍️ 嚴謹引用版</span>
+    </div>
+  </header>
+
+  <!-- 開場 -->
+  <p>
+    期中考剛結束的晚上，三年級的孩子用學校發的平板寫完線上作業，
+    手指一滑就切到影片。你喊「時間到了」，他回「再一集就好」；
+    一集變兩集，最後是你沒收平板、他摔門。
+  </p>
+  <p>
+    隔天你上網查「國小孩子一天可以用幾小時 3C」，答案有 1 小時、2 小時，也有人說根本不該給。
+    另一半覺得你太緊張，「現在誰不用？學校都在用了」；
+    你又想到新聞說手機會讓孩子焦慮、近視。於是問題變成：<strong>到底幾小時才算安全？</strong>
+  </p>
+  <p>
+    這篇文章想說的是，「幾小時」不是最好用的那把尺。對 6-12 歲的孩子，研究給出的訊號更具體：
+    <strong>螢幕本身的傷害多半很小，真正要顧的，是它擠掉了哪些東西</strong>——睡眠、戶外、身體活動，
+    還有和你說話的時間。而在台灣，這件事有幾個特別的數字——
+  </p>
+
+  <!-- 統計 -->
+  <div class="stat-grid">
+    <div class="stat-item">
+      <div class="stat-num">70.6%</div>
+      <div class="stat-label">國小六年級<br>近視盛行率</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">3.96 小時</div>
+      <div class="stat-label">兒少每日<br>平均上網時間</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">7.1 歲</div>
+      <div class="stat-label">首次接觸網路<br>的平均年齡</div>
+    </div>
+  </div>
+  <p class="table-note" style="text-align:center;">
+    資料來源：近視盛行率為國健署公布數據（幼兒園大班 9%、小一 19.8%、小六 70.6%）<sup class="ref"><a href="#ref-20">[20]</a></sup>；
+    上網時間與首次接觸年齡為教育部國教署引用 iWIN 網路內容防護機構 113 年度統計（兒少整體，非僅 6-12 歲；首次接觸年齡由 8.7 歲降至 7.1 歲）<sup class="ref"><a href="#ref-23">[23]</a></sup>。
+  </p>
+
+  <!-- 論述 1 -->
+  <div class="argument">
+    <h3>觀點一：「一天幾小時」是錯的單位，「一天被擠掉什麼」才是</h3>
+    <p>
+      許多爸媽記得「一天不超過 2 小時」，但美國兒科學會（AAP）2016 年針對 5-18 歲的政策聲明，
+      已經明確寫出<strong>健康的媒體使用沒有一體適用的答案</strong>；它要家長做的是一份
+      <strong>「家庭媒體使用計畫」</strong>：對每個孩子設定一致的每日時數與內容類型，
+      同時確保每天 1 小時身體活動與 8-12 小時睡眠、臥室不放裝置、睡前 1 小時不看螢幕、
+      寫作業時不開娛樂媒體，並規劃家庭的無螢幕時段與地點<sup class="ref"><a href="#ref-1">[1]</a></sup>。
+    </p>
+    <p>
+      AAP 後來推出的「5C」框架更直接，把其中一個 C 叫做 <strong>Crowding Out（被擠掉的東西）</strong>：
+      問的是「媒體擋到了什麼」——睡眠、閱讀、畫畫、作業、跟朋友玩、跟家人聊天
+      <sup class="ref"><a href="#ref-2">[2]</a></sup>。
+      加拿大兒科學會 2019 年的學齡兒童聲明同樣用四個原則取代單一時數：
+      <strong>健康的管理、有意義的使用、大人的示範、平衡且知情的監督</strong>
+      <sup class="ref"><a href="#ref-3">[3]</a></sup>。
+    </p>
+    <p>
+      世界衛生組織 2020 年的指引也很誠實：它強烈建議 5-17 歲孩子<strong>限制娛樂性螢幕時間</strong>，
+      但同時寫明<strong>證據不足以訂出一條精確的時數門檻</strong>
+      <sup class="ref"><a href="#ref-4">[4]</a></sup>。
+      所以我的立場是：與其和孩子爭「59 分鐘還是 61 分鐘」，
+      不如<strong>先把睡眠、戶外與身體活動排進行事曆，剩下的時間再談螢幕</strong>。
+    </p>
+  </div>
+
+  <!-- 科學解釋 -->
+  <h2>🔬 科學解釋：螢幕對 6-12 歲孩子，研究到底怎麼說</h2>
+
+  <h3>1. 心理健康：關聯是真的，但比新聞標題小很多</h3>
+  <p>
+    牛津大學 Orben 與 Przybylski 2019 年在《Nature Human Behaviour》用一種把所有合理分析方式都跑一遍的方法
+    （規格曲線分析），重新檢驗英美三個大型資料庫、共 355,358 名青少年。結果是：
+    數位科技使用與幸福感的關聯是負的，但<strong>最多只解釋 0.4% 的差異</strong>
+    <sup class="ref"><a href="#ref-5">[5]</a></sup>。
+    在同一篇論文的比較表裡，這個關聯的大小和「吃馬鈴薯」「戴眼鏡」與幸福感的關聯落在同一個量級；
+    睡眠充足與吃早餐的正向關聯則明顯大得多<sup class="ref"><a href="#ref-5">[5]</a></sup>。
+  </p>
+  <p>
+    那 6-12 歲呢？美國規模最大的青少年腦發展長期研究 ABCD，分析 11,875 名 9-10 歲孩子，
+    發現螢幕時間較多與心理健康、行為問題、學業表現與睡眠較差有關，<em>但與同儕關係較好有關</em>；
+    而且效果量都不大，<strong>家庭社經地位與這些結果的關聯，比螢幕時間更強</strong>。
+    作者的結論是：這不能證明因果，螢幕時間<em>不太可能</em>直接傷害 9-10 歲的孩子
+    <sup class="ref"><a href="#ref-6">[6]</a></sup>。
+  </p>
+
+  <h3>2. 但實驗告訴我們：拿掉螢幕，孩子會把時間拿去做別的事</h3>
+  <p>
+    相關研究的弱點是分不清因果，所以丹麥南丹麥大學團隊做了一件少見的事：<strong>直接隨機分組</strong>。
+    89 個家庭（181 名孩子，平均約 9 歲）中，一半的家庭在兩週內把<em>每人</em>休閒螢幕時間壓到
+    <strong>每週 3 小時以內</strong>，並交出手機與平板；另一半照常生活
+    <sup class="ref"><a href="#ref-8">[8]</a></sup><sup class="ref"><a href="#ref-9">[9]</a></sup>。
+  </p>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>結果</th>
+        <th>兩週後的組間差異</th>
+        <th>怎麼讀</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>孩子的非靜態休閒活動</strong></td>
+        <td>每天多 45.8 分鐘（95% 信賴區間 27.9-63.6）</td>
+        <td>螢幕時間被釋放出來後，孩子<strong>真的去動了</strong></td>
+      </tr>
+      <tr>
+        <td>腦波測量的睡眠</td>
+        <td>無顯著差異</td>
+        <td>短短兩週，睡眠沒有明顯改變</td>
+      </tr>
+      <tr>
+        <td><strong>情緒與行為困擾總分</strong>（SDQ）</td>
+        <td>−1.67 分（Cohen d = 0.53）</td>
+        <td>中等效果，以<strong>情緒與同儕問題</strong>改善最多</td>
+      </tr>
+      <tr>
+        <td>利社會行為</td>
+        <td>+0.84 分</td>
+        <td>分享、體貼別人的行為增加</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="table-note">
+    資料來源：Pedersen et al., <em>JAMA Pediatrics</em> 2022<sup class="ref"><a href="#ref-8">[8]</a></sup>；
+    Schmidt-Persson et al., <em>JAMA Network Open</em> 2024<sup class="ref"><a href="#ref-9">[9]</a></sup>。
+    參與家庭的家長原本休閒螢幕時間就偏高（每天超過 2.4 小時）；作者也提醒，效果能否長期維持仍需更多研究。
+  </p>
+  <p>
+    把兩種證據放在一起看，畫面就清楚了：<strong>觀察研究說螢幕本身的關聯很小，實驗卻看到明顯改變</strong>。
+    最合理的解釋，是改變來自「多出來的時間被拿去做什麼」——動起來、跟家人互動——
+    而不是螢幕裡有什麼毒素。這正是 AAP 所說的「被擠掉的東西」<sup class="ref"><a href="#ref-2">[2]</a></sup>。
+  </p>
+
+  <h3>3. 證據最一致的地方：睡眠</h3>
+  <p>
+    如果只能挑一件事管，研究最一致的是睡前。2015 年一份系統性回顧整理 67 篇研究，
+    <strong>90% 發現螢幕時間與睡眠較差有關</strong>，主要是睡得比較少、比較晚睡
+    <sup class="ref"><a href="#ref-11">[11]</a></sup>。
+    2016 年《JAMA Pediatrics》的統合分析（20 篇、125,198 名孩子）發現，睡前使用行動裝置的孩子，
+    睡眠不足的勝算是 2.17 倍、白天過度嗜睡 2.72 倍；更值得注意的是，
+    <strong>裝置只是放在房間裡、沒有使用，睡眠不足的勝算也有 1.79 倍</strong>
+    <sup class="ref"><a href="#ref-10">[10]</a></sup>。
+    要誠實說，這份分析的孩子平均 14.5 歲，偏向青少年，也都是相關性研究
+    <sup class="ref"><a href="#ref-10">[10]</a></sup>；但它和 AAP「臥室不放裝置」的建議方向一致
+    <sup class="ref"><a href="#ref-1">[1]</a></sup>。
+    美國睡眠醫學會建議 6-12 歲孩子<strong>每天睡 9-12 小時</strong>
+    <sup class="ref"><a href="#ref-12">[12]</a></sup>，這是排一天行程時最該先保住的一塊。
+  </p>
+
+  <h3>4. 眼睛：劑量反應很清楚，但解方在戶外</h3>
+  <p>
+    2025 年《JAMA Network Open》的劑量反應統合分析（45 篇、335,524 人，平均 9.3 歲）發現，
+    <strong>每天多 1 小時螢幕時間，近視勝算增加 21%</strong>；
+    風險在每天 1 到 4 小時之間上升最快，4 小時時勝算約為 1.97 倍
+    <sup class="ref"><a href="#ref-13">[13]</a></sup>。
+    較早的 2021 年《Lancet Digital Health》回顧結論類似但較保守（智慧裝置勝算 1.26，信賴區間下緣剛好碰到 1），
+    並指出<em>所有納入研究都沒有可靠的螢幕時間測量</em>
+    <sup class="ref"><a href="#ref-14">[14]</a></sup>。
+  </p>
+  <p>
+    台灣的好消息是，這題我們有本土實證。高雄長庚吳佩昌團隊在 16 所國小、693 名小一學生進行群集隨機試驗，
+    鼓勵孩子每週戶外活動最多 11 小時：介入組近視度數增加 0.35D、對照組 0.47D，
+    <strong>近視快速惡化的風險低 54%</strong>；而且<strong>樹蔭下、走廊這種光線較弱的戶外也有效</strong>，
+    不必曬大太陽<sup class="ref"><a href="#ref-15">[15]</a></sup>。
+    國健署推廣「用眼 30 分鐘休息 10 分鐘、每天戶外活動 2 到 3 小時」的「3010120」原則
+    <sup class="ref"><a href="#ref-21">[21]</a></sup>。
+  </p>
+
+  <!-- 論述 2 -->
+  <div class="argument">
+    <h3>觀點二：在台灣，「螢幕時間」至少是三種不同的東西</h3>
+    <p>
+      第一種是<strong>學校的螢幕</strong>。教育部自 111 年起推動「生生用平板」，偏遠地區學生 1 人 1 機、
+      非偏遠地區每 6 班配發 1 班，部長並宣示希望 4 年內各縣市都達到 1 人 1 機
+      <sup class="ref"><a href="#ref-24">[24]</a></sup>。
+      WHO 的「娛樂性螢幕時間」定義本來就<strong>排除學校與工作用途</strong>
+      <sup class="ref"><a href="#ref-4">[4]</a></sup>；
+      瑞典公共衛生局 2024 年建議 6-12 歲每天螢幕不超過 1-2 小時，也把學習、聽音樂與有聲書排除在外，
+      而且這個建議一發布就被當地學者批評證據不足<sup class="ref"><a href="#ref-25">[25]</a></sup>。
+      把作業時間算進「螢幕時數」裡跟孩子吵，等於拿錯的尺量對的事。
+    </p>
+    <p>
+      第二種是<strong>娛樂的螢幕</strong>，這才是家庭真正要談的部分。
+      第三種是<strong>室內的時間</strong>——這在台灣特別關鍵。國健署數據顯示，近視盛行率從幼兒園大班的 9%，
+      到小一跳到 19.8%、小六 70.6%、高三 87.2%<sup class="ref"><a href="#ref-20">[20]</a></sup>。
+      吳佩昌醫師在接受中央社訪問時指出，台灣學童近視率在推動「天天戶外 120」後，從最高約 5 成降到 4 成多，
+      是少數近視率不升反降的地方<sup class="ref"><a href="#ref-22">[22]</a></sup>。
+      換句話說，<strong>就算孩子不碰螢幕、卻整天待在室內讀書，眼睛的風險一樣在</strong>。
+    </p>
+    <p>
+      法律也是這個邏輯。《兒童及少年福利與權益保障法》第 43 條規定，兒少不得
+      「<strong>超過合理時間持續使用電子類產品，致有害身心健康</strong>」，照顧者應予禁止
+      <sup class="ref"><a href="#ref-18">[18]</a></sup>；第 91 條的罰則是「<strong>情節嚴重者</strong>」處新臺幣 1 萬至 5 萬元
+      <sup class="ref"><a href="#ref-19">[19]</a></sup>。
+      法條沒有寫幾分鐘，看的是「有害身心健康」與「情節嚴重」。所以不必因為某天多看了一部電影就擔心觸法——
+      法律在意的，和研究在意的是同一件事：<strong>結果，而不是碼表</strong>。
+    </p>
+  </div>
+
+  <!-- 實戰工具 -->
+  <h2>💡 實戰工具：先排保護時段，再談螢幕</h2>
+
+  <p>
+    下面這張表是本文依 AAP、WHO、美國睡眠醫學會與國健署的建議整理的「先保護清單」。
+    它不是某份研究直接驗證過的作息表，但每一列都有對應的權威建議。
+  </p>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>先保護的時間</th>
+        <th>建議</th>
+        <th>來源</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>睡眠</strong></td>
+        <td>每天 9-12 小時；睡前 1 小時不看螢幕；臥室不放裝置</td>
+        <td>美國睡眠醫學會<sup class="ref"><a href="#ref-12">[12]</a></sup>、AAP<sup class="ref"><a href="#ref-1">[1]</a></sup></td>
+      </tr>
+      <tr>
+        <td><strong>身體活動</strong></td>
+        <td>平均每天至少 60 分鐘中高強度活動</td>
+        <td>WHO 2020<sup class="ref"><a href="#ref-4">[4]</a></sup></td>
+      </tr>
+      <tr>
+        <td><strong>戶外</strong></td>
+        <td>每天 2-3 小時（含學校下課）；近距離用眼 30 分鐘休息 10 分鐘</td>
+        <td>國健署<sup class="ref"><a href="#ref-21">[21]</a></sup></td>
+      </tr>
+      <tr>
+        <td><strong>家庭時間</strong></td>
+        <td>吃飯等固定時段不開螢幕</td>
+        <td>AAP<sup class="ref"><a href="#ref-1">[1]</a></sup></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>🌙 Part 1 · 守住睡眠與眼睛</h3>
+
+  <div class="tip-list">
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP 2016 政策聲明 / Carter et al. 2016</span>
+      <h4>充電器搬出臥室，比設定時間更有效</h4>
+      <p>AAP 建議孩子<strong>睡覺時房間裡不要有電視、電腦和手機</strong>，睡前 1 小時避免螢幕
+      <sup class="ref"><a href="#ref-1">[1]</a></sup>。前面提到，裝置光是放在房間裡，睡眠不足的勝算就比較高
+      <sup class="ref"><a href="#ref-10">[10]</a></sup>——這代表「不准用」不夠，<em>「不在旁邊」</em>才是重點。</p>
+      <div class="example"><strong>做法：</strong>在客廳設一個全家共用的充電站，晚上固定時間「手機平板回家」，
+      大人的手機也一起放。孩子用平板當鬧鐘的話，換一個傳統鬧鐘。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：國健署 3010120 / Wu et al. 2018 / Ha et al. 2025</span>
+      <h4>把戶外排在螢幕前面，不是螢幕後面</h4>
+      <p>近視的劑量反應研究顯示風險隨螢幕時數上升<sup class="ref"><a href="#ref-13">[13]</a></sup>，
+      而台灣的試驗證明<strong>戶外時間本身就有保護力</strong>，連樹蔭和走廊都算
+      <sup class="ref"><a href="#ref-15">[15]</a></sup>。國健署也建議學童<strong>每年定期視力檢查 2 次</strong>
+      <sup class="ref"><a href="#ref-30">[30]</a></sup>。</p>
+      <div class="example"><strong>做法：</strong>放學先去公園或校園操場待半小時再回家；
+      週末至少安排一段戶外行程。跟孩子約定「戶外完成，才解鎖娛樂螢幕」，比「螢幕用完，才去外面」容易執行得多。
+      這是本文的實務建議，研究沒有比較過這兩種順序。</div>
+    </div>
+
+  </div>
+
+  <h3>📚 Part 2 · 分清楚螢幕在做什麼</h3>
+
+  <div class="tip-list">
+
+    <div class="tip-card">
+      <span class="tip-source">來自：WHO 2020 定義 / AAP 2016</span>
+      <h4>學校平板和娛樂螢幕，分開算、分開放</h4>
+      <p>WHO 的娛樂性螢幕時間不含學校用途<sup class="ref"><a href="#ref-4">[4]</a></sup>；
+      AAP 則建議<strong>寫作業時不要開娛樂媒體</strong><sup class="ref"><a href="#ref-1">[1]</a></sup>。</p>
+      <div class="example"><strong>做法：</strong>作業做完，學校平板就收回書包；
+      想看影片，改用家裡另一台、在客廳看。孩子會清楚知道「現在是哪一種螢幕時間」，
+      爸媽也不必每次都猜他到底是在查資料還是在看影片。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP 5C（Content）/ 加拿大兒科學會 2019</span>
+      <h4>看內容，不只看分鐘：一週一次，讓孩子教你玩</h4>
+      <p>AAP 提醒，這個年紀的孩子很容易接觸到不適齡的暴力、色情或粗俗內容；
+      家長控制功能<strong>「不是百分之百有效」</strong>，最好的方式是一起看、一起玩，
+      不喜歡它傳達的訊息就換一個；並<strong>避開分級為「青少年」的遊戲</strong>
+      <sup class="ref"><a href="#ref-2">[2]</a></sup>。加拿大兒科學會也把「有意義的使用」列為四大原則之一
+      <sup class="ref"><a href="#ref-3">[3]</a></sup>。</p>
+      <div class="example"><strong>做法：</strong>每週挑 20 分鐘，請孩子當老師，教你玩他最喜歡的遊戲或看他追的頻道。
+      你會在 20 分鐘內知道內容適不適合，孩子也會覺得被理解，而不是被監視。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP 5C（Calm / Crowding Out）</span>
+      <h4>別讓螢幕變成「無聊」和「挫折」的預設解法</h4>
+      <p>AAP 指出，很多學齡兒童放學後會用媒體讓腦袋休息，這沒問題，但要<strong>避免一無聊、
+      或一寫作業卡關，就拿螢幕當出口</strong>；並教孩子用深呼吸、聽安靜的音樂等方式讓自己平靜下來
+      <sup class="ref"><a href="#ref-2">[2]</a></sup>。</p>
+      <div class="example"><strong>做法：</strong>在客廳放一籃「不插電選項」：積木、桌遊、繪本、畫紙。
+      關螢幕前 5 分鐘先預告，讓孩子自己按掉，而不是由你直接拔掉。
+      預告這一步是常見的實務做法，沒有研究直接驗證。</div>
+    </div>
+
+  </div>
+
+  <h3>🤝 Part 3 · 大人的部分</h3>
+
+  <div class="tip-list">
+
+    <div class="tip-card">
+      <span class="tip-source">來自：瑞典公共衛生局 2026 / McDaniel &amp; Radesky 2018</span>
+      <h4>先看自己的手機</h4>
+      <p>瑞典公共衛生局 2026 年針對<em>成人</em>提出建議：研究發現<strong>家長使用螢幕的時間越長，孩子的使用時間也越長</strong>，
+      而 10-12 歲孩子的家長中，<strong>超過一半覺得自己用手機的時間太長</strong>；
+      建議與孩子相處時放下手機，並在家裡約定餐桌、臥室等「無手機區」
+      <sup class="ref"><a href="#ref-26">[26]</a></sup>。
+      美國一份 170 個家庭的研究也發現，親子互動被手機打斷（technoference）越多，孩子的情緒與行為問題越多；
+      不過那份研究的孩子平均約 3 歲，且無法判斷因果方向<sup class="ref"><a href="#ref-16">[16]</a></sup>。</p>
+      <div class="example"><strong>做法：</strong>「吃飯不用手機」這條規則，大人先做到。
+      AAP 也建議爸媽在睡前、吃飯、坐車時示範放下手機<sup class="ref"><a href="#ref-2">[2]</a></sup>。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP 5C（Communication）/ 教育部 2026 記者會</span>
+      <h4>讓孩子看到怪東西時，第一個想到的是你</h4>
+      <p>AAP 指出，國小階段孩子開始理解廣告、隱私與是非，是談媒體的好時機；要讓孩子知道，
+      <strong>在網路上看到負面或讓人不舒服的東西，可以來跟你說</strong>
+      <sup class="ref"><a href="#ref-2">[2]</a></sup>。
+      教育部 2026 年邀請的輔導專家也建議營造「<strong>能聊、給陪</strong>」的氛圍，
+      大人自己在網路上犯錯時，可以大方分享檢討過程<sup class="ref"><a href="#ref-27">[27]</a></sup>。</p>
+      <div class="example"><strong>做法：</strong>事先講好：「如果你看到奇怪的東西跑來告訴我，
+      我會先謝謝你，不會因為這樣就沒收平板。」如果說出來的代價是被禁用，孩子下次就不會說了。
+      這一條是本文的實務建議。</div>
+    </div>
+
+    <div class="tip-card">
+      <span class="tip-source">來自：AAP 5C 學齡兒童版</span>
+      <h4>社群帳號，國小階段先等等</h4>
+      <p>AAP 的 5-10 歲版本寫得很明確：這個年紀的孩子<strong>還沒準備好擁有社群媒體帳號</strong>；
+      如果孩子需要和朋友聯絡，可以考慮適合兒童的通訊工具<sup class="ref"><a href="#ref-2">[2]</a></sup>。
+      孩子開始傳訊息給朋友後，也要定期問問「最近跟同學聊得怎麼樣」<sup class="ref"><a href="#ref-2">[2]</a></sup>。</p>
+    </div>
+
+  </div>
+
+  <!-- 論述 3 -->
+  <div class="argument">
+    <h3>觀點三：螢幕常常是溫度計，不是病因</h3>
+    <p>
+      2024 年暢銷書《The Anxious Generation》主張智慧型手機與社群媒體「重新改寫了童年」。
+      研究兒少心理健康與數位科技使用 20 年的心理學家 Candice Odgers 在《Nature》書評中回應：
+      上百位研究者找過這麼大的效果，得到的是<strong>沒有、很小或混合的關聯</strong>，且多數是相關性資料；
+      若追蹤研究看到關聯，方向反而像是<strong>原本就有心理困擾的孩子，用得比較多、用法也不同</strong>
+      <sup class="ref"><a href="#ref-7">[7]</a></sup>。
+      她同時承認書中不少建議是合理的，例如更嚴格的內容審查、要求平台依使用者年齡設計
+      <sup class="ref"><a href="#ref-7">[7]</a></sup>。這場爭論還沒有結論，本文不站在任何一方的極端。
+    </p>
+    <p>
+      但這個「方向可能相反」的觀點，對家長很有用。
+      當一個原本會出門玩的孩子，突然整個週末都黏在螢幕上，與其第一時間沒收，
+      不如先問：<strong>學校最近發生什麼事？跟同學處得好嗎？是不是有什麼他不想面對？</strong>
+      AAP 的 5C 第一個 C 就是 Child——先了解<em>這個孩子</em>，包括他是否有注意力、社交、學習或情緒上的困難
+      <sup class="ref"><a href="#ref-2">[2]</a></sup>。
+    </p>
+    <p>
+      所以我的看法是：<strong>規則用來保護時間，對話用來理解孩子</strong>。
+      只有規則沒有對話，孩子學會的是躲；只有對話沒有規則，睡眠和戶外會被慢慢吃掉。兩個都要。
+    </p>
+  </div>
+
+  <!-- 就醫指引 -->
+  <h2>🚨 什麼時候不只是習慣問題，該找專業協助？</h2>
+
+  <div class="warning-box">
+    <div class="warning-title">⚠️ 遊戲或網路使用失控的訊號</div>
+    <p style="margin-bottom: 10px;">
+      世界衛生組織在 ICD-11 中定義的「遊戲障礙症」有三個核心特徵：<strong>（1）</strong>對遊戲的控制力受損；
+      <strong>（2）</strong>遊戲的優先順序越來越高，蓋過其他興趣與日常活動；<strong>（3）</strong>即使出現負面後果仍持續或加重。
+      要達到診斷，必須嚴重到<strong>明顯影響個人、家庭、社交或學業功能</strong>，且通常持續<strong>至少 12 個月</strong>；
+      WHO 也指出，只有一小部分玩遊戲的人會發展成遊戲障礙症<sup class="ref"><a href="#ref-17">[17]</a></sup>。
+      AAP 引用的研究估計，兒少問題性網路使用約 4%-8%，美國 8-18 歲青少年中最多 8.5% 符合網路遊戲障礙的研究準則
+      <sup class="ref"><a href="#ref-1">[1]</a></sup>。
+    </p>
+    <p style="margin-bottom: 0;">
+      換句話說，<strong>「很愛玩」不等於「生病」</strong>。如果你看到的是：試過很多次都減不下來、
+      為了遊戲不睡覺或不上學、對原本喜歡的人事物都失去興趣，而且已經持續一段時間，
+      建議帶孩子到兒童青少年精神科或身心科評估，也可以先和學校輔導室討論。
+    </p>
+  </div>
+
+  <div class="warning-box">
+    <div class="warning-title">⚠️ 眼睛：別等孩子說看不清楚</div>
+    <p style="margin-bottom: 0;">
+      國健署建議學童<strong>每年定期視力檢查 2 次</strong><sup class="ref"><a href="#ref-30">[30]</a></sup>。
+      學校視力檢查通知異常時，到眼科做進一步檢查（含散瞳驗光）。
+      國健署指出，學齡前就近視的孩子若不介入，度數每年可能增加將近 100 度，大幅提高高度近視風險<sup class="ref"><a href="#ref-20">[20]</a></sup>；國健署 114 學年度的學齡前篩檢試辦發現，5 歲孩子中有 9.5% 已近視、
+      48.5% 處於「近視前期」<sup class="ref"><a href="#ref-31">[31]</a></sup>，
+      所以就算孩子現在視力 1.0，也值得了解他的遠視儲備還剩多少<sup class="ref"><a href="#ref-20">[20]</a></sup>。
+      是否需要用藥控制近視，請由眼科醫師評估。
+    </p>
+  </div>
+
+  <h3>台灣可用的求助管道</h3>
+  <p>
+    <strong>1. 全國家庭教育諮詢專線 412-8185</strong>——
+    有親職教育困擾時可撥打<sup class="ref"><a href="#ref-28">[28]</a></sup>，
+    3C 規則訂不下去、親子為此衝突不斷，都可以問。
+  </p>
+  <p>
+    <strong>2. 衛福部安心專線 1925</strong>——全年無休、24 小時免費心理諮詢
+    <sup class="ref"><a href="#ref-29">[29]</a></sup>。爸媽自己被親子衝突壓得喘不過氣時也適用。
+  </p>
+  <p>
+    <strong>3. iWIN 網路內容防護機構</strong>——孩子在網路上看到色情、暴力等有害內容，可以向 iWIN 申訴；
+    國教署引用的統計也顯示，民眾申訴案件以色情和暴力內容最多<sup class="ref"><a href="#ref-23">[23]</a></sup>。
+  </p>
+  <p>
+    <strong>4. 學校輔導室與導師</strong>——教育部自 114 學年起推動校園手機「集中管理」原則，
+    實際做法由各校與師生、家長討論訂定<sup class="ref"><a href="#ref-23">[23]</a></sup>。
+    家裡的規則和學校的規則對得上，孩子比較不會兩邊鑽漏洞。
+  </p>
+  <p style="font-size: 13px; color: var(--text-muted);">
+    ※ 各專線服務時間與政策內容以主管機關最新公告為準。
+  </p>
+
+  <!-- 延伸活動 -->
+  <div class="related-activities">
+    <h3>👨‍👩‍👧 這週可以做的三件事</h3>
+    <ul>
+      <li><strong>設一個客廳充電站</strong>——今晚開始，全家的手機平板睡前都回到這裡，包括你的</li>
+      <li><strong>把一段戶外時間寫進平日行程</strong>——放學先去公園半小時，再談螢幕</li>
+      <li><strong>請孩子教你玩他最喜歡的遊戲 20 分鐘</strong>——先理解，再訂規則</li>
+    </ul>
+    <p style="margin: 12px 0 0 0;"><a href="../index.html">→ 回首頁看本週親子活動，找一個週末的戶外行程</a></p>
+  </div>
+
+  <!-- 引用清單 -->
+  <h2>📚 完整引用清單</h2>
+  <div class="references">
+    <h3>國際期刊與權威機構</h3>
+    <ol>
+      <li id="ref-1">
+        <span class="ref-type">AAP</span>
+        American Academy of Pediatrics, Council on Communications and Media.
+        <em>Media Use in School-Aged Children and Adolescents.</em>
+        Pediatrics. 2016;138(5):e20162592. DOI: 10.1542/peds.2016-2592. PMID: 27940794.
+        （5-18 歲；無一體適用答案；家庭媒體使用計畫；每天 1 小時活動、8-12 小時睡眠；臥室不放裝置、睡前 1 小時無螢幕；
+        作業時不開娛樂媒體；問題性網路使用 4-8%、8-18 歲網路遊戲障礙最多 8.5%）
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27940794/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/27940794</a>
+      </li>
+      <li id="ref-2">
+        <span class="ref-type">AAP</span>
+        American Academy of Pediatrics, Center of Excellence on Social Media and Youth Mental Health.
+        <em>The 5 Cs of Media Use — School-Aged Children: 5 to 10 Years</em>（家長衛教單）.
+        （Child、Content、Calm、Crowding Out、Communication；家長控制非百分之百有效；避開青少年分級遊戲；
+        避免以螢幕作為無聊與挫折的預設出口；此年齡尚未準備好擁有社群帳號）
+        <a href="https://downloads.aap.org/AAP/PDF/CoE_5Cs_School_Aged_Children.pdf" target="_blank" rel="noopener">downloads.aap.org · 5Cs School-Aged Children</a>
+      </li>
+      <li id="ref-3">
+        <span class="ref-type">CPS</span>
+        Canadian Paediatric Society, Digital Health Task Force.
+        <em>Digital media: Promoting healthy screen use in school-aged children and adolescents.</em>
+        Paediatrics &amp; Child Health. 2019;24(6):402-417. DOI: 10.1093/pch/pxz095. PMID: 31528113.
+        （四原則：健康的管理、有意義的使用、正向示範、平衡且知情的監督）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6736327/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC6736327</a>
+      </li>
+      <li id="ref-4">
+        <span class="ref-type">WHO</span>
+        Bull FC, Al-Ansari SS, Biddle S, et al.
+        <em>World Health Organization 2020 guidelines on physical activity and sedentary behaviour.</em>
+        British Journal of Sports Medicine. 2020;54(24):1451-1462. DOI: 10.1136/bjsports-2020-102955. PMID: 33239350.
+        （5-17 歲平均每天至少 60 分鐘中高強度活動；強烈建議限制娛樂性螢幕時間，但證據不足以訂出精確門檻；
+        娛樂性螢幕時間定義不含學校與工作用途）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7719906/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC7719906</a>
+      </li>
+      <li id="ref-5">
+        <span class="ref-type">期刊</span>
+        Orben A, Przybylski AK.
+        <em>The association between adolescent well-being and digital technology use.</em>
+        Nature Human Behaviour. 2019;3(2):173-182. DOI: 10.1038/s41562-018-0506-1. PMID: 30944443.
+        （英美三資料庫、355,358 名青少年；最多解釋幸福感 0.4% 的差異；與吃馬鈴薯、戴眼鏡等變項量級相近）
+        <a href="https://www.nature.com/articles/s41562-018-0506-1" target="_blank" rel="noopener">nature.com/articles/s41562-018-0506-1</a>
+      </li>
+      <li id="ref-6">
+        <span class="ref-type">期刊</span>
+        Paulich KN, Ross JM, Lessem JM, Hewitt JK.
+        <em>Screen time and early adolescent mental health, academic, and social outcomes in 9- and 10- year old children: Utilizing the Adolescent Brain Cognitive Development (ABCD) Study.</em>
+        PLoS One. 2021;16(9):e0256591. DOI: 10.1371/journal.pone.0256591. PMID: 34496002.
+        （11,875 名 9-10 歲；效果量小、社經地位關聯更強；同儕關係較好；不能推論因果）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8425530/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC8425530</a>
+      </li>
+      <li id="ref-7">
+        <span class="ref-type">Nature</span>
+        Odgers CL.
+        <em>The great rewiring: is social media really behind an epidemic of teenage mental illness?</em>（書評：Haidt J. <em>The Anxious Generation</em>）
+        Nature. 2024 Mar 29. DOI: 10.1038/d41586-024-00902-2.
+        （研究結果為沒有、很小或混合的關聯；追蹤研究的方向較像原本有心理困擾者用得較多；部分建議合理）
+        <a href="https://www.nature.com/articles/d41586-024-00902-2" target="_blank" rel="noopener">nature.com/articles/d41586-024-00902-2</a>
+      </li>
+      <li id="ref-8">
+        <span class="ref-type">期刊</span>
+        Pedersen J, Rasmussen MGB, Sørensen SO, et al.
+        <em>Effects of Limiting Recreational Screen Media Use on Physical Activity and Sleep in Families With Children: A Cluster Randomized Clinical Trial.</em>
+        JAMA Pediatrics. 2022;176(8):741-749. DOI: 10.1001/jamapediatrics.2022.1519. PMID: 35604678.
+        （89 個丹麥家庭、181 名孩子；兩週休閒螢幕每週 ≤ 3 小時；孩子非靜態休閒活動每天 +45.8 分鐘；腦波睡眠無顯著差異）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9127712/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC9127712</a>
+      </li>
+      <li id="ref-9">
+        <span class="ref-type">期刊</span>
+        Schmidt-Persson J, Rasmussen MGB, Sørensen SO, et al.
+        <em>Screen Media Use and Mental Health of Children and Adolescents: A Secondary Analysis of a Randomized Clinical Trial.</em>
+        JAMA Network Open. 2024;7(7):e2419881. DOI: 10.1001/jamanetworkopen.2024.19881. PMID: 38995646.
+        （SDQ 總困擾 −1.67、Cohen d 0.53；內化症狀 −1.03；利社會行為 +0.84；長期效果待確認）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11245724/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC11245724</a>
+      </li>
+      <li id="ref-10">
+        <span class="ref-type">期刊</span>
+        Carter B, Rees P, Hale L, Bhattacharjee D, Paradkar MS.
+        <em>Association Between Portable Screen-Based Media Device Access or Use and Sleep Outcomes: A Systematic Review and Meta-analysis.</em>
+        JAMA Pediatrics. 2016;170(12):1202-1208. DOI: 10.1001/jamapediatrics.2016.2341. PMID: 27802500.
+        （20 篇、125,198 名、平均 14.5 歲；睡前使用：睡眠不足 OR 2.17、白天嗜睡 2.72；僅擁有未使用：睡眠不足 OR 1.79）
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27802500/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/27802500</a>
+      </li>
+      <li id="ref-11">
+        <span class="ref-type">期刊</span>
+        Hale L, Guan S.
+        <em>Screen time and sleep among school-aged children and adolescents: a systematic literature review.</em>
+        Sleep Medicine Reviews. 2015;21:50-58. DOI: 10.1016/j.smrv.2014.07.007. PMID: 25193149.
+        （67 篇研究，90% 發現螢幕時間與睡眠較差相關，主要為睡眠縮短與延後；因果未確認）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4437561/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC4437561</a>
+      </li>
+      <li id="ref-12">
+        <span class="ref-type">AASM</span>
+        Paruthi S, Brooks LJ, D'Ambrosio C, et al.
+        <em>Recommended Amount of Sleep for Pediatric Populations: A Consensus Statement of the American Academy of Sleep Medicine.</em>
+        Journal of Clinical Sleep Medicine. 2016;12(6):785-786. DOI: 10.5664/jcsm.5866. PMID: 27250809.
+        （6-12 歲每 24 小時睡 9-12 小時）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4877308/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC4877308</a>
+      </li>
+      <li id="ref-13">
+        <span class="ref-type">期刊</span>
+        Ha A, Lee YJ, Lee M, Shim SR, Kim YK.
+        <em>Digital Screen Time and Myopia: A Systematic Review and Dose-Response Meta-Analysis.</em>
+        JAMA Network Open. 2025;8(2):e2460026. DOI: 10.1001/jamanetworkopen.2024.60026. PMID: 39982728.
+        （45 篇、335,524 人、平均 9.3 歲；每天多 1 小時 OR 1.21；每天 4 小時 OR 1.97；1-4 小時間上升最快）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11846013/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC11846013</a>
+      </li>
+      <li id="ref-14">
+        <span class="ref-type">期刊</span>
+        Foreman J, Salim AT, … Dirani M.
+        <em>Association between digital smart device use and myopia: a systematic review and meta-analysis.</em>
+        Lancet Digital Health. 2021;3(12):e806-e818. DOI: 10.1016/S2589-7500(21)00135-7. PMID: 34625399.
+        （33 篇回顧、11 篇統合；智慧裝置 OR 1.26（95% CI 1.00-1.60）、合併電腦 1.77；所有研究皆缺可靠螢幕時間測量）
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34625399/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/34625399</a>
+      </li>
+      <li id="ref-15">
+        <span class="ref-type">期刊</span>
+        Wu PC, Chen CT, Lin KK, et al.
+        <em>Myopia Prevention and Outdoor Light Intensity in a School-Based Cluster Randomized Trial.</em>
+        Ophthalmology. 2018;125(8):1239-1250. DOI: 10.1016/j.ophtha.2017.12.011. PMID: 29371008.
+        （台灣 16 校、693 名小一；每週戶外最多 11 小時；近視度數增加 0.35D vs 0.47D；快速惡化風險低 54%；樹蔭、走廊等較弱光線亦可）
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29371008/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/29371008</a>
+      </li>
+      <li id="ref-16">
+        <span class="ref-type">期刊</span>
+        McDaniel BT, Radesky JS.
+        <em>Technoference: Parent Distraction With Technology and Associations With Child Behavior Problems.</em>
+        Child Development. 2018;89(1):100-109. DOI: 10.1111/cdev.12822. PMID: 28493400.
+        （170 個美國家庭、孩子平均 3.04 歲；母親的科技干擾與孩子內外化行為相關；方向待確認）
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5681450/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/articles/PMC5681450</a>
+      </li>
+      <li id="ref-17">
+        <span class="ref-type">WHO</span>
+        World Health Organization. <em>Gaming disorder</em>（ICD-11 常見問答）.
+        （三項核心特徵；需明顯功能受損且通常持續至少 12 個月；只影響一小部分玩遊戲的人）
+        <a href="https://www.who.int/standards/classifications/frequently-asked-questions/gaming-disorder" target="_blank" rel="noopener">who.int · Gaming disorder</a>
+      </li>
+    </ol>
+
+    <h3 style="margin-top:22px;">台灣法規、官方與媒體來源</h3>
+    <ol start="18">
+      <li id="ref-18">
+        <span class="ref-type">法規</span>
+        《兒童及少年福利與權益保障法》第 43 條（第 1 項第 5 款：超過合理時間持續使用電子類產品，致有害身心健康；第 2 項：照顧者應予禁止）.
+        <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050001&amp;flno=43" target="_blank" rel="noopener">law.moj.gov.tw · D0050001 第 43 條</a>
+      </li>
+      <li id="ref-19">
+        <span class="ref-type">法規</span>
+        《兒童及少年福利與權益保障法》第 91 條（違反第 43 條第 2 項、情節嚴重者，處新臺幣 1 萬元以上 5 萬元以下罰鍰）.
+        <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050001&amp;flno=91" target="_blank" rel="noopener">law.moj.gov.tw · D0050001 第 91 條</a>
+      </li>
+      <li id="ref-20">
+        <span class="ref-type">中央社</span>
+        中央社. <em>小六學童逾7成近視　國健署啟動學齡前入園篩檢</em>（2025-09-19）.
+        （國健署：大班 9%、小一 19.8%、小六 70.6%、高三 87.2%；114 學年起試辦學齡前散瞳篩檢；遠視儲備案例）
+        <a href="https://www.cna.com.tw/news/ahel/202509190257.aspx" target="_blank" rel="noopener">cna.com.tw/news/ahel/202509190257</a>
+      </li>
+      <li id="ref-21">
+        <span class="ref-type">中央社</span>
+        中央社. <em>近7成學齡前童日常玩3C 護眼原則保遠視儲備量</em>（2024-02-22）.
+        （國健署「3010120」：用眼 30 分鐘休息 10 分鐘、每天戶外活動 2 到 3 小時；12 歲前注意遠視儲備）
+        <a href="https://www.cna.com.tw/news/ahel/202402220115.aspx" target="_blank" rel="noopener">cna.com.tw/news/ahel/202402220115</a>
+      </li>
+      <li id="ref-22">
+        <span class="ref-type">中央社</span>
+        中央社. <em>戶外護眼學童近視率降　醫盼助台挺進WHO</em>（2024-05-30）.
+        （2010 年起「天天 120」；吳佩昌：學童近視率最高約 50%、目前降至 4 成多；戶外未影響學科成績）
+        <a href="https://www.cna.com.tw/news/ahel/202405300210.aspx" target="_blank" rel="noopener">cna.com.tw/news/ahel/202405300210</a>
+      </li>
+      <li id="ref-23">
+        <span class="ref-type">中央社</span>
+        中央社. <em>校園手機使用原則將公告 集中管理、尊重各校自訂</em>（2025-05-14）.
+        （114 學年起校園手機集中管理、由各校自訂方式；國教署引用 iWIN 113 年度：兒少每日平均上網 3.96 小時、
+        首次接觸網路 8.7 歲降至 7.1 歲、申訴以色情與暴力最多）
+        <a href="https://www.cna.com.tw/news/ahel/202505140128.aspx" target="_blank" rel="noopener">cna.com.tw/news/ahel/202505140128</a>
+      </li>
+      <li id="ref-24">
+        <span class="ref-type">中央社</span>
+        中央社. <em>AI時代生生用平板　鄭英耀盼4年內22縣市全達1人1機</em>（2026-05-22）.
+        （111 年起偏遠 1 人 1 機、非偏遠每 6 班配發 1 班；111-114 年投入 200 億元）
+        <a href="https://www.cna.com.tw/news/ahel/202605220073.aspx" target="_blank" rel="noopener">cna.com.tw/news/ahel/202605220073</a>
+      </li>
+      <li id="ref-25">
+        <span class="ref-type">中央社</span>
+        中央社. <em>瑞典公共衛生局螢幕使用時間建議 引起各界討論</em>（2024-09-04）.
+        （6-12 歲每天 1-2 小時、不含學習與有聲書；睡前不用螢幕、手機不進臥室；當地學者批評證據不足）
+        <a href="https://www.cna.com.tw/news/aopl/202409040372.aspx" target="_blank" rel="noopener">cna.com.tw/news/aopl/202409040372</a>
+      </li>
+      <li id="ref-26">
+        <span class="ref-type">中央社</span>
+        中央社. <em>父母螢幕使用影響孩子多　瑞典政府籲放下手機多陪伴</em>（2026-06-01）.
+        （家長螢幕時間越長、孩子越長；10-12 歲孩子家長逾半覺得自己用手機太久；建議設無手機區）
+        <a href="https://www.cna.com.tw/news/aopl/202606010334.aspx" target="_blank" rel="noopener">cna.com.tw/news/aopl/202606010334</a>
+      </li>
+      <li id="ref-27">
+        <span class="ref-type">中央社</span>
+        中央社. <em>管孩子玩3C身教難　專家建議「能聊、給陪」氛圍</em>（2026-01-30）.
+        <a href="https://www.cna.com.tw/news/ahel/202601300110.aspx" target="_blank" rel="noopener">cna.com.tw/news/ahel/202601300110</a>
+      </li>
+      <li id="ref-28">
+        <span class="ref-type">中央社</span>
+        中央社. <em>國際不打小孩日 高雄市社會局做插畫圖卡宣導</em>（2023-04-30）.
+        （親職教育困擾可撥全國家庭教育諮詢專線 412-8185）
+        <a href="https://www.cna.com.tw/news/aloc/202304300048.aspx" target="_blank" rel="noopener">cna.com.tw/news/aloc/202304300048</a>
+      </li>
+      <li id="ref-29">
+        <span class="ref-type">國健署</span>
+        衛生福利部國民健康署孕產兒關懷中心. <em>認識產後憂鬱症</em>（孕產兒關懷網站）.
+        （1925 安心專線全年無休 24 小時）
+        <a href="https://mammy.hpa.gov.tw/Home/NewsKBContent?id=2053&amp;type=01" target="_blank" rel="noopener">mammy.hpa.gov.tw · 1925 安心專線</a>
+      </li>
+      <li id="ref-30">
+        <span class="ref-type">中央社</span>
+        中央社. <em>生生用平板要護眼  挑戰在於下課走出冷氣教室</em>（2023-09-24）.
+        （國健署建議學童每年定期視力檢查 2 次；下課淨空教室）
+        <a href="https://www.cna.com.tw/news/ahel/202309240101.aspx" target="_blank" rel="noopener">cna.com.tw/news/ahel/202309240101</a>
+      </li>
+      <li id="ref-31">
+        <span class="ref-type">中央社</span>
+        中央社. <em>眼科醫師進幼兒園篩檢　近半5歲童處近視前期</em>（2026-06-25）.
+        （114 學年學齡前篩檢試辦 14,570 人：近視 9.5%、近視前期 48.5%）
+        <a href="https://www.cna.com.tw/news/ahel/202606250257.aspx" target="_blank" rel="noopener">cna.com.tw/news/ahel/202606250257</a>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    <strong>📋 內容守則聲明：</strong>
+    本文整合自美國兒科學會（AAP）政策聲明與 5C 家長衛教、加拿大兒科學會聲明、世界衛生組織活動指引與 ICD-11 遊戲障礙症說明、
+    美國睡眠醫學會共識、《Nature Human Behaviour》《PLoS One》《JAMA Pediatrics》《JAMA Network Open》《Sleep Medicine Reviews》
+    《Lancet Digital Health》《Ophthalmology》《Child Development》等期刊研究、《Nature》書評，
+    以及《兒童及少年福利與權益保障法》與國民健康署、教育部公布資料（部分經中央社報導轉引）。
+    文中勝算比、效果量與百分比為研究的群體統計估計，<strong>反映平均趨勢，不能預測任何個別孩子的結果</strong>；
+    多數螢幕研究為相關性研究，部分研究對象為青少年或幼兒，套用到 6-12 歲時請保留差異。
+    「先保護清單」與各項「做法」為本文整理的實務建議，非研究直接驗證之工具。
+    <strong>本文僅供教育與參考，不能取代小兒科醫師、眼科醫師、兒童心智科醫師或臨床心理師的個別診斷與建議。
+    若您對孩子的行為、視力或發展有具體擔憂，請諮詢專業醫療人員。</strong>
+  </div>
+
+  <!-- Footer CTA -->
+  <div class="article-footer">
+    <h3>🌈 Kiddo POST · 每週三更新</h3>
+    <p>活動情報 + 發展議題 + 行事曆 · 爸媽專屬情報站</p>
+    <a href="../index.html" class="btn">✨ 回首頁看更多 →</a>
+  </div>
+
+</article>
+
+</body>
+</html>
