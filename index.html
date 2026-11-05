@@ -1842,7 +1842,10 @@ function renderFilterChips() {
     `<button class="filter-chip ${state.filterRegion === r ? 'active' : ''}" data-filter="Region" data-val="${r}">${r === 'all' ? '全部' : r}</button>`
   ).join('');
 
-  const types = ['all', ...new Set(ALL_ARTICLES.map(a => a.type).filter(Boolean))];
+  // type 7 類固定順序（normalize-types.py 定義）；資料裡沒有的類不顯示，未知值排最後
+  const TYPE_ORDER = ['展覽', '表演', '節慶市集', '樂園動物園', '戶外踏青', '戲水', '親子體驗'];
+  const typeSet = new Set(ALL_ARTICLES.map(a => a.type).filter(Boolean));
+  const types = ['all', ...TYPE_ORDER.filter(t => typeSet.has(t)), ...[...typeSet].filter(t => !TYPE_ORDER.includes(t))];
   document.getElementById('filterType').innerHTML = types.map(t =>
     `<button class="filter-chip ${state.filterType === t ? 'active' : ''}" data-filter="Type" data-val="${t}">${t === 'all' ? '全部' : t}</button>`
   ).join('');
@@ -1884,7 +1887,7 @@ function applyFilters(list) {
     if (a.category === 'development') return false;
     if (state.filterRegion !== 'all' && a.region !== state.filterRegion) return false;
     if (state.filterType !== 'all' && a.type !== state.filterType) return false;
-    if (state.filterVenue !== 'all' && a.venue !== state.filterVenue) return false;
+    if (state.filterVenue !== 'all' && !(a.venue || '').includes(state.filterVenue)) return false;  // 室內＋戶外 兩邊都算
     if (state.filterCost !== 'all' && a.cost !== state.filterCost) return false;
     if (state.filterAge !== 'all' && !(a.age_range || []).includes(state.filterAge)) return false;
     if (state.keyword) {

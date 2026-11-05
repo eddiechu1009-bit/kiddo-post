@@ -6,7 +6,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "新店區",
-    "type": "萬聖節活動",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -17,7 +17,8 @@
     "facilities": [],
     "tags": [
       "萬聖節",
-      "室內"
+      "室內",
+      "萬聖節活動"
     ],
     "coord": [
       24.9777,
@@ -52,7 +53,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "蘆竹區",
-    "type": "萬聖節活動",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -63,7 +64,8 @@
     "facilities": [],
     "tags": [
       "萬聖節",
-      "戶外"
+      "戶外",
+      "萬聖節活動"
     ],
     "coord": [
       25.053,
@@ -98,8 +100,8 @@
     "category": "outside",
     "region": "新竹縣",
     "district": "竹北市",
-    "type": "萬聖節活動",
-    "venue": "室內 / 戶外",
+    "type": "節慶市集",
+    "venue": "室內＋戶外",
     "age_range": [
       "3-6",
       "6-12"
@@ -109,7 +111,8 @@
     "facilities": [],
     "tags": [
       "萬聖節",
-      "室內 / 戶外"
+      "室內 / 戶外",
+      "萬聖節活動"
     ],
     "coord": [
       24.8339,
@@ -144,8 +147,8 @@
     "category": "outside",
     "region": "新竹市",
     "district": "北區",
-    "type": "萬聖節活動",
-    "venue": "室內 / 戶外",
+    "type": "節慶市集",
+    "venue": "室內＋戶外",
     "age_range": [
       "3-6",
       "6-12"
@@ -155,7 +158,8 @@
     "facilities": [],
     "tags": [
       "萬聖節",
-      "室內 / 戶外"
+      "室內 / 戶外",
+      "萬聖節活動"
     ],
     "coord": [
       24.8184,
@@ -190,7 +194,7 @@
     "category": "outside",
     "region": "新竹市",
     "district": "北區",
-    "type": "萬聖節活動",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -201,7 +205,8 @@
     "facilities": [],
     "tags": [
       "萬聖節",
-      "戶外"
+      "戶外",
+      "萬聖節活動"
     ],
     "coord": [
       24.8067,
@@ -236,7 +241,7 @@
     "category": "outside",
     "region": "台南市",
     "district": "中西區",
-    "type": "萬聖節活動",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -247,7 +252,8 @@
     "facilities": [],
     "tags": [
       "萬聖節",
-      "戶外"
+      "戶外",
+      "萬聖節活動"
     ],
     "coord": [
       22.9943,
@@ -282,8 +288,8 @@
     "category": "taipei",
     "region": "基隆市",
     "district": "中正區",
-    "type": "萬聖節活動",
-    "venue": "室內 / 戶外",
+    "type": "節慶市集",
+    "venue": "室內＋戶外",
     "age_range": [
       "3-6",
       "6-12"
@@ -293,7 +299,8 @@
     "facilities": [],
     "tags": [
       "萬聖節",
-      "室內 / 戶外"
+      "室內 / 戶外",
+      "萬聖節活動"
     ],
     "coord": [
       25.1402,
@@ -328,7 +335,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 台東區",
-    "type": "動物園活動",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -339,7 +346,8 @@
     "tags": [
       "日本",
       "保育",
-      "戶外"
+      "戶外",
+      "動物園活動"
     ],
     "coord": [
       35.7166,
@@ -373,7 +381,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 日野市",
-    "type": "動物園活動",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -384,7 +392,8 @@
     "tags": [
       "日本",
       "保育",
-      "戶外"
+      "戶外",
+      "動物園活動"
     ],
     "coord": [
       35.6488,
@@ -471,7 +480,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "文山區",
-    "type": "動物園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -523,7 +532,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "士林區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -539,7 +548,8 @@
       "戶外",
       "萬聖節",
       "變裝優惠",
-      "討糖"
+      "討糖",
+      "嘉年華"
     ],
     "coord": [
       25.097,
@@ -575,7 +585,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "快閃店",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -632,7 +642,7 @@
     "category": "outside",
     "region": "台南市",
     "district": "中西區",
-    "type": "光影藝術展",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -646,7 +656,8 @@
       "戶外",
       "夜間",
       "光影",
-      "博物館"
+      "博物館",
+      "光影藝術展"
     ],
     "coord": [
       22.9946,
@@ -682,7 +693,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "桃園區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -697,7 +708,8 @@
       "戶外",
       "萬聖節",
       "Snoopy",
-      "DIY"
+      "DIY",
+      "嘉年華"
     ],
     "coord": [
       25.0155,
@@ -733,7 +745,7 @@
     "category": "outside",
     "region": "嘉義縣",
     "district": "太保市",
-    "type": "博物館",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -790,7 +802,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 武藏野市・台東區・日野市",
-    "type": "動物園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -894,7 +906,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "煙火",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -909,7 +921,8 @@
       "戶外",
       "國慶",
       "無人機",
-      "夜間"
+      "夜間",
+      "煙火"
     ],
     "coord": [
       25.0378,
@@ -1052,7 +1065,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "三峽區",
-    "type": "市集",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -1065,7 +1078,8 @@
       "戶外",
       "萬聖節",
       "需報名",
-      "討糖"
+      "討糖",
+      "市集"
     ],
     "coord": [
       24.944,
@@ -1097,7 +1111,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "后里區",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -1113,7 +1127,8 @@
       "付費",
       "戶外",
       "連假優惠",
-      "森林遊樂區"
+      "森林遊樂區",
+      "主題樂園"
     ],
     "coord": [
       24.3226,
@@ -1153,7 +1168,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "龍潭區",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -1167,7 +1182,8 @@
       "免費",
       "戶外",
       "萬聖節",
-      "變裝優惠"
+      "變裝優惠",
+      "主題樂園"
     ],
     "coord": [
       24.8395,
@@ -1254,7 +1270,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 江戶川區",
-    "type": "水族館",
+    "type": "樂園動物園",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -1356,7 +1372,7 @@
     "category": "taipei",
     "region": "基隆市",
     "district": "中正區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -1403,7 +1419,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "中正區",
-    "type": "音樂節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -1546,7 +1562,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "文山區",
-    "type": "動物園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -1597,7 +1613,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "中壢區",
-    "type": "萬聖節",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -1695,7 +1711,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "三民區",
-    "type": "科學活動",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -1709,7 +1725,8 @@
       "付費",
       "室內",
       "工作坊",
-      "報名制"
+      "報名制",
+      "科學活動"
     ],
     "coord": [
       22.6404,
@@ -1749,7 +1766,7 @@
     "category": "japan",
     "region": "日本",
     "district": "愛知縣 名古屋市港區",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -1765,7 +1782,8 @@
       "付費",
       "戶外",
       "萬聖節",
-      "樂高"
+      "樂高",
+      "主題樂園"
     ],
     "coord": [
       35.0503,
@@ -1801,7 +1819,7 @@
     "category": "japan",
     "region": "日本",
     "district": "福岡縣 福岡市中央區",
-    "type": "光影展",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -1813,7 +1831,8 @@
       "付費",
       "戶外",
       "夜間",
-      "預售"
+      "預售",
+      "光影展"
     ],
     "coord": [
       33.5846,
@@ -1890,7 +1909,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "三重區 · 空軍三重一村（10/9 場在五股區貿商眷村）",
-    "type": "文化活動",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -1998,7 +2017,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "中山區",
-    "type": "市集",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -2052,7 +2071,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "金山區",
-    "type": "美術館",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -2108,7 +2127,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "深坑・平溪・十分・九份・金瓜石",
-    "type": "套票",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -2213,7 +2232,7 @@
     "category": "outside",
     "region": "全台巡演",
     "district": "台北 → 桃園 → 台中 → 嘉義 → 台南 → 新左營",
-    "type": "主題列車",
+    "type": "樂園動物園",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -2262,7 +2281,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "龍潭區",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "室內＋戶外",
     "age_range": [
       "3-6",
@@ -2312,7 +2331,7 @@
     "category": "outside",
     "region": "雲林縣",
     "district": "古坑鄉",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -2366,7 +2385,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 中央區・港區・文京區・台東區・墨田區・江東區・北區・國分寺市",
-    "type": "集章活動",
+    "type": "親子體驗",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -2383,7 +2402,8 @@
       "集章",
       "紅葉",
       "庭園",
-      "限量"
+      "限量",
+      "集章活動"
     ],
     "coord": [
       35.6598,
@@ -2415,7 +2435,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 調布市",
-    "type": "花季活動",
+    "type": "戶外踏青",
     "venue": "室內＋戶外",
     "age_range": [
       "0-3",
@@ -2436,7 +2456,8 @@
       "花季",
       "音樂會",
       "泡泡秀",
-      "免費節目"
+      "免費節目",
+      "花季活動"
     ],
     "coord": [
       35.6672,
@@ -2468,7 +2489,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 千代田區・渋谷區・江東區・江戸川區・小金井市・調布市・新宿區・港區・府中市",
-    "type": "集章活動",
+    "type": "親子體驗",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -2486,7 +2507,8 @@
       "集卡",
       "公園",
       "任務遊戲",
-      "限量"
+      "限量",
+      "集章活動"
     ],
     "coord": [
       35.6742,
@@ -2518,7 +2540,7 @@
     "category": "taipei",
     "region": "全台巡演",
     "district": "全台逾 1,100 處 · 主場台中文化資產園區",
-    "type": "文化活動",
+    "type": "節慶市集",
     "venue": "室內＋戶外",
     "age_range": [
       "3-6",
@@ -2536,7 +2558,8 @@
       "古蹟",
       "文化資產",
       "手作",
-      "集章"
+      "集章",
+      "文化活動"
     ],
     "coord": [
       24.1387,
@@ -2572,7 +2595,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "金山區",
-    "type": "美術館",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -2624,7 +2647,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "台北 5 處／新北 6 處河濱公園",
-    "type": "戶外休憩",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "0-1",
@@ -2644,7 +2667,8 @@
       "戶外",
       "中秋",
       "烤肉",
-      "河濱公園"
+      "河濱公園",
+      "戶外休憩"
     ],
     "coord": [
       25.0704,
@@ -2680,7 +2704,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "士林區",
-    "type": "科學教育",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -2699,7 +2723,8 @@
       "天文",
       "講座",
       "中秋",
-      "需報名"
+      "需報名",
+      "科學教育"
     ],
     "coord": [
       25.0956,
@@ -2731,7 +2756,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "后里區",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -2786,7 +2811,7 @@
     "category": "outside",
     "region": "新竹縣",
     "district": "關西鎮",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -2841,7 +2866,7 @@
     "category": "outside",
     "region": "嘉義市",
     "district": "東區・西區（老屋走讀路線）",
-    "type": "光影藝術",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -2858,7 +2883,8 @@
       "夜間",
       "光影",
       "老屋",
-      "走讀"
+      "走讀",
+      "光影藝術"
     ],
     "coord": [
       23.4801,
@@ -2890,7 +2916,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "前鎮區",
-    "type": "特展",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -2941,7 +2967,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 台東區",
-    "type": "動物園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -2993,7 +3019,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 足立區",
-    "type": "兒童館",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -3045,7 +3071,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 江東區 有明",
-    "type": "美食祭",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "0-1",
@@ -3097,7 +3123,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "中正區",
-    "type": "街區活動",
+    "type": "節慶市集",
     "venue": "室內＋戶外",
     "age_range": [
       "1-3",
@@ -3118,7 +3144,8 @@
       "總統府",
       "防災",
       "閱讀",
-      "運動"
+      "運動",
+      "街區活動"
     ],
     "coord": [
       25.0402,
@@ -3150,7 +3177,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "鶯歌區",
-    "type": "音樂節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -3202,7 +3229,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "三芝・石門・金山・萬里",
-    "type": "藝術節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -3219,7 +3246,8 @@
       "戶外",
       "地景藝術",
       "海邊",
-      "開車友善"
+      "開車友善",
+      "藝術節"
     ],
     "coord": [
       25.2226,
@@ -3251,7 +3279,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "音樂會",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -3300,7 +3328,7 @@
     "category": "taipei",
     "region": "基隆市",
     "district": "中正區",
-    "type": "音樂會",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -3402,7 +3430,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "鹽埕區",
-    "type": "體驗型展覽",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -3420,7 +3448,8 @@
       "室內",
       "沉浸式",
       "台灣原創",
-      "集章"
+      "集章",
+      "體驗型展覽"
     ],
     "coord": [
       22.6198,
@@ -3452,7 +3481,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "前鎮區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "室內＋戶外",
     "age_range": [
       "3-6",
@@ -3472,7 +3501,8 @@
       "書展",
       "影展",
       "劇場",
-      "國際交流"
+      "國際交流",
+      "嘉年華"
     ],
     "coord": [
       22.6072,
@@ -3504,7 +3534,7 @@
     "category": "outside",
     "region": "宜蘭縣",
     "district": "頭城鎮",
-    "type": "花火大會",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -3520,7 +3550,8 @@
       "戶外",
       "煙火",
       "無人機",
-      "海邊"
+      "海邊",
+      "花火大會"
     ],
     "coord": [
       24.8586,
@@ -3552,7 +3583,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "大里區",
-    "type": "劇場",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -3653,7 +3684,7 @@
     "category": "japan",
     "region": "日本",
     "district": "千葉縣 習志野市",
-    "type": "親子展區",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -3674,7 +3705,8 @@
       "室內遊戲場",
       "史努比",
       "雨天備案",
-      "新開幕"
+      "新開幕",
+      "親子展區"
     ],
     "coord": [
       35.6912,
@@ -3854,7 +3886,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "士林區",
-    "type": "音樂會",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -3906,7 +3938,7 @@
     "category": "taipei",
     "region": "全台巡演",
     "district": "臺北・新北・桃園・新竹・臺中・嘉義・臺南・高雄",
-    "type": "音樂會",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -3955,7 +3987,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "北投區",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -4101,7 +4133,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "潭子・后里・北屯・北區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -4150,7 +4182,7 @@
     "category": "outside",
     "region": "南投縣",
     "district": "魚池鄉",
-    "type": "音樂節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -4164,7 +4196,8 @@
       "免費",
       "戶外",
       "煙火",
-      "音樂會"
+      "音樂會",
+      "音樂節"
     ],
     "coord": [
       23.8515,
@@ -4196,7 +4229,7 @@
     "category": "outside",
     "region": "嘉義市",
     "district": "西區",
-    "type": "燈光藝術",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -4214,7 +4247,8 @@
       "戶外",
       "光影",
       "市集",
-      "中秋"
+      "中秋",
+      "燈光藝術"
     ],
     "coord": [
       23.4795,
@@ -4246,7 +4280,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 中央區 日本橋・八重洲",
-    "type": "街區活動",
+    "type": "節慶市集",
     "venue": "室內＋戶外",
     "age_range": [
       "1-3",
@@ -4264,7 +4298,8 @@
       "室內",
       "戶外",
       "寶可夢",
-      "謎解"
+      "謎解",
+      "街區活動"
     ],
     "coord": [
       35.6865,
@@ -4296,7 +4331,7 @@
     "category": "japan",
     "region": "日本",
     "district": "埼玉縣 飯能市",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -4345,7 +4380,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 多摩市",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -4396,7 +4431,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "市集/物產展",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -4413,7 +4448,8 @@
       "免費",
       "室內",
       "市集",
-      "兩天限定"
+      "兩天限定",
+      "市集/物產展"
     ],
     "coord": [
       25.0438,
@@ -4445,7 +4481,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "市集",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -4495,7 +4531,7 @@
     "category": "taipei",
     "region": "基隆市",
     "district": "中正區",
-    "type": "戶外體驗/遊船",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -4509,7 +4545,8 @@
       "付費",
       "戶外",
       "遊船",
-      "季節限定"
+      "季節限定",
+      "戶外體驗/遊船"
     ],
     "coord": [
       25.1372,
@@ -4541,7 +4578,7 @@
     "category": "taipei",
     "region": "基隆市",
     "district": "中正區",
-    "type": "影片放映",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -4557,7 +4594,8 @@
       "付費",
       "室內",
       "海洋",
-      "影片"
+      "影片",
+      "影片放映"
     ],
     "coord": [
       25.1372,
@@ -4589,7 +4627,7 @@
     "category": "taipei",
     "region": "基隆市",
     "district": "中正區",
-    "type": "節慶活動/小展",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -4606,7 +4644,8 @@
       "付費",
       "室內",
       "中秋",
-      "海洋教育"
+      "海洋教育",
+      "節慶活動/小展"
     ],
     "coord": [
       25.145,
@@ -4638,7 +4677,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "VR 沉浸體驗",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -4653,7 +4692,8 @@
       "室內",
       "VR",
       "埃及",
-      "有年齡限制"
+      "有年齡限制",
+      "VR 沉浸體驗"
     ],
     "coord": [
       25.0438,
@@ -4685,7 +4725,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "三民區",
-    "type": "防災教育活動",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -4701,7 +4741,8 @@
       "付費",
       "室內",
       "防災",
-      "動手做"
+      "動手做",
+      "防災教育活動"
     ],
     "coord": [
       22.6552,
@@ -4733,7 +4774,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "三民區",
-    "type": "主題月活動",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -4750,7 +4791,8 @@
       "付費",
       "室內",
       "三代同遊",
-      "生命教育"
+      "生命教育",
+      "主題月活動"
     ],
     "coord": [
       22.6552,
@@ -4782,7 +4824,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "北區",
-    "type": "實境解謎",
+    "type": "親子體驗",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -4797,7 +4839,8 @@
       "付費",
       "戶外",
       "解謎",
-      "生態"
+      "生態",
+      "實境解謎"
     ],
     "coord": [
       24.158,
@@ -4829,7 +4872,7 @@
     "category": "outside",
     "region": "宜蘭縣",
     "district": "五結鄉",
-    "type": "藝術節/表演",
+    "type": "表演",
     "venue": "室內＋戶外",
     "age_range": [
       "3-6",
@@ -4847,7 +4890,8 @@
       "索票制",
       "表演",
       "預售",
-      "戶外"
+      "戶外",
+      "藝術節/表演"
     ],
     "coord": [
       24.6866,
@@ -4879,7 +4923,7 @@
     "category": "outside",
     "region": "台南市",
     "district": "新市區",
-    "type": "手作工作坊",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -4895,7 +4939,8 @@
       "付費",
       "室內",
       "手作",
-      "考古"
+      "考古",
+      "手作工作坊"
     ],
     "coord": [
       23.1027,
@@ -4927,7 +4972,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 練馬區",
-    "type": "影城限定企畫",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -4942,7 +4987,8 @@
       "付費",
       "室內",
       "哈利波特",
-      "即將結束"
+      "即將結束",
+      "影城限定企畫"
     ],
     "coord": [
       35.7565,
@@ -4974,7 +5020,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 新宿區",
-    "type": "體驗型展覽",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -4991,7 +5037,8 @@
       "付費",
       "室內",
       "三麗鷗",
-      "長檔期"
+      "長檔期",
+      "體驗型展覽"
     ],
     "coord": [
       35.6952,
@@ -5023,7 +5070,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 渋谷區",
-    "type": "體驗型展覽",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -5038,7 +5085,8 @@
       "付費",
       "室內",
       "思考",
-      "親子對話"
+      "親子對話",
+      "體驗型展覽"
     ],
     "coord": [
       35.6614,
@@ -5119,7 +5167,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "快閃店",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -5169,7 +5217,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "板橋區",
-    "type": "藝術節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -5219,7 +5267,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "新店區",
-    "type": "共融遊戲場",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -5316,7 +5364,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "桃園區",
-    "type": "藝術節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -5414,7 +5462,7 @@
     "category": "outside",
     "region": "苗栗縣",
     "district": "通霄鎮",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -5432,7 +5480,8 @@
       "戶外",
       "沙雕",
       "海邊",
-      "玩沙"
+      "玩沙",
+      "嘉年華"
     ],
     "coord": [
       24.4886,
@@ -5464,7 +5513,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "鳳山區",
-    "type": "藝術節",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -5515,7 +5564,7 @@
     "category": "japan",
     "region": "日本",
     "district": "福岡縣",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -5561,7 +5610,7 @@
     "category": "japan",
     "region": "日本",
     "district": "京都府",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -5607,7 +5656,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都",
-    "type": "花火大會",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -5622,7 +5671,8 @@
       "戶外",
       "花火",
       "夏祭",
-      "預售"
+      "預售",
+      "花火大會"
     ],
     "coord": [
       35.7148,
@@ -5855,7 +5905,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "貢寮區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -5874,7 +5924,8 @@
       "沙雕",
       "海邊",
       "玩沙",
-      "IP"
+      "IP",
+      "嘉年華"
     ],
     "coord": [
       25.0156,
@@ -5906,7 +5957,7 @@
     "category": "outside",
     "region": "花蓮縣",
     "district": "花蓮市",
-    "type": "音樂節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -5954,7 +6005,7 @@
     "category": "outside",
     "region": "花蓮縣",
     "district": "壽豐鄉",
-    "type": "主題活動",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -5971,7 +6022,8 @@
       "IP",
       "水舞",
       "打卡",
-      "預售"
+      "預售",
+      "主題活動"
     ],
     "coord": [
       23.927,
@@ -6003,7 +6055,7 @@
     "category": "outside",
     "region": "嘉義縣",
     "district": "東石鄉",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6022,7 +6074,8 @@
       "海邊",
       "玩水",
       "市集",
-      "預售"
+      "預售",
+      "嘉年華"
     ],
     "coord": [
       23.459,
@@ -6054,7 +6107,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "龍潭區",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -6071,7 +6124,8 @@
       "戶外",
       "遊樂園",
       "戲水",
-      "暑假限定"
+      "暑假限定",
+      "主題樂園"
     ],
     "coord": [
       24.823,
@@ -6103,7 +6157,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都",
-    "type": "市集",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -6152,7 +6206,7 @@
     "category": "japan",
     "region": "日本",
     "district": "山梨縣",
-    "type": "體驗",
+    "type": "親子體驗",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -6168,7 +6222,8 @@
       "戶外",
       "水陸兩用",
       "富士山",
-      "自然體驗"
+      "自然體驗",
+      "體驗"
     ],
     "coord": [
       35.417,
@@ -6200,7 +6255,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "士林區",
-    "type": "水樂園",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6299,7 +6354,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "內湖區",
-    "type": "戲水區",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6314,7 +6369,8 @@
     "tags": [
       "免費",
       "戶外",
-      "戲水"
+      "戲水",
+      "戲水區"
     ],
     "coord": [
       25.0838,
@@ -6346,7 +6402,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "鶯歌區",
-    "type": "戲水區",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6362,7 +6418,8 @@
       "免費",
       "戶外",
       "戲水",
-      "藝術"
+      "藝術",
+      "戲水區"
     ],
     "coord": [
       24.954,
@@ -6394,7 +6451,7 @@
     "category": "outside",
     "region": "花蓮縣",
     "district": "吉安鄉",
-    "type": "水樂園",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6490,7 +6547,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "復興區",
-    "type": "戲水區",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -6504,7 +6561,8 @@
       "免費",
       "戶外",
       "戲水",
-      "溪流"
+      "溪流",
+      "戲水區"
     ],
     "coord": [
       24.821,
@@ -6536,7 +6594,7 @@
     "category": "japan",
     "region": "日本",
     "district": "大阪府",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -6680,7 +6738,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "三重區",
-    "type": "共融遊戲場",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6729,7 +6787,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "中正區",
-    "type": "水樂園",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6875,7 +6933,7 @@
     "category": "outside",
     "region": "台東縣",
     "district": "成功鎮",
-    "type": "音樂節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -6922,7 +6980,7 @@
     "category": "outside",
     "region": "台東縣",
     "district": "鹿野鄉",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -6971,7 +7029,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "后里區",
-    "type": "水樂園",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -7019,8 +7077,8 @@
     "category": "outside",
     "region": "花蓮縣",
     "district": "壽豐鄉",
-    "type": "遊樂園",
-    "venue": "室內+戶外",
+    "type": "樂園動物園",
+    "venue": "室內＋戶外",
     "age_range": [
       "1-3",
       "3-6",
@@ -7036,7 +7094,8 @@
       "付費",
       "戶外",
       "主題樂園",
-      "聯名"
+      "聯名",
+      "遊樂園"
     ],
     "coord": [
       23.843,
@@ -7116,8 +7175,8 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 秋留野市",
-    "type": "水樂園",
-    "venue": "室內+戶外",
+    "type": "戲水",
+    "venue": "室內＋戶外",
     "age_range": [
       "3-6",
       "6-12"
@@ -7212,7 +7271,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "全市12區",
-    "type": "藝術節",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -7259,7 +7318,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "光影展",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -7276,7 +7335,8 @@
     "tags": [
       "免費",
       "戶外",
-      "光影"
+      "光影",
+      "光影展"
     ],
     "coord": [
       25.0441,
@@ -7308,7 +7368,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "文山區",
-    "type": "動物園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -7322,7 +7382,8 @@
     "tags": [
       "付費",
       "戶外",
-      "限量"
+      "限量",
+      "動物園"
     ],
     "coord": [
       24.9998,
@@ -7404,7 +7465,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "中山區",
-    "type": "戲水區",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -7421,7 +7482,8 @@
     "tags": [
       "免費",
       "戶外",
-      "戲水"
+      "戲水",
+      "戲水區"
     ],
     "coord": [
       25.0707,
@@ -7550,7 +7612,7 @@
     "category": "outside",
     "region": "宜蘭縣",
     "district": "五結鄉",
-    "type": "節慶",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -7566,7 +7628,8 @@
     "tags": [
       "付費",
       "戶外",
-      "水域"
+      "水域",
+      "節慶"
     ],
     "coord": [
       24.6722,
@@ -7696,7 +7759,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "大樹區",
-    "type": "遊樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -7744,7 +7807,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -7792,7 +7855,7 @@
     "category": "japan",
     "region": "日本",
     "district": "大阪府",
-    "type": "水樂園",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -7839,7 +7902,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -7889,7 +7952,7 @@
     "category": "japan",
     "region": "日本",
     "district": "神奈川縣",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -7937,7 +8000,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "大同區",
-    "type": "節慶",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -7954,7 +8017,8 @@
       "戶外",
       "煙火",
       "市集",
-      "水岸"
+      "水岸",
+      "節慶"
     ],
     "coord": [
       25.0559,
@@ -7986,7 +8050,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "主題展",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -8002,7 +8066,8 @@
       "免費",
       "室內",
       "打卡",
-      "玩具"
+      "玩具",
+      "主題展"
     ],
     "coord": [
       25.04,
@@ -8034,7 +8099,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "體驗",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -8049,7 +8114,8 @@
       "免費",
       "室內",
       "積木",
-      "闖關"
+      "闖關",
+      "體驗"
     ],
     "coord": [
       25.041,
@@ -8128,7 +8194,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "三峽區",
-    "type": "文化節",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -8144,7 +8210,8 @@
       "戶外",
       "手作",
       "藍染",
-      "走讀"
+      "走讀",
+      "文化節"
     ],
     "coord": [
       24.934,
@@ -8176,7 +8243,7 @@
     "category": "outside",
     "region": "宜蘭縣",
     "district": "壯圍鄉",
-    "type": "藝術節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8192,7 +8259,8 @@
       "戶外",
       "裝置藝術",
       "沙丘",
-      "音樂會"
+      "音樂會",
+      "藝術節"
     ],
     "coord": [
       24.746,
@@ -8224,7 +8292,7 @@
     "category": "outside",
     "region": "台南市",
     "district": "七股區",
-    "type": "食農體驗",
+    "type": "親子體驗",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -8239,7 +8307,8 @@
       "戶外",
       "食農",
       "玩水",
-      "體驗"
+      "體驗",
+      "食農體驗"
     ],
     "coord": [
       23.147,
@@ -8271,7 +8340,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "旗津區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8288,7 +8357,8 @@
       "戶外",
       "風箏",
       "玩水",
-      "氣墊"
+      "氣墊",
+      "嘉年華"
     ],
     "coord": [
       22.613,
@@ -8320,7 +8390,7 @@
     "category": "outside",
     "region": "台南市",
     "district": "官田區",
-    "type": "親水活動",
+    "type": "戲水",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -8333,7 +8403,8 @@
       "免費",
       "戶外",
       "玩水",
-      "水陸闖關"
+      "水陸闖關",
+      "親水活動"
     ],
     "coord": [
       23.193,
@@ -8365,7 +8436,7 @@
     "category": "japan",
     "region": "日本",
     "district": "大阪府 北區",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -8411,7 +8482,7 @@
     "category": "japan",
     "region": "日本",
     "district": "埼玉縣 川越市",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8427,7 +8498,8 @@
       "戶外",
       "風鈴",
       "打卡",
-      "神社"
+      "神社",
+      "祭典"
     ],
     "coord": [
       35.925,
@@ -8459,7 +8531,7 @@
     "category": "japan",
     "region": "日本",
     "district": "千葉縣 浦安市",
-    "type": "主題樂園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8509,7 +8581,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "淡水區",
-    "type": "節慶",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8527,7 +8599,8 @@
       "戶外",
       "煙火",
       "水舞",
-      "無人機"
+      "無人機",
+      "節慶"
     ],
     "coord": [
       25.183,
@@ -8559,7 +8632,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "快閃店",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -8578,7 +8651,8 @@
       "室內",
       "快閃",
       "拍照",
-      "角色"
+      "角色",
+      "快閃店"
     ],
     "coord": [
       25.0438,
@@ -8708,7 +8782,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "桃園市",
-    "type": "藝術節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8726,7 +8800,8 @@
       "戶外",
       "藝術",
       "地景",
-      "放電"
+      "放電",
+      "藝術節"
     ],
     "coord": [
       24.9937,
@@ -8758,7 +8833,7 @@
     "category": "outside",
     "region": "基隆市",
     "district": "中正區",
-    "type": "節慶",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -8775,7 +8850,8 @@
       "戶外",
       "海洋",
       "生態",
-      "放電"
+      "放電",
+      "節慶"
     ],
     "coord": [
       25.147,
@@ -8807,7 +8883,7 @@
     "category": "outside",
     "region": "嘉義縣",
     "district": "太保市",
-    "type": "展演",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -8825,7 +8901,8 @@
       "戶外",
       "水舞",
       "燈光",
-      "國寶"
+      "國寶",
+      "展演"
     ],
     "coord": [
       23.5069,
@@ -8857,7 +8934,7 @@
     "category": "outside",
     "region": "台南市",
     "district": "中西區",
-    "type": "闖關遊戲",
+    "type": "親子體驗",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -8874,7 +8951,8 @@
       "戶外",
       "古蹟",
       "集章",
-      "探索"
+      "探索",
+      "闖關遊戲"
     ],
     "coord": [
       22.997,
@@ -8906,7 +8984,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "石岡區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -8955,7 +9033,7 @@
     "category": "japan",
     "region": "日本",
     "district": "奈良縣",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -8972,7 +9050,8 @@
       "戶外",
       "燈會",
       "夜間",
-      "關西"
+      "關西",
+      "祭典"
     ],
     "coord": [
       34.6851,
@@ -9004,7 +9083,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -9054,7 +9133,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -9071,7 +9150,8 @@
       "戶外",
       "阿波舞",
       "踩街",
-      "晚夏"
+      "晚夏",
+      "祭典"
     ],
     "coord": [
       35.7056,
@@ -9103,7 +9183,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "大同區",
-    "type": "快閃店",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "0-1",
@@ -9152,7 +9232,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "中正區",
-    "type": "劇場",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "0-1",
@@ -9202,7 +9282,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "士林區",
-    "type": "特展",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -9218,7 +9298,8 @@
       "付費",
       "室內",
       "恐龍",
-      "互動"
+      "互動",
+      "特展"
     ],
     "coord": [
       25.0977,
@@ -9250,7 +9331,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "中正區",
-    "type": "特展",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -9266,7 +9347,8 @@
       "付費",
       "室內",
       "海洋",
-      "蓋章"
+      "蓋章",
+      "特展"
     ],
     "coord": [
       25.0322,
@@ -9298,7 +9380,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "快閃店",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -9347,7 +9429,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "中壢區",
-    "type": "水族館",
+    "type": "樂園動物園",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -9395,7 +9477,7 @@
     "category": "outside",
     "region": "屏東縣",
     "district": "屏東市",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -9412,7 +9494,8 @@
       "免費",
       "戶外",
       "遊樂設施",
-      "表演"
+      "表演",
+      "嘉年華"
     ],
     "coord": [
       22.6789,
@@ -9444,7 +9527,7 @@
     "category": "outside",
     "region": "桃園市",
     "district": "八德區",
-    "type": "美術館",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -9492,7 +9575,7 @@
     "category": "outside",
     "region": "新竹市",
     "district": "北區",
-    "type": "節慶",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -9508,7 +9591,8 @@
       "免費",
       "戶外",
       "風箏",
-      "夜光"
+      "夜光",
+      "節慶"
     ],
     "coord": [
       24.8494,
@@ -9540,7 +9624,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "鹽埕區",
-    "type": "特展",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "1-3",
@@ -9556,7 +9640,8 @@
       "付費",
       "室內",
       "氣墊",
-      "幼齡友善"
+      "幼齡友善",
+      "特展"
     ],
     "coord": [
       22.6203,
@@ -9588,7 +9673,7 @@
     "category": "outside",
     "region": "南投縣",
     "district": "仁愛鄉",
-    "type": "觀星",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -9635,7 +9720,7 @@
     "category": "japan",
     "region": "日本",
     "district": "青森縣",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -9650,7 +9735,8 @@
       "免費",
       "戶外",
       "夏祭",
-      "花車遊行"
+      "花車遊行",
+      "祭典"
     ],
     "coord": [
       40.8228,
@@ -9682,7 +9768,7 @@
     "category": "japan",
     "region": "日本",
     "district": "靜岡縣",
-    "type": "花火",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "1-3",
@@ -9730,7 +9816,7 @@
     "category": "japan",
     "region": "日本",
     "district": "宮城縣",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "0-1",
@@ -9748,7 +9834,8 @@
       "免費",
       "半室內",
       "夏祭",
-      "推車友善"
+      "推車友善",
+      "祭典"
     ],
     "coord": [
       38.26,
@@ -9929,7 +10016,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "金山區",
-    "type": "藝術節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -10077,8 +10164,8 @@
     "category": "outside",
     "region": "高雄市",
     "district": "鳳山區",
-    "type": "遊戲場",
-    "venue": "半室內",
+    "type": "戶外踏青",
+    "venue": "室內＋戶外",
     "age_range": [
       "0-3",
       "3-6",
@@ -10129,7 +10216,7 @@
     "category": "outside",
     "region": "新竹市",
     "district": "北區",
-    "type": "音樂節",
+    "type": "表演",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -10230,7 +10317,7 @@
     "category": "outside",
     "region": "花蓮縣",
     "district": "玉里鎮 / 富里鄉",
-    "type": "賞花",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -10279,8 +10366,8 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 杉並區",
-    "type": "祭典",
-    "venue": "半室內",
+    "type": "節慶市集",
+    "venue": "室內＋戶外",
     "age_range": [
       "0-3",
       "3-6",
@@ -10329,7 +10416,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 港區",
-    "type": "祭典",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -10478,7 +10565,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "快閃店",
+    "type": "節慶市集",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -10528,7 +10615,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "市集",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -10577,7 +10664,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "信義區",
-    "type": "光影展",
+    "type": "展覽",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -10595,7 +10682,8 @@
       "戶外",
       "光影",
       "夜間",
-      "打卡"
+      "打卡",
+      "光影展"
     ],
     "coord": [
       25.044,
@@ -10627,7 +10715,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "北區",
-    "type": "劇場",
+    "type": "表演",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -10724,7 +10812,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "三民區",
-    "type": "親子展區",
+    "type": "展覽",
     "venue": "室內",
     "age_range": [
       "0-3",
@@ -11011,7 +11099,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "文山區",
-    "type": "動物園",
+    "type": "樂園動物園",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -11057,7 +11145,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "新社區",
-    "type": "花海",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -11103,7 +11191,7 @@
     "category": "outside",
     "region": "高雄市",
     "district": "三民區",
-    "type": "科學節",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -11117,7 +11205,8 @@
     "tags": [
       "免費",
       "室內",
-      "科學"
+      "科學",
+      "科學節"
     ],
     "coord": [
       22.64,
@@ -11149,7 +11238,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "清水區",
-    "type": "集章",
+    "type": "親子體驗",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -11192,7 +11281,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 日野市",
-    "type": "動物園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -11238,7 +11327,7 @@
     "category": "japan",
     "region": "日本",
     "district": "愛知縣 豊橋市",
-    "type": "動物園",
+    "type": "樂園動物園",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -11285,7 +11374,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "板橋區",
-    "type": "燈節",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -11301,7 +11390,8 @@
       "免費",
       "戶外",
       "耶誕",
-      "IP"
+      "IP",
+      "燈節"
     ],
     "coord": [
       25.0118,
@@ -11337,7 +11427,7 @@
     "category": "taipei",
     "region": "新北市",
     "district": "貢寮區",
-    "type": "步道",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "6-12"
@@ -11472,7 +11562,7 @@
     "category": "taipei",
     "region": "台北市",
     "district": "士林區",
-    "type": "科學節",
+    "type": "親子體驗",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -11488,7 +11578,8 @@
       "免費",
       "戶外",
       "科學",
-      "嘉年華"
+      "嘉年華",
+      "科學節"
     ],
     "coord": [
       25.0964,
@@ -11520,7 +11611,7 @@
     "category": "outside",
     "region": "彰化縣",
     "district": "福興鄉",
-    "type": "共融遊戲場",
+    "type": "戶外踏青",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -11568,7 +11659,7 @@
     "category": "outside",
     "region": "台中市",
     "district": "北區",
-    "type": "科學節",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "3-6",
@@ -11582,7 +11673,8 @@
     "tags": [
       "付費",
       "室內",
-      "科學"
+      "科學",
+      "科學節"
     ],
     "coord": [
       24.1573,
@@ -11662,7 +11754,7 @@
     "category": "outside",
     "region": "屏東縣",
     "district": "屏東市",
-    "type": "燈節",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -11677,7 +11769,8 @@
       "免費",
       "戶外",
       "耶誕",
-      "泡泡"
+      "泡泡",
+      "燈節"
     ],
     "coord": [
       22.6727,
@@ -11709,7 +11802,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 台東區",
-    "type": "耶誕市集",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "0-3",
@@ -11721,7 +11814,8 @@
     "tags": [
       "戶外",
       "耶誕",
-      "日本"
+      "日本",
+      "耶誕市集"
     ],
     "coord": [
       35.7115,
@@ -11757,7 +11851,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 江東區",
-    "type": "嘉年華",
+    "type": "節慶市集",
     "venue": "戶外",
     "age_range": [
       "3-6",
@@ -11771,7 +11865,8 @@
       "免費",
       "戶外",
       "手作",
-      "日本"
+      "日本",
+      "嘉年華"
     ],
     "coord": [
       35.6545,
@@ -11803,7 +11898,7 @@
     "category": "japan",
     "region": "日本",
     "district": "東京都 新宿區",
-    "type": "體驗",
+    "type": "親子體驗",
     "venue": "室內",
     "age_range": [
       "6-12"
@@ -11816,7 +11911,8 @@
       "免費",
       "室內",
       "STEAM",
-      "日本"
+      "日本",
+      "體驗"
     ],
     "coord": [
       35.6905,
