@@ -580,7 +580,7 @@
   {
     "date": "2026-10-14",
     "week": "2026-W42",
-    "status": "active",
+    "status": "archived",
     "id": "xinyi-pokemon-teletubbies-picturebook-2026",
     "category": "taipei",
     "region": "台北市",
@@ -740,7 +740,7 @@
   {
     "date": "2026-10-14",
     "week": "2026-W42",
-    "status": "active",
+    "status": "archived",
     "id": "npm-south-himalaya-month-2026",
     "category": "outside",
     "region": "嘉義縣",
@@ -854,7 +854,7 @@
   {
     "date": "2026-10-14",
     "week": "2026-W42",
-    "status": "active",
+    "status": "archived",
     "id": "kariya-sena-keiko-exhibition-2026",
     "category": "japan",
     "region": "日本",
@@ -11090,7 +11090,7 @@
       }
     ],
     "end_date": "2026-11-08",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "penguin-stamp-rally-2026",
@@ -11272,7 +11272,7 @@
       }
     ],
     "end_date": "2026-11-07",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tama-amur-tiger-twins-2026",
@@ -11507,7 +11507,7 @@
       }
     ],
     "end_date": "2026-11-08",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "ntcart-power-dream-factory-2026",
@@ -11935,6 +11935,519 @@
       }
     ],
     "end_date": "2026-11-15",
+    "status": "active"
+  },
+  {
+    "id": "taipei-zoo-penguin-walk-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "文山區",
+    "type": "樂園動物園",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "入園門票",
+      "戶外",
+      "企鵝",
+      "動物園"
+    ],
+    "coord": [
+      24.9958,
+      121.5843
+    ],
+    "title": "木柵 · 臺北市立動物園「企鵝走路趣」（11/19 首場 · 氣溫低於 24 度不定期加場）",
+    "summary": "動物園首度讓黑腳企鵝走出室內，到企鵝館出口步道散步，幫助企鵝增加活動量、降低足部「趾瘤」風險；現場另有保育員「Keeper's Talk 企鵝保母講古」。",
+    "highlight": "先跟孩子約好不喧嘩、不追逐、不觸摸餵食、不開閃光燈；首場在平日上午，後續場次看當天氣溫，依官網公告。",
+    "info": {
+      "date": "11/19（四）09:30 首場，之後氣溫低於 24 度不定期",
+      "location": "臺北市立動物園 企鵝館出口步道",
+      "age": "全齡",
+      "price": "活動不另收費，需入園門票"
+    },
+    "source_name": "中央社 · 台北動物園 11/19 首場企鵝散步",
+    "sources": [
+      {
+        "name": "中央社 · 台北動物園 11/19 首場企鵝散步",
+        "url": "https://www.cna.com.tw/news/ahel/202611105003.aspx"
+      },
+      {
+        "name": "臺北市立動物園官網",
+        "url": "https://www.zoo.gov.taipei/"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "ntpc-christmasland-snow-sports-party-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "板橋區",
+    "type": "親子體驗",
+    "venue": "戶外",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "雪合戰",
+      "直排輪",
+      "運動",
+      "耶誕"
+    ],
+    "coord": [
+      25.0118,
+      121.4648
+    ],
+    "title": "板橋 · 新北耶誕城「冬日萌遊運動咖集合！」（11/22 · 雪合戰、直排輪闖關、香蕉哥哥帶動唱）",
+    "summary": "新北市體育局在耶誕城辦的運動派對：5 人一隊的雪合戰（10 梯次、依年齡分組）、直排輪障礙挑戰、互動跑酷車、運動耶誕市集與特技演出；19:00~21:00 另有現場報名的雪球九宮格。",
+    "highlight": "雪合戰限 100 人、直排輪挑戰 200 人，11/10 中午起 Accupass 報名，額滿為止；白天玩運動、傍晚看耶誕城亮燈一趟排滿。",
+    "info": {
+      "date": "11/22（日）13:30~21:00",
+      "location": "新北市民廣場",
+      "age": "雪合戰國小到成人分組；跑酷限身高 100 公分以上",
+      "price": "免費（雪合戰、直排輪需網路報名）"
+    },
+    "source_name": "媽媽寶寶 · 耶誕城 11/22 雪合戰",
+    "sources": [
+      {
+        "name": "媽媽寶寶 · 耶誕城 11/22 雪合戰",
+        "url": "https://www.mombaby.com.tw/articles/9938373"
+      },
+      {
+        "name": "中央社 · 新北耶誕城市集 13 日登場",
+        "url": "https://www.cna.com.tw/news/aloc/202611100299.aspx"
+      }
+    ],
+    "end_date": "2026-11-22",
+    "status": "active"
+  },
+  {
+    "id": "ntpc-city-expo-newtaipeiband-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "三重區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "室內",
+      "體能闖關",
+      "球池",
+      "AR",
+      "雨天備案"
+    ],
+    "coord": [
+      25.0605,
+      121.488
+    ],
+    "title": "三重 · 2026 新北城市展「New Taipei Band：共奏未來」（至 12/27 · 免費 · 5 樓親子放電區）",
+    "summary": "7 大展區橫跨三重安芯中心 1~5 樓；5 樓「日常體能王」把菜市場、馬路、洗衣店變成體能關卡，「怪獸放電場」有球池、體感投影、AR 與閱讀角，3、4 樓有全民玩馬戲。",
+    "highlight": "免費室內、可以跑跳，是下雨天好備案；直接上 5 樓先放電。週一休展，11/13 起開放到 20:00。",
+    "info": {
+      "date": "10/30~12/27（週一休展；11/13 起 10:00~20:00）",
+      "location": "新北市政府三重安芯中心 1~5 樓",
+      "age": "幼兒～國小",
+      "price": "免費"
+    },
+    "source_name": "2026 新北城市展官網",
+    "sources": [
+      {
+        "name": "2026 新北城市展官網",
+        "url": "https://newtaipeiband.tw/"
+      },
+      {
+        "name": "媽媽寶寶 · 新北城市展親子攻略",
+        "url": "https://www.mombaby.com.tw/articles/9938369"
+      }
+    ],
+    "end_date": "2026-12-27",
+    "status": "active"
+  },
+  {
+    "id": "ntch-unseen-picturebook-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "中正區",
+    "type": "親子體驗",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "依官網",
+    "facilities": [],
+    "tags": [
+      "室內",
+      "繪本",
+      "共融",
+      "感官體驗"
+    ],
+    "coord": [
+      25.0359,
+      121.5188
+    ],
+    "title": "中正 · 兩廳院「看不見」親子繪本說故事（至 11/21 · 戴眼罩闖關、真人視障魔法師交流）",
+    "summary": "以繪本《看不見》為底，在表演藝術圖書館設計闖關：孩子指揮戴眼罩的大人組合物件，再親子一起戴眼罩抓繩索探索，用觸覺、聽覺、嗅覺解謎，結束後與視障講者交流。",
+    "highlight": "讓孩子當一次指揮大人的人，練表達也練換位思考；只剩 11/21 前場次，先查兩廳院官網名額。",
+    "info": {
+      "date": "即日起至 11/21（六）",
+      "location": "國家兩廳院 表演藝術圖書館",
+      "age": "學齡前～國小，親子同行",
+      "price": "費用與報名方式依兩廳院官網"
+    },
+    "source_name": "中央社 · 兩廳院「看不見」繪本說故事",
+    "sources": [
+      {
+        "name": "中央社 · 兩廳院「看不見」繪本說故事",
+        "url": "https://www.cna.com.tw/news/acul/202611100018.aspx"
+      }
+    ],
+    "end_date": "2026-11-21",
+    "status": "active"
+  },
+  {
+    "id": "tainan-anping-lonely-friends-balloons-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "outside",
+    "region": "台南市",
+    "district": "安平區",
+    "type": "展覽",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "大型氣偶",
+      "角落小夥伴作者",
+      "燈光秀"
+    ],
+    "coord": [
+      22.9966,
+      120.158
+    ],
+    "title": "台南安平 · 2026 跟朗萌綺盟一起來台南（12 米水上巨型氣偶 · 10/31 起展 37 天）",
+    "summary": "「角落小夥伴」作者橫溝友里的新角色「朗萌綺盟」：12 米高水上氣偶「大山椒魚」與「小島」、5 米陸上氣偶「狐狸」與「小耳朵同盟」；有夜間燈光秀，假日加開街頭藝人、市集與快閃店。",
+    "highlight": "白天走安平古堡、樹屋，傍晚回碼頭看燈光秀；結束日依「37 天」推算為 12/6，以台南市府公告為準。",
+    "info": {
+      "date": "10/31 起 37 天（推算至 12/6）",
+      "location": "安平漁人碼頭等地",
+      "age": "全齡",
+      "price": "看氣偶免費；快閃店、遊船另計"
+    },
+    "source_name": "中央社 · 朗萌綺盟台南巨型氣偶展出 37 天",
+    "sources": [
+      {
+        "name": "中央社 · 朗萌綺盟台南巨型氣偶展出 37 天",
+        "url": "https://www.cna.com.tw/news/aloc/202610300114.aspx"
+      }
+    ],
+    "end_date": "2026-12-06",
+    "status": "active"
+  },
+  {
+    "id": "kaohsiung-christmas-life-festival-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "新興區",
+    "type": "節慶市集",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "耶誕",
+      "市集",
+      "燈飾"
+    ],
+    "coord": [
+      22.625,
+      120.3013
+    ],
+    "title": "高雄 · 2026 高雄聖誕生活節（11/13 起連 5 個週末耶誕小鎮市集 · 中央公園）",
+    "summary": "高雄市經發局主辦，燈飾主題「聖誕高雄・閃耀星光」，連 5 個週末耶誕小鎮市集，邀 30 個商圈與青年、原住民族攤商；12/19~27 耶誕黃金週加開音樂演出。",
+    "highlight": "捷運中央公園站直達、推車好走；想看主燈揭曉排第一個週末傍晚。",
+    "info": {
+      "date": "11/13（五）起連 5 個週末；12/19~27 黃金週",
+      "location": "高雄中央公園",
+      "age": "全齡",
+      "price": "入園免費；市集消費另計"
+    },
+    "source_name": "中央社 · 高雄聖誕生活節 13 日登場",
+    "sources": [
+      {
+        "name": "中央社 · 高雄聖誕生活節 13 日登場",
+        "url": "https://www.cna.com.tw/news/aloc/202611100088.aspx"
+      }
+    ],
+    "end_date": "2026-12-27",
+    "status": "active"
+  },
+  {
+    "id": "changhua-puxin-fruit-park-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "outside",
+    "region": "彰化縣",
+    "district": "埔心鄉",
+    "type": "戶外踏青",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "共融遊戲場",
+      "集章"
+    ],
+    "coord": [
+      23.953,
+      120.544
+    ],
+    "title": "彰化埔心 · 舊館蜜果樂園 共融遊戲場（11/9 新啟用 · 彰化第 21 座）＋公園集章換積木",
+    "summary": "以葡萄、芭樂、金蜜芒果「三蜜」為主題，0.9 公頃；6 公尺「蜜果大樹塔」含攀爬架、鋼索吊橋、滑竿、溜滑梯，另有彈跳床、旋轉椅、水果搖搖馬與 450 公尺環狀步道。",
+    "highlight": "可和福興大興飛行樂園排成一趟；「彰化公園好玩美」集滿 13 章（至 2027/1/31）前 1,000 名換積木組。新廁所預計 2027/8 底才啟用。",
+    "info": {
+      "date": "11/9 起（常設）；集章至 2027/1/31",
+      "location": "彰化縣埔心鄉 舊館公園",
+      "age": "幼兒～學齡；另有樂齡體健區",
+      "price": "免費"
+    },
+    "source_name": "中央社 · 埔心舊館蜜果樂園啟用",
+    "sources": [
+      {
+        "name": "中央社 · 埔心舊館蜜果樂園啟用",
+        "url": "https://www.cna.com.tw/news/ahel/202611090135.aspx"
+      },
+      {
+        "name": "中央社 · 彰化公園集章",
+        "url": "https://www.cna.com.tw/news/aloc/202611070110.aspx"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "paperwindmill-dengguai-zhongli-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "outside",
+    "region": "桃園市",
+    "district": "中壢區",
+    "type": "表演",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "戶外",
+      "兒童劇",
+      "客語",
+      "紙風車"
+    ],
+    "coord": [
+      24.9525,
+      121.2185
+    ],
+    "title": "桃園中壢 · 紙風車劇團客家親子劇《燈怪》（11/13~14 · 8 公尺巨型機械「燈燈國王」）",
+    "summary": "客委會與紙風車合作的原創客家親子劇，巡演 10 縣市累積 15 萬人次；8 公尺「燈燈國王」由 5,000 多個零件打造，會眨眼、展翅、噴氣，客、華語交錯演出。",
+    "highlight": "出發前先聽「瓜瓜歌」，現場更投入；戶外空地晚上偏涼，帶小椅子與薄外套。開演時間依主辦公告。",
+    "info": {
+      "date": "11/13（五）、11/14（六）晚間",
+      "location": "桃園市中壢區中華路二段 前泰豐輪胎空地（中壢簡易庭對面）",
+      "age": "學齡前～國小",
+      "price": "依主辦公告"
+    },
+    "source_name": "中央社 · 紙風車《燈怪》累積 15 萬人次",
+    "sources": [
+      {
+        "name": "中央社 · 紙風車《燈怪》累積 15 萬人次",
+        "url": "https://www.cna.com.tw/news/acul/202611090266.aspx"
+      }
+    ],
+    "end_date": "2026-11-14",
+    "status": "active"
+  },
+  {
+    "id": "play-museum-kikuchi-chiki-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 立川市",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "付費",
+      "室內",
+      "繪本",
+      "原畫展"
+    ],
+    "coord": [
+      35.7046,
+      139.413
+    ],
+    "title": "東京立川 · PLAY! MUSEUM「絵本作家 きくちちき展 いきもの Rhapsody」（至 12/13）",
+    "summary": "繪本作家きくちちき首次全國巡迴大型個展：新作《いきもの Rhapsody》30 張高 3 公尺原畫排滿 60 公尺展間成「空間繪本」，另展原畫約 150 張與約 80 本全繪本。",
+    "highlight": "畫面大、色彩強，不識字的小小孩也看得懂；門票只指定日期不指定時段，可與 11/14~15 昭和記念公園「たちかわ楽市」排同一天。",
+    "info": {
+      "date": "10/7~12/13；10:00~17:00（週六日假日至 18:00）",
+      "location": "PLAY! MUSEUM（GREEN SPRINGS）",
+      "age": "全齡",
+      "price": "一般 1,800 日圓、國中小 600 日圓、未就學兒免費"
+    },
+    "source_name": "PLAY! MUSEUM · きくちちき展",
+    "sources": [
+      {
+        "name": "PLAY! MUSEUM · きくちちき展",
+        "url": "https://play2020.jp/article/kikuchichiki/"
+      }
+    ],
+    "end_date": "2026-12-13",
+    "status": "active"
+  },
+  {
+    "id": "tachikawa-rakuichi-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 立川市",
+    "type": "節慶市集",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "市民祭典",
+      "手作體驗"
+    ],
+    "coord": [
+      35.705,
+      139.409
+    ],
+    "title": "東京立川 · たちかわ楽市 2026（11/14~15 · 國營昭和記念公園 · 免費市集與體驗）",
+    "summary": "立川市民祭、商人祭、農業祭與昭和記念公園活動同時舉辦：市民舞台、手作市集、外國料理，モルック與昔日遊戲、萬花筒 DIY 等體驗，集章前 250 名送花盆。",
+    "highlight": "手作體驗看示範就會；會場不收費，但進入昭和記念公園其他收費區需另付入園費。惡劣天候停辦。",
+    "info": {
+      "date": "11/14（六）~11/15（日）",
+      "location": "國營昭和記念公園 花みどり文化センター・みどりの文化ゾーン",
+      "age": "全齡",
+      "price": "會場免費；攤位消費另計"
+    },
+    "source_name": "立川市地域文化振興財團 · たちかわ楽市 2026",
+    "sources": [
+      {
+        "name": "立川市地域文化振興財團 · たちかわ楽市 2026",
+        "url": "https://www.tachikawa-chiikibunka.or.jp/b10-20261114/"
+      }
+    ],
+    "end_date": "2026-11-15",
+    "status": "active"
+  },
+  {
+    "id": "galaxcity-paw-patrol-dome-2026",
+    "date": "2026-11-11",
+    "week": "2026-W46",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 足立區",
+    "type": "表演",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "付費",
+      "室內",
+      "球幕電影",
+      "汪汪隊"
+    ],
+    "coord": [
+      35.779,
+      139.788
+    ],
+    "title": "東京足立 · ギャラクシティ 球幕《パウ・パトロール》天文台救援篇（至 2027/1/7 · 未就學兒免費）",
+    "summary": "汪汪隊立大功的球幕短片（約 30 分鐘，170 席）：冒險灣新天文台被市長偷走，汪汪隊出動找回來。當天 9:00 起 1 樓服務台現場售票、先到先買。",
+    "highlight": "全家只要幾百日圓；館內還有攀爬網與體驗區可玩半天。團體預約、休館日與特別活動日不放映。",
+    "info": {
+      "date": "9/27~2027/1/7；平日 11:30、週六日假日 11:00",
+      "location": "ギャラクシティ まるちたいけんドーム（東武西新井站）",
+      "age": "全齡",
+      "price": "大人 500 日圓、小中高 100 日圓、未就學兒免費（佔座收小中高票）"
+    },
+    "source_name": "ギャラクシティ · パウ・パトロール 投影資訊",
+    "sources": [
+      {
+        "name": "ギャラクシティ · パウ・パトロール 投影資訊",
+        "url": "https://www.galaxcity.jp/future-creation-hall/multi-experience-dome/20270107-009150.html"
+      }
+    ],
+    "end_date": "2027-01-07",
     "status": "active"
   }
 ]
