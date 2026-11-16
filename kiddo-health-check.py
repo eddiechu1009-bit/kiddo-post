@@ -27,6 +27,7 @@ import html as htmllib
 import json
 import os
 import re
+import ssl
 import sys
 import time
 import urllib.error
@@ -242,16 +243,34 @@ ROOT_PATHS = {"", "/", "/En", "/en", "/En/", "/en/"}
 HREF_RE = re.compile(r'href=[\'"](https?://[^\'"]+)[\'"]', re.I)
 
 
-def fetch_status(url: str, timeout: int = 25) -> tuple[int | None, str, str]:
+# 2026-11-15 健檢:46 個 .gov.tw 連結因憑證鏈缺 Subject Key Identifier,
+# 被新版 Python SSL 驗證擋下(CERTIFICATE_VERIFY_FAILED),curl 複驗全 200。
+# → 只有遇到憑證驗證錯誤時才改用不驗憑證重試一次(只讀狀態碼,不送任何資料)。
+_INSECURE_CTX = ssl.create_default_context()
+_INSECURE_CTX.check_hostname = False
+_INSECURE_CTX.verify_mode = ssl.CERT_NONE
+
+
+def _is_cert_error(e: Exception) -> bool:
+    reason = getattr(e, "reason", e)
+    return (isinstance(reason, ssl.SSLCertVerificationError)
+            or "CERTIFICATE_VERIFY_FAILED" in str(e))
+
+
+def fetch_status(url: str, timeout: int = 25,
+                 _insecure: bool = False) -> tuple[int | None, str, str]:
     """回傳 (status_code, url_effective, error)。3xx 由 urllib 自動跟完。"""
     req = urllib.request.Request(url, headers=BROWSER_HEADERS, method="GET")
+    ctx = _INSECURE_CTX if _insecure else None
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
             resp.read(2048)  # 只讀開頭,避免整份 PDF 拉下來
             return resp.status, resp.geturl(), ""
     except urllib.error.HTTPError as e:
         return e.code, e.geturl() if hasattr(e, "geturl") else url, ""
     except Exception as e:
+        if not _insecure and _is_cert_error(e):
+            return fetch_status(url, timeout, _insecure=True)
         return None, url, f"{type(e).__name__}: {e}"
 
 
