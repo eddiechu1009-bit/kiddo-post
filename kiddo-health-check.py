@@ -239,6 +239,10 @@ BROWSER_HEADERS = {
 }
 # 靜態資源不算引用來源
 LINK_SKIP_HOSTS = {"fonts.googleapis.com", "fonts.gstatic.com"}
+# 只開放台灣 IP 的網域:健檢機器的對外 IP 在海外(東京),連線一律 timeout。
+# 2026-11-16 用台灣行動網路手機實測可開才加入;連不到時視為存活,不列需複驗。
+# 有回應的狀態碼(404 等)照常判讀。新增網域前要先用台灣網路確認。
+GEO_RESTRICTED_HOSTS = {"1957.mohw.gov.tw", "cfedaweb.mohw.gov.tw"}
 ROOT_PATHS = {"", "/", "/En", "/en", "/En/", "/en/"}
 HREF_RE = re.compile(r'href=[\'"](https?://[^\'"]+)[\'"]', re.I)
 
@@ -284,6 +288,10 @@ def classify_link(url: str) -> dict:
         code, final, err = fetch_status(url, timeout=40)
     out = {"url": url, "status": code, "url_effective": final, "error": err}
     if code is None:
+        if urlsplit(url).hostname in GEO_RESTRICTED_HOSTS:
+            out["verdict"] = "alive"
+            out["reason"] = "限台灣 IP 的網域,海外連線一律 timeout(已人工確認可開)"
+            return out
         out["verdict"] = "error"
         return out
     # 判準 3:最終網址塌回網域根目錄 → 檔案已下架(即使回 200)
