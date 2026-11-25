@@ -2480,7 +2480,7 @@
       }
     ],
     "end_date": "2026-11-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tokyo-parks-card-2026",
@@ -2857,7 +2857,7 @@
       }
     ],
     "end_date": "2026-11-22",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "chiayi-moonlit-woods-2026",
@@ -11182,7 +11182,7 @@
       }
     ],
     "end_date": "2026-11-22",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "nstm-science-festival-2026",
@@ -11745,7 +11745,7 @@
       }
     ],
     "end_date": "2026-11-22",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "pingtung-christmas-2026",
@@ -12033,7 +12033,7 @@
       }
     ],
     "end_date": "2026-11-22",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "ntpc-city-expo-newtaipeiband-2026",
@@ -12128,7 +12128,7 @@
       }
     ],
     "end_date": "2026-11-21",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tainan-anping-lonely-friends-balloons-2026",
@@ -12542,7 +12542,7 @@
       }
     ],
     "end_date": "2026-11-22",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tpo-hansel-gretel-opera-2026",
@@ -12587,7 +12587,7 @@
       }
     ],
     "end_date": "2026-11-20",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "tfam-sakamoto-ryuichi-2026",
@@ -12684,7 +12684,7 @@
       }
     ],
     "end_date": "2026-11-22",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "miaoli-christmas-city-2026",
@@ -12776,7 +12776,7 @@
       }
     ],
     "end_date": "2026-11-21",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "huwei-bombax-pink-market-2026",
@@ -12963,7 +12963,7 @@
       }
     ],
     "end_date": "2026-11-23",
-    "status": "active"
+    "status": "archived"
   },
   {
     "id": "hoshida-star-bridge-illumination-2026",
@@ -13007,6 +13007,610 @@
       }
     ],
     "end_date": "2027-01-11",
+    "status": "active"
+  },
+  {
+    "id": "linfamily-garden-night-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "板橋區",
+    "type": "節慶市集",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "免費",
+      "戶外",
+      "光雕",
+      "古蹟",
+      "夜間"
+    ],
+    "coord": [
+      25.0103,
+      121.4553
+    ],
+    "title": "板橋 · 林本源園邸「2026 幻旅林園」光影夜遊（週六日晚上 · 至 12/13 · 夜間免費入園）",
+    "summary": "百年林家花園週末晚上變光影場域：光影主秀《流光四序》、藝術裝置、夜間演出與遊園闖關。",
+    "highlight": "平常門票 80 元的古蹟這 4 個週末晚上免費、捷運可達；園內階梯水池多、光線暗，小小孩要牽好。11/28 投票日延後 11:00 開園。",
+    "info": {
+      "date": "11/14~12/13 每週六、日 18:00~21:00",
+      "location": "國定古蹟林本源園邸（板橋區西門街 9 號，捷運府中站步行約 15 分）",
+      "age": "全齡",
+      "price": "活動期間夜間免費入園；藝術家工作坊每人 100 元"
+    },
+    "source_name": "林本源園邸 · 幻旅林園活動公告",
+    "sources": [
+      {
+        "name": "林本源園邸 · 幻旅林園活動公告",
+        "url": "https://www.linfamily.ntpc.gov.tw/xceventsnews/cont?xsmsid=0G249617555861789607&sid=0Q293499310685644373"
+      },
+      {
+        "name": "媽媽寶寶 · 三大免費景點",
+        "url": "https://www.mombaby.com.tw/articles/9938465"
+      }
+    ],
+    "end_date": "2026-12-13",
+    "status": "active"
+  },
+  {
+    "id": "tam-magic-schoolbag-dec-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "士林區",
+    "type": "親子體驗",
+    "venue": "室內",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "付費",
+      "室內",
+      "天文",
+      "DIY",
+      "需報名"
+    ],
+    "coord": [
+      25.0955,
+      121.5185
+    ],
+    "title": "士林 · 天文館假日親子「天文魔法小書包」（12/5、12/19 週六 14:00 · 每梯 50 人 · 網路報名）",
+    "summary": "導覽解說加 DIY 教具，最後搭宇宙探險車體驗聲光太空之旅；11/26 另有天王星衝。",
+    "highlight": "每梯只有 50 人、活動前一週才開放報名；天文館、科教館、兒童新樂園相鄰，可用二館／三館聯票。",
+    "info": {
+      "date": "12/5（六）、12/19（六）14:00，約 2 小時",
+      "location": "臺北市立天文科學教育館",
+      "age": "親子同行",
+      "price": "活動不另收費，需購展示場及宇宙探險門票"
+    },
+    "source_name": "臺北天文館 · 天文魔法小書包",
+    "sources": [
+      {
+        "name": "臺北天文館 · 天文魔法小書包",
+        "url": "https://www.tam.gov.taipei/News_Content.aspx?n=49854D6439EC40C0&sms=72544237BBE4C5F6&s=E7A6AE5B2AF396B3"
+      }
+    ],
+    "end_date": "2026-12-19",
+    "status": "active"
+  },
+  {
+    "id": "penglai-rice-centennial-huashan-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "中正區",
+    "type": "展覽",
+    "venue": "室內＋戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "依主辦公告",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "市集",
+      "展覽",
+      "農業",
+      "試吃"
+    ],
+    "coord": [
+      25.0441,
+      121.5294
+    ],
+    "title": "中正 · 華山「蓬萊米百年特展暨市集」（11/28~11/29 · 古早割稻飯場景、好米試吃）",
+    "summary": "農糧署為蓬萊米命名 100 週年辦的 4 區特展：米食演變、傳統農具、稻穀變米飯、稻米科技，另有 37 家米食展售。",
+    "highlight": "讓孩子看看一粒米怎麼來的，回家可以一起洗米煮飯；只有兩天，11/28 投票日先投票再去。",
+    "info": {
+      "date": "11/28（六）、11/29（日）",
+      "location": "華山 1914 文化創意產業園區",
+      "age": "全齡",
+      "price": "新聞稿未提收費；市集消費另計"
+    },
+    "source_name": "中央社 · 蓬萊米百年特展",
+    "sources": [
+      {
+        "name": "中央社 · 蓬萊米百年特展",
+        "url": "https://www.cna.com.tw/news/ahel/202611250102.aspx"
+      }
+    ],
+    "end_date": "2026-11-29",
+    "status": "active"
+  },
+  {
+    "id": "taipei-zoo-tapir-calf-outdoor-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "文山區",
+    "type": "樂園動物園",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [
+      "捷運可達",
+      "哺乳室"
+    ],
+    "tags": [
+      "付費",
+      "戶外",
+      "動物寶寶",
+      "馬來貘"
+    ],
+    "coord": [
+      24.9983,
+      121.581
+    ],
+    "title": "木柵 · 臺北動物園 馬來貘寶寶「Treepeva」跟著媽媽首次在戶外水池亮相",
+    "summary": "8/17 出生的馬來貘寶寶跟媽媽「Putri」搬到熱帶雨林區大水池，有機會看到母女一前一後走動。",
+    "highlight": "小貘的條紋只有小時候看得到；熱帶雨林區整修中、馬來虎暫時搬走，部分步道封閉。",
+    "info": {
+      "date": "11/4 起戶外活動，依動物狀況",
+      "location": "臺北市立動物園 熱帶雨林區（穿山甲館旁）",
+      "age": "全齡",
+      "price": "需入園門票"
+    },
+    "source_name": "臺北市立動物園 · 馬來貘戶外初亮相",
+    "sources": [
+      {
+        "name": "臺北市立動物園 · 馬來貘戶外初亮相",
+        "url": "https://www.zoo.gov.taipei/News_Content.aspx?n=BD065B2FA7782989&sms=72544237BBE4C5F6&s=AC49459F824D405E"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "ntsec-between-silence-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "taipei",
+    "region": "台北市",
+    "district": "士林區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [
+      "捷運可達"
+    ],
+    "tags": [
+      "免費",
+      "室內",
+      "科技藝術",
+      "聲音"
+    ],
+    "coord": [
+      25.0966,
+      121.5155
+    ],
+    "title": "士林 · 科教館《寂靜之間》科技藝術實驗展（至 12/27 · 免費 · 把宇宙射線變成聲音）",
+    "summary": "藝術家張永達把粒子運動、宇宙射線、輻射與二氧化碳數據轉成聲音、影像與光。",
+    "highlight": "免費、在 B1 小黑盒前廳，逛科教館時順路；用眼睛耳朵看、不要摸。導覽建議 7 歲以上。",
+    "info": {
+      "date": "至 12/27，依科教館開放時間",
+      "location": "國立臺灣科學教育館 B1 南側廊道",
+      "age": "全齡；導覽建議 7 歲以上",
+      "price": "免費參觀"
+    },
+    "source_name": "國立臺灣科學教育館 · 寂靜之間",
+    "sources": [
+      {
+        "name": "國立臺灣科學教育館 · 寂靜之間",
+        "url": "https://www.ntsec.gov.tw/article/detail.aspx?a=6174"
+      }
+    ],
+    "end_date": "2026-12-27",
+    "status": "active"
+  },
+  {
+    "id": "ntpc-smile-mountain-stamp-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "taipei",
+    "region": "新北市",
+    "district": "鶯歌區、三峽區、平溪區等 9 區",
+    "type": "戶外踏青",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "集章",
+      "健行"
+    ],
+    "coord": [
+      24.9531,
+      121.3524
+    ],
+    "title": "新北 · 「微笑山線：大手小手集章散策」親子集章（5 大山系、22 個據點 · 兌換至 2027 年底）",
+    "summary": "帶實體手冊到 22 個服務據點集章，集滿大棟山、鳶山、天上山、二格山、五分山 5 大山系戳章可換贈品。",
+    "highlight": "一次一座山、慢慢集一年；小小孩先從鶯歌陶博館、新北市美術館等室內據點開始。",
+    "info": {
+      "date": "11/19 起，兌換至 2027 年底",
+      "location": "新北 22 處服務據點（含鶯歌陶瓷博物館、新北市美術館、客家文化園區、十分遊客中心）",
+      "age": "3 歲以上可挑短程",
+      "price": "集章免費"
+    },
+    "source_name": "中央社 · 微笑山線推集章散策",
+    "sources": [
+      {
+        "name": "中央社 · 微笑山線推集章散策",
+        "url": "https://www.cna.com.tw/news/aloc/202611190309.aspx"
+      }
+    ],
+    "end_date": "2027-12-31",
+    "status": "active"
+  },
+  {
+    "id": "yilan-winter-hotspring-fest-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "outside",
+    "region": "宜蘭縣",
+    "district": "礁溪鄉",
+    "type": "節慶市集",
+    "venue": "戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "戶外",
+      "溫泉",
+      "踩街",
+      "市集"
+    ],
+    "coord": [
+      24.8266,
+      121.7716
+    ],
+    "title": "宜蘭礁溪 · 2026 冬戀蘭陽溫泉季（12/4~12/20 · 12/6 踩街嘉年華）",
+    "summary": "12/4 湯圍溝祈水感恩禮開幕、12/6 踩街嘉年華，12/11~13、12/19~20 晚上有溫泉美食市集與多元文化音樂會。",
+    "highlight": "台北出發當天來回；白天泡腳、下午看踩街，帶條小毛巾。",
+    "info": {
+      "date": "12/4~12/20；12/6（日）15:00 踩街",
+      "location": "礁溪湯圍溝溫泉公園、溫泉路與健康路口、五峰旗重劃區",
+      "age": "全齡",
+      "price": "活動免費；市集消費另計"
+    },
+    "source_name": "中央社 · 冬戀蘭陽溫泉季",
+    "sources": [
+      {
+        "name": "中央社 · 冬戀蘭陽溫泉季",
+        "url": "https://www.cna.com.tw/news/aloc/202611200080.aspx"
+      }
+    ],
+    "end_date": "2026-12-20",
+    "status": "active"
+  },
+  {
+    "id": "kaohsiung-comic-library-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "outside",
+    "region": "高雄市",
+    "district": "鹽埕區",
+    "type": "親子體驗",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "免費",
+    "facilities": [],
+    "tags": [
+      "免費",
+      "室內",
+      "圖書館",
+      "漫畫",
+      "共讀"
+    ],
+    "coord": [
+      22.6205,
+      120.2875
+    ],
+    "title": "高雄鹽埕 · 高雄漫畫圖書館新開幕（3.2 萬冊漫畫 · 親子共讀「閱讀城堡」有爬網）",
+    "summary": "市圖鹽埕分館遷到原高雄國際會議中心，館藏 6.5 萬冊；親子共讀區「閱讀城堡」有兒童閱讀區和爬網。",
+    "highlight": "高雄雨天的免費室內好去處，近駁二；漫畫區留意分級。",
+    "info": {
+      "date": "11/12 開幕，常設",
+      "location": "原高雄國際會議中心一樓",
+      "age": "全齡",
+      "price": "免費入館"
+    },
+    "source_name": "中央社 · 高雄漫畫圖書館開幕",
+    "sources": [
+      {
+        "name": "中央社 · 高雄漫畫圖書館開幕",
+        "url": "https://www.cna.com.tw/news/aloc/202611120145.aspx"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "taichung-prefecture-hall-exhibit-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "outside",
+    "region": "台中市",
+    "district": "西區",
+    "type": "展覽",
+    "venue": "室內",
+    "age_range": [
+      "6-12"
+    ],
+    "cost": "依主辦公告",
+    "facilities": [],
+    "tags": [
+      "室內",
+      "古蹟",
+      "歷史",
+      "工藝體驗"
+    ],
+    "coord": [
+      24.1394,
+      120.6782
+    ],
+    "title": "台中西區 · 「台中州廳的前世今生特展」（至 2027/1/8 · 磚牆、屋頂木架工藝體驗）",
+    "summary": "老照片與古地圖看台中城市發展，有舊市府辦公情境區，還能動手體驗磚牆、屋頂木架與柱飾工法。",
+    "highlight": "能動手疊磚、組木架的孩子比較記得住；近台中火車站。",
+    "info": {
+      "date": "即日起至 2027/1/8",
+      "location": "國定古蹟台中州廳",
+      "age": "建議國小以上",
+      "price": "新聞稿未提收費，出發前查台中市文化局公告"
+    },
+    "source_name": "中央社 · 台中州廳前世今生特展",
+    "sources": [
+      {
+        "name": "中央社 · 台中州廳前世今生特展",
+        "url": "https://www.cna.com.tw/news/aloc/202611230152.aspx"
+      }
+    ],
+    "end_date": "2027-01-08",
+    "status": "active"
+  },
+  {
+    "id": "wuling-farm-metasequoia-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "outside",
+    "region": "台中市",
+    "district": "和平區",
+    "type": "戶外踏青",
+    "venue": "戶外",
+    "age_range": [
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "付費",
+      "戶外",
+      "賞楓",
+      "高山"
+    ],
+    "coord": [
+      24.36,
+      121.311
+    ],
+    "title": "台中和平 · 武陵農場水杉林轉金黃（賞景期估到 12 月中旬 · 落羽松 12 月接力）",
+    "summary": "露營區 A 區水杉林正值最佳觀賞期，大草原區落羽松 12 月接力轉色。",
+    "highlight": "高山早晚溫差大，羽絨外套、帽子要帶；山路彎多，注意暈車。",
+    "info": {
+      "date": "至 12 月中旬（農場預估）",
+      "location": "武陵農場 露營區 A 區、大草原區",
+      "age": "3 歲以上較適合",
+      "price": "需購武陵農場入園門票"
+    },
+    "source_name": "中央社 · 武陵農場水杉轉金黃",
+    "sources": [
+      {
+        "name": "中央社 · 武陵農場水杉轉金黃",
+        "url": "https://www.cna.com.tw/news/aloc/202611250040.aspx"
+      }
+    ],
+    "end_date": "2026-12-15",
+    "status": "active"
+  },
+  {
+    "id": "tama-zoo-koala-sora-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 日野市",
+    "type": "樂園動物園",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "付費",
+      "室內",
+      "無尾熊",
+      "動物"
+    ],
+    "coord": [
+      35.6497,
+      139.4037
+    ],
+    "title": "東京日野 · 多摩動物公園 新來的無尾熊「ソラ」11/7 起公開",
+    "summary": "6 歲公無尾熊「ソラ」從埼玉縣こども動物自然公園移入，為了新配對與繁殖。",
+    "highlight": "無尾熊多半在睡，上午或餵食時段較易看到活動；園區大又有坡，帶推車。",
+    "info": {
+      "date": "11/7 起在コアラ館ケージ部屋展示",
+      "location": "多摩動物公園",
+      "age": "全齡",
+      "price": "一般 600 日圓；小學生以下、都內在住在學中學生免費"
+    },
+    "source_name": "多摩動物公園 · コアラ「ソラ」",
+    "sources": [
+      {
+        "name": "多摩動物公園 · コアラ「ソラ」",
+        "url": "https://www.tokyo-zoo.net/tama/news/13084/index.html"
+      },
+      {
+        "name": "東京都立動物園 · 入園料",
+        "url": "https://www.tokyo-zoo.net/tama/visitor-info/tickets/index.html"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "kasai-fairy-penguin-chicks-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 江戶川區",
+    "type": "樂園動物園",
+    "venue": "室內＋戶外",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "付費",
+      "水族館",
+      "企鵝",
+      "動物寶寶"
+    ],
+    "coord": [
+      35.6403,
+      139.862
+    ],
+    "title": "東京葛西 · 葛西臨海水族園 從澳洲運卵孵出的小藍企鵝幼鳥 8 隻展示中",
+    "summary": "從澳洲空運 12 顆受精卵、孵出 8 隻世界最小的企鵝，11/5 起展示，翅膀綁束帶的是今年新生兒。",
+    "highlight": "和孩子玩「找企鵝寶寶」；水族園整修中，12/3~4 部分水槽暫停，出發前看公告。",
+    "info": {
+      "date": "11/5 起展示（健康管理時可能暫停）",
+      "location": "葛西臨海水族園",
+      "age": "全齡",
+      "price": "一般 700 日圓；小學 6 年級以下、都內在住在學中學生免費"
+    },
+    "source_name": "葛西臨海水族園 · フェアリーペンギン幼鳥",
+    "sources": [
+      {
+        "name": "葛西臨海水族園 · フェアリーペンギン幼鳥",
+        "url": "https://www.tokyo-zoo.net/kasai/news/12156/index.html"
+      },
+      {
+        "name": "葛西臨海水族園 · 入園料",
+        "url": "https://www.tokyo-zoo.net/kasai/visitor-info/tickets/index.html"
+      }
+    ],
+    "end_date": null,
+    "status": "active"
+  },
+  {
+    "id": "tokyo-skytree-dream-christmas-2026",
+    "date": "2026-11-25",
+    "week": "2026-W48",
+    "category": "japan",
+    "region": "日本",
+    "district": "東京都 墨田區",
+    "type": "節慶市集",
+    "venue": "室內",
+    "age_range": [
+      "0-3",
+      "3-6",
+      "6-12"
+    ],
+    "cost": "付費",
+    "facilities": [],
+    "tags": [
+      "付費",
+      "室內",
+      "聖誕",
+      "展望台"
+    ],
+    "coord": [
+      35.7101,
+      139.8107
+    ],
+    "title": "東京押上 · 東京晴空塔「Dream Christmas 2026」（至 12/25 · 晴空塔吉祥物週週換聖誕裝）",
+    "summary": "350 樓緞帶包裝窗景與星星雪球裝置，每晚播 4 分鐘聖誕限定短片；ソラカラちゃん每週換歷年聖誕服裝。",
+    "highlight": "傍晚上去一次看夕陽、夜景和短片；12/1 起吉祥物見面只剩 12:00、17:30 兩場。",
+    "info": {
+      "date": "11/5~12/25（部分商品至 2027/2/24）",
+      "location": "東京晴空塔 天望デッキ 350 樓等",
+      "age": "全齡",
+      "price": "需購展望台門票（依日期時段浮動）"
+    },
+    "source_name": "東京晴空塔 · Dream Christmas 2026",
+    "sources": [
+      {
+        "name": "東京晴空塔 · Dream Christmas 2026",
+        "url": "https://www.tokyo-skytree.jp/event/christmas2026/"
+      }
+    ],
+    "end_date": "2026-12-25",
     "status": "active"
   }
 ]
